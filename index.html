@@ -237,7 +237,7 @@ footer{background:#0F1B2D;color:#AEBAC6;padding:44px 0 24px;margin-top:26px;font
         <label for="oz">Ounces</label>
         <div class="inp"><input id="oz" type="text" inputmode="decimal" value="16" autocomplete="off"><span class="unit" id="ozUnit">oz</span></div>
       </div>
-      <button class="swap" id="swap" aria-label="Swap units" title="Swap">
+      <button class="swap" id="swap" aria-label="Reverse: go to kilograms to ounces converter" title="Reverse → kg to oz">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 4 4 7l3 3M4 7h13M17 20l3-3-3-3m3 3H7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       <div class="field">
@@ -620,9 +620,10 @@ decSel.addEventListener('change', ()=>{ dp=parseInt(decSel.value,10); recalc(); 
 
 document.getElementById('chips').addEventListener('click', e=>{ const b=e.target.closest('button'); if(!b) return; ozEl.value=b.dataset.oz; fromOz(); });
 
+// swap navigates to the reverse converter (kg -> oz), carrying the weight across
 document.getElementById('swap').addEventListener('click', ()=>{
-  const sw=document.getElementById('swap'); sw.classList.toggle('spin');
-  const o=ozEl.value, k=kgEl.value; ozEl.value=k; kgEl.value=o; recalc();
+  const o=parseVal(ozEl.value); const k=(isNaN(o)?NaN:o*F);
+  location.href = isFinite(k) ? ('kg-to-oz.html?kg='+(+k.toFixed(6))) : 'kg-to-oz.html';
 });
 
 // ounce type: avoirdupois vs troy (precious metals)
@@ -648,6 +649,8 @@ document.getElementById('tbody').innerHTML = rows.map(o=>{
   return `<tr><td>${ozL} oz</td><td>${k.toFixed(4)} kg</td><td>${gL} g</td></tr>`;
 }).join('');
 
+// pre-fill from a reverse-conversion hand-off (?kg=…)
+(function(){ const v=new URLSearchParams(location.search).get('kg'); if(v!==null){ const n=parseFloat(v); if(isFinite(n)) ozEl.value=String(+(n/AVO).toFixed(4)); } })();
 fromOz();
 </script>
 </body>
