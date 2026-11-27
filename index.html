@@ -40,6 +40,12 @@ nav{display:flex;gap:22px}
 nav a{color:var(--muted);font-weight:500;font-size:15px}
 nav a:hover{color:var(--teal-ink)}
 @media(max-width:640px){nav{display:none}}
+.crumbs{background:#fff;border-bottom:1px solid var(--line)}
+.crumbs > div{max-width:1060px;margin:0 auto;padding:10px 20px;font-size:13.5px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--indigo);font-weight:500}
+.crumbs a:hover{text-decoration:underline}
+.crumbs .sep{color:#B6C0CF}
+.crumbs .cur{color:var(--ink);font-weight:500}
 
 /* hero + converter */
 .hero{position:relative;padding:54px 0 96px;text-align:center;background:var(--grad);color:#fff;overflow:hidden}
@@ -223,6 +229,8 @@ footer{background:#0F1B2D;color:#AEBAC6;padding:44px 0 24px;margin-top:26px;font
     <a href="kg-to-oz.html">Kg → oz</a>
   </nav>
 </div></header>
+
+<nav class="crumbs" aria-label="Breadcrumb"><div><span class="cur">Home</span></div></nav>
 
 <main id="top">
 <section class="hero"><div class="aurora a1"></div><div class="aurora a2"></div><div class="w">
