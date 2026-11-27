@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Przelicznik uncji na kilogramy (oz na kg) | Standard i troy</title>
+<meta name="description" content="Przeliczaj uncje na kilogramy natychmiast, dla uncji standardowych i troy. Dokładne współczynniki NIST, pełna tabela, rozwiązane przykłady i wskazówki dotyczące zaokrąglania.">
+<link rel="alternate" hreflang="en" href="https://ouncestokilograms.com/">
+<link rel="alternate" hreflang="de" href="https://ouncestokilograms.com/de/">
+<link rel="alternate" hreflang="es" href="https://ouncestokilograms.com/es/">
+<link rel="alternate" hreflang="fr" href="https://ouncestokilograms.com/fr/">
+<link rel="alternate" hreflang="it" href="https://ouncestokilograms.com/it/">
+<link rel="alternate" hreflang="pl" href="https://ouncestokilograms.com/pl/">
+<link rel="alternate" hreflang="pt" href="https://ouncestokilograms.com/pt/">
+<link rel="alternate" hreflang="x-default" href="https://ouncestokilograms.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F5FB; --ink:#131A2B; --muted:#4B5768; --card:#FFFFFF; --line:#E4E8F2;
+  --teal:#0F766E; --teal-ink:#0B5C56; --indigo:#4338CA; --indigo-2:#1D4ED8; --violet:#7C3AED; --sky:#1D4ED8; --soft:#EDF1FF;
+  --grad:linear-gradient(118deg,#0F766E 0%,#1D4ED8 54%,#7C3AED 100%);
+  --grad-2:linear-gradient(118deg,#1D4ED8,#7C3AED);
+  --grad-soft:linear-gradient(118deg,#E8F4F2,#EDF0FF);
+  --sh:0 1px 2px rgba(20,26,46,.05),0 16px 44px rgba(28,34,80,.12);
+  --sh-c:0 10px 30px rgba(40,50,120,.15);
+  --maxw:1060px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.dsp{font-family:'Space Grotesk',Inter,sans-serif;letter-spacing:-.015em;line-height:1.08;margin:0}
+a{color:inherit;text-decoration:none}
+.w{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.num{font-variant-numeric:tabular-nums}
+
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(245,247,248,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .mk{width:38px;height:38px;border-radius:10px;background:var(--grad);display:grid;place-items:center;flex:0 0 auto}
+.brand b{font-family:'Space Grotesk';font-weight:700;font-size:18px;line-height:1}
+.brand span{display:block;font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+nav{display:flex;gap:22px}
+nav a{color:var(--muted);font-weight:500;font-size:15px}
+nav a:hover{color:var(--teal-ink)}
+@media(max-width:640px){nav{display:none}}
+.crumbs{background:#fff;border-bottom:1px solid var(--line)}
+.crumbs > div{max-width:1060px;margin:0 auto;padding:10px 20px;font-size:13.5px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--indigo);font-weight:500}
+.crumbs a:hover{text-decoration:underline}
+.crumbs .sep{color:#B6C0CF}
+.crumbs .cur{color:var(--ink);font-weight:500}
+
+/* hero + converter */
+.hero{position:relative;padding:54px 0 96px;text-align:center;background:var(--grad);color:#fff;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:42px 42px;mask:radial-gradient(700px 320px at 50% 0,#000,transparent 75%);pointer-events:none}
+.aurora{position:absolute;border-radius:50%;filter:blur(64px);opacity:.45;pointer-events:none}
+.aurora.a1{width:340px;height:340px;background:#8BF0E4;top:-120px;left:-60px}
+.aurora.a2{width:320px;height:320px;background:#B9A6FF;top:-80px;right:-50px;opacity:.5}
+.hero .w{position:relative;z-index:2}
+.eyebrow{display:inline-block;font-family:'Space Grotesk';font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.28);padding:5px 13px;border-radius:999px;backdrop-filter:blur(4px)}
+.hero h1{font-size:clamp(30px,5vw,48px);font-weight:700;margin:16px 0 0;color:#fff}
+.hero p.sub{color:rgba(255,255,255,.92);font-size:18px;max-width:580px;margin:12px auto 0}
+.hero p.sub strong{color:#fff}
+
+.conv{position:relative;background:var(--card);border:1px solid rgba(255,255,255,.6);border-radius:22px;box-shadow:0 30px 70px rgba(20,26,70,.33);max-width:720px;margin:30px auto 0;padding:28px 26px 26px;overflow:hidden}
+.conv::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--grad)}
+.conv-row{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:end}
+.field label{display:block;font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;text-align:left}
+.field .inp{position:relative}
+.field input{width:100%;font-family:'Space Grotesk';font-weight:600;font-size:30px;padding:16px 68px 16px 16px;border:1.5px solid var(--line);border-radius:14px;background:#FBFCFD;color:var(--ink);font-variant-numeric:tabular-nums}
+.field input:focus{outline:none;border-color:var(--indigo);box-shadow:0 0 0 4px rgba(91,91,240,.15);background:#fff}
+.field .unit{position:absolute;right:16px;top:50%;transform:translateY(-50%);font-family:'Space Grotesk';font-weight:700;color:var(--indigo);font-size:16px;pointer-events:none}
+.swap{width:50px;height:50px;border-radius:50%;border:0;background:var(--grad);display:grid;place-items:center;cursor:pointer;transition:transform .3s,box-shadow .2s;margin-bottom:4px;box-shadow:0 8px 20px rgba(40,60,180,.3)}
+.swap:hover{box-shadow:0 10px 26px rgba(40,60,180,.42)}
+.swap.spin{transform:rotate(180deg)}
+.scalebox{margin-top:18px;text-align:center}
+.scale{width:100%;max-width:430px;height:auto;margin:0 auto;display:block}
+.scale .beam-wrap{transform-box:view-box;transform-origin:220px 50px;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.scap{margin-top:4px;font-family:'Space Grotesk';font-weight:700;font-size:21px;color:var(--ink);font-variant-numeric:tabular-nums}
+.scap #eqline{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.scap small{display:block;font-family:Inter;font-weight:500;font-size:13px;color:var(--muted);margin-top:3px;letter-spacing:.01em}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
+.chips button{font-family:Inter;font-weight:500;font-size:14px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--muted);cursor:pointer;transition:.15s}
+.chips button:hover{border-color:transparent;color:#fff;background:var(--grad-2);box-shadow:0 6px 14px rgba(60,80,200,.25)}
+.prec{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:16px;font-size:14px;color:var(--muted)}
+.prec select{font:inherit;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink)}
+@media(max-width:560px){.conv-row{grid-template-columns:1fr;gap:10px}.swap{margin:0 auto;transform:rotate(90deg)}.swap.spin{transform:rotate(270deg)}}
+
+/* trust line */
+.trust{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:16px auto 0}
+.trust span{font-size:13px;color:#fff;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:5px 12px;backdrop-filter:blur(4px)}
+.trust b{font-weight:600}
+/* ounce-type toggle */
+.seg-wrap{text-align:center}
+.seg{display:inline-flex;margin:16px auto 0;background:#EDF0F7;border:1px solid var(--line);border-radius:12px;padding:4px;gap:4px}
+.seg button{font-family:'Space Grotesk';font-weight:600;font-size:14px;padding:8px 16px;border:0;border-radius:9px;background:transparent;color:var(--muted);cursor:pointer;transition:.15s}
+.seg button.on{background:#fff;color:var(--indigo);box-shadow:0 1px 3px rgba(20,26,70,.14)}
+/* equation + copy */
+.eqrow{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.copybtn{font-family:'Space Grotesk';font-weight:600;font-size:13px;color:var(--indigo);background:var(--soft);border:1px solid #D6DEF6;border-radius:9px;padding:6px 12px;cursor:pointer;transition:.15s}
+.copybtn:hover{background:#fff;border-color:var(--indigo)}
+.copybtn.done{color:#fff;background:var(--grad-2);border-color:transparent}
+/* multi-unit output */
+.also{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.also span{display:block;background:var(--grad-soft);border:1px solid #E1E7F5;border-radius:12px;padding:11px 10px;text-align:center;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.also b{display:block;font-family:'Space Grotesk';font-weight:700;font-size:18px;color:var(--ink);margin-top:3px;font-variant-numeric:tabular-nums;text-transform:none;letter-spacing:0}
+@media(max-width:480px){.also{grid-template-columns:1fr 1fr}}
+
+/* sections + article */
+.sec{padding:34px 0}
+.sec h2{font-size:clamp(24px,3.4vw,32px);font-weight:700;margin-bottom:6px}
+.sec .lead{color:var(--muted);margin:0 0 22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh)}
+.article{max-width:760px;margin:0 auto}
+.article h2{font-size:clamp(23px,3.2vw,30px);font-weight:700;margin:0 0 14px;scroll-margin-top:84px;position:relative;padding-left:16px}
+.article h2::before{content:"";position:absolute;left:0;top:5px;bottom:5px;width:5px;border-radius:3px;background:var(--grad)}
+.article h3{font-family:'Space Grotesk';font-weight:600;font-size:19px;color:var(--indigo);margin:26px 0 8px}
+.article p{margin:0 0 16px;color:#2A3346}
+.article strong{color:var(--ink);font-weight:600}
+.article ol,.article ul{margin:0 0 18px;padding-left:22px;color:#2A3346}
+.article li{margin-bottom:9px}
+.article p a[href^="http"]{color:var(--indigo);font-weight:600;text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+.article p a[href^="http"]:hover{color:var(--violet)}
+
+/* author byline */
+.byline{display:flex;align-items:center;gap:13px;margin:0 0 22px;padding:12px 15px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh)}
+.byline img{width:50px;height:50px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:2px solid #fff;box-shadow:0 2px 6px rgba(20,26,70,.22)}
+.byline .bl-name{font-size:15px;color:var(--ink);font-weight:500}
+.byline .bl-name a{color:var(--indigo);font-weight:600}
+.byline .bl-meta{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+
+/* author card (writer section) */
+.authorcard{display:flex;gap:22px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh);padding:26px;position:relative;overflow:hidden}
+.authorcard::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad)}
+.authorcard img{width:96px;height:96px;border-radius:16px;object-fit:cover;flex:0 0 auto;border:2px solid #fff;box-shadow:0 3px 10px rgba(20,26,70,.2)}
+.authorcard .an-name{font-family:'Space Grotesk';font-weight:700;font-size:22px;color:var(--ink);margin:0}
+.authorcard .an-role{font-size:14px;color:var(--indigo);font-weight:600;margin:3px 0 12px}
+.authorcard p{margin:0 0 12px;color:#2A3346}
+.authorcard .an-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-weight:600;font-size:14px;color:#fff;background:var(--grad-2);padding:9px 16px;border-radius:10px;transition:.15s}
+.authorcard .an-link:hover{box-shadow:0 8px 18px rgba(60,80,200,.3)}
+@media(max-width:560px){.authorcard{flex-direction:column;gap:16px;padding:22px}}
+
+/* callout */
+.callout{background:var(--grad-soft);border:1px solid #DCE6F3;border-left:4px solid var(--indigo);border-radius:12px;padding:16px 18px;margin:0 0 18px;color:#2A3346;font-size:16px}
+.callout.teal{border-left-color:var(--teal)}
+.callout b,.callout strong{color:var(--ink)}
+
+/* inline formula */
+.fml{font-family:'Space Grotesk';font-weight:600;font-size:18px;background:var(--grad-soft);color:var(--indigo);padding:13px 16px;border-radius:10px;border:1px solid #E3E7F6;margin:0 0 18px;text-align:center;font-variant-numeric:tabular-nums;overflow-x:auto}
+
+/* TOC */
+.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--sh);padding:22px 24px;max-width:760px;margin:0 auto}
+.toc .toch{font-family:'Space Grotesk';font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 14px}
+.toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.toc li{counter-increment:toc;margin:0 0 10px;break-inside:avoid}
+.toc a{display:flex;gap:10px;align-items:baseline;color:#2A3346;font-size:15px;transition:.15s}
+.toc a::before{content:counter(toc,decimal-leading-zero);font-family:'Space Grotesk';font-weight:600;font-size:12px;color:var(--indigo);flex:0 0 auto}
+.toc a:hover{color:var(--indigo)}
+@media(max-width:560px){.toc ol{columns:1}}
+
+/* value grid */
+.valgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:4px 0 20px}
+.valcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--sh);position:relative;overflow:hidden}
+.valcard::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
+.valcard h3{margin:0 0 6px;font-size:15px;color:var(--muted);text-transform:none;font-family:'Space Grotesk'}
+.valcard .big{font-family:'Space Grotesk';font-weight:700;font-size:23px;color:var(--indigo-2);font-variant-numeric:tabular-nums}
+.valcard p{font-size:13.5px;color:var(--muted);margin:6px 0 0}
+@media(max-width:620px){.valgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){.valgrid{grid-template-columns:1fr}}
+
+/* table */
+.tbl{border-radius:16px;overflow:hidden;margin:0 0 20px}
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;min-width:300px}
+th,td{padding:14px 18px;text-align:left;font-size:15.5px;vertical-align:top}
+.tbl.nowrap th,.tbl.nowrap td{white-space:nowrap}
+@media(max-width:420px){th,td{padding:12px 12px;font-size:14px}}
+thead th{font-family:'Space Grotesk';font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--grad)}
+tbody td{border-bottom:1px solid var(--line)}
+tbody tr:nth-child(even){background:#F5F7FE}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:var(--soft)}
+td:first-child{font-weight:700;color:var(--ink)}
+td:nth-child(2){font-weight:700;color:var(--indigo-2)}
+td:nth-child(3){color:var(--muted)}
+.tbl.plain td:nth-child(2){font-weight:400;color:#2A3346}
+.tbl.plain td:nth-child(3){color:#2A3346}
+
+/* formula cards */
+.formula{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 20px}
+.fcard{padding:24px;position:relative;overflow:hidden}
+.fcard::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad)}
+.fhd{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.fico{width:42px;height:42px;border-radius:12px;background:var(--grad-soft);border:1px solid #DCE3F5;display:grid;place-items:center;flex:0 0 auto}
+.fcard h3{font-size:18px;margin:0;color:var(--ink)}
+.eq{font-family:'Space Grotesk';font-weight:600;font-size:19px;background:var(--grad-soft);color:var(--indigo);padding:14px 16px;border-radius:12px;font-variant-numeric:tabular-nums;border:1px solid #E3E7F6}
+.eq small{display:block;color:var(--muted);font-weight:500;font-size:13px;margin-top:6px}
+@media(max-width:640px){.formula{grid-template-columns:1fr}}
+
+/* faq */
+.faq details{border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:10px;overflow:hidden}
+.faq details[open]{box-shadow:var(--sh-c);border-color:#CBD2F2}
+.faq summary{list-style:none;cursor:pointer;padding:16px 18px;font-family:'Space Grotesk';font-weight:600;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:#fff;background:var(--grad-2);width:26px;height:26px;min-width:26px;border-radius:50%;display:grid;place-items:center;font-size:18px;line-height:1;font-weight:500}
+.faq details[open] summary{color:var(--indigo)}
+.faq details[open] summary::after{content:"\2013"}
+.faq .ans{padding:2px 18px 16px;color:var(--muted)}
+
+footer{background:#0F1B2D;color:#AEBAC6;padding:44px 0 24px;margin-top:26px;font-size:14px}
+.fw{max-width:1060px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:28px}
+.fcol h4{font-family:'Space Grotesk';font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#fff;margin:0 0 12px}
+.fcol a{display:block;color:#AEBAC6;margin-bottom:9px}.fcol a:hover{color:#fff}
+.fbrand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.fbrand .mk{width:34px;height:34px;border-radius:9px;background:var(--grad);display:grid;place-items:center}
+.fbrand b{color:#fff;font-family:'Space Grotesk';font-weight:700;font-size:16px}
+.brandcol p{color:#8A97A6;margin:0;max-width:260px;line-height:1.5;font-size:13.5px}
+.fbar{max-width:1060px;margin:26px auto 0;padding:18px 20px 0;border-top:1px solid rgba(255,255,255,.1);color:#7D8B99;font-size:13px}
+@media(max-width:720px){.fw{grid-template-columns:1fr 1fr}.brandcol{grid-column:1/-1}}
+@media(max-width:440px){.fw{grid-template-columns:1fr}}
+
+.hright{display:flex;align-items:center;gap:16px;margin-left:auto}
+.langsel{position:relative}
+.langsel .lbtn{display:flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-weight:600;font-size:14px;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:9px;padding:7px 11px;cursor:pointer}
+.langsel .lbtn:hover{border-color:var(--indigo);color:var(--indigo)}
+.langsel .lmenu{position:absolute;right:0;top:calc(100% + 8px);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--sh);padding:6px;display:none;grid-template-columns:1fr 1fr;gap:2px;min-width:260px;z-index:40}
+.langsel.open .lmenu{display:grid}
+.langsel .lmenu a{display:block;padding:8px 11px;border-radius:8px;font-size:14px;color:#2A3346;white-space:nowrap}
+.langsel .lmenu a:hover{background:var(--soft);color:var(--indigo)}
+.langsel .lmenu a.cur{color:var(--indigo);font-weight:600;background:var(--grad-soft)}
+@media(max-width:480px){.langsel .lmenu{grid-template-columns:1fr;min-width:170px}}
+</style>
+</head>
+<body>
+
+<header><div class="w">
+  <a class="brand" href="index.html">
+    <span class="mk"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span><b>Ounces&nbsp;to&nbsp;Kilograms</b><span>przelicznik oz → kg</span></span>
+  </a>
+  <div class="hright">
+  <nav>
+    <a href="index.html">Oz → kg</a>
+    <a href="kg-to-oz.html">Kg → oz</a>
+  </nav>
+  <div class="langsel" id="langsel"><button class="lbtn" id="lbtn" aria-haspopup="true" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15.5 0 18M12 3c-2.5 2.5-2.5 15.5 0 18" stroke="currentColor" stroke-width="1.7"/></svg><span>PL</span></button><div class="lmenu"><a href="../index.html" lang="en">English</a><a href="../de/index.html" lang="de">Deutsch</a><a href="../es/index.html" lang="es">Español</a><a href="../fr/index.html" lang="fr">Français</a><a href="../it/index.html" lang="it">Italiano</a><a class="cur" href="index.html" lang="pl">Polski</a><a href="../pt/index.html" lang="pt">Português</a></div></div>
+  </div>
+</div></header>
+
+<nav class="crumbs" aria-label="Breadcrumb"><div><span class="cur">Strona główna</span></div></nav>
+
+<main id="top">
+<section class="hero"><div class="aurora a1"></div><div class="aurora a2"></div><div class="w">
+  <span class="eyebrow">Przelicznik wagi</span>
+  <h1>Przelicznik uncji na kilogramy</h1>
+  <p class="sub">Przeliczaj <strong>uncje (oz)</strong> na <strong>kilogramy (kg)</strong> w chwili wpisywania, dla uncji standardowych i troy. Użyj przycisku zamiany, aby przejść z kg na oz.</p>
+  <div class="trust"><span>✓ Dokładne współczynniki NIST</span><span>Zweryfikowane przez <b>Gary Bennett</b></span><span>Zaktualizowano <b>lis. 2026</b></span></div>
+
+  <div class="conv">
+    <div class="conv-row">
+      <div class="field">
+        <label for="oz">Uncje</label>
+        <div class="inp"><input id="oz" type="text" inputmode="decimal" value="16" autocomplete="off"><span class="unit" id="ozUnit">oz</span></div>
+      </div>
+      <button class="swap" id="swap" aria-label="Reverse: go to kilograms to ounces converter" title="Reverse → kg to oz">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 4 4 7l3 3M4 7h13M17 20l3-3-3-3m3 3H7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="field">
+        <label for="kg">Kilogramy</label>
+        <div class="inp"><input id="kg" type="text" inputmode="decimal" autocomplete="off"><span class="unit">kg</span></div>
+      </div>
+    </div>
+    <div class="seg-wrap"><div class="seg" id="ozType"><button class="on" data-f="0.028349523125" data-lab="oz">Uncja (oz)</button><button data-f="0.0311034768" data-lab="oz t">Uncja troy (oz t)</button></div></div>
+    <div class="scalebox">
+      <svg class="scale" viewBox="0 0 440 172" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0F766E"/><stop offset=".55" stop-color="#1D4ED8"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs>
+        <rect x="178" y="142" width="84" height="12" rx="6" fill="#28304D"/>
+        <rect x="214" y="54" width="12" height="90" rx="6" fill="#28304D"/>
+        <g class="beam-wrap">
+          <rect x="70" y="45" width="300" height="10" rx="5" fill="url(#beam)"/>
+          <circle cx="220" cy="50" r="11" fill="#1D4ED8" stroke="#fff" stroke-width="3"/>
+          <path d="M95 53 L66 100 M95 53 L124 100" stroke="#9AA6BF" stroke-width="2"/>
+          <path d="M58 100 Q95 130 132 100" stroke="#0F766E" stroke-width="3.5" stroke-linecap="round" fill="#E7F3F1"/>
+          <path d="M345 53 L316 100 M345 53 L374 100" stroke="#9AA6BF" stroke-width="2"/>
+          <path d="M308 100 Q345 130 382 100" stroke="#7C3AED" stroke-width="3.5" stroke-linecap="round" fill="#F2ECFF"/>
+          <text id="panL" x="95" y="88" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="18" fill="#131A2B">16 oz</text>
+          <text id="panR" x="345" y="88" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="18" fill="#131A2B">0.4536 kg</text>
+        </g>
+      </svg>
+      <div class="scap"><div class="eqrow"><span id="eqline">16 oz = 0.4536 kg</span><button class="copybtn" id="copy" type="button">⧉ Kopiuj</button></div><small>Ta sama waga, pokazana w dwóch jednostkach</small></div>
+    </div>
+    <div class="also"><span>W gramach<b id="u-g">453.59 g</b></span><span>W funtach<b id="u-lb">1 lb</b></span><span>W stone'ach<b id="u-st">0.0714 st</b></span></div>
+    <div class="chips" id="chips">
+      <button data-oz="0.5">½ oz</button>
+      <button data-oz="1">1 oz</button>
+      <button data-oz="4">4 oz</button>
+      <button data-oz="8">8 oz</button>
+      <button data-oz="16">16 oz</button>
+      <button data-oz="32">32 oz</button>
+      <button data-oz="100">100 oz</button>
+      <button data-oz="1000">1000 oz</button>
+    </div>
+    <div class="prec">
+      <label for="dec">Miejsca dziesiętne</label>
+      <select id="dec"><option>2</option><option selected>4</option><option>6</option></select>
+    </div>
+  </div>
+</div></section>
+
+<!-- intro -->
+<section class="sec article"><div class="w">
+  <h2>Przelicznik uncji na kilogramy dla uncji standardowych i troy</h2>
+  <p>To darmowe narzędzie przelicza uncje na kilogramy w chwili wpisywania liczby. Przeliczanie uncji na kilogramy zamienia wagę w amerykańskim układzie miar na wagę metryczną za pomocą jednej stałej liczby. Uncje pojawiają się na amerykańskich etykietach, paczkach i w przepisach, podczas gdy większość świata używa kilogramów. Jedna stała liczba sprawia, że każdy wynik jest dokładny, szybki i godny zaufania. Wpisz wartość w polu Uncje, użyj przycisku zamiany dla kilogramów na uncje i wybierz Troy dla złota lub srebra.</p>
+  <p><strong>Jedna uncja równa się dokładnie 0,028349523125 kilograma, czyli około 28,35 grama.</strong> Aby przeliczyć oz na kg, pomnóż uncje przez 0,028349523125. Jeden kilogram zawiera około 35,274 uncji, więc dzielenie przez 35,274 daje ten sam wynik. Szesnaście uncji tworzy jeden funt, a jeden funt równa się dokładnie 0,45359237 kilograma. Każda uncja zawiera 437,5 granów, a gran to maleńka jednostka około 64,8 miligrama.</p>
+  <p>Te liczby pochodzą z prawa, a nie ze zgadywania. W 1959 roku sześć państw podpisało Międzynarodowe Porozumienie o jardzie i funcie. Stany Zjednoczone, Wielka Brytania, Kanada, Australia, Nowa Zelandia i Republika Południowej Afryki uzgodniły jeden funt o masie 0,45359237 kg. National Institute of Standards and Technology (NIST) podaje odpowiadającą wartość uncji w tabelach swojego Handbook 44. Stephan Schlamminger, fizyk NIST, który pomógł przedefiniować kilogram, nazwał jego nową podstawę „wplecioną w strukturę wszechświata”.</p>
+  <p>Ten poradnik obejmuje wzór, metodę w czterech krokach oraz gotowe odpowiedzi od 1 uncji do 100 uncji. Każda sekcja zaczyna się od prawdziwego zadania, takiego jak pieczenie według amerykańskiego przepisu czy wysyłka małej paczki. Rodzice przeliczający wagę noworodka i podróżni pakujący walizkę znajdą każdy odpowiednią sekcję. Bokserzy sprawdzający rozmiary rękawic i kupujący złoto, którzy ważą monety, także mają swoją. Ostatnie sekcje dotyczą uncji troy i uncji płynu.</p>
+  <div class="callout teal"><strong>Jeden zaskakujący fakt o 35 uncjach.</strong> Trzydzieści pięć uncji waży 0,9922 kg, czyli zaledwie 7,8 grama od pełnego kilograma. Złota moneta o masie 1 uncji troy waży 31,1 grama, ponieważ metale szlachetne używają własnej specjalnej uncji. A butelka wody o pojemności 32 uncji mierzy objętość, więc jej wartość w kilogramach zależy od tego, co ją wypełnia.</div>
+</div></section>
+
+<!-- table of contents -->
+<section class="sec" style="padding-top:6px"><div class="w">
+  <nav class="toc" aria-label="Contents">
+    <div class="toch">Spis treści</div>
+    <ol>
+      <li><a href="#basics">Czym są uncja, uncja troy i kilogram</a></li>
+      <li><a href="#convert">Jak przeliczać uncje na kilogramy</a></li>
+      <li><a href="#method">Metoda krok po kroku</a></li>
+      <li><a href="#chart">Tabela przeliczeń oz na kg</a></li>
+      <li><a href="#searched">Najczęściej wyszukiwane wartości uncji</a></li>
+      <li><a href="#everyday">Codzienne rzeczy, które się przelicza</a></li>
+      <li><a href="#troy">Uncja troy i kruszec</a></li>
+      <li><a href="#fluid">Uncja płynu a uncja</a></li>
+      <li><a href="#precision">Jak dokładnym być</a></li>
+      <li><a href="#faq">Często zadawane pytania</a></li>
+    </ol>
+  </nav>
+</div></section>
+
+<!-- 1. basics -->
+<section class="sec article" id="basics"><div class="w">
+  <h2>Czym są uncja, uncja troy i kilogram?</h2>
+  <p>Uncja to mała jednostka masy, która występuje w dwóch powszechnych postaciach. Uncja standardowa waży 28,35 grama, a uncja troy dla metali szlachetnych waży 31,10 grama. Kilogram to metryczna jednostka podstawowa masy równa 1000 gramów.</p>
+
+  <h3>Uncja standardowa (avoirdupois)</h3>
+  <p>Uncja avoirdupois to jednostka masy równa jednej szesnastej funta i służy do mierzenia codziennych towarów. Słowo avoirdupois (wymawiane „av-er-duh-POIZ”) pochodzi od dawnych francuskich słów oznaczających „towary o wadze”. W Stanach Zjednoczonych klienci widzą tę uncję na niemal każdym opakowaniu żywności. Jedna uncja avoirdupois zawiera 16 dramów, a dram to maleńka jednostka używana w dawnych przepisach.</p>
+  <p>Wielka Brytania przyjęła ten sam funt z 1959 roku poprzez Weights and Measures Act 1963. W rezultacie uncja brytyjska i uncja amerykańska ważą dziś tyle samo. Karty dań ze stekami w wielu brytyjskich restauracjach z dumą podają porcje w uncjach, a sklepy sprzedają to samo mięso w gramach.</p>
+
+  <h3>Uncja troy</h3>
+  <p>Uncja troy (oz t) to jednostka masy równa 31,1034768 grama, używana do ważenia złota, srebra, platyny i palladu. Nazwa pochodzi od Troyes, miasta targowego we Francji, gdzie średniowieczni kupcy ważyli srebro i przyprawy. Jedna uncja troy zawiera 480 granów, podczas gdy uncja standardowa zawiera 437,5 grana.</p>
+  <p>System troy buduje swoje jednostki z tego samego grana. Według NIST Handbook 44, 24 grany tworzą 1 pennyweight, a 20 pennyweightów tworzy 1 uncję troy. Dwanaście uncji troy tworzy 1 funt troy o masie 373,24 grama. Funt troy jest więc lżejszy od funta standardowego, chociaż uncja troy jest cięższa od uncji standardowej.</p>
+  <p>Uncje troy przelicza się na kilogramy własnym współczynnikiem. Pomnóż uncje troy przez 0,0311034768, aby otrzymać kilogramy. Sztabka srebra 10 oz t waży 0,3110 kg, a jeden kilogram zawiera 32,1507 uncji troy. Ustawienie Troy w przeliczniku używa dokładnie tego współczynnika.</p>
+
+  <h3>Kilogram</h3>
+  <p>Kilogram to podstawowa jednostka masy w Międzynarodowym Układzie Jednostek Miar (SI) i stanowi oparcie dla każdej wagi metrycznej. Generalna Konferencja Miar (CGPM) zagłosowała w listopadzie 2018 roku za zmianą definicji kilograma. Nowa zasada weszła w życie 20 maja 2019 roku, w Światowy Dzień Metrologii.</p>
+  <p>Przed tą datą jeden metalowy walec pod Paryżem wyznaczał wielkość kilograma. Naukowcy nazywali ten walec z platyny i irydu „Le Grand K”. Dziś kilogram opiera się na stałej Plancka, ustalonej liczbie z fizyki równej 6,62607015 × 10⁻³⁴ dżuli-sekundy. Międzynarodowe Biuro Miar (BIPM) wybrało tę liczbę tak, aby kilogram zachował swój dawny rozmiar. Ten wybór utrzymuje wartość każdej uncji bez zmian.</p>
+  <p>Naukowcy odróżniają masę od ciężaru. Masa to ilość materii w obiekcie, a ciężar to siła grawitacji działająca na niego. W życiu codziennym obu słów używa się na określenie tego samego, i ten poradnik robi tak samo.</p>
+</div></section>
+
+<!-- 2. convert -->
+<section class="sec article" id="convert"><div class="w">
+  <h2>Jak przeliczyć uncje na kilogramy?</h2>
+  <p>Pomnóż liczbę uncji przez 0,028349523125, aby otrzymać kilogramy. Dzielenie uncji przez 35,27396195 daje ten sam wynik.</p>
+  <div class="formula">
+    <div class="card fcard">
+      <div class="fhd"><span class="fico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 20c3 0 3-15 6-15M3 9h8" stroke="#4338CA" stroke-width="2" stroke-linecap="round"/></svg></span><h3>Wzór</h3></div>
+      <div class="eq">kg = oz × 0.0283495<small>1 uncja = 0,028349523125 kilograma (dokładnie)</small></div>
+    </div>
+    <div class="card fcard">
+      <div class="fhd"><span class="fico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#7C3AED" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Przykład</h3></div>
+      <div class="eq">16 oz × 0.0283495 = 0.4536 kg<small>Zatem 16 uncji równa się około 0,4536 kilograma.</small></div>
+    </div>
+  </div>
+
+  <h3>Dlaczego współczynnik to 0,028349523125?</h3>
+  <p>Współczynnik pochodzi z podziału jednego funta na 16 równych części. Porozumienie z 1959 roku ustaliło funt na 0,45359237 kg, więc jedna uncja to ta wartość podzielona przez 16.</p>
+  <div class="fml">0.45359237 ÷ 16 = 0.028349523125</div>
+  <p>NIST potwierdza tę samą liczbę. Jego Handbook 44, Załącznik C podaje jedną uncję avoirdupois jako dokładnie 28,349523125 grama. Ponieważ obie liczby są dokładne na mocy prawa, współczynnik nigdy nie zmienia się z roku na rok.</p>
+
+  <h3>Dwa rozwiązane przykłady</h3>
+  <p>Wyobraź sobie osobę gotującą w domu z amerykańskim przepisem na brownie, który wymaga 10 uncji czekolady. Dziesięć uncji razy 0,0283495 daje 0,2835 kg, czyli około 283 gramów na wadze kuchennej. Sprzedawca internetowy wysyłający świecę o masie 28 uncji otrzymuje 0,7938 kg na formularz celny.</p>
+
+  <h3>Jaki jest współczynnik odwrotny?</h3>
+  <p>Jeden kilogram równa się 35,27396195 uncji. Aby zamienić kilogramy z powrotem na uncje, pomnóż kilogramy przez tę liczbę. Podróżny, którego linia lotnicza dopuszcza 23 kg, może zamienić ten limit na uncje: 23 × 35,274 = 811,3 uncji. Przycisk zamiany w przeliczniku wykonuje ten krok za ciebie.</p>
+  <p>Wiele europejskich książek kucharskich podaje 28 gramów na uncję jako uproszczenie. Dokładny współczynnik jest o około 1,2% dokładniejszy, co pomaga, by chleb i wypieki się udały.</p>
+</div></section>
+
+<!-- 3. method -->
+<section class="sec article" id="method"><div class="w">
+  <h2>Jaka jest metoda krok po kroku?</h2>
+  <p>Aby przeliczyć oz na kg ręcznie, wykonaj 4 kroki: zapisz uncje, pomnóż, zaokrąglij i sprawdź. Cała metoda zajmuje mniej niż minutę z kalkulatorem w telefonie.</p>
+  <ol>
+    <li>Zapisz wagę w uncjach jako liczbę dziesiętną, na przykład 15 lub 7,5.</li>
+    <li>Pomnóż tę liczbę przez 0,028349523125, lub przez 0,0283495 w większości zastosowań.</li>
+    <li>Zaokrąglij wynik do swojego zadania, na przykład do 2 miejsc dziesiętnych przy gotowaniu.</li>
+    <li>Sprawdź wynik względem znanej wartości, na przykład 16 oz = 0,4536 kg.</li>
+  </ol>
+  <p>Oto jak przeliczyć oz na kg na prawdziwej liczbie. Piętnaście uncji razy 0,0283495 daje 0,4252 kg. Ten wynik jest nieco poniżej 16 uncji, więc przechodzi sprawdzenie. Dla wyników w gramach przelicznik uncji na gramy odpowiada bezpośrednio.</p>
+
+  <h3>Rozwiązane przykłady z liczbami dziesiętnymi</h3>
+  <p>Zadania szkolne często używają liczb dziesiętnych, oto więc 3 przykłady do ćwiczeń. Aby przeliczyć 90,2 oz na kg, pomnóż 90,2 przez 0,028349523125 i otrzymaj 2,5571 kg. Te same kroki przeliczają 91,3 oz na kg i dają 2,5883 kg. Trzecia karta pracy może poprosić o przeliczenie 92,2 oz na kg, a odpowiedź to 2,6138 kg.</p>
+  <p>Nauczyciele nazywają tę metodę analizą wymiarową. Analiza wymiarowa rozwiązuje zadania z jednostkami poprzez mnożenie przez ułamek równy 1, taki jak 0,0283495 kg na 1 oz. Jednostki uncji się skracają, i pozostają tylko kilogramy.</p>
+
+  <h3>Skrót do liczenia w pamięci</h3>
+  <p>Podziel uncje przez 35, aby szybko oszacować. Dla 105 uncji 105 ÷ 35 = 3 kg, a dokładna odpowiedź to 2,9767 kg. Szacunek mieści się w granicach około 0,8% dokładnej wartości. Sprawdza się to dobrze w sklepowej alejce, a dokładny współczynnik najlepiej pasuje do etykiet pocztowych.</p>
+
+  <h3>Funty plus uncje</h3>
+  <p>Najpierw zamień funty na uncje, dodaj dodatkowe uncje, a potem pomnóż. Paczka 2 lb 5 oz zawiera 2 × 16 + 5 = 37 uncji. Trzydzieści siedem uncji razy 0,0283495 daje 1,0489 kg. Dla wag podanych tylko w funtach przelicznik funtów na kilogramy jest szybszy.</p>
+</div></section>
+
+<!-- 4. chart -->
+<section class="sec article" id="chart"><div class="w">
+  <h2>Co pokazuje tabela przeliczeń oz na kg?</h2>
+  <p>W tabeli poniżej pojawia się trzydzieści sześć wartości, od 1 uncji do 1000 uncji. Każda wartość w kilogramach jest zaokrąglona do 4 miejsc dziesiętnych, a każda wartość w gramach do 2 miejsc.</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Uncje (oz)</th><th>Kilogramy (kg)</th><th>Gramy (g)</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+  <p>Tabela pokazuje jedną przydatną granicę. Trzydzieści pięć uncji mieści się tuż poniżej 1 kilograma, podczas gdy 36 uncji przekracza go o około 21 gramów.</p>
+</div></section>
+
+<!-- 5. most searched -->
+<section class="sec article" id="searched"><div class="w">
+  <h2>Jakie są najczęściej wyszukiwane wartości uncji w kilogramach?</h2>
+  <p>Sześć najczęściej wyszukiwanych wartości to 16, 10, 12, 32, 8 i 1 uncja. W kilogramach wynoszą 0,4536, 0,2835, 0,3402, 0,9072, 0,2268 i 0,0283.</p>
+  <div class="valgrid">
+    <div class="valcard"><h3>16 oz na kg</h3><div class="big">0.4536 kg</div><p>Dokładnie jeden pełny funt (453,59 g). Piekarze używają tej wartości najczęściej, ponieważ amerykańskie przepisy liczą w funtach.</p></div>
+    <div class="valcard"><h3>10 oz na kg</h3><div class="big">0.2835 kg</div><p>283,50 grama, trochę więcej niż jedna czwarta kilograma.</p></div>
+    <div class="valcard"><h3>12 oz na kg</h3><div class="big">0.3402 kg</div><p>340,19 grama. Standardowe amerykańskie opakowanie kawy mielonej często zawiera 12 uncji.</p></div>
+    <div class="valcard"><h3>32 oz na kg</h3><div class="big">0.9072 kg</div><p>Dwa funty, około 93 gramów od 1 kilograma. Sprawdź etykietę, ponieważ wiele butelek 32 oz podaje uncje płynu.</p></div>
+    <div class="valcard"><h3>8 oz na kg</h3><div class="big">0.2268 kg</div><p>Pół funta. Amerykański cup wody waży około 8,3 uncji, więc cup i 8 oz są bliskie, ale nierówne.</p></div>
+    <div class="valcard"><h3>1 oz na kg</h3><div class="big">0.0283 kg</div><p>Zaokrąglone. Zapisana w pełni wartość to 0,028349523125 kg.</p></div>
+  </div>
+</div></section>
+
+<!-- 6. everyday -->
+<section class="sec article" id="everyday"><div class="w">
+  <h2>Jakie codzienne rzeczy przelicza się z uncji na kilogramy?</h2>
+  <p>Przelicza się 5 głównych grup codziennych przedmiotów: żywność, przesyłki, noworodki, bagaż i sprzęt do ćwiczeń. Złoto i srebro tworzą szóstą grupę, ale używają innej uncji.</p>
+
+  <h3>Etykiety żywności i przepisy</h3>
+  <p>Amerykańskie etykiety żywności pokazują obie jednostki na mocy prawa. U.S. Food and Drug Administration (FDA) ustala tę zasadę w 21 CFR 101.105. Pakowana żywność musi podawać masę netto w jednostkach metrycznych i w jednostkach amerykańskich. Masa netto to masa samej żywności, bez pudełka, puszki czy słoika.</p>
+  <p>NIST zbadał, jak dobrze sklepy przestrzegają tej zasady. Badacze sprawdzili co najmniej 1137 opakowań w 19 sklepach detalicznych. Około 17% tych opakowań podawało tylko jednostki metryczne, co pokazuje, jak powszechne stały się etykiety metryczne. Opakowania o zmiennej wadze, takie jak wędliny wyceniane za funt, są zwolnione z zasady dwóch jednostek.</p>
+  <p>Osoba gotująca według amerykańskiego przepisu spotyka te liczby w każdej alejce. Jedna kostka masła waży 4 uncje, czyli 0,1134 kg. Kubek jogurtu często zawiera 6 uncji, a sprawdzenie 6 oz na kg daje 0,1701 kg. Fasola w puszce zwykle występuje w puszkach 15-uncjowych, więc 15 oz na kg równa się 0,4252 kg.</p>
+  <p>Większe opakowania wymagają tej samej uwagi. Duże puszki pomidorów krojonych zawierają 28 uncji, co daje 0,7938 kg. Wysoki pojemnik płatków owsianych często waży 18 uncji, czyli 0,5103 kg. Piekarze, którzy sprawdzają 16 oz na kg dla funta mąki, otrzymują 0,4536 kg.</p>
+  <p>Bochenki chleba tostowego często ważą 24 uncje, co daje 0,6804 kg. Duży słoik majonezu może zawierać 30 uncji wagowo, czyli 0,8505 kg. W krajach metrycznych porównuje się cenę za kilogram, więc ta liczba pomaga ocenić opłacalność.</p>
+
+  <h3>Poczta i wysyłka</h3>
+  <p>United States Postal Service (USPS) stosuje 2 kluczowe limity w uncjach. Jego Domestic Mail Manual ogranicza list First-Class do 3,5 uncji, czyli 0,0992 kg. Przesyłka First-Class o dowolnym kształcie kończy się na 13 uncjach. Wartość 13 oz na kg to 0,3685 kg, a cięższe przesyłki przechodzą do innych usług.</p>
+  <p>Mali sprzedawcy na Etsy i eBay pracują z tymi limitami każdego dnia i wyceniają swoje paczki z pewnością. Kartka z cienkim prezentem może ważyć 2 uncje, czyli 0,0567 kg. Sprawdzenie 3 oz na kg daje 0,0850 kg, co nadal mieści się w limicie listu. Książka w miękkiej oprawie o masie 11 uncji waży 0,3118 kg, więc pozostaje poniżej limitu 13 uncji.</p>
+  <p>Wielu międzynarodowych przewoźników nalicza opłaty za kolejne pół kilograma lub pełny kilogram. Sprzedawcy uzyskują najbardziej płynną dostawę, zaokrąglając w górę przed wydrukowaniem etykiety. Tu pojawia się niuans: przewoźnik może naliczać opłatę według rozmiaru pudełka zamiast wagi dla lekkich, nieporęcznych paczek.</p>
+
+  <h3>Waga noworodka i dziecka</h3>
+  <p>Amerykańskie szpitale często podają wagę urodzeniową w funtach i uncjach, a większość świata używa kilogramów. Centers for Disease Control and Prevention (CDC) definiują niską wagę urodzeniową jako poniżej 2500 gramów. W jednostkach amerykańskich tę granicę zapisuje się jako 5 funtów 8 uncji.</p>
+  <p>Personel medyczny i rodzice używają metody funty-plus-uncje dla każdej wagi dziecka. Noworodek o masie 7 lb 8 oz waży 7 × 16 + 8 = 120 uncji. Sto dwadzieścia uncji razy 0,0283495 daje 3,4019 kg. Dziadkowie za granicą często chcą tej liczby w kilogramach już w pierwszej wiadomości ze szpitala.</p>
+  <p>Wartość graniczna to ciekawy przypadek szczególny. Dokładnie 5 lb 8 oz równa się 88 uncji, czyli 2,4948 kg. Ta liczba leży 5 gramów poniżej 2500 gramów. Agencje zdrowia używają zaokrąglonej pary, więc lekarze odczytują obie formy jako to samo odniesienie.</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Funty i uncje</th><th>Łącznie uncji</th><th>Kilogramy</th></tr></thead>
+        <tbody>
+          <tr><td>5 lb 4 oz</td><td>84</td><td>2.3814</td></tr>
+          <tr><td>5 lb 6 oz</td><td>86</td><td>2.4381</td></tr>
+          <tr><td>6 lb 4 oz</td><td>100</td><td>2.8350</td></tr>
+          <tr><td>6 lb 5 oz</td><td>101</td><td>2.8633</td></tr>
+          <tr><td>6 lb 14 oz</td><td>110</td><td>3.1184</td></tr>
+          <tr><td>8 lb 9 oz</td><td>137</td><td>3.8839</td></tr>
+          <tr><td>9 lb 5 oz</td><td>149</td><td>4.2241</td></tr>
+          <tr><td>10 lb 5 oz</td><td>165</td><td>4.6777</td></tr>
+          <tr><td>14 lb 5 oz</td><td>229</td><td>6.4920</td></tr>
+          <tr><td>15 lb 5 oz</td><td>245</td><td>6.9456</td></tr>
+          <tr><td>16 lb 10 oz</td><td>266</td><td>7.5410</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>Każdy wiersz stosuje tę samą zasadę. Pomnóż funty przez 16, dodaj uncje i pomnóż sumę przez 0,0283495.</p>
+
+  <h3>Podróże i bagaż</h3>
+  <p>Linie lotnicze ustalają limity bagażu w kilogramach lub funtach, a sprytni pakujący ważą małe przedmioty wcześnie. Para butów do biegania o masie 26 uncji daje 0,7371 kg, a cienki laptop o masie 42 uncji waży 1,1907 kg. Pamiątkowy wazon o masie 36 uncji daje 1,0206 kg, piękny prezent o masie nieco ponad jednego kilograma.</p>
+  <p>Pudełka z prezentami szybko piętrzą się w walizce. Sprawdzenie 40 oz na kg daje 1,1340 kg. Trzy funty czekolady równają się 48 uncji, czyli 1,3608 kg. Cztery funty ziaren kawy równają się 64 uncje, czyli 1,8144 kg.</p>
+  <p>Towary luzem sięgają cięższego końca tabeli. Siedemdziesiąt dwie uncje dają 2,0412 kg, a 80 uncji 2,2680 kg. Na samej górze 100 oz na kg równa się 2,8350 kg, co warto zapamiętać: 100 uncji jest blisko 3 kilogramów, ale wciąż poniżej.</p>
+
+  <h3>Sprzęt do ćwiczeń i porcje jedzenia</h3>
+  <p>Rękawice bokserskie sprzedaje się wagowo w uncjach, od 8 do 20 uncji. Rękawice treningowe o masie 10 uncji ważą 0,2835 kg, więc 10 oz na kg odpowiada na częste pytanie bokserów za granicą. Rękawice sparingowe o masie 14 uncji ważą 0,3969 kg, co pomaga trenerom porównać amerykańskie i europejskie rozmiary.</p>
+  <p>Aplikacje do śledzenia posiłków ważą białko w schludnych, dokładnych porcjach. Porcja piersi z kurczaka o masie 5 uncji waży 0,1417 kg, a filet z łososia o masie 7 uncji daje 0,1984 kg. Duży stek ribeye o masie 20 uncji waży 0,5670 kg, hojne pół kilograma mięsa.</p>
+  <p>Sprzęt treningowy zajmuje środek tabeli. Obciążana skakanka o masie 22 uncji waży 0,6237 kg, a wałek piankowy o masie 25 uncji daje 0,7087 kg.</p>
+</div></section>
+
+<!-- 7. troy & bullion -->
+<section class="sec article" id="troy"><div class="w">
+  <h2>Od uncji spożywczej do uncji kruszcowej</h2>
+  <p>Każda wartość w tabeli do tej pory używa jednej uncji: uncji spożywczej o masie 28,35 grama. Ta uncja wypełnia koszyki na zakupy, worki pocztowe i książeczki zdrowia dziecka w całych Stanach Zjednoczonych. Ale słowo „uncja” ma drugie życie w sklepach jubilerskich i skarbcach banków. Tam uncja waży trochę więcej i nosi własną nazwę. I to jest krok, który czyni ten poradnik kompletnym. Wybór właściwej uncji ma znaczenie, ponieważ obie różnią się o prawie 10%. Dla kupujących złoto właściwa uncja chroni wartość każdego zakupu. Kolejne wiersze wyjaśniają uncję kruszcową w prostych liczbach.</p>
+
+  <h3>Czy uncja troy to to samo co zwykła uncja?</h3>
+  <p>Nie. Uncja troy waży 31,1034768 grama, a zwykła uncja waży 28,349523125 grama. Uncja troy jest o około 9,7% cięższa.</p>
+  <p>Zwykła uncja zawiera 437,5 grana, więc uncja troy niesie 42,5 grana więcej. Ustawienie Uncja w przeliczniku używa zwykłej uncji. Wagi złota i srebra wymagają natomiast ustawienia Troy.</p>
+  <div class="fml">kg = oz t × 0.0311034768</div>
+  <p>Aby przeliczyć oz złota na kg, pomnóż uncje troy przez 0,0311034768. Jeden kilogram zawiera 32,1507 uncji troy, więc 1 kg na uncje troy równa się 32,15 oz t. Przelicznik uncji troy na kilogramy wykonuje obliczenia kruszcowe z tym współczynnikiem.</p>
+  <div class="callout"><strong>Dlaczego ustawienie Troy ma znaczenie.</strong> Inwestor w złoto kupujący sztabkę 5 oz t otrzymuje 5 × 0,0311034768 = 0,1555 kg. Ustawienie standardowe pokazałoby 0,1417 kg dla tych samych 5 uncji. Ta różnica 13,8 grama to realne pieniądze dla kupujących kruszec.</div>
+  <p>London Bullion Market Association (LBMA) ustala światowy standard dla dużych sztab. Jej zasady Good Delivery wymagają, aby sztabka złota zawierała od 350 do 430 uncji troy czystego kruszcu. Ten zakres równa się około 10,9 kg do 13,4 kg. Standardowa sztabka srebra zawiera około 1000 uncji troy, czyli blisko 31,1 kg.</p>
+  <p>Perth Mint, należąca do rządu Australii Zachodniej, zwraca uwagę na jeden powszechny zwyczaj. Sprzedawcy często drukują „oz” na monetach i sztabkach jako skrót od uncji troy. Kupujący mogą z pewnością odczytywać każde „oz” metalu szlachetnego jako uncję troy.</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Pozycja</th><th>Uncje troy</th><th>Kilogramy</th></tr></thead>
+        <tbody>
+          <tr><td>Moneta złota lub srebrna</td><td>1 oz t</td><td>0.0311 kg</td></tr>
+          <tr><td>Kilobar</td><td>32.15 oz t</td><td>1.0000 kg</td></tr>
+          <tr><td>Sztabka srebra</td><td>100 oz t</td><td>3.1103 kg</td></tr>
+          <tr><td>Sztabka złota LBMA (typowa)</td><td>400 oz t</td><td>12.4414 kg</td></tr>
+          <tr><td>Sztabka srebra LBMA (typowa)</td><td>1,000 oz t</td><td>31.1035 kg</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>Sztabka złota 400 uncji waży około 12,4 kg w jednostkach troy. Te same 400 uncji spożywczych ważyłoby tylko 11,3 kg.</p>
+</div></section>
+
+<!-- 8. fluid -->
+<section class="sec article" id="fluid"><div class="w">
+  <h2>Czy uncja płynu waży tyle samo co uncja?</h2>
+  <p>Nie. Uncja płynu mierzy objętość, czyli przestrzeń, którą wypełnia ciecz, a uncja mierzy masę. Jedna amerykańska uncja płynu zawiera 29,57 mililitra.</p>
+  <p>Woda to jeden łatwy przypadek. Jedna amerykańska uncja płynu wody waży około 29,6 grama, czyli blisko 1,04 uncji. Więc butelka wody 32 uncji napełniona wodą waży około 0,946 kg, trochę więcej niż 32 uncje wagi (0,907 kg). Ta różnica 39 gramów to przydatny fakt dla turystów i bywalców siłowni.</p>
+  <p>Inne ciecze łamią schemat wody. Olej jadalny jest lżejszy od wody, a miód znacznie cięższy. Słoik oznaczony w uncjach płynu wymaga gęstości cieczy, czyli jej masy na mililitr, zanim jakikolwiek wynik w kilogramach będzie dokładny. Większość butelek w amerykańskich sklepach drukuje „fl oz”, więc litery „fl” to sygnał, na który trzeba zwrócić uwagę.</p>
+</div></section>
+
+<!-- 9. precision -->
+<section class="sec article" id="precision"><div class="w">
+  <h2>Jak dokładny powinien być twój wynik?</h2>
+  <p>Dopasuj miejsca dziesiętne do zadania: 2 miejsca do gotowania, 3 do wysyłki i 4 lub więcej do nauki i medycyny. Właściwa liczba cyfr czyni każdy wynik jasnym i praktycznym.</p>
+  <div class="card tbl plain">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Zastosowanie</th><th>Miejsca dziesiętne</th><th>12 oz w kg</th><th>Zasada zaokrąglania</th></tr></thead>
+        <tbody>
+          <tr><td>Gotowanie i pieczenie</td><td>2</td><td>0.34 kg</td><td>Zaokrąglij do najbliższego</td></tr>
+          <tr><td>Wysyłka i opłaty pocztowe</td><td>3</td><td>0.341 kg</td><td>Zawsze w górę</td></tr>
+          <tr><td>Medycyna i opieka nad dzieckiem</td><td>4</td><td>0.3402 kg</td><td>Zaokrąglij do najbliższego</td></tr>
+          <tr><td>Nauka w laboratorium i szkole</td><td>6 lub więcej</td><td>0.340194 kg</td><td>Zachowaj cyfry znaczące</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>Wysyłka to jedyne zastosowanie, w którym zaokrąglanie w górę działa najlepiej. Przewoźnicy naliczają opłaty według kolejnego progu, więc zaokrąglona w górę waga utrzymuje płynny przepływ każdej paczki.</p>
+  <p>Cyfry znaczące to cyfry w liczbie, które niosą rzeczywiste znaczenie. Waga, która pokazuje 12,0 uncji, daje 3 cyfry znaczące, więc 0,340 kg to uczciwy wynik. Każda oficjalna tabela sprawdzona na potrzeby tego poradnika podaje ten sam współczynnik, więc tylko zaokrąglanie powoduje małe różnice między stronami.</p>
+</div></section>
+
+<!-- 10. faq -->
+<section class="sec article" id="faq"><div class="w">
+  <h2>Często zadawane pytania</h2>
+  <p>Poniżej znajduje się odpowiedź na szesnaście częstych pytań. Każda odpowiedź jest samodzielna.</p>
+  <div class="faq">
+    <details open><summary>Ile kilogramów jest w uncji?</summary><div class="ans">1 oz równa się 0,0283 kg. Dokładna wartość to 0,028349523125 kg, czyli 28,35 grama.</div></details>
+    <details><summary>Jak przeliczyć uncje na kilogramy?</summary><div class="ans">Pomnóż liczbę uncji przez 0,0283495. Na przykład 8 oz × 0,0283495 = 0,2268 kg.</div></details>
+    <details><summary>Czy przy przeliczaniu oz na kg mnoży się czy dzieli?</summary><div class="ans">Oba sposoby działają. Pomnóż uncje przez 0,0283495 lub podziel je przez 35,274. Oba dają tę samą wartość w kilogramach.</div></details>
+    <details><summary>Ile uncji jest w kilogramie?</summary><div class="ans">Jeden kilogram równa się około 35,274 uncji. Dla złota i srebra jeden kilogram równa się 32,15 uncji troy.</div></details>
+    <details><summary>Czy to uncje wagowe czy uncje płynu?</summary><div class="ans">Ten przelicznik używa uncji wagowych, znanych jako uncje avoirdupois. Uncje płynu mierzą objętość, a nie wagę.</div></details>
+    <details><summary>Jak przeliczyć fl oz na kg?</summary><div class="ans">Uncje płynu mierzą objętość, więc najpierw potrzebujesz gęstości cieczy. Dla wody pomnóż fl oz przez 0,02957, aby otrzymać kilogramy. Butelka wody 32 fl oz waży około 0,946 kg.</div></details>
+    <details><summary>Czym jest uncja troy i kiedy powinienem użyć ustawienia Troy?</summary><div class="ans">Uncja troy waży 31,1034768 grama i mierzy złoto, srebro, platynę i pallad. Użyj ustawienia Troy dla każdej wagi metalu szlachetnego, nawet gdy etykieta podaje tylko „oz”.</div></details>
+    <details><summary>Jak przeliczyć funty i uncje na kg?</summary><div class="ans">Pomnóż funty przez 16 i dodaj dodatkowe uncje. Następnie pomnóż łączne uncje przez 0,0283495. Dla 6 lb 4 oz to 100 oz, czyli 2,835 kg.</div></details>
+    <details><summary>Jak personel medyczny przelicza wagę dziecka z lb i oz na kg?</summary><div class="ans">Personel medyczny zamienia wagę na łączne uncje, mnoży przez 0,0283495 i zapisuje kilogramy do 3 lub 4 miejsc dziesiętnych. Dziecko o masie 7 lb 8 oz waży 3,402 kg.</div></details>
+    <details><summary>Dziecko waży 41 lb 12 oz. Ile to w kg?</summary><div class="ans">Czterdzieści jeden funtów 12 uncji równa się 668 uncji. Pomnóż 668 przez 0,0283495, aby otrzymać 18,94 kg.</div></details>
+    <details><summary>Ile to 56 oz w kg?</summary><div class="ans">Pięćdziesiąt sześć uncji równa się 1,5876 kg, czyli dokładnie 3,5 funta.</div></details>
+    <details><summary>Czy 35 uncji to więcej niż 1 kilogram?</summary><div class="ans">Nie. Odpowiedź 35 oz na kg to 0,9922 kg, czyli 7,8 grama od 1 kilograma. Trzydzieści sześć uncji przekracza granicę 1 kg.</div></details>
+    <details><summary>Który współczynnik daje najdokładniejszy wynik?</summary><div class="ans">Niektóre strony zaokrąglają współczynnik do 0,0283495 lub 0,02835. To uproszczenie pozostaje dokładne do około czwartego miejsca dziesiętnego. Dokładny współczynnik 0,028349523125 daje idealne dopasowanie za każdym razem.</div></details>
+    <details><summary>Czy zmiana kilograma z 2019 roku wpłynęła na przeliczenia uncji?</summary><div class="ans">Nie. BIPM wybrało wartość stałej Plancka tak, aby kilogram zachował swój dawny rozmiar. Każda wartość uncji sprzed 2019 roku obowiązuje do dziś.</div></details>
+    <details><summary>Czy Stany Zjednoczone i Wielka Brytania używają tej samej uncji?</summary><div class="ans">Tak. Oba kraje przyjęły międzynarodowy funt z 1959 roku, więc obie uncje ważą 28,349523125 grama. Wielka Brytania wpisała tę wartość do swojego Weights and Measures Act 1963.</div></details>
+    <details><summary>Co obejmuje ten poradnik o przeliczaniu uncji na kilogramy?</summary><div class="ans">Obejmuje dokładny wzór, metodę w czterech krokach, tabelę 36 wierszy, najczęściej wyszukiwane wartości, codzienne zastosowania, uncję troy dla kruszcu, uncję płynu oraz to, jak dokładny powinien być twój wynik.</div></details>
+  </div>
+</div></section>
+
+<!-- about the writer -->
+<section class="sec article" id="author"><div class="w">
+  <h2>O autorze</h2>
+  <div class="authorcard">
+    <img src="../gary-bennett.webp" alt="Gary Bennett, metrologist" width="96" height="96" loading="lazy">
+    <div>
+      <p class="an-name">Gary Bennett</p>
+      <div class="an-role">Autor i metrolog · Specjalista ds. pomiarów</div>
+      <p>Gary Bennett jest autorem i metrologiem, który tworzy i weryfikuje poradniki pomiarowe pod kątem dokładności. Napisał ten poradnik i sprawdził każdy współczynnik przeliczeniowy, każdą wartość z tabel i każdy przykład względem dokładnych danych NIST, w tym uncję avoirdupois (0,028349523125 kg) oraz uncję troy (0,0311034768 kg).</p>
+      <a class="an-link" href="../gary-bennett.html">Przeczytaj pełny profil Gary'ego →</a>
+    </div>
+  </div>
+</div></section>
+
+</main>
+
+<footer>
+  <div class="fw">
+    <div class="fcol brandcol">
+      <div class="fbrand"><span class="mk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>Ounces to Kilograms</b></div>
+      <p>Darmowe, dokładne przeliczenia uncji na kilogramy dla uncji standardowych i troy, oparte na oficjalnych współczynnikach NIST.</p>
+    </div>
+    <div class="fcol"><h4>Strony</h4>
+      <a href="index.html">Uncje na kilogramy</a><a href="kg-to-oz.html">Kilogramy na uncje</a><a href="../about.html">O nas</a><a href="../gary-bennett.html">Autor</a><a href="../sitemap.html">Mapa strony</a><a href="../contact.html">Kontakt</a>
+    </div>
+    <div class="fcol"><h4>Zasady</h4>
+      <a href="../editorial-policy.html">Zasady redakcyjne</a><a href="../disclaimer.html">Zastrzeżenia</a><a href="../privacy-policy.html">Polityka prywatności</a><a href="../terms.html">Warunki korzystania</a>
+    </div>
+    <div class="fcol"><h4>Kontakt</h4>
+      <a href="mailto:info@ouncestokilograms.com">info@ouncestokilograms.com</a>
+    </div>
+  </div>
+  <div class="fbar">© 2026 Przelicznik uncji na kilogramy. Wszelkie prawa zastrzeżone.</div>
+</footer>
+
+<script>
+const AVO = 0.028349523125;            // avoirdupois ounce → kg (NIST)
+const LB = 0.45359237, ST = 6.35029318; // kg per pound / stone
+let F = AVO, ozLab = 'oz', dp = 4, tipT;
+
+const ozEl=document.getElementById('oz'), kgEl=document.getElementById('kg'),
+      eq=document.getElementById('eqline'), panL=document.getElementById('panL'),
+      panR=document.getElementById('panR'), beam=document.querySelector('.beam-wrap'),
+      ozUnit=document.getElementById('ozUnit'), decSel=document.getElementById('dec'),
+      uG=document.getElementById('u-g'), uLB=document.getElementById('u-lb'), uST=document.getElementById('u-st');
+const rm = matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+// accepts "0.5", "1/2", "3 1/2"
+function parseVal(s){ s=(s||'').trim(); if(s==='') return NaN;
+  let m=s.match(/^(-?\d*\.?\d+)\s+(\d+)\/(\d+)$/); if(m) return (+m[1])+(+m[2])/(+m[3]);
+  m=s.match(/^(-?\d+)\/(\d+)$/); if(m) return (+m[1])/(+m[2]);
+  const n=parseFloat(s.replace(/,/g,'')); return isFinite(n)?n:NaN;
+}
+function fmt(n){ if(!isFinite(n)) return '0'; return n.toFixed(dp).replace(/\.?0+$/,'') || '0'; }
+function tip(dir){ if(rm||!beam) return; beam.style.transform='rotate('+dir+'deg)'; clearTimeout(tipT); tipT=setTimeout(()=>{ beam.style.transform='rotate(0deg)'; },280); }
+function multi(k){ uG.textContent=(k*1000).toFixed(2).replace(/\.?0+$/,'')+' g'; uLB.textContent=fmt(k/LB)+' lb'; uST.textContent=fmt(k/ST)+' st'; }
+function paintEmpty(){ panL.textContent='- '+ozLab; panR.textContent='- kg'; eq.textContent='Wpisz wartość'; uG.textContent='-'; uLB.textContent='-'; uST.textContent='-'; }
+function paint(o,k,dir){ panL.textContent=fmt(o)+' '+ozLab; panR.textContent=fmt(k)+' kg'; multi(k); tip(dir); }
+function fromOz(){ const o=parseVal(ozEl.value); if(isNaN(o)){ kgEl.value=''; paintEmpty(); return; } const k=o*F; kgEl.value=fmt(k); eq.textContent=fmt(o)+' '+ozLab+' = '+fmt(k)+' kg'; paint(o,k,-1.6); }
+function fromKg(){ const k=parseVal(kgEl.value); if(isNaN(k)){ ozEl.value=''; paintEmpty(); return; } const o=k/F; ozEl.value=fmt(o); eq.textContent=fmt(k)+' kg = '+fmt(o)+' '+ozLab; paint(o,k,1.6); }
+function recalc(){ if(ozEl.value.trim()!=='') fromOz(); else if(kgEl.value.trim()!=='') fromKg(); else paintEmpty(); }
+
+ozEl.addEventListener('input', fromOz);
+kgEl.addEventListener('input', fromKg);
+decSel.addEventListener('change', ()=>{ dp=parseInt(decSel.value,10); recalc(); });
+
+document.getElementById('chips').addEventListener('click', e=>{ const b=e.target.closest('button'); if(!b) return; ozEl.value=b.dataset.oz; fromOz(); });
+
+// swap navigates to the reverse converter (kg -> oz), carrying the weight across
+document.getElementById('swap').addEventListener('click', ()=>{
+  const o=parseVal(ozEl.value); const k=(isNaN(o)?NaN:o*F);
+  location.href = isFinite(k) ? ('kg-to-oz.html?kg='+(+k.toFixed(6))) : 'kg-to-oz.html';
+});
+
+// ounce type: avoirdupois vs troy (precious metals)
+document.getElementById('ozType').addEventListener('click', e=>{
+  const b=e.target.closest('button'); if(!b) return;
+  [...e.currentTarget.children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+  F=parseFloat(b.dataset.f); ozLab=b.dataset.lab; ozUnit.textContent=ozLab; recalc();
+});
+
+// copy result
+document.getElementById('copy').addEventListener('click', async ()=>{
+  const btn=document.getElementById('copy');
+  try{ await navigator.clipboard.writeText(eq.textContent); btn.textContent='✓ Skopiowano'; btn.classList.add('done'); setTimeout(()=>{ btn.textContent='⧉ Kopiuj'; btn.classList.remove('done'); },1400); }
+  catch(err){ /* clipboard blocked in this context */ }
+});
+
+// conversion chart: 36 values, kg to 4 dp, g to 2 dp (matches the guide)
+const rows=[1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,18,20,22,24,25,26,28,30,32,35,36,40,42,48,50,64,72,80,90,100,1000];
+document.getElementById('tbody').innerHTML = rows.map(o=>{
+  const k=o*AVO, g=o*28.349523125;
+  const ozL=o.toLocaleString('en-US');
+  const gL=g.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+  return `<tr><td>${ozL} oz</td><td>${k.toFixed(4)} kg</td><td>${gL} g</td></tr>`;
+}).join('');
+
+// pre-fill from a reverse-conversion hand-off (?kg=…)
+(function(){ const v=new URLSearchParams(location.search).get('kg'); if(v!==null){ const n=parseFloat(v); if(isFinite(n)) ozEl.value=String(+(n/AVO).toFixed(4)); } })();
+fromOz();
+</script>
+<script>
+(function(){var s=document.getElementById('langsel'),b=document.getElementById('lbtn');if(b){b.addEventListener('click',function(e){e.stopPropagation();var o=s.classList.toggle('open');b.setAttribute('aria-expanded',o);});document.addEventListener('click',function(){s.classList.remove('open');b.setAttribute('aria-expanded',false);});}})();
+</script>
+</body>
+</html>
