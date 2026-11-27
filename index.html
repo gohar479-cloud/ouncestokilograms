@@ -111,6 +111,13 @@ nav a:hover{color:var(--teal-ink)}
 .article ol,.article ul{margin:0 0 18px;padding-left:22px;color:#2A3346}
 .article li{margin-bottom:9px}
 
+/* author byline */
+.byline{display:flex;align-items:center;gap:13px;margin:0 0 22px;padding:12px 15px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh)}
+.byline img{width:50px;height:50px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:2px solid #fff;box-shadow:0 2px 6px rgba(20,26,70,.22)}
+.byline .bl-name{font-size:15px;color:var(--ink);font-weight:500}
+.byline .bl-name a{color:var(--indigo);font-weight:600}
+.byline .bl-meta{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+
 /* callout */
 .callout{background:var(--grad-soft);border:1px solid #DCE6F3;border-left:4px solid var(--indigo);border-radius:12px;padding:16px 18px;margin:0 0 18px;color:#2A3346;font-size:16px}
 .callout.teal{border-left-color:var(--teal)}
@@ -205,7 +212,7 @@ footer .fnav{display:flex;gap:18px;font-size:14px;flex-wrap:wrap}
   <span class="eyebrow">Weight converter</span>
   <h1>Ounces to Kilograms Converter</h1>
   <p class="sub">Convert <strong>ounces (oz)</strong> to <strong>kilograms (kg)</strong> the moment you type, for standard and troy ounces. Swap for kg to oz.</p>
-  <div class="trust"><span>✓ Exact NIST factors</span><span>✓ Standard &amp; troy ounces</span><span>Updated <b>Nov 2026</b></span></div>
+  <div class="trust"><span>✓ Exact NIST factors</span><span>Reviewed by <b>Gary Bennett</b></span><span>Updated <b>Nov 2026</b></span></div>
 
   <div class="conv">
     <div class="conv-row">
@@ -261,6 +268,10 @@ footer .fnav{display:flex;gap:18px;font-size:14px;flex-wrap:wrap}
 <!-- intro -->
 <section class="sec article"><div class="w">
   <h2>Ounces to Kilograms Converter for Standard and Troy Ounces</h2>
+  <div class="byline">
+    <img src="gary-bennett.webp" alt="Gary Bennett, metrologist" width="50" height="50" loading="lazy">
+    <div class="bl-name">Written &amp; reviewed by <a href="https://www.linkedin.com/in/gary-bennett-4a07531a" target="_blank" rel="noopener nofollow">Gary Bennett</a>, Metrologist<span class="bl-meta">Updated November 2026 · Verified against exact NIST factors</span></div>
+  </div>
   <p>This free tool converts ounces to kilograms the moment you type a number. Ounce-to-kilogram conversion turns a US customary weight into a metric weight with one fixed number. Ounces appear on US labels, parcels, and recipes, while most of the world uses kilograms. One fixed number makes every answer exact, quick, and easy to trust. Type a value in the Ounces box, use the swap button for kilograms to ounces, and pick Troy for gold or silver.</p>
   <p><strong>One ounce equals exactly 0.028349523125 kilograms, which is about 28.35 grams.</strong> To convert oz to kg, multiply the ounces by 0.028349523125. One kilogram holds about 35.274 ounces, so dividing by 35.274 gives the same answer. Sixteen ounces make one pound, and one pound equals exactly 0.45359237 kilograms. Each ounce holds 437.5 grains, and a grain is a tiny unit of about 64.8 milligrams.</p>
   <p>These numbers come from law, not from guessing. In 1959, six nations signed the International Yard and Pound Agreement. The United States, the United Kingdom, Canada, Australia, New Zealand, and South Africa agreed on one pound of 0.45359237 kg. The National Institute of Standards and Technology (NIST) lists the matching ounce value in its Handbook 44 tables. Stephan Schlamminger, a NIST physicist who helped redefine the kilogram, called its new anchor "woven into the fabric of the universe."</p>
@@ -395,13 +406,13 @@ footer .fnav{display:flex;gap:18px;font-size:14px;flex-wrap:wrap}
   <h3>Food Labels and Recipes</h3>
   <p>US food labels show both units by law. The U.S. Food and Drug Administration (FDA) sets this rule in 21 CFR 101.105. Packaged food must list its net weight in metric units and in US customary units. Net weight is the weight of the food alone, without the box, can, or jar.</p>
   <p>NIST studied how well stores follow this rule. Researchers examined at least 1,137 packages in 19 retail stores. About 17% of those packages listed metric units only, which shows how familiar metric labels have become. Random-weight packages, such as deli meat priced by the pound, are exempt from the two-unit rule.</p>
-  <p>A home cook working from an American recipe meets these numbers in every aisle. One stick of butter weighs 4 ounces, so the 4 oz to kg answer is 0.1134 kg. A yogurt cup often holds 6 ounces, and a 6 oz to kg check gives 0.1701 kg. Canned beans usually come in 15-ounce cans. That makes 15 oz to kg equal 0.4252 kg.</p>
-  <p>Larger packages need the same care. Big cans of crushed tomatoes hold 28 ounces, and 28 oz to kg comes to 0.7938 kg. A tall canister of rolled oats often weighs 18 ounces. For that canister, 18 oz to kg equals 0.5103 kg. Bakers who look up 16 oz to kg for a pound of flour get 0.4536 kg.</p>
-  <p>Sandwich loaves often weigh 24 ounces, so 24 oz to kg gives 0.6804 kg. A large jar of mayonnaise may hold 30 ounces by weight. Its 30 oz to kg value is 0.8505 kg. Shoppers in metric countries compare price per kilogram, so this figure helps them judge value.</p>
+  <p>A home cook working from an American recipe meets these numbers in every aisle. One stick of butter weighs 4 ounces, which is 0.1134 kg. A yogurt cup often holds 6 ounces, and a 6 oz to kg check gives 0.1701 kg. Canned beans usually come in 15-ounce cans, so 15 oz to kg equals 0.4252 kg.</p>
+  <p>Larger packages need the same care. Big cans of crushed tomatoes hold 28 ounces, which comes to 0.7938 kg. A tall canister of rolled oats often weighs 18 ounces, or 0.5103 kg. Bakers who look up 16 oz to kg for a pound of flour get 0.4536 kg.</p>
+  <p>Sandwich loaves often weigh 24 ounces, which gives 0.6804 kg. A large jar of mayonnaise may hold 30 ounces by weight, or 0.8505 kg. Shoppers in metric countries compare price per kilogram, so this figure helps them judge value.</p>
 
   <h3>Mail and Shipping</h3>
   <p>The United States Postal Service (USPS) uses 2 key ounce limits. Its Domestic Mail Manual caps a First-Class letter at 3.5 ounces, which is 0.0992 kg. First-Class Mail of any shape stops at 13 ounces. The 13 oz to kg value is 0.3685 kg, and heavier pieces move to other services.</p>
-  <p>Small sellers on Etsy and eBay work with these limits every day and price their parcels with confidence. A greeting card with a thin gift may weigh 2 ounces, and the 2 oz to kg figure is 0.0567 kg. A 3 oz to kg check gives 0.0850 kg, which still fits the letter limit. A paperback book of 11 ounces weighs 0.3118 kg. That 11 oz to kg result stays under the 13-ounce cap.</p>
+  <p>Small sellers on Etsy and eBay work with these limits every day and price their parcels with confidence. A greeting card with a thin gift may weigh 2 ounces, or 0.0567 kg. A 3 oz to kg check gives 0.0850 kg, which still fits the letter limit. A paperback book of 11 ounces weighs 0.3118 kg, so it stays under the 13-ounce cap.</p>
   <p>Many international carriers bill by the next half kilogram or full kilogram. Sellers get the smoothest delivery by rounding up before printing a label. Here is where it gets nuanced: a carrier may bill by box size instead of weight for light, bulky parcels.</p>
 
   <h3>Newborn and Child Weight</h3>
@@ -431,14 +442,14 @@ footer .fnav{display:flex;gap:18px;font-size:14px;flex-wrap:wrap}
   <p>Every row follows the same rule. Multiply the pounds by 16, add the ounces, and multiply the total by 0.0283495.</p>
 
   <h3>Travel and Luggage</h3>
-  <p>Airlines set bag limits in kilograms or pounds, and smart packers weigh small items early. A traveler packing a pair of running shoes of 26 ounces finds that 26 oz to kg gives 0.7371 kg. A thin laptop of 42 ounces weighs 1.1907 kg, which answers 42 oz to kg. A souvenir vase of 36 ounces weighs 1.0206 kg. That 36 oz to kg result shows a lovely gift at just over one kilogram.</p>
-  <p>Gift boxes stack quickly in a suitcase. For a 40 oz to kg check, the answer is 1.1340 kg. Three pounds of chocolate equal 48 ounces, and 48 oz to kg equals 1.3608 kg. Four pounds of coffee beans equal 64 ounces. The 64 oz to kg value is 1.8144 kg.</p>
-  <p>Bulk items reach the heavier end of the chart. The 72 oz to kg answer is 2.0412 kg, and 80 oz to kg comes to 2.2680 kg. A 90 oz to kg check gives 2.5515 kg. At the top, 100 oz to kg equals 2.8350 kg. That number is worth remembering: 100 ounces are close to 3 kilograms but still under them.</p>
+  <p>Airlines set bag limits in kilograms or pounds, and smart packers weigh small items early. A pair of running shoes at 26 ounces works out to 0.7371 kg, while a thin laptop of 42 ounces weighs 1.1907 kg. A souvenir vase of 36 ounces comes to 1.0206 kg, a lovely gift at just over one kilogram.</p>
+  <p>Gift boxes stack quickly in a suitcase. A 40 oz to kg check gives 1.1340 kg. Three pounds of chocolate equal 48 ounces, or 1.3608 kg. Four pounds of coffee beans equal 64 ounces, which is 1.8144 kg.</p>
+  <p>Bulk items reach the heavier end of the chart. Seventy-two ounces come to 2.0412 kg, and 80 ounces to 2.2680 kg. At the top, 100 oz to kg equals 2.8350 kg — worth remembering, since 100 ounces are close to 3 kilograms but still under them.</p>
 
   <h3>Fitness Gear and Food Portions</h3>
-  <p>Boxing gloves are sold by weight in ounces, from 8 ounces to 20 ounces. Bag gloves of 10 ounces weigh 0.2835 kg, so 10 oz to kg answers a common question from boxers abroad. Sparring gloves of 14 ounces weigh 0.3969 kg. That 14 oz to kg figure helps coaches compare US and European glove sizes.</p>
-  <p>Meal trackers weigh protein in neat, precise portions. A chicken breast portion of 5 ounces weighs 0.1417 kg, which answers 5 oz to kg. A salmon fillet of 7 ounces gives a 7 oz to kg value of 0.1984 kg. A large ribeye steak of 20 ounces weighs 0.5670 kg. For that steak, 20 oz to kg means a generous half kilogram of meat.</p>
-  <p>Training gear covers the middle of the chart. A weighted jump rope of 22 ounces weighs 0.6237 kg, so 22 oz to kg is 0.6237. A foam roller of 25 ounces gives a 25 oz to kg value of 0.7087 kg.</p>
+  <p>Boxing gloves are sold by weight in ounces, from 8 ounces to 20 ounces. Bag gloves of 10 ounces weigh 0.2835 kg, so 10 oz to kg answers a common question from boxers abroad. Sparring gloves of 14 ounces weigh 0.3969 kg, which helps coaches compare US and European glove sizes.</p>
+  <p>Meal trackers weigh protein in neat, precise portions. A chicken breast portion of 5 ounces weighs 0.1417 kg, and a salmon fillet of 7 ounces comes to 0.1984 kg. A large ribeye steak of 20 ounces weighs 0.5670 kg, a generous half kilogram of meat.</p>
+  <p>Training gear covers the middle of the chart. A weighted jump rope of 22 ounces weighs 0.6237 kg, and a foam roller of 25 ounces comes to 0.7087 kg.</p>
 </div></section>
 
 <!-- 7. troy & bullion -->
