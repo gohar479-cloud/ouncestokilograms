@@ -42,6 +42,11 @@ header .w{display:flex;align-items:center;justify-content:space-between;height:6
 .crumbs a:hover{text-decoration:underline}
 .crumbs .sep{color:#B6C0CF}
 .crumbs .cur{color:var(--ink);font-weight:500}
+.crumbs-hero{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 18px;font-size:13px}
+.crumbs-hero a{color:#fff;opacity:.85;font-weight:500}
+.crumbs-hero a:hover{opacity:1;text-decoration:underline}
+.crumbs-hero .sep{color:rgba(255,255,255,.55)}
+.crumbs-hero .cur{color:#fff;opacity:.95;font-weight:500}
 
 .ahero{background:var(--grad);color:#fff;padding:48px 0 40px;text-align:center}
 .ahero img{width:124px;height:124px;border-radius:24px;object-fit:cover;border:3px solid rgba(255,255,255,.5);box-shadow:0 12px 30px rgba(10,15,40,.3)}
@@ -90,9 +95,8 @@ footer{background:#0F1B2D;color:#AEBAC6;padding:44px 0 24px;margin-top:26px;font
   <nav style="display:flex;gap:20px"><a class="back" href="index.html">Oz → kg</a><a class="back" href="kg-to-oz.html">Kg → oz</a></nav>
 </div></header>
 
-<nav class="crumbs" aria-label="Breadcrumb"><div><a href="index.html">Home</a><span class="sep">&rsaquo;</span><span class="cur">Gary Bennett</span></div></nav>
-
 <section class="ahero">
+  <nav class="crumbs-hero" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">&rsaquo;</span><span class="cur">Gary Bennett</span></nav>
   <img src="gary-bennett.webp" alt="Gary Bennett, metrologist" width="124" height="124">
   <h1>Gary Bennett</h1>
   <div class="role">Writer &amp; Metrologist · Measurement specialist</div>

@@ -52,6 +52,11 @@ nav a:hover{color:var(--teal-ink)}
 .crumbs a:hover{text-decoration:underline}
 .crumbs .sep{color:#B6C0CF}
 .crumbs .cur{color:var(--ink);font-weight:500}
+.crumbs-hero{position:relative;z-index:2;display:flex;justify-content:center;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 18px;font-size:13px}
+.crumbs-hero a{color:#fff;opacity:.85;font-weight:500}
+.crumbs-hero a:hover{opacity:1;text-decoration:underline}
+.crumbs-hero .sep{color:rgba(255,255,255,.55)}
+.crumbs-hero .cur{color:#fff;opacity:.95;font-weight:500}
 .hero{position:relative;padding:54px 0 96px;text-align:center;background:var(--grad);color:#fff;overflow:hidden}
 .hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:42px 42px;mask:radial-gradient(700px 320px at 50% 0,#000,transparent 75%);pointer-events:none}
 .aurora{position:absolute;border-radius:50%;filter:blur(64px);opacity:.45;pointer-events:none}
@@ -231,10 +236,9 @@ footer{background:#0F1B2D;color:#AEBAC6;padding:44px 0 24px;margin-top:26px;font
   </div>
 </div></header>
 
-<nav class="crumbs" aria-label="Breadcrumb"><div><a href="index.html">Home</a><span class="sep">&rsaquo;</span><span class="cur">Kilograms to Ounces</span></div></nav>
-
 <main id="top">
 <section class="hero"><div class="aurora a1"></div><div class="aurora a2"></div><div class="w">
+  <nav class="crumbs-hero" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">&rsaquo;</span><span class="cur">Kilograms to Ounces</span></nav>
   <span class="eyebrow">Weight converter</span>
   <h1>Kilograms to Ounces Converter</h1>
   <p class="sub">Convert <strong>kilograms (kg)</strong> to <strong>ounces (oz)</strong> the moment you type, with <strong>troy ounces</strong> for gold and silver and <strong>pounds plus ounces</strong> below.</p>

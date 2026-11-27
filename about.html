@@ -32,6 +32,11 @@ header .hw{max-width:1060px;margin:0 auto;padding:0 20px;display:flex;align-item
 .crumbs a:hover{text-decoration:underline}
 .crumbs .sep{color:#B6C0CF}
 .crumbs .cur{color:var(--ink);font-weight:500}
+.crumbs-hero{display:flex;justify-content:flex-start;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 14px;font-size:13px}
+.crumbs-hero a{color:#fff;opacity:.85;font-weight:500}
+.crumbs-hero a:hover{opacity:1;text-decoration:underline}
+.crumbs-hero .sep{color:rgba(255,255,255,.55)}
+.crumbs-hero .cur{color:#fff;opacity:.95;font-weight:500}
 .phead{background:var(--grad);color:#fff;padding:44px 0 36px}
 .phead h1{font-size:clamp(27px,4.6vw,38px);font-weight:700}
 .phead p{color:rgba(255,255,255,.92);margin:10px 0 0;font-size:16px}
@@ -64,8 +69,7 @@ footer{background:#0F1B2D;color:#AEBAC6;padding:44px 0 24px;margin-top:26px;font
   <a class="brand" href="index.html"><span class="mk"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Ounces&nbsp;to&nbsp;Kilograms</b><span>oz &rarr; kg converter</span></span></a>
   <nav class="hnav"><a href="index.html">Oz &rarr; kg</a><a href="kg-to-oz.html">Kg &rarr; oz</a></nav>
 </div></header>
-<nav class="crumbs" aria-label="Breadcrumb"><div><a href="index.html">Home</a><span class="sep">&rsaquo;</span><span class="cur">About</span></div></nav>
-<section class="phead"><div class="wrap"><h1>About Ounces to Kilograms</h1><p>Who we are and why you can trust our conversions.</p></div></section>
+<section class="phead"><div class="wrap"><nav class="crumbs-hero" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">&rsaquo;</span><span class="cur">About</span></nav><h1>About Ounces to Kilograms</h1><p>Who we are and why you can trust our conversions.</p></div></section>
 <main><div class="wrap">
 <div class="card">
     <h2>Our mission</h2>
