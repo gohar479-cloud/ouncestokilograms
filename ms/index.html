@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Penukar auns ke kilogram (oz ke kg) | Standard &amp; Troy</title>
+<meta name="description" content="Tukar auns ke kilogram serta-merta untuk auns standard dan troy. Faktor NIST yang tepat, jadual penuh, contoh pengiraan, dan petua pembundaran.">
+<link rel="alternate" hreflang="en" href="https://ouncestokilograms.com/">
+<link rel="alternate" hreflang="de" href="https://ouncestokilograms.com/de/">
+<link rel="alternate" hreflang="es" href="https://ouncestokilograms.com/es/">
+<link rel="alternate" hreflang="fr" href="https://ouncestokilograms.com/fr/">
+<link rel="alternate" hreflang="id" href="https://ouncestokilograms.com/id/">
+<link rel="alternate" hreflang="it" href="https://ouncestokilograms.com/it/">
+<link rel="alternate" hreflang="ms" href="https://ouncestokilograms.com/ms/">
+<link rel="alternate" hreflang="pl" href="https://ouncestokilograms.com/pl/">
+<link rel="alternate" hreflang="pt" href="https://ouncestokilograms.com/pt/">
+<link rel="alternate" hreflang="x-default" href="https://ouncestokilograms.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F5FB; --ink:#131A2B; --muted:#4B5768; --card:#FFFFFF; --line:#E4E8F2;
+  --teal:#0F766E; --teal-ink:#0B5C56; --indigo:#4338CA; --indigo-2:#1D4ED8; --violet:#7C3AED; --sky:#1D4ED8; --soft:#EDF1FF;
+  --grad:linear-gradient(118deg,#0F766E 0%,#1D4ED8 54%,#7C3AED 100%);
+  --grad-2:linear-gradient(118deg,#1D4ED8,#7C3AED);
+  --grad-soft:linear-gradient(118deg,#E8F4F2,#EDF0FF);
+  --sh:0 1px 2px rgba(20,26,46,.05),0 16px 44px rgba(28,34,80,.12);
+  --sh-c:0 10px 30px rgba(40,50,120,.15);
+  --maxw:1060px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.dsp{font-family:'Space Grotesk',Inter,sans-serif;letter-spacing:-.015em;line-height:1.08;margin:0}
+a{color:inherit;text-decoration:none}
+.w{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.num{font-variant-numeric:tabular-nums}
+
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(245,247,248,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .mk{width:38px;height:38px;border-radius:10px;background:var(--grad);display:grid;place-items:center;flex:0 0 auto}
+.brand b{font-family:'Space Grotesk';font-weight:700;font-size:18px;line-height:1}
+.brand span{display:block;font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+nav{display:flex;gap:22px}
+nav a{color:var(--muted);font-weight:500;font-size:15px}
+nav a:hover{color:var(--teal-ink)}
+@media(max-width:640px){nav{display:none}}
+.crumbs{background:#fff;border-bottom:1px solid var(--line)}
+.crumbs > div{max-width:1060px;margin:0 auto;padding:10px 20px;font-size:13.5px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--indigo);font-weight:500}
+.crumbs a:hover{text-decoration:underline}
+.crumbs .sep{color:#B6C0CF}
+.crumbs .cur{color:var(--ink);font-weight:500}
+
+/* hero + converter */
+.hero{position:relative;padding:54px 0 96px;text-align:center;background:var(--grad);color:#fff;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:42px 42px;mask:radial-gradient(700px 320px at 50% 0,#000,transparent 75%);pointer-events:none}
+.aurora{position:absolute;border-radius:50%;filter:blur(64px);opacity:.45;pointer-events:none}
+.aurora.a1{width:340px;height:340px;background:#8BF0E4;top:-120px;left:-60px}
+.aurora.a2{width:320px;height:320px;background:#B9A6FF;top:-80px;right:-50px;opacity:.5}
+.hero .w{position:relative;z-index:2}
+.eyebrow{display:inline-block;font-family:'Space Grotesk';font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.28);padding:5px 13px;border-radius:999px;backdrop-filter:blur(4px)}
+.hero h1{font-size:clamp(30px,5vw,48px);font-weight:700;margin:16px 0 0;color:#fff}
+.hero p.sub{color:rgba(255,255,255,.92);font-size:18px;max-width:580px;margin:12px auto 0}
+.hero p.sub strong{color:#fff}
+
+.conv{position:relative;background:var(--card);border:1px solid rgba(255,255,255,.6);border-radius:22px;box-shadow:0 30px 70px rgba(20,26,70,.33);max-width:720px;margin:30px auto 0;padding:28px 26px 26px;overflow:hidden}
+.conv::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--grad)}
+.conv-row{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:end}
+.field label{display:block;font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;text-align:left}
+.field .inp{position:relative}
+.field input{width:100%;font-family:'Space Grotesk';font-weight:600;font-size:30px;padding:16px 68px 16px 16px;border:1.5px solid var(--line);border-radius:14px;background:#FBFCFD;color:var(--ink);font-variant-numeric:tabular-nums}
+.field input:focus{outline:none;border-color:var(--indigo);box-shadow:0 0 0 4px rgba(91,91,240,.15);background:#fff}
+.field .unit{position:absolute;right:16px;top:50%;transform:translateY(-50%);font-family:'Space Grotesk';font-weight:700;color:var(--indigo);font-size:16px;pointer-events:none}
+.swap{width:50px;height:50px;border-radius:50%;border:0;background:var(--grad);display:grid;place-items:center;cursor:pointer;transition:transform .3s,box-shadow .2s;margin-bottom:4px;box-shadow:0 8px 20px rgba(40,60,180,.3)}
+.swap:hover{box-shadow:0 10px 26px rgba(40,60,180,.42)}
+.swap.spin{transform:rotate(180deg)}
+.scalebox{margin-top:18px;text-align:center}
+.scale{width:100%;max-width:430px;height:auto;margin:0 auto;display:block}
+.scale .beam-wrap{transform-box:view-box;transform-origin:220px 50px;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.scap{margin-top:4px;font-family:'Space Grotesk';font-weight:700;font-size:21px;color:var(--ink);font-variant-numeric:tabular-nums}
+.scap #eqline{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.scap small{display:block;font-family:Inter;font-weight:500;font-size:13px;color:var(--muted);margin-top:3px;letter-spacing:.01em}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
+.chips button{font-family:Inter;font-weight:500;font-size:14px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--muted);cursor:pointer;transition:.15s}
+.chips button:hover{border-color:transparent;color:#fff;background:var(--grad-2);box-shadow:0 6px 14px rgba(60,80,200,.25)}
+.prec{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:16px;font-size:14px;color:var(--muted)}
+.prec select{font:inherit;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink)}
+@media(max-width:560px){.conv-row{grid-template-columns:1fr;gap:10px}.swap{margin:0 auto;transform:rotate(90deg)}.swap.spin{transform:rotate(270deg)}}
+
+/* trust line */
+.trust{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:16px auto 0}
+.trust span{font-size:13px;color:#fff;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:5px 12px;backdrop-filter:blur(4px)}
+.trust b{font-weight:600}
+/* ounce-type toggle */
+.seg-wrap{text-align:center}
+.seg{display:inline-flex;margin:16px auto 0;background:#EDF0F7;border:1px solid var(--line);border-radius:12px;padding:4px;gap:4px}
+.seg button{font-family:'Space Grotesk';font-weight:600;font-size:14px;padding:8px 16px;border:0;border-radius:9px;background:transparent;color:var(--muted);cursor:pointer;transition:.15s}
+.seg button.on{background:#fff;color:var(--indigo);box-shadow:0 1px 3px rgba(20,26,70,.14)}
+/* equation + copy */
+.eqrow{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.copybtn{font-family:'Space Grotesk';font-weight:600;font-size:13px;color:var(--indigo);background:var(--soft);border:1px solid #D6DEF6;border-radius:9px;padding:6px 12px;cursor:pointer;transition:.15s}
+.copybtn:hover{background:#fff;border-color:var(--indigo)}
+.copybtn.done{color:#fff;background:var(--grad-2);border-color:transparent}
+/* multi-unit output */
+.also{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.also span{display:block;background:var(--grad-soft);border:1px solid #E1E7F5;border-radius:12px;padding:11px 10px;text-align:center;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.also b{display:block;font-family:'Space Grotesk';font-weight:700;font-size:18px;color:var(--ink);margin-top:3px;font-variant-numeric:tabular-nums;text-transform:none;letter-spacing:0}
+@media(max-width:480px){.also{grid-template-columns:1fr 1fr}}
+
+/* sections + article */
+.sec{padding:34px 0}
+.sec h2{font-size:clamp(24px,3.4vw,32px);font-weight:700;margin-bottom:6px}
+.sec .lead{color:var(--muted);margin:0 0 22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh)}
+.article{max-width:760px;margin:0 auto}
+.article h2{font-size:clamp(23px,3.2vw,30px);font-weight:700;margin:0 0 14px;scroll-margin-top:84px;position:relative;padding-left:16px}
+.article h2::before{content:"";position:absolute;left:0;top:5px;bottom:5px;width:5px;border-radius:3px;background:var(--grad)}
+.article h3{font-family:'Space Grotesk';font-weight:600;font-size:19px;color:var(--indigo);margin:26px 0 8px}
+.article p{margin:0 0 16px;color:#2A3346}
+.article strong{color:var(--ink);font-weight:600}
+.article ol,.article ul{margin:0 0 18px;padding-left:22px;color:#2A3346}
+.article li{margin-bottom:9px}
+.article p a[href^="http"]{color:var(--indigo);font-weight:600;text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+.article p a[href^="http"]:hover{color:var(--violet)}
+
+/* author byline */
+.byline{display:flex;align-items:center;gap:13px;margin:0 0 22px;padding:12px 15px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh)}
+.byline img{width:50px;height:50px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:2px solid #fff;box-shadow:0 2px 6px rgba(20,26,70,.22)}
+.byline .bl-name{font-size:15px;color:var(--ink);font-weight:500}
+.byline .bl-name a{color:var(--indigo);font-weight:600}
+.byline .bl-meta{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+
+/* author card (writer section) */
+.authorcard{display:flex;gap:22px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh);padding:26px;position:relative;overflow:hidden}
+.authorcard::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad)}
+.authorcard img{width:96px;height:96px;border-radius:16px;object-fit:cover;flex:0 0 auto;border:2px solid #fff;box-shadow:0 3px 10px rgba(20,26,70,.2)}
+.authorcard .an-name{font-family:'Space Grotesk';font-weight:700;font-size:22px;color:var(--ink);margin:0}
+.authorcard .an-role{font-size:14px;color:var(--indigo);font-weight:600;margin:3px 0 12px}
+.authorcard p{margin:0 0 12px;color:#2A3346}
+.authorcard .an-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-weight:600;font-size:14px;color:#fff;background:var(--grad-2);padding:9px 16px;border-radius:10px;transition:.15s}
+.authorcard .an-link:hover{box-shadow:0 8px 18px rgba(60,80,200,.3)}
+@media(max-width:560px){.authorcard{flex-direction:column;gap:16px;padding:22px}}
+
+/* callout */
+.callout{background:var(--grad-soft);border:1px solid #DCE6F3;border-left:4px solid var(--indigo);border-radius:12px;padding:16px 18px;margin:0 0 18px;color:#2A3346;font-size:16px}
+.callout.teal{border-left-color:var(--teal)}
+.callout b,.callout strong{color:var(--ink)}
+
+/* inline formula */
+.fml{font-family:'Space Grotesk';font-weight:600;font-size:18px;background:var(--grad-soft);color:var(--indigo);padding:13px 16px;border-radius:10px;border:1px solid #E3E7F6;margin:0 0 18px;text-align:center;font-variant-numeric:tabular-nums;overflow-x:auto}
+
+/* TOC */
+.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--sh);padding:22px 24px;max-width:760px;margin:0 auto}
+.toc .toch{font-family:'Space Grotesk';font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 14px}
+.toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.toc li{counter-increment:toc;margin:0 0 10px;break-inside:avoid}
+.toc a{display:flex;gap:10px;align-items:baseline;color:#2A3346;font-size:15px;transition:.15s}
+.toc a::before{content:counter(toc,decimal-leading-zero);font-family:'Space Grotesk';font-weight:600;font-size:12px;color:var(--indigo);flex:0 0 auto}
+.toc a:hover{color:var(--indigo)}
+@media(max-width:560px){.toc ol{columns:1}}
+
+/* value grid */
+.valgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:4px 0 20px}
+.valcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--sh);position:relative;overflow:hidden}
+.valcard::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
+.valcard h3{margin:0 0 6px;font-size:15px;color:var(--muted);text-transform:none;font-family:'Space Grotesk'}
+.valcard .big{font-family:'Space Grotesk';font-weight:700;font-size:23px;color:var(--indigo-2);font-variant-numeric:tabular-nums}
+.valcard p{font-size:13.5px;color:var(--muted);margin:6px 0 0}
+@media(max-width:620px){.valgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){.valgrid{grid-template-columns:1fr}}
+
+/* table */
+.tbl{border-radius:16px;overflow:hidden;margin:0 0 20px}
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;min-width:300px}
+th,td{padding:14px 18px;text-align:left;font-size:15.5px;vertical-align:top}
+.tbl.nowrap th,.tbl.nowrap td{white-space:nowrap}
+@media(max-width:420px){th,td{padding:12px 12px;font-size:14px}}
+thead th{font-family:'Space Grotesk';font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--grad)}
+tbody td{border-bottom:1px solid var(--line)}
+tbody tr:nth-child(even){background:#F5F7FE}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:var(--soft)}
+td:first-child{font-weight:700;color:var(--ink)}
+td:nth-child(2){font-weight:700;color:var(--indigo-2)}
+td:nth-child(3){color:var(--muted)}
+.tbl.plain td:nth-child(2){font-weight:400;color:#2A3346}
+.tbl.plain td:nth-child(3){color:#2A3346}
+
+/* formula cards */
+.formula{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 20px}
+.fcard{padding:24px;position:relative;overflow:hidden}
+.fcard::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad)}
+.fhd{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.fico{width:42px;height:42px;border-radius:12px;background:var(--grad-soft);border:1px solid #DCE3F5;display:grid;place-items:center;flex:0 0 auto}
+.fcard h3{font-size:18px;margin:0;color:var(--ink)}
+.eq{font-family:'Space Grotesk';font-weight:600;font-size:19px;background:var(--grad-soft);color:var(--indigo);padding:14px 16px;border-radius:12px;font-variant-numeric:tabular-nums;border:1px solid #E3E7F6}
+.eq small{display:block;color:var(--muted);font-weight:500;font-size:13px;margin-top:6px}
+@media(max-width:640px){.formula{grid-template-columns:1fr}}
+
+/* faq */
+.faq details{border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:10px;overflow:hidden}
+.faq details[open]{box-shadow:var(--sh-c);border-color:#CBD2F2}
+.faq summary{list-style:none;cursor:pointer;padding:16px 18px;font-family:'Space Grotesk';font-weight:600;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:#fff;background:var(--grad-2);width:26px;height:26px;min-width:26px;border-radius:50%;display:grid;place-items:center;font-size:18px;line-height:1;font-weight:500}
+.faq details[open] summary{color:var(--indigo)}
+.faq details[open] summary::after{content:"\2013"}
+.faq .ans{padding:2px 18px 16px;color:var(--muted)}
+
+footer{background:#0F1B2D;color:#AEBAC6;padding:44px 0 24px;margin-top:26px;font-size:14px}
+.fw{max-width:1060px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:28px}
+.fcol h4{font-family:'Space Grotesk';font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#fff;margin:0 0 12px}
+.fcol a{display:block;color:#AEBAC6;margin-bottom:9px}.fcol a:hover{color:#fff}
+.fbrand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.fbrand .mk{width:34px;height:34px;border-radius:9px;background:var(--grad);display:grid;place-items:center}
+.fbrand b{color:#fff;font-family:'Space Grotesk';font-weight:700;font-size:16px}
+.brandcol p{color:#8A97A6;margin:0;max-width:260px;line-height:1.5;font-size:13.5px}
+.fbar{max-width:1060px;margin:26px auto 0;padding:18px 20px 0;border-top:1px solid rgba(255,255,255,.1);color:#7D8B99;font-size:13px}
+@media(max-width:720px){.fw{grid-template-columns:1fr 1fr}.brandcol{grid-column:1/-1}}
+@media(max-width:440px){.fw{grid-template-columns:1fr}}
+
+.hright{display:flex;align-items:center;gap:16px;margin-left:auto}
+.langsel{position:relative}
+.langsel .lbtn{display:flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-weight:600;font-size:14px;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:9px;padding:7px 11px;cursor:pointer}
+.langsel .lbtn:hover{border-color:var(--indigo);color:var(--indigo)}
+.langsel .lmenu{position:absolute;right:0;top:calc(100% + 8px);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--sh);padding:6px;display:none;grid-template-columns:1fr 1fr;gap:2px;min-width:260px;z-index:40}
+.langsel.open .lmenu{display:grid}
+.langsel .lmenu a{display:block;padding:8px 11px;border-radius:8px;font-size:14px;color:#2A3346;white-space:nowrap}
+.langsel .lmenu a:hover{background:var(--soft);color:var(--indigo)}
+.langsel .lmenu a.cur{color:var(--indigo);font-weight:600;background:var(--grad-soft)}
+@media(max-width:480px){.langsel .lmenu{grid-template-columns:1fr;min-width:170px}}
+</style>
+</head>
+<body>
+
+<header><div class="w">
+  <a class="brand" href="index.html">
+    <span class="mk"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span><b>Ounces&nbsp;to&nbsp;Kilograms</b><span>penukar oz → kg</span></span>
+  </a>
+  <div class="hright">
+  <nav>
+    <a href="index.html">Oz → kg</a>
+    <a href="kg-to-oz.html">Kg → oz</a>
+  </nav>
+  <div class="langsel" id="langsel"><button class="lbtn" id="lbtn" aria-haspopup="true" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15.5 0 18M12 3c-2.5 2.5-2.5 15.5 0 18" stroke="currentColor" stroke-width="1.7"/></svg><span>MS</span></button><div class="lmenu"><a href="../index.html" lang="en">English</a><a href="../de/index.html" lang="de">Deutsch</a><a href="../es/index.html" lang="es">Español</a><a href="../fr/index.html" lang="fr">Français</a><a href="../id/index.html" lang="id">Bahasa Indonesia</a><a href="../it/index.html" lang="it">Italiano</a><a class="cur" href="index.html" lang="ms">Bahasa Melayu</a><a href="../pl/index.html" lang="pl">Polski</a><a href="../pt/index.html" lang="pt">Português</a></div></div>
+  </div>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="aurora a1"></div><div class="aurora a2"></div><div class="w">
+  <span class="eyebrow">Penukar berat</span>
+  <h1>Penukar auns ke kilogram</h1>
+  <p class="sub">Tukar <strong>auns (oz)</strong> ke <strong>kilogram (kg)</strong> sebaik sahaja anda menaip, untuk auns standard dan troy. Guna butang tukar untuk beralih daripada kg ke oz.</p>
+  <div class="trust"><span>✓ Faktor NIST yang tepat</span><span>Disemak oleh <b>Gary Bennett</b></span><span>Dikemas kini <b>Nov 2026</b></span></div>
+
+  <div class="conv">
+    <div class="conv-row">
+      <div class="field">
+        <label for="oz">Auns</label>
+        <div class="inp"><input id="oz" type="text" inputmode="decimal" value="16" autocomplete="off"><span class="unit" id="ozUnit">oz</span></div>
+      </div>
+      <button class="swap" id="swap" aria-label="Reverse: go to kilograms to ounces converter" title="Reverse → kg to oz">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 4 4 7l3 3M4 7h13M17 20l3-3-3-3m3 3H7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="field">
+        <label for="kg">Kilogram</label>
+        <div class="inp"><input id="kg" type="text" inputmode="decimal" autocomplete="off"><span class="unit">kg</span></div>
+      </div>
+    </div>
+    <div class="seg-wrap"><div class="seg" id="ozType"><button class="on" data-f="0.028349523125" data-lab="oz">Auns (oz)</button><button data-f="0.0311034768" data-lab="oz t">Auns troy (oz t)</button></div></div>
+    <div class="scalebox">
+      <svg class="scale" viewBox="0 0 440 172" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0F766E"/><stop offset=".55" stop-color="#1D4ED8"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs>
+        <rect x="178" y="142" width="84" height="12" rx="6" fill="#28304D"/>
+        <rect x="214" y="54" width="12" height="90" rx="6" fill="#28304D"/>
+        <g class="beam-wrap">
+          <rect x="70" y="45" width="300" height="10" rx="5" fill="url(#beam)"/>
+          <circle cx="220" cy="50" r="11" fill="#1D4ED8" stroke="#fff" stroke-width="3"/>
+          <path d="M95 53 L66 100 M95 53 L124 100" stroke="#9AA6BF" stroke-width="2"/>
+          <path d="M58 100 Q95 130 132 100" stroke="#0F766E" stroke-width="3.5" stroke-linecap="round" fill="#E7F3F1"/>
+          <path d="M345 53 L316 100 M345 53 L374 100" stroke="#9AA6BF" stroke-width="2"/>
+          <path d="M308 100 Q345 130 382 100" stroke="#7C3AED" stroke-width="3.5" stroke-linecap="round" fill="#F2ECFF"/>
+          <text id="panL" x="95" y="88" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="18" fill="#131A2B">16 oz</text>
+          <text id="panR" x="345" y="88" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="18" fill="#131A2B">0.4536 kg</text>
+        </g>
+      </svg>
+      <div class="scap"><div class="eqrow"><span id="eqline">16 oz = 0.4536 kg</span><button class="copybtn" id="copy" type="button">⧉ Salin</button></div><small>Berat yang sama, ditunjukkan dalam dua unit</small></div>
+    </div>
+    <div class="also"><span>Dalam gram<b id="u-g">453.59 g</b></span><span>Dalam paun<b id="u-lb">1 lb</b></span><span>Dalam stone<b id="u-st">0.0714 st</b></span></div>
+    <div class="chips" id="chips">
+      <button data-oz="0.5">½ oz</button>
+      <button data-oz="1">1 oz</button>
+      <button data-oz="4">4 oz</button>
+      <button data-oz="8">8 oz</button>
+      <button data-oz="16">16 oz</button>
+      <button data-oz="32">32 oz</button>
+      <button data-oz="100">100 oz</button>
+      <button data-oz="1000">1000 oz</button>
+    </div>
+    <div class="prec">
+      <label for="dec">Tempat perpuluhan</label>
+      <select id="dec"><option>2</option><option selected>4</option><option>6</option></select>
+    </div>
+  </div>
+</div></section>
+
+<!-- intro -->
+<section class="sec article"><div class="w">
+  <h2>Penukar auns ke kilogram untuk auns standard dan troy</h2>
+  <p>Alat percuma ini menukar auns ke kilogram sebaik sahaja anda menaip nombor. Penukaran auns ke kilogram mengubah berat sistem AS kepada berat metrik dengan satu nombor tetap. Auns muncul pada label, bungkusan, dan resipi AS, manakala kebanyakan dunia menggunakan kilogram. Satu nombor tetap menjadikan setiap jawapan tepat, pantas, dan boleh dipercayai. Taip nilai dalam kotak Auns, guna butang tukar untuk <a href="kg-to-oz.html">kilogram ke auns</a>, dan pilih Troy untuk emas atau perak.</p>
+  <p><strong>Satu auns bersamaan tepat 0,028349523125 kilogram, iaitu kira-kira 28,35 gram.</strong> Untuk menukar oz ke kg, darabkan auns dengan 0,028349523125. Satu kilogram mengandungi kira-kira 35,274 auns, jadi membahagi dengan 35,274 memberikan jawapan yang sama. Enam belas auns membentuk satu paun, dan satu paun bersamaan tepat 0,45359237 kilogram. Setiap auns mengandungi 437,5 grain, dan grain ialah unit kecil kira-kira 64,8 miligram.</p>
+  <p>Angka-angka ini datang daripada undang-undang, bukan tekaan. Pada 1959, enam negara menandatangani Perjanjian Antarabangsa Ela dan Paun. Amerika Syarikat, United Kingdom, Kanada, Australia, New Zealand, dan Afrika Selatan bersetuju dengan satu paun sebanyak 0,45359237 kg. National Institute of Standards and Technology (NIST) menyenaraikan nilai auns yang sepadan dalam jadual Handbook 44-nya. Stephan Schlamminger, ahli fizik NIST yang membantu mentakrif semula kilogram, menyebut asas barunya «terjalin dalam fabrik alam semesta».</p>
+  <p>Panduan ini merangkumi formula, kaedah empat langkah, dan jawapan sedia dari 1 auns hingga 100 auns. Setiap bahagian bermula daripada tugas sebenar, seperti membakar daripada resipi AS atau menghantar bungkusan kecil. Ibu bapa yang menukar berat bayi baru lahir dan pengembara yang mengemas beg masing-masing menemui bahagian yang sesuai. Peninju yang menyemak saiz sarung tangan dan pembeli emas yang menimbang syiling juga ada bahagiannya. Bahagian akhir meliputi auns troy dan auns cecair.</p>
+  <div class="callout teal"><strong>Satu fakta mengejutkan tentang 35 auns.</strong> Tiga puluh lima auns berberat 0,9922 kg, iaitu hanya 7,8 gram daripada satu kilogram penuh. Syiling emas 1 auns troy berberat 31,1 gram, kerana logam berharga menggunakan auns khasnya sendiri. Dan botol air 32 auns mengukur isi padu, jadi nilai kilogramnya bergantung pada apa yang mengisinya.</div>
+</div></section>
+
+<!-- table of contents -->
+<section class="sec" style="padding-top:6px"><div class="w">
+  <nav class="toc" aria-label="Contents">
+    <div class="toch">Kandungan</div>
+    <ol>
+      <li><a href="#basics">Apa itu auns, auns troy, dan kilogram</a></li>
+      <li><a href="#convert">Cara menukar auns ke kilogram</a></li>
+      <li><a href="#method">Kaedah langkah demi langkah</a></li>
+      <li><a href="#chart">Jadual penukaran oz ke kg</a></li>
+      <li><a href="#searched">Nilai auns yang paling dicari</a></li>
+      <li><a href="#everyday">Barang harian yang ditukar orang</a></li>
+      <li><a href="#troy">Auns troy &amp; jongkong</a></li>
+      <li><a href="#fluid">Auns cecair vs auns</a></li>
+      <li><a href="#precision">Sejauh mana ketepatan</a></li>
+      <li><a href="#faq">Soalan lazim</a></li>
+    </ol>
+  </nav>
+</div></section>
+
+<!-- 1. basics -->
+<section class="sec article" id="basics"><div class="w">
+  <h2>Apa Itu Auns, Auns Troy, dan Kilogram?</h2>
+  <p>Auns ialah unit jisim kecil yang hadir dalam dua bentuk biasa. Auns standard berberat 28,35 gram, dan auns troy untuk logam berharga berberat 31,10 gram. Kilogram ialah unit asas metrik bagi jisim yang bersamaan 1.000 gram.</p>
+
+  <h3>Auns Standard (Avoirdupois)</h3>
+  <p>Auns avoirdupois ialah unit jisim yang bersamaan satu per enam belas paun dan mengukur barang harian. Perkataan avoirdupois (disebut «av-er-duh-POIZ») berasal daripada perkataan Perancis lama yang bermaksud «barang berberat». Di Amerika Syarikat, pembeli melihat auns ini pada hampir setiap bungkusan makanan. Satu auns avoirdupois mengandungi 16 dram, dan dram ialah unit kecil yang digunakan dalam resipi lama.</p>
+  <p>United Kingdom menerima pakai paun 1959 yang sama melalui Weights and Measures Act 1963. Akibatnya, auns British dan auns Amerika berberat sama hari ini. Menu stik di banyak restoran UK dengan bangga menyenaraikan potongan dalam auns, dan kedai menjual daging yang sama dalam gram.</p>
+
+  <h3>Auns Troy</h3>
+  <p>Auns troy (oz t) ialah unit jisim yang bersamaan 31,1034768 gram dan digunakan untuk menimbang emas, perak, platinum, dan paladium. Namanya berasal daripada Troyes, pekan pasar di Perancis tempat pedagang zaman pertengahan menimbang perak dan rempah. Satu auns troy mengandungi 480 grain, manakala auns standard mengandungi 437,5 grain.</p>
+  <p>Sistem troy membina unitnya daripada grain yang sama. Menurut NIST Handbook 44, 24 grain membentuk 1 pennyweight, dan 20 pennyweight membentuk 1 auns troy. Dua belas auns troy membentuk 1 paun troy sebanyak 373,24 gram. Jadi paun troy lebih ringan daripada paun standard, walaupun auns troy lebih berat daripada auns standard.</p>
+  <p>Auns troy ditukar ke kilogram dengan faktornya sendiri. Darabkan auns troy dengan 0,0311034768 untuk mendapat kilogram. Jongkong perak 10 oz t berberat 0,3110 kg, dan satu kilogram mengandungi 32,1507 auns troy. Tetapan Troy pada penukar menggunakan faktor tepat ini.</p>
+
+  <h3>Kilogram</h3>
+  <p>Kilogram ialah unit asas jisim dalam Sistem Unit Antarabangsa (SI) dan menjadi asas setiap berat metrik. Persidangan Am Timbang dan Sukat (CGPM) mengundi pada November 2018 untuk menukar definisi kilogram. Peraturan baharu bermula pada 20 Mei 2019, iaitu Hari Metrologi Sedunia.</p>
+  <p>Sebelum tarikh itu, satu silinder logam berhampiran Paris menetapkan saiz kilogram. Para saintis memanggil silinder platinum dan iridium itu «Le Grand K». Hari ini, kilogram bersandar pada pemalar Planck, nombor tetap daripada fizik yang bersamaan 6,62607015 × 10⁻³⁴ joule-saat. Biro Antarabangsa Timbang dan Sukat (BIPM) memilih nombor itu supaya kilogram mengekalkan saiz lamanya. Pilihan itu mengekalkan nilai setiap auns sama.</p>
+  <p>Para saintis memisahkan jisim daripada berat. Jisim ialah jumlah jirim dalam sesuatu objek, dan berat ialah tarikan graviti ke atasnya. Dalam kehidupan harian, kedua-dua perkataan digunakan untuk perkara yang sama, dan panduan ini pun begitu.</p>
+</div></section>
+
+<!-- 2. convert -->
+<section class="sec article" id="convert"><div class="w">
+  <h2>Bagaimana Cara Menukar Auns ke Kilogram?</h2>
+  <p>Darabkan bilangan auns dengan 0,028349523125 untuk mendapat kilogram. Membahagi auns dengan 35,27396195 memberikan hasil yang sama.</p>
+  <div class="formula">
+    <div class="card fcard">
+      <div class="fhd"><span class="fico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 20c3 0 3-15 6-15M3 9h8" stroke="#4338CA" stroke-width="2" stroke-linecap="round"/></svg></span><h3>Formula</h3></div>
+      <div class="eq">kg = oz × 0.0283495<small>1 auns = 0,028349523125 kilogram (tepat)</small></div>
+    </div>
+    <div class="card fcard">
+      <div class="fhd"><span class="fico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#7C3AED" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Contoh</h3></div>
+      <div class="eq">16 oz × 0.0283495 = 0.4536 kg<small>Jadi 16 auns bersamaan kira-kira 0,4536 kilogram.</small></div>
+    </div>
+  </div>
+
+  <h3>Mengapa Faktornya 0,028349523125?</h3>
+  <p>Faktor ini berasal daripada membahagi satu paun kepada 16 bahagian sama. Perjanjian 1959 menetapkan paun pada 0,45359237 kg, jadi satu auns ialah nilai itu dibahagi 16.</p>
+  <div class="fml">0.45359237 ÷ 16 = 0.028349523125</div>
+  <p>NIST mengesahkan angka yang sama. Handbook 44, Lampiran C menyenaraikan satu auns avoirdupois sebagai tepat 28,349523125 gram. Kerana kedua-dua nombor tepat mengikut undang-undang, faktornya tidak pernah berubah dari tahun ke tahun.</p>
+
+  <h3>Dua Contoh Pengiraan</h3>
+  <p>Bayangkan seseorang memasak dengan resipi brownie AS yang memerlukan 10 auns coklat. Sepuluh auns darab 0,0283495 bersamaan 0,2835 kg, atau kira-kira 283 gram pada penimbang dapur. Penjual dalam talian yang menghantar lilin berberat 28 auns mendapat 0,7938 kg untuk borang kastam.</p>
+
+  <h3>Apa Faktor Songsangnya?</h3>
+  <p>Satu kilogram bersamaan 35,27396195 auns. Untuk menukar kilogram semula menjadi auns, darabkan kilogram dengan nombor itu. Pengembara yang syarikat penerbangannya membenarkan 23 kg boleh menukar had itu kepada auns: 23 × 35,274 = 811,3 auns. Butang tukar pada penukar melakukan langkah ini untuk anda.</p>
+  <p>Banyak buku masakan Eropah mencetak 28 gram setiap auns sebagai jalan pintas. Faktor yang tepat kira-kira 1,2% lebih jitu, yang membantu roti dan pastri menjadi.</p>
+</div></section>
+
+<!-- 3. method -->
+<section class="sec article" id="method"><div class="w">
+  <h2>Apa Kaedah Langkah demi Langkahnya?</h2>
+  <p>Untuk menukar oz ke kg secara manual, ikut 4 langkah: tulis auns, darab, bundarkan, dan semak. Seluruh kaedah mengambil masa kurang daripada seminit dengan kalkulator telefon.</p>
+  <ol>
+    <li>Tulis berat dalam auns sebagai nombor perpuluhan, seperti 15 atau 7,5.</li>
+    <li>Darabkan nombor itu dengan 0,028349523125, atau dengan 0,0283495 untuk kebanyakan kegunaan.</li>
+    <li>Bundarkan jawapan mengikut tugas anda, seperti 2 tempat perpuluhan untuk memasak.</li>
+    <li>Semak jawapan berbanding nilai yang diketahui, seperti 16 oz = 0,4536 kg.</li>
+  </ol>
+  <p>Berikut cara menukar oz ke kg dengan nombor sebenar. Lima belas auns darab 0,0283495 bersamaan 0,4252 kg. Jawapan itu sedikit di bawah 16 auns, jadi ia lulus semakan. Untuk hasil dalam gram, penukar auns ke gram menjawab terus.</p>
+
+  <h3>Contoh Pengiraan dengan Perpuluhan</h3>
+  <p>Soalan sekolah sering menggunakan perpuluhan, jadi berikut 3 contoh latihan. Untuk menukar 90,2 oz ke kg, darabkan 90,2 dengan 0,028349523125 dan dapat 2,5571 kg. Langkah yang sama menukar 91,3 oz ke kg dan memberi 2,5883 kg. Lembaran ketiga mungkin meminta anda menukar 92,2 oz ke kg, dan jawapannya 2,6138 kg.</p>
+  <p>Guru memanggil kaedah ini analisis dimensi. Analisis dimensi ialah cara menyelesaikan masalah unit dengan mendarab pecahan yang bersamaan 1, seperti 0,0283495 kg bagi 1 oz. Unit auns terbatal, dan hanya kilogram yang tinggal.</p>
+
+  <h3>Jalan Pintas Kira Minda</h3>
+  <p>Bahagikan auns dengan 35 untuk anggaran pantas. Untuk 105 auns, 105 ÷ 35 = 3 kg, dan jawapan tepatnya 2,9767 kg. Anggaran itu berada dalam kira-kira 0,8% daripada nilai tepat. Ini berfungsi dengan baik di lorong kedai, dan faktor yang tepat paling sesuai untuk label pos.</p>
+
+  <h3>Paun Campur Auns</h3>
+  <p>Tukar paun kepada auns dahulu, tambah auns tambahan, kemudian darab. Bungkusan 2 lb 5 oz mengandungi 2 × 16 + 5 = 37 auns. Tiga puluh tujuh auns darab 0,0283495 bersamaan 1,0489 kg. Untuk berat yang diberikan hanya dalam paun, penukar paun ke kilogram lebih pantas.</p>
+</div></section>
+
+<!-- 4. chart -->
+<section class="sec article" id="chart"><div class="w">
+  <h2>Apa yang Ditunjukkan Jadual Penukaran oz ke kg?</h2>
+  <p>Tiga puluh enam nilai muncul dalam jadual di bawah, dari 1 auns hingga 1.000 auns. Setiap angka kilogram dibundarkan kepada 4 tempat perpuluhan, dan setiap angka gram kepada 2 tempat.</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Auns (oz)</th><th>Kilogram (kg)</th><th>Gram (g)</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+  <p>Jadual menunjukkan satu sempadan berguna. Tiga puluh lima auns berada tepat di bawah 1 kilogram, manakala 36 auns melepasinya kira-kira 21 gram.</p>
+</div></section>
+
+<!-- 5. most searched -->
+<section class="sec article" id="searched"><div class="w">
+  <h2>Apa Nilai Auns yang Paling Dicari dalam Kilogram?</h2>
+  <p>Enam nilai yang paling dicari ialah 16, 10, 12, 32, 8, dan 1 auns. Dalam kilogram, nilainya 0,4536, 0,2835, 0,3402, 0,9072, 0,2268, dan 0,0283.</p>
+  <div class="valgrid">
+    <div class="valcard"><h3>16 oz ke kg</h3><div class="big">0.4536 kg</div><p>Tepat satu paun penuh (453,59 g). Pembuat kek paling kerap menggunakan nilai ini, kerana resipi AS mengira dalam paun.</p></div>
+    <div class="valcard"><h3>10 oz ke kg</h3><div class="big">0.2835 kg</div><p>283,50 gram, sedikit lebih daripada suku kilogram.</p></div>
+    <div class="valcard"><h3>12 oz ke kg</h3><div class="big">0.3402 kg</div><p>340,19 gram. Beg standard kopi kisar AS sering mengandungi 12 auns.</p></div>
+    <div class="valcard"><h3>32 oz ke kg</h3><div class="big">0.9072 kg</div><p>Dua paun, dalam kira-kira 93 gram daripada 1 kilogram. Semak label, kerana banyak botol 32 oz menyenaraikan auns cecair.</p></div>
+    <div class="valcard"><h3>8 oz ke kg</h3><div class="big">0.2268 kg</div><p>Setengah paun. Satu cawan air AS berberat kira-kira 8,3 auns, jadi satu cawan dan 8 oz hampir tetapi tidak sama.</p></div>
+    <div class="valcard"><h3>1 oz ke kg</h3><div class="big">0.0283 kg</div><p>Dibundarkan. Ditulis penuh, nilainya 0,028349523125 kg.</p></div>
+  </div>
+</div></section>
+
+<!-- 6. everyday -->
+<section class="sec article" id="everyday"><div class="w">
+  <h2>Barang Harian Apa yang Ditukar Orang daripada Auns ke Kilo?</h2>
+  <p>Orang menukar 5 kumpulan utama barang harian: makanan, pos, bayi baru lahir, bagasi, dan peralatan kecergasan. Emas dan perak membentuk kumpulan keenam, tetapi menggunakan auns yang berbeza.</p>
+
+  <h3>Label Makanan dan Resipi</h3>
+  <p>Label makanan AS menunjukkan kedua-dua unit mengikut undang-undang. U.S. Food and Drug Administration (FDA) menetapkan peraturan ini dalam 21 CFR 101.105. Makanan berbungkus mesti menyenaraikan berat bersihnya dalam unit metrik dan unit AS. Berat bersih ialah berat makanan sahaja, tanpa kotak, tin, atau balang.</p>
+  <p>NIST mengkaji sejauh mana kedai mematuhi peraturan ini. Penyelidik memeriksa sekurang-kurangnya 1.137 bungkusan di 19 kedai runcit. Kira-kira 17% bungkusan itu menyenaraikan unit metrik sahaja, yang menunjukkan betapa biasanya label metrik telah menjadi. Bungkusan berat rawak, seperti daging deli yang dihargai setiap paun, dikecualikan daripada peraturan dua unit.</p>
+  <p>Seseorang yang memasak dengan resipi Amerika menemui angka-angka ini di setiap lorong. Satu batang mentega berberat 4 auns, iaitu 0,1134 kg. Satu cawan yogurt sering mengandungi 6 auns, dan semakan 6 oz ke kg memberi 0,1701 kg. Kacang dalam tin biasanya datang dalam tin 15 auns, jadi 15 oz ke kg bersamaan 0,4252 kg.</p>
+  <p>Bungkusan yang lebih besar memerlukan penjagaan yang sama. Tin besar tomato hancur mengandungi 28 auns, iaitu 0,7938 kg. Bekas tinggi oat sering berberat 18 auns, atau 0,5103 kg. Pembuat kek yang mencari 16 oz ke kg untuk satu paun tepung mendapat 0,4536 kg.</p>
+  <p>Roti sandwic sering berberat 24 auns, yang memberi 0,6804 kg. Balang besar mayonis boleh mengandungi 30 auns mengikut berat, atau 0,8505 kg. Pembeli di negara metrik membandingkan harga setiap kilogram, jadi angka ini membantu menilai nilai.</p>
+
+  <h3>Pos dan Penghantaran</h3>
+  <p>United States Postal Service (USPS) menggunakan 2 had auns utama. Domestic Mail Manual-nya mengehadkan surat First-Class pada 3,5 auns, iaitu 0,0992 kg. Mel First-Class dalam apa-apa bentuk berhenti pada 13 auns. Nilai 13 oz ke kg ialah 0,3685 kg, dan kiriman yang lebih berat beralih ke perkhidmatan lain.</p>
+  <p>Penjual kecil di Etsy dan eBay bekerja dengan had ini setiap hari dan menetapkan harga bungkusan mereka dengan yakin. Kad ucapan dengan hadiah nipis mungkin berberat 2 auns, atau 0,0567 kg. Semakan 3 oz ke kg memberi 0,0850 kg, yang masih muat dalam had surat. Buku kulit nipis 11 auns berberat 0,3118 kg, jadi ia kekal di bawah had 13 auns.</p>
+  <p>Banyak syarikat kurier antarabangsa mengecaj setiap setengah kilogram atau kilogram penuh berikutnya. Penjual mendapat penghantaran paling lancar dengan membundarkan ke atas sebelum mencetak label. Di sinilah ada nuansanya: syarikat kurier mungkin mengecaj mengikut saiz kotak dan bukannya berat untuk bungkusan ringan dan besar.</p>
+
+  <h3>Berat Bayi Baru Lahir dan Kanak-kanak</h3>
+  <p>Hospital AS sering melaporkan berat lahir dalam paun dan auns, manakala kebanyakan dunia menggunakan kilogram. Centers for Disease Control and Prevention (CDC) mentakrifkan berat lahir rendah sebagai kurang daripada 2.500 gram. Dalam unit AS, sempadan itu ditulis 5 paun 8 auns.</p>
+  <p>Jururawat dan ibu bapa menggunakan kaedah paun-campur-auns untuk mana-mana berat bayi. Bayi baru lahir 7 lb 8 oz berberat 7 × 16 + 8 = 120 auns. Seratus dua puluh auns darab 0,0283495 bersamaan 3,4019 kg. Datuk nenek di luar negara sering mahukan angka kilogram ini pada mesej pertama dari hospital.</p>
+  <p>Nilai sempadan ialah kes khas yang menarik. Tepat 5 lb 8 oz bersamaan 88 auns, atau 2,4948 kg. Angka itu berada 5 gram di bawah 2.500 gram. Agensi kesihatan menggunakan pasangan yang dibundarkan, jadi doktor membaca kedua-dua bentuk sebagai rujukan yang sama.</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Paun dan auns</th><th>Jumlah auns</th><th>Kilogram</th></tr></thead>
+        <tbody>
+          <tr><td>5 lb 4 oz</td><td>84</td><td>2.3814</td></tr>
+          <tr><td>5 lb 6 oz</td><td>86</td><td>2.4381</td></tr>
+          <tr><td>6 lb 4 oz</td><td>100</td><td>2.8350</td></tr>
+          <tr><td>6 lb 5 oz</td><td>101</td><td>2.8633</td></tr>
+          <tr><td>6 lb 14 oz</td><td>110</td><td>3.1184</td></tr>
+          <tr><td>8 lb 9 oz</td><td>137</td><td>3.8839</td></tr>
+          <tr><td>9 lb 5 oz</td><td>149</td><td>4.2241</td></tr>
+          <tr><td>10 lb 5 oz</td><td>165</td><td>4.6777</td></tr>
+          <tr><td>14 lb 5 oz</td><td>229</td><td>6.4920</td></tr>
+          <tr><td>15 lb 5 oz</td><td>245</td><td>6.9456</td></tr>
+          <tr><td>16 lb 10 oz</td><td>266</td><td>7.5410</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>Setiap baris mengikut peraturan yang sama. Darabkan paun dengan 16, tambah auns, dan darabkan jumlahnya dengan 0,0283495.</p>
+
+  <h3>Perjalanan dan Bagasi</h3>
+  <p>Syarikat penerbangan menetapkan had beg dalam kilogram atau paun, dan pengemas bijak menimbang barang kecil lebih awal. Sepasang kasut lari 26 auns menjadi 0,7371 kg, manakala komputer riba nipis 42 auns berberat 1,1907 kg. Pasu cenderamata 36 auns menjadi 1,0206 kg, hadiah indah sedikit melebihi satu kilogram.</p>
+  <p>Kotak hadiah cepat bertindan dalam beg. Semakan 40 oz ke kg memberi 1,1340 kg. Tiga paun coklat bersamaan 48 auns, atau 1,3608 kg. Empat paun biji kopi bersamaan 64 auns, iaitu 1,8144 kg.</p>
+  <p>Barang pukal mencapai hujung jadual yang lebih berat. Tujuh puluh dua auns menjadi 2,0412 kg, dan 80 auns menjadi 2,2680 kg. Di puncak, 100 oz ke kg bersamaan 2,8350 kg, patut diingat: 100 auns hampir dengan 3 kilogram tetapi masih di bawahnya.</p>
+
+  <h3>Peralatan Kecergasan dan Bahagian Makanan</h3>
+  <p>Sarung tinju dijual mengikut berat dalam auns, dari 8 auns hingga 20 auns. Sarung beg 10 auns berberat 0,2835 kg, jadi 10 oz ke kg menjawab soalan lazim daripada peninju di luar negara. Sarung sparring 14 auns berberat 0,3969 kg, yang membantu jurulatih membandingkan saiz AS dan Eropah.</p>
+  <p>Penjejak makanan menimbang protein dalam bahagian yang kemas dan tepat. Bahagian dada ayam 5 auns berberat 0,1417 kg, dan fillet salmon 7 auns menjadi 0,1984 kg. Stik ribeye besar 20 auns berberat 0,5670 kg, setengah kilogram daging yang banyak.</p>
+  <p>Peralatan latihan meliputi bahagian tengah jadual. Tali lompat berpemberat 22 auns berberat 0,6237 kg, dan foam roller 25 auns menjadi 0,7087 kg.</p>
+</div></section>
+
+<!-- 7. troy & bullion -->
+<section class="sec article" id="troy"><div class="w">
+  <h2>Daripada Auns Barangan Runcit ke Auns Jongkong</h2>
+  <p>Setiap nilai dalam jadual setakat ini menggunakan satu auns: auns barangan runcit 28,35 gram. Auns itu memenuhi troli beli-belah, beg pos, dan buku bayi di seluruh Amerika Syarikat. Tetapi perkataan «auns» mempunyai kehidupan kedua di kedai barang kemas dan bilik kebal bank. Di sana, auns berberat sedikit lebih dan membawa namanya sendiri. Dan inilah langkah yang menjadikan panduan ini lengkap. Memilih auns yang betul itu penting, kerana kedua-duanya berbeza hampir 10%. Bagi pembeli emas, auns yang betul melindungi nilai setiap pembelian. Baris seterusnya menerangkan auns jongkong dalam angka mudah.</p>
+
+  <h3>Adakah Auns Troy Sama dengan Auns Biasa?</h3>
+  <p>Tidak. Auns troy berberat 31,1034768 gram, manakala auns biasa berberat 28,349523125 gram. Auns troy kira-kira 9,7% lebih berat.</p>
+  <p>Auns biasa mengandungi 437,5 grain, jadi auns troy membawa 42,5 grain lebih. Tetapan Auns pada penukar menggunakan auns biasa. Berat emas dan perak memerlukan tetapan Troy pula.</p>
+  <div class="fml">kg = oz t × 0.0311034768</div>
+  <p>Untuk menukar oz emas ke kg, darabkan auns troy dengan 0,0311034768. Satu kilogram mengandungi 32,1507 auns troy, jadi 1 kg ke auns troy bersamaan 32,15 oz t. Penukar auns troy ke kilogram mengendalikan pengiraan jongkong dengan faktor ini.</p>
+  <div class="callout"><strong>Mengapa tetapan Troy penting.</strong> Pelabur emas yang membeli jongkong 5 oz t mendapat 5 × 0,0311034768 = 0,1555 kg. Tetapan standard akan menunjukkan 0,1417 kg untuk 5 auns yang sama. Jurang 13,8 gram itu ialah wang sebenar bagi pembeli jongkong.</div>
+  <p>London Bullion Market Association (LBMA) menetapkan standard dunia untuk jongkong besar. Peraturan Good Delivery-nya memerlukan jongkong emas mengandungi 350 hingga 430 auns troy tulen. Julat itu bersamaan kira-kira 10,9 kg hingga 13,4 kg. Jongkong perak standard mengandungi kira-kira 1.000 auns troy, iaitu hampir 31,1 kg.</p>
+  <p>The Perth Mint, dimiliki oleh Kerajaan Australia Barat, mencatatkan satu tabiat biasa. Peniaga lazimnya mencetak «oz» pada syiling dan jongkong sebagai bentuk ringkas auns troy. Pembeli boleh dengan yakin membaca setiap «oz» logam berharga sebagai auns troy.</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Item</th><th>Auns troy</th><th>Kilogram</th></tr></thead>
+        <tbody>
+          <tr><td>Syiling emas atau perak</td><td>1 oz t</td><td>0.0311 kg</td></tr>
+          <tr><td>Kilobar</td><td>32.15 oz t</td><td>1.0000 kg</td></tr>
+          <tr><td>Jongkong perak</td><td>100 oz t</td><td>3.1103 kg</td></tr>
+          <tr><td>Jongkong emas LBMA (biasa)</td><td>400 oz t</td><td>12.4414 kg</td></tr>
+          <tr><td>Jongkong perak LBMA (biasa)</td><td>1,000 oz t</td><td>31.1035 kg</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>Jongkong emas 400 auns berberat kira-kira 12,4 kg dalam unit troy. 400 auns barangan runcit yang sama hanya berberat 11,3 kg.</p>
+</div></section>
+
+<!-- 8. fluid -->
+<section class="sec article" id="fluid"><div class="w">
+  <h2>Adakah Auns Cecair Berberat Sama dengan Auns?</h2>
+  <p>Tidak. Auns cecair mengukur isi padu, atau ruang yang diisi cecair, manakala auns mengukur jisim. Satu auns cecair AS mengandungi 29,57 mililiter.</p>
+  <p>Air ialah satu kes mudah. Satu auns cecair AS air berberat kira-kira 29,6 gram, iaitu hampir 1,04 auns. Jadi botol air 32 auns yang diisi air berberat kira-kira 0,946 kg, sedikit lebih daripada 32 auns berat (0,907 kg). Perbezaan 39 gram itu ialah fakta berguna bagi pendaki dan ahli gim.</p>
+  <p>Cecair lain mematahkan corak air. Minyak masak lebih ringan daripada air, dan madu jauh lebih berat. Balang berlabel auns cecair memerlukan ketumpatan cecair, iaitu jisimnya setiap mililiter, sebelum mana-mana jawapan kilogram tepat. Kebanyakan botol di kedai AS mencetak «fl oz», jadi huruf «fl» ialah isyarat yang perlu diperhatikan.</p>
+</div></section>
+
+<!-- 9. precision -->
+<section class="sec article" id="precision"><div class="w">
+  <h2>Sejauh Mana Ketepatan Jawapan Anda Perlu?</h2>
+  <p>Padankan tempat perpuluhan dengan tugas: 2 tempat untuk memasak, 3 untuk penghantaran, dan 4 atau lebih untuk sains dan perubatan. Bilangan digit yang betul menjadikan setiap jawapan jelas dan praktikal.</p>
+  <div class="card tbl plain">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Kegunaan</th><th>Tempat perpuluhan</th><th>12 oz dalam kg</th><th>Peraturan pembundaran</th></tr></thead>
+        <tbody>
+          <tr><td>Memasak dan membakar</td><td>2</td><td>0.34 kg</td><td>Bundarkan ke terdekat</td></tr>
+          <tr><td>Penghantaran dan pos</td><td>3</td><td>0.341 kg</td><td>Sentiasa bundar ke atas</td></tr>
+          <tr><td>Perubatan dan penjagaan bayi</td><td>4</td><td>0.3402 kg</td><td>Bundarkan ke terdekat</td></tr>
+          <tr><td>Sains makmal dan sekolah</td><td>6 atau lebih</td><td>0.340194 kg</td><td>Kekalkan angka bererti</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>Penghantaran ialah satu kegunaan di mana membundarkan ke atas paling baik. Syarikat kurier mengecaj mengikut tahap berikutnya, jadi berat yang dibundarkan ke atas memastikan setiap bungkusan bergerak lancar.</p>
+  <p>Angka bererti ialah digit dalam sesuatu nombor yang membawa makna sebenar. Penimbang yang membaca 12,0 auns memberi 3 angka bererti, jadi 0,340 kg ialah hasil yang jujur. Setiap jadual rasmi yang disemak untuk panduan ini memberi faktor yang sama, jadi hanya pembundaran yang menyebabkan perbezaan kecil antara laman.</p>
+</div></section>
+
+<!-- 10. faq -->
+<section class="sec article" id="faq"><div class="w">
+  <h2>Soalan lazim</h2>
+  <p>Enam belas soalan popular dijawab di bawah. Setiap jawapan berdiri sendiri.</p>
+  <div class="faq">
+    <details open><summary>Berapa kilogram dalam satu auns?</summary><div class="ans">1 oz bersamaan 0,0283 kg. Nilai tepatnya 0,028349523125 kg, iaitu 28,35 gram.</div></details>
+    <details><summary>Bagaimana saya menukar auns ke kilogram?</summary><div class="ans">Darabkan bilangan auns dengan 0,0283495. Contohnya, 8 oz × 0,0283495 = 0,2268 kg.</div></details>
+    <details><summary>Adakah anda mendarab atau membahagi untuk menukar oz ke kg?</summary><div class="ans">Kedua-duanya boleh. Darabkan auns dengan 0,0283495, atau bahagikan dengan 35,274. Kedua-duanya memberi nilai kilogram yang sama.</div></details>
+    <details><summary>Berapa auns dalam satu kilogram?</summary><div class="ans">Satu kilogram bersamaan kira-kira 35,274 auns. Untuk emas dan perak, satu kilogram bersamaan 32,15 auns troy.</div></details>
+    <details><summary>Adakah ini auns mengikut berat atau auns cecair?</summary><div class="ans">Penukar ini menggunakan auns mengikut berat, dikenali sebagai auns avoirdupois. Auns cecair mengukur isi padu, bukan berat.</div></details>
+    <details><summary>Bagaimana anda menukar fl oz ke kg?</summary><div class="ans">Auns cecair mengukur isi padu, jadi anda perlukan ketumpatan cecair dahulu. Untuk air, darabkan fl oz dengan 0,02957 untuk mendapat kilogram. Botol air 32 fl oz berberat kira-kira 0,946 kg.</div></details>
+    <details><summary>Apa itu auns troy, dan bila saya patut guna tetapan Troy?</summary><div class="ans">Auns troy berberat 31,1034768 gram dan mengukur emas, perak, platinum, dan paladium. Guna tetapan Troy untuk mana-mana berat logam berharga, walaupun label hanya menyebut «oz».</div></details>
+    <details><summary>Bagaimana anda menukar paun dan auns ke kg?</summary><div class="ans">Darabkan paun dengan 16 dan tambah auns tambahan. Kemudian darabkan jumlah auns dengan 0,0283495. Untuk 6 lb 4 oz, itu 100 oz, atau 2,835 kg.</div></details>
+    <details><summary>Bagaimana jururawat menukar berat bayi dari lb dan oz ke kg?</summary><div class="ans">Jururawat menukar berat kepada jumlah auns, mendarab dengan 0,0283495, dan merekod kilogram kepada 3 atau 4 tempat perpuluhan. Bayi 7 lb 8 oz berberat 3,402 kg.</div></details>
+    <details><summary>Seorang kanak-kanak berberat 41 lb 12 oz. Berapa itu dalam kg?</summary><div class="ans">Empat puluh satu paun 12 auns bersamaan 668 auns. Darabkan 668 dengan 0,0283495 untuk mendapat 18,94 kg.</div></details>
+    <details><summary>Berapa 56 oz dalam kg?</summary><div class="ans">Lima puluh enam auns bersamaan 1,5876 kg, iaitu tepat 3,5 paun.</div></details>
+    <details><summary>Adakah 35 auns lebih daripada 1 kilogram?</summary><div class="ans">Tidak. Jawapan 35 oz ke kg ialah 0,9922 kg, iaitu dalam 7,8 gram daripada 1 kilogram. Tiga puluh enam auns melepasi tanda 1 kg.</div></details>
+    <details><summary>Faktor mana yang memberi hasil paling tepat?</summary><div class="ans">Sesetengah laman membundarkan faktor kepada 0,0283495 atau 0,02835. Jalan pintas itu kekal jitu sehingga kira-kira tempat perpuluhan keempat. Faktor tepat 0,028349523125 memberi padanan sempurna setiap kali.</div></details>
+    <details><summary>Adakah perubahan kilogram 2019 menjejaskan penukaran auns?</summary><div class="ans">Tidak. BIPM memilih nilai pemalar Planck supaya kilogram mengekalkan saiz lamanya. Setiap nilai auns daripada sebelum 2019 masih sah hari ini.</div></details>
+    <details><summary>Adakah Amerika Syarikat dan United Kingdom menggunakan auns yang sama?</summary><div class="ans">Ya. Kedua-dua negara menerima pakai paun antarabangsa 1959, jadi kedua-dua auns berberat 28,349523125 gram. UK menulis nilai ini dalam Weights and Measures Act 1963-nya.</div></details>
+    <details><summary>Apa yang diliputi panduan auns ke kilogram ini?</summary><div class="ans">Ia meliputi formula yang tepat, kaedah empat langkah, jadual 36 baris, nilai yang paling dicari, kegunaan harian, auns troy untuk jongkong, auns cecair, dan sejauh mana ketepatan jawapan anda perlu.</div></details>
+  </div>
+</div></section>
+
+<!-- about the writer -->
+<section class="sec article" id="author"><div class="w">
+  <h2>Tentang penulis</h2>
+  <div class="authorcard">
+    <img src="../gary-bennett.webp" alt="Gary Bennett, metrologist" width="96" height="96" loading="lazy">
+    <div>
+      <p class="an-name">Gary Bennett</p>
+      <div class="an-role">Penulis &amp; Ahli metrologi · Pakar pengukuran</div>
+      <p>Gary Bennett ialah penulis dan ahli metrologi yang menghasilkan dan menyemak panduan pengukuran demi ketepatan. Beliau menulis panduan ini dan memeriksa setiap faktor penukaran, nilai jadual, dan contoh pengiraan berbanding angka NIST yang tepat, termasuk auns avoirdupois (0,028349523125 kg) dan auns troy (0,0311034768 kg).</p>
+      <a class="an-link" href="../gary-bennett.html">Baca profil penuh Gary →</a>
+    </div>
+  </div>
+</div></section>
+
+</main>
+
+<footer>
+  <div class="fw">
+    <div class="fcol brandcol">
+      <div class="fbrand"><span class="mk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>Ounces to Kilograms</b></div>
+      <p>Penukaran auns ke kilogram yang percuma dan tepat untuk auns standard dan troy, berdasarkan faktor rasmi NIST.</p>
+    </div>
+    <div class="fcol"><h4>Halaman</h4>
+      <a href="index.html">Auns ke kilogram</a><a href="kg-to-oz.html">Kilogram ke auns</a><a href="../about.html">Perihal</a><a href="../gary-bennett.html">Penulis</a><a href="../sitemap.html">Peta laman</a><a href="../contact.html">Hubungi</a>
+    </div>
+    <div class="fcol"><h4>Dasar</h4>
+      <a href="../editorial-policy.html">Dasar editorial</a><a href="../disclaimer.html">Penafian</a><a href="../privacy-policy.html">Dasar privasi</a><a href="../terms.html">Terma penggunaan</a>
+    </div>
+    <div class="fcol"><h4>Hubungi</h4>
+      <a href="mailto:info@ouncestokilograms.com">info@ouncestokilograms.com</a>
+    </div>
+  </div>
+  <div class="fbar">© 2026 Auns ke kilogram. Hak cipta terpelihara.</div>
+</footer>
+
+<script>
+const AVO = 0.028349523125;            // avoirdupois ounce → kg (NIST)
+const LB = 0.45359237, ST = 6.35029318; // kg per pound / stone
+let F = AVO, ozLab = 'oz', dp = 4, tipT;
+
+const ozEl=document.getElementById('oz'), kgEl=document.getElementById('kg'),
+      eq=document.getElementById('eqline'), panL=document.getElementById('panL'),
+      panR=document.getElementById('panR'), beam=document.querySelector('.beam-wrap'),
+      ozUnit=document.getElementById('ozUnit'), decSel=document.getElementById('dec'),
+      uG=document.getElementById('u-g'), uLB=document.getElementById('u-lb'), uST=document.getElementById('u-st');
+const rm = matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+// accepts "0.5", "1/2", "3 1/2"
+function parseVal(s){ s=(s||'').trim(); if(s==='') return NaN;
+  let m=s.match(/^(-?\d*\.?\d+)\s+(\d+)\/(\d+)$/); if(m) return (+m[1])+(+m[2])/(+m[3]);
+  m=s.match(/^(-?\d+)\/(\d+)$/); if(m) return (+m[1])/(+m[2]);
+  const n=parseFloat(s.replace(/,/g,'')); return isFinite(n)?n:NaN;
+}
+function fmt(n){ if(!isFinite(n)) return '0'; return n.toFixed(dp).replace(/\.?0+$/,'') || '0'; }
+function tip(dir){ if(rm||!beam) return; beam.style.transform='rotate('+dir+'deg)'; clearTimeout(tipT); tipT=setTimeout(()=>{ beam.style.transform='rotate(0deg)'; },280); }
+function multi(k){ uG.textContent=(k*1000).toFixed(2).replace(/\.?0+$/,'')+' g'; uLB.textContent=fmt(k/LB)+' lb'; uST.textContent=fmt(k/ST)+' st'; }
+function paintEmpty(){ panL.textContent='- '+ozLab; panR.textContent='- kg'; eq.textContent='Masukkan nilai'; uG.textContent='-'; uLB.textContent='-'; uST.textContent='-'; }
+function paint(o,k,dir){ panL.textContent=fmt(o)+' '+ozLab; panR.textContent=fmt(k)+' kg'; multi(k); tip(dir); }
+function fromOz(){ const o=parseVal(ozEl.value); if(isNaN(o)){ kgEl.value=''; paintEmpty(); return; } const k=o*F; kgEl.value=fmt(k); eq.textContent=fmt(o)+' '+ozLab+' = '+fmt(k)+' kg'; paint(o,k,-1.6); }
+function fromKg(){ const k=parseVal(kgEl.value); if(isNaN(k)){ ozEl.value=''; paintEmpty(); return; } const o=k/F; ozEl.value=fmt(o); eq.textContent=fmt(k)+' kg = '+fmt(o)+' '+ozLab; paint(o,k,1.6); }
+function recalc(){ if(ozEl.value.trim()!=='') fromOz(); else if(kgEl.value.trim()!=='') fromKg(); else paintEmpty(); }
+
+ozEl.addEventListener('input', fromOz);
+kgEl.addEventListener('input', fromKg);
+decSel.addEventListener('change', ()=>{ dp=parseInt(decSel.value,10); recalc(); });
+
+document.getElementById('chips').addEventListener('click', e=>{ const b=e.target.closest('button'); if(!b) return; ozEl.value=b.dataset.oz; fromOz(); });
+
+// swap navigates to the reverse converter (kg -> oz), carrying the weight across
+document.getElementById('swap').addEventListener('click', ()=>{
+  const o=parseVal(ozEl.value); const k=(isNaN(o)?NaN:o*F);
+  location.href = isFinite(k) ? ('kg-to-oz.html?kg='+(+k.toFixed(6))) : 'kg-to-oz.html';
+});
+
+// ounce type: avoirdupois vs troy (precious metals)
+document.getElementById('ozType').addEventListener('click', e=>{
+  const b=e.target.closest('button'); if(!b) return;
+  [...e.currentTarget.children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+  F=parseFloat(b.dataset.f); ozLab=b.dataset.lab; ozUnit.textContent=ozLab; recalc();
+});
+
+// copy result
+document.getElementById('copy').addEventListener('click', async ()=>{
+  const btn=document.getElementById('copy');
+  try{ await navigator.clipboard.writeText(eq.textContent); btn.textContent='✓ Disalin'; btn.classList.add('done'); setTimeout(()=>{ btn.textContent='⧉ Salin'; btn.classList.remove('done'); },1400); }
+  catch(err){ /* clipboard blocked in this context */ }
+});
+
+// conversion chart: 36 values, kg to 4 dp, g to 2 dp (matches the guide)
+const rows=[1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,18,20,22,24,25,26,28,30,32,35,36,40,42,48,50,64,72,80,90,100,1000];
+document.getElementById('tbody').innerHTML = rows.map(o=>{
+  const k=o*AVO, g=o*28.349523125;
+  const ozL=o.toLocaleString('en-US');
+  const gL=g.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+  return `<tr><td>${ozL} oz</td><td>${k.toFixed(4)} kg</td><td>${gL} g</td></tr>`;
+}).join('');
+
+// pre-fill from a reverse-conversion hand-off (?kg=…)
+(function(){ const v=new URLSearchParams(location.search).get('kg'); if(v!==null){ const n=parseFloat(v); if(isFinite(n)) ozEl.value=String(+(n/AVO).toFixed(4)); } })();
+fromOz();
+</script>
+<script>
+(function(){var s=document.getElementById('langsel'),b=document.getElementById('lbtn');if(b){b.addEventListener('click',function(e){e.stopPropagation();var o=s.classList.toggle('open');b.setAttribute('aria-expanded',o);});document.addEventListener('click',function(){s.classList.remove('open');b.setAttribute('aria-expanded',false);});}})();
+</script>
+</body>
+</html>
