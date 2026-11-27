@@ -60,8 +60,17 @@ main strong{color:var(--ink);font-weight:600}
 .backtool{display:block;text-align:center;margin:8px 0 46px}
 .backtool a{font-family:'Space Grotesk';font-weight:600;color:#fff;background:var(--grad-2);padding:13px 24px;border-radius:12px;display:inline-block}
 
-footer{background:#0F1B2D;color:#AEBAC6;padding:30px 0;text-align:center;font-size:13px}
-footer a{color:#AEBAC6}footer a:hover{color:#fff}
+footer{background:#0F1B2D;color:#AEBAC6;padding:44px 0 24px;margin-top:26px;font-size:14px}
+.fw{max-width:1060px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:28px}
+.fcol h4{font-family:'Space Grotesk';font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#fff;margin:0 0 12px}
+.fcol a{display:block;color:#AEBAC6;margin-bottom:9px}.fcol a:hover{color:#fff}
+.fbrand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.fbrand .mk{width:34px;height:34px;border-radius:9px;background:var(--grad);display:grid;place-items:center}
+.fbrand b{color:#fff;font-family:'Space Grotesk';font-weight:700;font-size:16px}
+.brandcol p{color:#8A97A6;margin:0;max-width:260px;line-height:1.5;font-size:13.5px}
+.fbar{max-width:1060px;margin:26px auto 0;padding:18px 20px 0;border-top:1px solid rgba(255,255,255,.1);color:#7D8B99;font-size:13px}
+@media(max-width:720px){.fw{grid-template-columns:1fr 1fr}.brandcol{grid-column:1/-1}}
+@media(max-width:440px){.fw{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -112,9 +121,24 @@ footer a{color:#AEBAC6}footer a:hover{color:#fff}
 
 <div class="backtool"><a href="index.html">Open the Ounces to Kilograms Converter →</a></div>
 
-<footer><div class="w">
-  © 2026 Ounces to Kilograms Converter · <a href="index.html">Home</a>
-</div></footer>
+<footer>
+  <div class="fw">
+    <div class="fcol brandcol">
+      <div class="fbrand"><span class="mk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>Ounces to Kilograms</b></div>
+      <p>Free, exact ounce-to-kilogram conversions for standard and troy ounces, built on official NIST factors.</p>
+    </div>
+    <div class="fcol"><h4>Pages</h4>
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="gary-bennett.html">Writer</a><a href="sitemap.html">Sitemap</a><a href="contact.html">Contact</a>
+    </div>
+    <div class="fcol"><h4>Policies</h4>
+      <a href="editorial-policy.html">Editorial Policy</a><a href="disclaimer.html">Disclaimer</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a>
+    </div>
+    <div class="fcol"><h4>Contact</h4>
+      <a href="mailto:info@ouncestokilograms.com">info@ouncestokilograms.com</a>
+    </div>
+  </div>
+  <div class="fbar">© 2026 Ounces to Kilograms Converter. All rights reserved.</div>
+</footer>
 
 </body>
 </html>
