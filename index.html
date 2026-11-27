@@ -118,6 +118,17 @@ nav a:hover{color:var(--teal-ink)}
 .byline .bl-name a{color:var(--indigo);font-weight:600}
 .byline .bl-meta{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
 
+/* author card (writer section) */
+.authorcard{display:flex;gap:22px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh);padding:26px;position:relative;overflow:hidden}
+.authorcard::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad)}
+.authorcard img{width:96px;height:96px;border-radius:16px;object-fit:cover;flex:0 0 auto;border:2px solid #fff;box-shadow:0 3px 10px rgba(20,26,70,.2)}
+.authorcard .an-name{font-family:'Space Grotesk';font-weight:700;font-size:22px;color:var(--ink);margin:0}
+.authorcard .an-role{font-size:14px;color:var(--indigo);font-weight:600;margin:3px 0 12px}
+.authorcard p{margin:0 0 12px;color:#2A3346}
+.authorcard .an-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-weight:600;font-size:14px;color:#fff;background:var(--grad-2);padding:9px 16px;border-radius:10px;transition:.15s}
+.authorcard .an-link:hover{box-shadow:0 8px 18px rgba(60,80,200,.3)}
+@media(max-width:560px){.authorcard{flex-direction:column;gap:16px;padding:22px}}
+
 /* callout */
 .callout{background:var(--grad-soft);border:1px solid #DCE6F3;border-left:4px solid var(--indigo);border-radius:12px;padding:16px 18px;margin:0 0 18px;color:#2A3346;font-size:16px}
 .callout.teal{border-left-color:var(--teal)}
@@ -270,7 +281,7 @@ footer .fnav{display:flex;gap:18px;font-size:14px;flex-wrap:wrap}
   <h2>Ounces to Kilograms Converter for Standard and Troy Ounces</h2>
   <div class="byline">
     <img src="gary-bennett.webp" alt="Gary Bennett, metrologist" width="50" height="50" loading="lazy">
-    <div class="bl-name">Written &amp; reviewed by <a href="https://www.linkedin.com/in/gary-bennett-4a07531a" target="_blank" rel="noopener nofollow">Gary Bennett</a>, Metrologist<span class="bl-meta">Updated November 2026 · Verified against exact NIST factors</span></div>
+    <div class="bl-name">Written &amp; reviewed by <a href="gary-bennett.html">Gary Bennett</a>, Metrologist<span class="bl-meta">Updated November 2026 · Verified against exact NIST factors</span></div>
   </div>
   <p>This free tool converts ounces to kilograms the moment you type a number. Ounce-to-kilogram conversion turns a US customary weight into a metric weight with one fixed number. Ounces appear on US labels, parcels, and recipes, while most of the world uses kilograms. One fixed number makes every answer exact, quick, and easy to trust. Type a value in the Ounces box, use the swap button for kilograms to ounces, and pick Troy for gold or silver.</p>
   <p><strong>One ounce equals exactly 0.028349523125 kilograms, which is about 28.35 grams.</strong> To convert oz to kg, multiply the ounces by 0.028349523125. One kilogram holds about 35.274 ounces, so dividing by 35.274 gives the same answer. Sixteen ounces make one pound, and one pound equals exactly 0.45359237 kilograms. Each ounce holds 437.5 grains, and a grain is a tiny unit of about 64.8 milligrams.</p>
@@ -444,7 +455,7 @@ footer .fnav{display:flex;gap:18px;font-size:14px;flex-wrap:wrap}
   <h3>Travel and Luggage</h3>
   <p>Airlines set bag limits in kilograms or pounds, and smart packers weigh small items early. A pair of running shoes at 26 ounces works out to 0.7371 kg, while a thin laptop of 42 ounces weighs 1.1907 kg. A souvenir vase of 36 ounces comes to 1.0206 kg, a lovely gift at just over one kilogram.</p>
   <p>Gift boxes stack quickly in a suitcase. A 40 oz to kg check gives 1.1340 kg. Three pounds of chocolate equal 48 ounces, or 1.3608 kg. Four pounds of coffee beans equal 64 ounces, which is 1.8144 kg.</p>
-  <p>Bulk items reach the heavier end of the chart. Seventy-two ounces come to 2.0412 kg, and 80 ounces to 2.2680 kg. At the top, 100 oz to kg equals 2.8350 kg — worth remembering, since 100 ounces are close to 3 kilograms but still under them.</p>
+  <p>Bulk items reach the heavier end of the chart. Seventy-two ounces come to 2.0412 kg, and 80 ounces to 2.2680 kg. At the top, 100 oz to kg equals 2.8350 kg, worth remembering: 100 ounces are close to 3 kilograms but still under them.</p>
 
   <h3>Fitness Gear and Food Portions</h3>
   <p>Boxing gloves are sold by weight in ounces, from 8 ounces to 20 ounces. Bag gloves of 10 ounces weigh 0.2835 kg, so 10 oz to kg answers a common question from boxers abroad. Sparring gloves of 14 ounces weigh 0.3969 kg, which helps coaches compare US and European glove sizes.</p>
@@ -535,6 +546,20 @@ footer .fnav{display:flex;gap:18px;font-size:14px;flex-wrap:wrap}
   </div>
 </div></section>
 
+<!-- about the writer -->
+<section class="sec article" id="author"><div class="w">
+  <h2>About the Writer</h2>
+  <div class="authorcard">
+    <img src="gary-bennett.webp" alt="Gary Bennett, metrologist" width="96" height="96" loading="lazy">
+    <div>
+      <p class="an-name">Gary Bennett</p>
+      <div class="an-role">Metrologist · Measurement and unit-conversion specialist</div>
+      <p>Gary Bennett is a metrologist who writes and reviews measurement guides for accuracy. For this guide he checked every conversion factor, chart value, and worked example against the exact NIST figures, including the avoirdupois ounce (0.028349523125 kg) and the troy ounce (0.0311034768 kg).</p>
+      <a class="an-link" href="gary-bennett.html">Read Gary's full profile →</a>
+    </div>
+  </div>
+</div></section>
+
 </main>
 
 <footer><div class="w">
@@ -567,7 +592,7 @@ function parseVal(s){ s=(s||'').trim(); if(s==='') return NaN;
 function fmt(n){ if(!isFinite(n)) return '0'; return n.toFixed(dp).replace(/\.?0+$/,'') || '0'; }
 function tip(dir){ if(rm||!beam) return; beam.style.transform='rotate('+dir+'deg)'; clearTimeout(tipT); tipT=setTimeout(()=>{ beam.style.transform='rotate(0deg)'; },280); }
 function multi(k){ uG.textContent=(k*1000).toFixed(2).replace(/\.?0+$/,'')+' g'; uLB.textContent=fmt(k/LB)+' lb'; uST.textContent=fmt(k/ST)+' st'; }
-function paintEmpty(){ panL.textContent='— '+ozLab; panR.textContent='— kg'; eq.textContent='Enter a value'; uG.textContent='—'; uLB.textContent='—'; uST.textContent='—'; }
+function paintEmpty(){ panL.textContent='- '+ozLab; panR.textContent='- kg'; eq.textContent='Enter a value'; uG.textContent='-'; uLB.textContent='-'; uST.textContent='-'; }
 function paint(o,k,dir){ panL.textContent=fmt(o)+' '+ozLab; panR.textContent=fmt(k)+' kg'; multi(k); tip(dir); }
 function fromOz(){ const o=parseVal(ozEl.value); if(isNaN(o)){ kgEl.value=''; paintEmpty(); return; } const k=o*F; kgEl.value=fmt(k); eq.textContent=fmt(o)+' '+ozLab+' = '+fmt(k)+' kg'; paint(o,k,-1.6); }
 function fromKg(){ const k=parseVal(kgEl.value); if(isNaN(k)){ ozEl.value=''; paintEmpty(); return; } const o=k/F; ozEl.value=fmt(o); eq.textContent=fmt(k)+' kg = '+fmt(o)+' '+ozLab; paint(o,k,1.6); }
@@ -598,7 +623,7 @@ document.getElementById('copy').addEventListener('click', async ()=>{
   catch(err){ /* clipboard blocked in this context */ }
 });
 
-// conversion chart — 36 values, kg to 4 dp, g to 2 dp (matches the guide)
+// conversion chart: 36 values, kg to 4 dp, g to 2 dp (matches the guide)
 const rows=[1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,18,20,22,24,25,26,28,30,32,35,36,40,42,48,50,64,72,80,90,100,1000];
 document.getElementById('tbody').innerHTML = rows.map(o=>{
   const k=o*AVO, g=o*28.349523125;
