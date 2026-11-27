@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Kilograms to Ounces Converter (kg to oz) | Standard &amp; Troy</title>
+<meta name="description" content="Convert kilograms to ounces instantly, for standard and troy ounces. Exact NIST factor (1 kg = 35.27396195 oz), a full chart, and worked examples.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F5FB; --ink:#131A2B; --muted:#4B5768; --card:#FFFFFF; --line:#E4E8F2;
+  --teal:#0F766E; --teal-ink:#0B5C56; --indigo:#4338CA; --indigo-2:#1D4ED8; --violet:#7C3AED; --soft:#EDF1FF;
+  --grad:linear-gradient(118deg,#0F766E 0%,#1D4ED8 54%,#7C3AED 100%);
+  --grad-2:linear-gradient(118deg,#1D4ED8,#7C3AED);
+  --grad-soft:linear-gradient(118deg,#E8F4F2,#EDF0FF);
+  --sh:0 1px 2px rgba(20,26,46,.05),0 16px 44px rgba(28,34,80,.12);
+  --sh-c:0 10px 30px rgba(40,50,120,.15);
+  --maxw:1060px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif;letter-spacing:-.015em;line-height:1.08;margin:0}
+a{color:inherit;text-decoration:none}
+.w{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(245,247,248,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .mk{width:38px;height:38px;border-radius:10px;background:var(--grad);display:grid;place-items:center;flex:0 0 auto}
+.brand b{font-family:'Space Grotesk';font-weight:700;font-size:18px;line-height:1}
+.brand span{display:block;font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+nav{display:flex;gap:22px}
+nav a{color:var(--muted);font-weight:500;font-size:15px}
+nav a:hover{color:var(--teal-ink)}
+@media(max-width:640px){nav{display:none}}
+/* hero + converter */
+.hero{position:relative;padding:54px 0 96px;text-align:center;background:var(--grad);color:#fff;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:42px 42px;mask:radial-gradient(700px 320px at 50% 0,#000,transparent 75%);pointer-events:none}
+.aurora{position:absolute;border-radius:50%;filter:blur(64px);opacity:.45;pointer-events:none}
+.aurora.a1{width:340px;height:340px;background:#8BF0E4;top:-120px;left:-60px}
+.aurora.a2{width:320px;height:320px;background:#B9A6FF;top:-80px;right:-50px;opacity:.5}
+.hero .w{position:relative;z-index:2}
+.eyebrow{display:inline-block;font-family:'Space Grotesk';font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.28);padding:5px 13px;border-radius:999px;backdrop-filter:blur(4px)}
+.hero h1{font-size:clamp(30px,5vw,48px);font-weight:700;margin:16px 0 0;color:#fff}
+.hero p.sub{color:rgba(255,255,255,.92);font-size:18px;max-width:580px;margin:12px auto 0}
+.hero p.sub strong{color:#fff}
+.conv{position:relative;background:var(--card);border:1px solid rgba(255,255,255,.6);border-radius:22px;box-shadow:0 30px 70px rgba(20,26,70,.33);max-width:720px;margin:30px auto 0;padding:28px 26px 26px;overflow:hidden}
+.conv::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--grad)}
+.conv-row{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:end}
+.field label{display:block;font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;text-align:left}
+.field .inp{position:relative}
+.field input{width:100%;font-family:'Space Grotesk';font-weight:600;font-size:30px;padding:16px 68px 16px 16px;border:1.5px solid var(--line);border-radius:14px;background:#FBFCFD;color:var(--ink);font-variant-numeric:tabular-nums}
+.field input:focus{outline:none;border-color:var(--indigo);box-shadow:0 0 0 4px rgba(91,91,240,.15);background:#fff}
+.field .unit{position:absolute;right:16px;top:50%;transform:translateY(-50%);font-family:'Space Grotesk';font-weight:700;color:var(--indigo);font-size:16px;pointer-events:none}
+.swap{width:50px;height:50px;border-radius:50%;border:0;background:var(--grad);display:grid;place-items:center;cursor:pointer;transition:transform .3s,box-shadow .2s;margin-bottom:4px;box-shadow:0 8px 20px rgba(40,60,180,.3)}
+.swap:hover{box-shadow:0 10px 26px rgba(40,60,180,.42)}
+.swap.spin{transform:rotate(180deg)}
+.scalebox{margin-top:18px;text-align:center}
+.scale{width:100%;max-width:430px;height:auto;margin:0 auto;display:block}
+.scale .beam-wrap{transform-box:view-box;transform-origin:220px 50px;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.scap{margin-top:4px;font-family:'Space Grotesk';font-weight:700;font-size:21px;color:var(--ink);font-variant-numeric:tabular-nums}
+.scap #eqline{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.scap small{display:block;font-family:Inter;font-weight:500;font-size:13px;color:var(--muted);margin-top:3px;letter-spacing:.01em}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
+.chips button{font-family:Inter;font-weight:500;font-size:14px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--muted);cursor:pointer;transition:.15s}
+.chips button:hover{border-color:transparent;color:#fff;background:var(--grad-2);box-shadow:0 6px 14px rgba(60,80,200,.25)}
+.prec{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:16px;font-size:14px;color:var(--muted)}
+.prec select{font:inherit;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink)}
+@media(max-width:560px){.conv-row{grid-template-columns:1fr;gap:10px}.swap{margin:0 auto;transform:rotate(90deg)}.swap.spin{transform:rotate(270deg)}}
+.trust{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:16px auto 0}
+.trust span{font-size:13px;color:#fff;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:5px 12px;backdrop-filter:blur(4px)}
+.trust b{font-weight:600}
+.seg-wrap{text-align:center}
+.seg{display:inline-flex;margin:16px auto 0;background:#EDF0F7;border:1px solid var(--line);border-radius:12px;padding:4px;gap:4px}
+.seg button{font-family:'Space Grotesk';font-weight:600;font-size:14px;padding:8px 16px;border:0;border-radius:9px;background:transparent;color:var(--muted);cursor:pointer;transition:.15s}
+.seg button.on{background:#fff;color:var(--indigo);box-shadow:0 1px 3px rgba(20,26,70,.14)}
+.eqrow{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.copybtn{font-family:'Space Grotesk';font-weight:600;font-size:13px;color:var(--indigo);background:var(--soft);border:1px solid #D6DEF6;border-radius:9px;padding:6px 12px;cursor:pointer;transition:.15s}
+.copybtn:hover{background:#fff;border-color:var(--indigo)}
+.copybtn.done{color:#fff;background:var(--grad-2);border-color:transparent}
+.also{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.also span{display:block;background:var(--grad-soft);border:1px solid #E1E7F5;border-radius:12px;padding:11px 10px;text-align:center;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.also b{display:block;font-family:'Space Grotesk';font-weight:700;font-size:18px;color:var(--ink);margin-top:3px;font-variant-numeric:tabular-nums;text-transform:none;letter-spacing:0}
+@media(max-width:480px){.also{grid-template-columns:1fr 1fr}}
+/* article */
+.sec{padding:34px 0}
+.article{max-width:760px;margin:0 auto}
+.article h2{font-size:clamp(23px,3.2vw,30px);font-weight:700;margin:0 0 14px;scroll-margin-top:84px;position:relative;padding-left:16px}
+.article h2::before{content:"";position:absolute;left:0;top:5px;bottom:5px;width:5px;border-radius:3px;background:var(--grad)}
+.article h3{font-family:'Space Grotesk';font-weight:600;font-size:19px;color:var(--indigo);margin:26px 0 8px}
+.article p{margin:0 0 16px;color:#2A3346}
+.article strong{color:var(--ink);font-weight:600}
+.article p a[href$=".html"]{color:var(--indigo);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.byline{display:flex;align-items:center;gap:13px;margin:0 0 22px;padding:12px 15px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh)}
+.byline img{width:50px;height:50px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:2px solid #fff;box-shadow:0 2px 6px rgba(20,26,70,.22)}
+.byline .bl-name{font-size:15px;color:var(--ink);font-weight:500}
+.byline .bl-name a{color:var(--indigo);font-weight:600}
+.byline .bl-meta{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+.callout{background:var(--grad-soft);border:1px solid #DCE6F3;border-left:4px solid var(--indigo);border-radius:12px;padding:16px 18px;margin:0 0 18px;color:#2A3346;font-size:16px}
+.callout b{color:var(--ink)}
+.callout a{color:var(--indigo);font-weight:600;text-decoration:underline}
+/* feature list */
+.feat{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.feat li{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:15px 16px;font-size:14.5px;color:#2A3346;box-shadow:var(--sh)}
+.feat li b{display:block;font-family:'Space Grotesk';color:var(--ink);margin-bottom:3px;font-size:15px}
+@media(max-width:560px){.feat{grid-template-columns:1fr}}
+/* formula */
+.formula{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 6px}
+.fcard{padding:24px;position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh)}
+.fcard::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad)}
+.fhd{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.fico{width:42px;height:42px;border-radius:12px;background:var(--grad-soft);border:1px solid #DCE3F5;display:grid;place-items:center;flex:0 0 auto}
+.fcard h3{font-size:18px;margin:0;color:var(--ink)}
+.eq{font-family:'Space Grotesk';font-weight:600;font-size:19px;background:var(--grad-soft);color:var(--indigo);padding:14px 16px;border-radius:12px;font-variant-numeric:tabular-nums;border:1px solid #E3E7F6}
+.eq small{display:block;color:var(--muted);font-weight:500;font-size:13px;margin-top:6px}
+@media(max-width:640px){.formula{grid-template-columns:1fr}}
+/* table */
+.tbl{border-radius:16px;overflow:hidden;margin:0 0 20px;background:var(--card);border:1px solid var(--line);box-shadow:var(--sh)}
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;min-width:300px}
+th,td{padding:14px 18px;text-align:left;font-size:15.5px;white-space:nowrap}
+@media(max-width:420px){th,td{padding:12px 12px;font-size:14px}}
+thead th{font-family:'Space Grotesk';font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--grad)}
+tbody td{border-bottom:1px solid var(--line)}
+tbody tr:nth-child(even){background:#F5F7FE}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:var(--soft)}
+td:first-child{font-weight:700;color:var(--ink)}
+td:nth-child(2){font-weight:700;color:var(--indigo-2)}
+td:nth-child(3){color:var(--muted)}
+/* faq */
+.faq details{border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:10px;overflow:hidden}
+.faq details[open]{box-shadow:var(--sh-c);border-color:#CBD2F2}
+.faq summary{list-style:none;cursor:pointer;padding:16px 18px;font-family:'Space Grotesk';font-weight:600;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:#fff;background:var(--grad-2);width:26px;height:26px;min-width:26px;border-radius:50%;display:grid;place-items:center;font-size:18px;line-height:1;font-weight:500}
+.faq details[open] summary{color:var(--indigo)}
+.faq details[open] summary::after{content:"\2013"}
+.faq .ans{padding:2px 18px 16px;color:var(--muted)}
+/* author card */
+.authorcard{display:flex;gap:22px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh);padding:26px;position:relative;overflow:hidden}
+.authorcard::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad)}
+.authorcard img{width:96px;height:96px;border-radius:16px;object-fit:cover;flex:0 0 auto;border:2px solid #fff;box-shadow:0 3px 10px rgba(20,26,70,.2)}
+.authorcard .an-name{font-family:'Space Grotesk';font-weight:700;font-size:22px;color:var(--ink);margin:0}
+.authorcard .an-role{font-size:14px;color:var(--indigo);font-weight:600;margin:3px 0 12px}
+.authorcard p{margin:0 0 12px;color:#2A3346}
+.authorcard .an-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-weight:600;font-size:14px;color:#fff;background:var(--grad-2);padding:9px 16px;border-radius:10px;transition:.15s}
+.authorcard .an-link:hover{box-shadow:0 8px 18px rgba(60,80,200,.3)}
+@media(max-width:560px){.authorcard{flex-direction:column;gap:16px;padding:22px}}
+/* footer */
+footer{background:#0F1B2D;color:#AEBAC6;padding:44px 0 24px;margin-top:26px;font-size:14px}
+.fw{max-width:1060px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:28px}
+.fcol h4{font-family:'Space Grotesk';font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#fff;margin:0 0 12px}
+.fcol a{display:block;color:#AEBAC6;margin-bottom:9px}.fcol a:hover{color:#fff}
+.fbrand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.fbrand .mk{width:34px;height:34px;border-radius:9px;background:var(--grad);display:grid;place-items:center}
+.fbrand b{color:#fff;font-family:'Space Grotesk';font-weight:700;font-size:16px}
+.brandcol p{color:#8A97A6;margin:0;max-width:260px;line-height:1.5;font-size:13.5px}
+.fbar{max-width:1060px;margin:26px auto 0;padding:18px 20px 0;border-top:1px solid rgba(255,255,255,.1);color:#7D8B99;font-size:13px}
+@media(max-width:720px){.fw{grid-template-columns:1fr 1fr}.brandcol{grid-column:1/-1}}
+@media(max-width:440px){.fw{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header><div class="w">
+  <a class="brand" href="index.html">
+    <span class="mk"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span><b>Ounces&nbsp;to&nbsp;Kilograms</b><span>kg → oz converter</span></span>
+  </a>
+  <nav>
+    <a href="index.html">Oz → kg</a>
+  </nav>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="aurora a1"></div><div class="aurora a2"></div><div class="w">
+  <span class="eyebrow">Weight converter</span>
+  <h1>Kilograms to Ounces Converter</h1>
+  <p class="sub">Convert <strong>kilograms (kg)</strong> to <strong>ounces (oz)</strong> the moment you type, for standard and troy ounces. Swap for oz to kg.</p>
+  <div class="trust"><span>✓ Exact NIST factor</span><span>Reviewed by <b>Gary Bennett</b></span><span>Updated <b>Nov 2026</b></span></div>
+
+  <div class="conv">
+    <div class="conv-row">
+      <div class="field">
+        <label for="kg">Kilograms</label>
+        <div class="inp"><input id="kg" type="text" inputmode="decimal" value="1" autocomplete="off"><span class="unit">kg</span></div>
+      </div>
+      <button class="swap" id="swap" aria-label="Swap units" title="Swap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 4 4 7l3 3M4 7h13M17 20l3-3-3-3m3 3H7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="field">
+        <label for="oz">Ounces</label>
+        <div class="inp"><input id="oz" type="text" inputmode="decimal" autocomplete="off"><span class="unit" id="ozUnit">oz</span></div>
+      </div>
+    </div>
+    <div class="seg-wrap"><div class="seg" id="ozType"><button class="on" data-f="0.028349523125" data-lab="oz">Ounce (oz)</button><button data-f="0.0311034768" data-lab="oz t">Troy ounce (oz t)</button></div></div>
+    <div class="scalebox">
+      <svg class="scale" viewBox="0 0 440 172" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0F766E"/><stop offset=".55" stop-color="#1D4ED8"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs>
+        <rect x="178" y="142" width="84" height="12" rx="6" fill="#28304D"/>
+        <rect x="214" y="54" width="12" height="90" rx="6" fill="#28304D"/>
+        <g class="beam-wrap">
+          <rect x="70" y="45" width="300" height="10" rx="5" fill="url(#beam)"/>
+          <circle cx="220" cy="50" r="11" fill="#1D4ED8" stroke="#fff" stroke-width="3"/>
+          <path d="M95 53 L66 100 M95 53 L124 100" stroke="#9AA6BF" stroke-width="2"/>
+          <path d="M58 100 Q95 130 132 100" stroke="#0F766E" stroke-width="3.5" stroke-linecap="round" fill="#E7F3F1"/>
+          <path d="M345 53 L316 100 M345 53 L374 100" stroke="#9AA6BF" stroke-width="2"/>
+          <path d="M308 100 Q345 130 382 100" stroke="#7C3AED" stroke-width="3.5" stroke-linecap="round" fill="#F2ECFF"/>
+          <text id="panL" x="95" y="88" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="18" fill="#131A2B">1 kg</text>
+          <text id="panR" x="345" y="88" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="18" fill="#131A2B">35.274 oz</text>
+        </g>
+      </svg>
+      <div class="scap"><div class="eqrow"><span id="eqline">1 kg = 35.274 oz</span><button class="copybtn" id="copy" type="button">⧉ Copy</button></div><small>The same weight, shown in two units</small></div>
+    </div>
+    <div class="also"><span>In grams<b id="u-g">1000 g</b></span><span>In pounds<b id="u-lb">2.2046 lb</b></span><span>In stones<b id="u-st">0.1575 st</b></span></div>
+    <div class="chips" id="chips">
+      <button data-kg="0.5">0.5 kg</button>
+      <button data-kg="1">1 kg</button>
+      <button data-kg="2">2 kg</button>
+      <button data-kg="5">5 kg</button>
+      <button data-kg="10">10 kg</button>
+      <button data-kg="20">20 kg</button>
+      <button data-kg="50">50 kg</button>
+      <button data-kg="100">100 kg</button>
+    </div>
+    <div class="prec">
+      <label for="dec">Decimal places</label>
+      <select id="dec"><option>2</option><option selected>4</option><option>6</option></select>
+    </div>
+  </div>
+</div></section>
+
+<!-- intro -->
+<section class="sec article"><div class="w">
+  <h2>Kilograms to Ounces Converter for Standard and Troy Ounces</h2>
+  <div class="byline">
+    <img src="gary-bennett.webp" alt="Gary Bennett, writer and metrologist" width="50" height="50" loading="lazy">
+    <div class="bl-name">Written by <a href="gary-bennett.html">Gary Bennett</a>, Writer &amp; Metrologist<span class="bl-meta">Updated November 2026 · Verified against exact NIST factors</span></div>
+  </div>
+  <p>This free tool converts kilograms to ounces the moment you type a number. One kilogram equals about <strong>35.27396195 ounces</strong>, so the converter multiplies your kilograms by that fixed figure. People reach for it to read a metric scale in US ounces, follow a European recipe, or check a shipping weight in customary units.</p>
+  <p>For gold, silver, and other precious metals, switch the toggle to <strong>Troy</strong>. In troy ounces, one kilogram equals 32.1507 oz t. You can also type a value in the Ounces box to go the other way, from ounces back to kilograms, or use our <a href="index.html">Ounces to Kilograms converter</a> for that direction.</p>
+  <div class="callout"><b>Quick fact.</b> One kilogram is 35.274 ounces, which is a little over two pounds (2.2046 lb). So a 1 kg bag of flour weighs about 35 ounces, and a 5 kg dumbbell is roughly 176 ounces.</div>
+</div></section>
+
+<!-- how it works -->
+<section class="sec article" id="how"><div class="w">
+  <h2>How this tool works</h2>
+  <p>The converter does the math for you in real time and is built to be both exact and easy to picture. Here is what every part does:</p>
+  <ul class="feat">
+    <li><b>Instant two-way conversion</b>Type kilograms to get ounces, or type ounces to get kilograms. No button to press.</li>
+    <li><b>Swap button</b>The circular arrow flips the two units, so you can reverse the conversion in one tap.</li>
+    <li><b>Standard &amp; troy ounces</b>Toggle between the everyday avoirdupois ounce and the troy ounce used for bullion. The factor and the unit label change with it.</li>
+    <li><b>Exact NIST factor</b>It uses 1 oz = 0.028349523125 kg, so 1 kg = 35.27396195 oz, never a rounded shortcut.</li>
+    <li><b>Adjustable precision</b>Choose 2, 4, or 6 decimal places to match your task, from cooking to lab work.</li>
+    <li><b>Fraction input</b>You can type values like <strong>1/2</strong> or <strong>3 1/2</strong>, not just decimals.</li>
+    <li><b>Multi-unit output</b>Below the result, the same weight is shown in grams, pounds, and stones at the same time.</li>
+    <li><b>Copy result</b>The Copy button puts the full equation on your clipboard with one click.</li>
+    <li><b>Quick values</b>Tap a common kilogram amount, such as 1, 5, or 10 kg, to convert it instantly.</li>
+    <li><b>Visual balance scale</b>The scale shows the two weights as equal, so the conversion is easy to trust at a glance.</li>
+  </ul>
+</div></section>
+
+<!-- formula -->
+<section class="sec article" id="formula"><div class="w">
+  <h2>How Do You Convert Kilograms to Ounces?</h2>
+  <p>Multiply the number of kilograms by 35.27396195 to get ounces. Dividing the kilograms by 0.028349523125 gives the same result.</p>
+  <div class="formula">
+    <div class="fcard">
+      <div class="fhd"><span class="fico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 20c3 0 3-15 6-15M3 9h8" stroke="#4338CA" stroke-width="2" stroke-linecap="round"/></svg></span><h3>Formula</h3></div>
+      <div class="eq">oz = kg × 35.27396195<small>1 kilogram = 35.27396195 ounces (exact)</small></div>
+    </div>
+    <div class="fcard">
+      <div class="fhd"><span class="fico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#7C3AED" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Example</h3></div>
+      <div class="eq">2 kg × 35.27396195 = 70.548 oz<small>So 2 kilograms equals about 70.55 ounces.</small></div>
+    </div>
+  </div>
+  <p style="margin-top:16px">For precious metals, multiply kilograms by 32.1507 instead to get troy ounces. A 1 kg gold bar is 32.1507 oz t, which is why bullion is often sold as a "kilobar."</p>
+</div></section>
+
+<!-- chart -->
+<section class="sec article" id="chart"><div class="w">
+  <h2>Kilograms to Ounces Chart</h2>
+  <p>Common kilogram values converted to ounces and pounds. Ounces are rounded to 2 decimal places.</p>
+  <div class="tbl">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Kilograms (kg)</th><th>Ounces (oz)</th><th>Pounds (lb)</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div></section>
+
+<!-- faq -->
+<section class="sec article" id="faq"><div class="w">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
+    <details open><summary>How many ounces are in a kilogram?</summary><div class="ans">One kilogram equals about 35.274 ounces. The exact value is 35.27396195 oz.</div></details>
+    <details><summary>How do I convert kilograms to ounces?</summary><div class="ans">Multiply the number of kilograms by 35.27396195. For example, 3 kg × 35.27396195 = 105.82 oz.</div></details>
+    <details><summary>How many kilograms is 1 ounce?</summary><div class="ans">One ounce equals 0.0283 kg, or exactly 0.028349523125 kg. To go from ounces back to kilograms, multiply by that number.</div></details>
+    <details><summary>How many troy ounces are in a kilogram?</summary><div class="ans">One kilogram equals 32.1507 troy ounces. Use the Troy setting for gold, silver, platinum, and palladium.</div></details>
+    <details><summary>Is this ounces by weight or fluid ounces?</summary><div class="ans">This converter uses ounces by weight, known as avoirdupois ounces. Fluid ounces measure volume, not weight.</div></details>
+    <details><summary>How many ounces is 2 kg?</summary><div class="ans">Two kilograms equal 70.55 ounces (70.54792 oz), which is about 4.41 pounds.</div></details>
+  </div>
+</div></section>
+
+<!-- about writer -->
+<section class="sec article" id="author"><div class="w">
+  <h2>About the Writer</h2>
+  <div class="authorcard">
+    <img src="gary-bennett.webp" alt="Gary Bennett, writer and metrologist" width="96" height="96" loading="lazy">
+    <div>
+      <p class="an-name">Gary Bennett</p>
+      <div class="an-role">Writer &amp; Metrologist · Measurement specialist</div>
+      <p>Gary Bennett is a writer and metrologist who produces and reviews measurement guides for accuracy. He checked every factor and value on this page against the exact NIST figures, including the avoirdupois ounce (0.028349523125 kg) and the troy ounce (0.0311034768 kg).</p>
+      <a class="an-link" href="gary-bennett.html">Read Gary's full profile →</a>
+    </div>
+  </div>
+</div></section>
+
+</main>
+
+<footer>
+  <div class="fw">
+    <div class="fcol brandcol">
+      <div class="fbrand"><span class="mk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>Ounces to Kilograms</b></div>
+      <p>Free, exact weight conversions for standard and troy ounces, built on official NIST factors.</p>
+    </div>
+    <div class="fcol"><h4>Pages</h4>
+      <a href="index.html">Ounces to Kilograms</a><a href="kg-to-oz.html">Kilograms to Ounces</a><a href="about.html">About</a><a href="gary-bennett.html">Writer</a><a href="sitemap.html">Sitemap</a><a href="contact.html">Contact</a>
+    </div>
+    <div class="fcol"><h4>Policies</h4>
+      <a href="editorial-policy.html">Editorial Policy</a><a href="disclaimer.html">Disclaimer</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a>
+    </div>
+    <div class="fcol"><h4>Contact</h4>
+      <a href="mailto:info@ouncestokilograms.com">info@ouncestokilograms.com</a>
+    </div>
+  </div>
+  <div class="fbar">© 2026 Ounces to Kilograms Converter. All rights reserved.</div>
+</footer>
+
+<script>
+const AVO = 0.028349523125;            // kg per avoirdupois ounce (NIST)
+const LB = 0.45359237, ST = 6.35029318; // kg per pound / stone
+let F = AVO, ozLab = 'oz', dp = 4, tipT;
+
+const kgEl=document.getElementById('kg'), ozEl=document.getElementById('oz'),
+      eq=document.getElementById('eqline'), panL=document.getElementById('panL'),
+      panR=document.getElementById('panR'), beam=document.querySelector('.beam-wrap'),
+      ozUnit=document.getElementById('ozUnit'), decSel=document.getElementById('dec'),
+      uG=document.getElementById('u-g'), uLB=document.getElementById('u-lb'), uST=document.getElementById('u-st');
+const rm = matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+function parseVal(s){ s=(s||'').trim(); if(s==='') return NaN;
+  let m=s.match(/^(-?\d*\.?\d+)\s+(\d+)\/(\d+)$/); if(m) return (+m[1])+(+m[2])/(+m[3]);
+  m=s.match(/^(-?\d+)\/(\d+)$/); if(m) return (+m[1])/(+m[2]);
+  const n=parseFloat(s.replace(/,/g,'')); return isFinite(n)?n:NaN;
+}
+function fmt(n){ if(!isFinite(n)) return '0'; return n.toFixed(dp).replace(/\.?0+$/,'') || '0'; }
+function tip(dir){ if(rm||!beam) return; beam.style.transform='rotate('+dir+'deg)'; clearTimeout(tipT); tipT=setTimeout(()=>{ beam.style.transform='rotate(0deg)'; },280); }
+function multi(k){ uG.textContent=(k*1000).toFixed(2).replace(/\.?0+$/,'')+' g'; uLB.textContent=fmt(k/LB)+' lb'; uST.textContent=fmt(k/ST)+' st'; }
+function paintEmpty(){ panL.textContent='- kg'; panR.textContent='- '+ozLab; eq.textContent='Enter a value'; uG.textContent='-'; uLB.textContent='-'; uST.textContent='-'; }
+function paint(k,o,dir){ panL.textContent=fmt(k)+' kg'; panR.textContent=fmt(o)+' '+ozLab; multi(k); tip(dir); }
+function fromKg(){ const k=parseVal(kgEl.value); if(isNaN(k)){ ozEl.value=''; paintEmpty(); return; } const o=k/F; ozEl.value=fmt(o); eq.textContent=fmt(k)+' kg = '+fmt(o)+' '+ozLab; paint(k,o,-1.6); }
+function fromOz(){ const o=parseVal(ozEl.value); if(isNaN(o)){ kgEl.value=''; paintEmpty(); return; } const k=o*F; kgEl.value=fmt(k); eq.textContent=fmt(o)+' '+ozLab+' = '+fmt(k)+' kg'; paint(k,o,1.6); }
+function recalc(){ if(kgEl.value.trim()!=='') fromKg(); else if(ozEl.value.trim()!=='') fromOz(); else paintEmpty(); }
+
+kgEl.addEventListener('input', fromKg);
+ozEl.addEventListener('input', fromOz);
+decSel.addEventListener('change', ()=>{ dp=parseInt(decSel.value,10); recalc(); });
+
+document.getElementById('chips').addEventListener('click', e=>{ const b=e.target.closest('button'); if(!b) return; kgEl.value=b.dataset.kg; fromKg(); });
+
+document.getElementById('swap').addEventListener('click', ()=>{
+  const sw=document.getElementById('swap'); sw.classList.toggle('spin');
+  const k=kgEl.value, o=ozEl.value; kgEl.value=o; ozEl.value=k; recalc();
+});
+
+document.getElementById('ozType').addEventListener('click', e=>{
+  const b=e.target.closest('button'); if(!b) return;
+  [...e.currentTarget.children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+  F=parseFloat(b.dataset.f); ozLab=b.dataset.lab; ozUnit.textContent=ozLab; recalc();
+});
+
+document.getElementById('copy').addEventListener('click', async ()=>{
+  const btn=document.getElementById('copy');
+  try{ await navigator.clipboard.writeText(eq.textContent); btn.textContent='✓ Copied'; btn.classList.add('done'); setTimeout(()=>{ btn.textContent='⧉ Copy'; btn.classList.remove('done'); },1400); }
+  catch(err){ /* clipboard blocked */ }
+});
+
+// kg -> oz chart
+const rows=[0.1,0.25,0.5,1,1.5,2,2.5,3,4,5,6,7,8,9,10,15,20,25,30,40,50,75,100];
+document.getElementById('tbody').innerHTML = rows.map(k=>{
+  const oz=k/AVO, lb=k/LB;
+  const kgL=k.toLocaleString('en-US');
+  const ozL=oz.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+  const lbL=lb.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+  return `<tr><td>${kgL} kg</td><td>${ozL} oz</td><td>${lbL} lb</td></tr>`;
+}).join('');
+
+fromKg();
+</script>
+</body>
+</html>
