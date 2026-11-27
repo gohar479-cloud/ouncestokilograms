@@ -110,6 +110,8 @@ nav a:hover{color:var(--teal-ink)}
 .article strong{color:var(--ink);font-weight:600}
 .article ol,.article ul{margin:0 0 18px;padding-left:22px;color:#2A3346}
 .article li{margin-bottom:9px}
+.article p a[href^="http"]{color:var(--indigo);font-weight:600;text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+.article p a[href^="http"]:hover{color:var(--violet)}
 
 /* author byline */
 .byline{display:flex;align-items:center;gap:13px;margin:0 0 22px;padding:12px 15px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh)}
@@ -206,10 +208,13 @@ footer .fnav{display:flex;gap:18px;font-size:14px;flex-wrap:wrap}
 <body>
 
 <header><div class="w">
-  <a class="brand" href="#top">
+  <a class="brand" href="index.html">
     <span class="mk"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
     <span><b>Ounces&nbsp;to&nbsp;Kilograms</b><span>oz → kg converter</span></span>
   </a>
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
 </div></header>
 
 <main id="top">
@@ -341,7 +346,7 @@ footer .fnav{display:flex;gap:18px;font-size:14px;flex-wrap:wrap}
   <h3>Why Is the Factor 0.028349523125?</h3>
   <p>The factor comes from splitting one pound into 16 equal parts. The 1959 agreement fixed the pound at 0.45359237 kg, so one ounce is that value divided by 16.</p>
   <div class="fml">0.45359237 ÷ 16 = 0.028349523125</div>
-  <p>NIST confirms the same figure. Its Handbook 44, Appendix C, lists one avoirdupois ounce as exactly 28.349523125 grams. Because both numbers are exact by law, the factor never changes from year to year.</p>
+  <p>NIST confirms the same figure. Its <a href="https://www.nist.gov/document/2026-nist-handbook-44-appendix-c" target="_blank" rel="noopener">Handbook 44, Appendix C</a> lists one avoirdupois ounce as exactly 28.349523125 grams. Because both numbers are exact by law, the factor never changes from year to year.</p>
 
   <h3>Two Worked Examples</h3>
   <p>Picture a home cook with a US brownie recipe that calls for 10 ounces of chocolate. Ten ounces times 0.0283495 equals 0.2835 kg, or about 283 grams on a kitchen scale. An online seller shipping a candle that weighs 28 ounces gets 0.7938 kg for the customs form.</p>
