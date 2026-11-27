@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>เครื่องแปลงออนซ์เป็นกิโลกรัม (oz เป็น kg) | มาตรฐานและทรอย</title>
+<meta name="description" content="แปลงออนซ์เป็นกิโลกรัมทันทีสำหรับออนซ์มาตรฐานและทรอยออนซ์ ค่าตัวประกอบ NIST ที่แม่นยำ ตารางครบถ้วน ตัวอย่างที่คำนวณแล้ว และเคล็ดลับการปัดเศษ">
+<link rel="alternate" hreflang="en" href="https://ouncestokilograms.com/">
+<link rel="alternate" hreflang="de" href="https://ouncestokilograms.com/de/">
+<link rel="alternate" hreflang="es" href="https://ouncestokilograms.com/es/">
+<link rel="alternate" hreflang="fr" href="https://ouncestokilograms.com/fr/">
+<link rel="alternate" hreflang="hi" href="https://ouncestokilograms.com/hi/">
+<link rel="alternate" hreflang="id" href="https://ouncestokilograms.com/id/">
+<link rel="alternate" hreflang="it" href="https://ouncestokilograms.com/it/">
+<link rel="alternate" hreflang="ms" href="https://ouncestokilograms.com/ms/">
+<link rel="alternate" hreflang="pl" href="https://ouncestokilograms.com/pl/">
+<link rel="alternate" hreflang="pt" href="https://ouncestokilograms.com/pt/">
+<link rel="alternate" hreflang="th" href="https://ouncestokilograms.com/th/">
+<link rel="alternate" hreflang="tl" href="https://ouncestokilograms.com/tl/">
+<link rel="alternate" hreflang="vi" href="https://ouncestokilograms.com/vi/">
+<link rel="alternate" hreflang="x-default" href="https://ouncestokilograms.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F5FB; --ink:#131A2B; --muted:#4B5768; --card:#FFFFFF; --line:#E4E8F2;
+  --teal:#0F766E; --teal-ink:#0B5C56; --indigo:#4338CA; --indigo-2:#1D4ED8; --violet:#7C3AED; --sky:#1D4ED8; --soft:#EDF1FF;
+  --grad:linear-gradient(118deg,#0F766E 0%,#1D4ED8 54%,#7C3AED 100%);
+  --grad-2:linear-gradient(118deg,#1D4ED8,#7C3AED);
+  --grad-soft:linear-gradient(118deg,#E8F4F2,#EDF0FF);
+  --sh:0 1px 2px rgba(20,26,46,.05),0 16px 44px rgba(28,34,80,.12);
+  --sh-c:0 10px 30px rgba(40,50,120,.15);
+  --maxw:1060px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.dsp{font-family:'Space Grotesk',Inter,sans-serif;letter-spacing:-.015em;line-height:1.08;margin:0}
+a{color:inherit;text-decoration:none}
+.w{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.num{font-variant-numeric:tabular-nums}
+
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(245,247,248,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .mk{width:38px;height:38px;border-radius:10px;background:var(--grad);display:grid;place-items:center;flex:0 0 auto}
+.brand b{font-family:'Space Grotesk';font-weight:700;font-size:18px;line-height:1}
+.brand span{display:block;font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+nav{display:flex;gap:22px}
+nav a{color:var(--muted);font-weight:500;font-size:15px}
+nav a:hover{color:var(--teal-ink)}
+@media(max-width:640px){nav{display:none}}
+.crumbs{background:#fff;border-bottom:1px solid var(--line)}
+.crumbs > div{max-width:1060px;margin:0 auto;padding:10px 20px;font-size:13.5px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--indigo);font-weight:500}
+.crumbs a:hover{text-decoration:underline}
+.crumbs .sep{color:#B6C0CF}
+.crumbs .cur{color:var(--ink);font-weight:500}
+
+/* hero + converter */
+.hero{position:relative;padding:54px 0 96px;text-align:center;background:var(--grad);color:#fff;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:42px 42px;mask:radial-gradient(700px 320px at 50% 0,#000,transparent 75%);pointer-events:none}
+.aurora{position:absolute;border-radius:50%;filter:blur(64px);opacity:.45;pointer-events:none}
+.aurora.a1{width:340px;height:340px;background:#8BF0E4;top:-120px;left:-60px}
+.aurora.a2{width:320px;height:320px;background:#B9A6FF;top:-80px;right:-50px;opacity:.5}
+.hero .w{position:relative;z-index:2}
+.eyebrow{display:inline-block;font-family:'Space Grotesk';font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.28);padding:5px 13px;border-radius:999px;backdrop-filter:blur(4px)}
+.hero h1{font-size:clamp(30px,5vw,48px);font-weight:700;margin:16px 0 0;color:#fff}
+.hero p.sub{color:rgba(255,255,255,.92);font-size:18px;max-width:580px;margin:12px auto 0}
+.hero p.sub strong{color:#fff}
+
+.conv{position:relative;background:var(--card);border:1px solid rgba(255,255,255,.6);border-radius:22px;box-shadow:0 30px 70px rgba(20,26,70,.33);max-width:720px;margin:30px auto 0;padding:28px 26px 26px;overflow:hidden}
+.conv::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--grad)}
+.conv-row{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:end}
+.field label{display:block;font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;text-align:left}
+.field .inp{position:relative}
+.field input{width:100%;font-family:'Space Grotesk';font-weight:600;font-size:30px;padding:16px 68px 16px 16px;border:1.5px solid var(--line);border-radius:14px;background:#FBFCFD;color:var(--ink);font-variant-numeric:tabular-nums}
+.field input:focus{outline:none;border-color:var(--indigo);box-shadow:0 0 0 4px rgba(91,91,240,.15);background:#fff}
+.field .unit{position:absolute;right:16px;top:50%;transform:translateY(-50%);font-family:'Space Grotesk';font-weight:700;color:var(--indigo);font-size:16px;pointer-events:none}
+.swap{width:50px;height:50px;border-radius:50%;border:0;background:var(--grad);display:grid;place-items:center;cursor:pointer;transition:transform .3s,box-shadow .2s;margin-bottom:4px;box-shadow:0 8px 20px rgba(40,60,180,.3)}
+.swap:hover{box-shadow:0 10px 26px rgba(40,60,180,.42)}
+.swap.spin{transform:rotate(180deg)}
+.scalebox{margin-top:18px;text-align:center}
+.scale{width:100%;max-width:430px;height:auto;margin:0 auto;display:block}
+.scale .beam-wrap{transform-box:view-box;transform-origin:220px 50px;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.scap{margin-top:4px;font-family:'Space Grotesk';font-weight:700;font-size:21px;color:var(--ink);font-variant-numeric:tabular-nums}
+.scap #eqline{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.scap small{display:block;font-family:Inter;font-weight:500;font-size:13px;color:var(--muted);margin-top:3px;letter-spacing:.01em}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
+.chips button{font-family:Inter;font-weight:500;font-size:14px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--muted);cursor:pointer;transition:.15s}
+.chips button:hover{border-color:transparent;color:#fff;background:var(--grad-2);box-shadow:0 6px 14px rgba(60,80,200,.25)}
+.prec{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:16px;font-size:14px;color:var(--muted)}
+.prec select{font:inherit;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink)}
+@media(max-width:560px){.conv-row{grid-template-columns:1fr;gap:10px}.swap{margin:0 auto;transform:rotate(90deg)}.swap.spin{transform:rotate(270deg)}}
+
+/* trust line */
+.trust{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:16px auto 0}
+.trust span{font-size:13px;color:#fff;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:5px 12px;backdrop-filter:blur(4px)}
+.trust b{font-weight:600}
+/* ounce-type toggle */
+.seg-wrap{text-align:center}
+.seg{display:inline-flex;margin:16px auto 0;background:#EDF0F7;border:1px solid var(--line);border-radius:12px;padding:4px;gap:4px}
+.seg button{font-family:'Space Grotesk';font-weight:600;font-size:14px;padding:8px 16px;border:0;border-radius:9px;background:transparent;color:var(--muted);cursor:pointer;transition:.15s}
+.seg button.on{background:#fff;color:var(--indigo);box-shadow:0 1px 3px rgba(20,26,70,.14)}
+/* equation + copy */
+.eqrow{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.copybtn{font-family:'Space Grotesk';font-weight:600;font-size:13px;color:var(--indigo);background:var(--soft);border:1px solid #D6DEF6;border-radius:9px;padding:6px 12px;cursor:pointer;transition:.15s}
+.copybtn:hover{background:#fff;border-color:var(--indigo)}
+.copybtn.done{color:#fff;background:var(--grad-2);border-color:transparent}
+/* multi-unit output */
+.also{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.also span{display:block;background:var(--grad-soft);border:1px solid #E1E7F5;border-radius:12px;padding:11px 10px;text-align:center;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.also b{display:block;font-family:'Space Grotesk';font-weight:700;font-size:18px;color:var(--ink);margin-top:3px;font-variant-numeric:tabular-nums;text-transform:none;letter-spacing:0}
+@media(max-width:480px){.also{grid-template-columns:1fr 1fr}}
+
+/* sections + article */
+.sec{padding:34px 0}
+.sec h2{font-size:clamp(24px,3.4vw,32px);font-weight:700;margin-bottom:6px}
+.sec .lead{color:var(--muted);margin:0 0 22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh)}
+.article{max-width:760px;margin:0 auto}
+.article h2{font-size:clamp(23px,3.2vw,30px);font-weight:700;margin:0 0 14px;scroll-margin-top:84px;position:relative;padding-left:16px}
+.article h2::before{content:"";position:absolute;left:0;top:5px;bottom:5px;width:5px;border-radius:3px;background:var(--grad)}
+.article h3{font-family:'Space Grotesk';font-weight:600;font-size:19px;color:var(--indigo);margin:26px 0 8px}
+.article p{margin:0 0 16px;color:#2A3346}
+.article strong{color:var(--ink);font-weight:600}
+.article ol,.article ul{margin:0 0 18px;padding-left:22px;color:#2A3346}
+.article li{margin-bottom:9px}
+.article p a[href^="http"]{color:var(--indigo);font-weight:600;text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+.article p a[href^="http"]:hover{color:var(--violet)}
+
+/* author byline */
+.byline{display:flex;align-items:center;gap:13px;margin:0 0 22px;padding:12px 15px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh)}
+.byline img{width:50px;height:50px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:2px solid #fff;box-shadow:0 2px 6px rgba(20,26,70,.22)}
+.byline .bl-name{font-size:15px;color:var(--ink);font-weight:500}
+.byline .bl-name a{color:var(--indigo);font-weight:600}
+.byline .bl-meta{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+
+/* author card (writer section) */
+.authorcard{display:flex;gap:22px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh);padding:26px;position:relative;overflow:hidden}
+.authorcard::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad)}
+.authorcard img{width:96px;height:96px;border-radius:16px;object-fit:cover;flex:0 0 auto;border:2px solid #fff;box-shadow:0 3px 10px rgba(20,26,70,.2)}
+.authorcard .an-name{font-family:'Space Grotesk';font-weight:700;font-size:22px;color:var(--ink);margin:0}
+.authorcard .an-role{font-size:14px;color:var(--indigo);font-weight:600;margin:3px 0 12px}
+.authorcard p{margin:0 0 12px;color:#2A3346}
+.authorcard .an-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-weight:600;font-size:14px;color:#fff;background:var(--grad-2);padding:9px 16px;border-radius:10px;transition:.15s}
+.authorcard .an-link:hover{box-shadow:0 8px 18px rgba(60,80,200,.3)}
+@media(max-width:560px){.authorcard{flex-direction:column;gap:16px;padding:22px}}
+
+/* callout */
+.callout{background:var(--grad-soft);border:1px solid #DCE6F3;border-left:4px solid var(--indigo);border-radius:12px;padding:16px 18px;margin:0 0 18px;color:#2A3346;font-size:16px}
+.callout.teal{border-left-color:var(--teal)}
+.callout b,.callout strong{color:var(--ink)}
+
+/* inline formula */
+.fml{font-family:'Space Grotesk';font-weight:600;font-size:18px;background:var(--grad-soft);color:var(--indigo);padding:13px 16px;border-radius:10px;border:1px solid #E3E7F6;margin:0 0 18px;text-align:center;font-variant-numeric:tabular-nums;overflow-x:auto}
+
+/* TOC */
+.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--sh);padding:22px 24px;max-width:760px;margin:0 auto}
+.toc .toch{font-family:'Space Grotesk';font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 14px}
+.toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.toc li{counter-increment:toc;margin:0 0 10px;break-inside:avoid}
+.toc a{display:flex;gap:10px;align-items:baseline;color:#2A3346;font-size:15px;transition:.15s}
+.toc a::before{content:counter(toc,decimal-leading-zero);font-family:'Space Grotesk';font-weight:600;font-size:12px;color:var(--indigo);flex:0 0 auto}
+.toc a:hover{color:var(--indigo)}
+@media(max-width:560px){.toc ol{columns:1}}
+
+/* value grid */
+.valgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:4px 0 20px}
+.valcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--sh);position:relative;overflow:hidden}
+.valcard::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
+.valcard h3{margin:0 0 6px;font-size:15px;color:var(--muted);text-transform:none;font-family:'Space Grotesk'}
+.valcard .big{font-family:'Space Grotesk';font-weight:700;font-size:23px;color:var(--indigo-2);font-variant-numeric:tabular-nums}
+.valcard p{font-size:13.5px;color:var(--muted);margin:6px 0 0}
+@media(max-width:620px){.valgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){.valgrid{grid-template-columns:1fr}}
+
+/* table */
+.tbl{border-radius:16px;overflow:hidden;margin:0 0 20px}
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;min-width:300px}
+th,td{padding:14px 18px;text-align:left;font-size:15.5px;vertical-align:top}
+.tbl.nowrap th,.tbl.nowrap td{white-space:nowrap}
+@media(max-width:420px){th,td{padding:12px 12px;font-size:14px}}
+thead th{font-family:'Space Grotesk';font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--grad)}
+tbody td{border-bottom:1px solid var(--line)}
+tbody tr:nth-child(even){background:#F5F7FE}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:var(--soft)}
+td:first-child{font-weight:700;color:var(--ink)}
+td:nth-child(2){font-weight:700;color:var(--indigo-2)}
+td:nth-child(3){color:var(--muted)}
+.tbl.plain td:nth-child(2){font-weight:400;color:#2A3346}
+.tbl.plain td:nth-child(3){color:#2A3346}
+
+/* formula cards */
+.formula{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 20px}
+.fcard{padding:24px;position:relative;overflow:hidden}
+.fcard::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad)}
+.fhd{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.fico{width:42px;height:42px;border-radius:12px;background:var(--grad-soft);border:1px solid #DCE3F5;display:grid;place-items:center;flex:0 0 auto}
+.fcard h3{font-size:18px;margin:0;color:var(--ink)}
+.eq{font-family:'Space Grotesk';font-weight:600;font-size:19px;background:var(--grad-soft);color:var(--indigo);padding:14px 16px;border-radius:12px;font-variant-numeric:tabular-nums;border:1px solid #E3E7F6}
+.eq small{display:block;color:var(--muted);font-weight:500;font-size:13px;margin-top:6px}
+@media(max-width:640px){.formula{grid-template-columns:1fr}}
+
+/* faq */
+.faq details{border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:10px;overflow:hidden}
+.faq details[open]{box-shadow:var(--sh-c);border-color:#CBD2F2}
+.faq summary{list-style:none;cursor:pointer;padding:16px 18px;font-family:'Space Grotesk';font-weight:600;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:#fff;background:var(--grad-2);width:26px;height:26px;min-width:26px;border-radius:50%;display:grid;place-items:center;font-size:18px;line-height:1;font-weight:500}
+.faq details[open] summary{color:var(--indigo)}
+.faq details[open] summary::after{content:"\2013"}
+.faq .ans{padding:2px 18px 16px;color:var(--muted)}
+
+footer{background:#0F1B2D;color:#AEBAC6;padding:44px 0 24px;margin-top:26px;font-size:14px}
+.fw{max-width:1060px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:28px}
+.fcol h4{font-family:'Space Grotesk';font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#fff;margin:0 0 12px}
+.fcol a{display:block;color:#AEBAC6;margin-bottom:9px}.fcol a:hover{color:#fff}
+.fbrand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.fbrand .mk{width:34px;height:34px;border-radius:9px;background:var(--grad);display:grid;place-items:center}
+.fbrand b{color:#fff;font-family:'Space Grotesk';font-weight:700;font-size:16px}
+.brandcol p{color:#8A97A6;margin:0;max-width:260px;line-height:1.5;font-size:13.5px}
+.fbar{max-width:1060px;margin:26px auto 0;padding:18px 20px 0;border-top:1px solid rgba(255,255,255,.1);color:#7D8B99;font-size:13px}
+@media(max-width:720px){.fw{grid-template-columns:1fr 1fr}.brandcol{grid-column:1/-1}}
+@media(max-width:440px){.fw{grid-template-columns:1fr}}
+
+.hright{display:flex;align-items:center;gap:16px;margin-left:auto}
+.langsel{position:relative}
+.langsel .lbtn{display:flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-weight:600;font-size:14px;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:9px;padding:7px 11px;cursor:pointer}
+.langsel .lbtn:hover{border-color:var(--indigo);color:var(--indigo)}
+.langsel .lmenu{position:absolute;right:0;top:calc(100% + 8px);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--sh);padding:6px;display:none;grid-template-columns:1fr 1fr;gap:2px;min-width:260px;z-index:40}
+.langsel.open .lmenu{display:grid}
+.langsel .lmenu a{display:block;padding:8px 11px;border-radius:8px;font-size:14px;color:#2A3346;white-space:nowrap}
+.langsel .lmenu a:hover{background:var(--soft);color:var(--indigo)}
+.langsel .lmenu a.cur{color:var(--indigo);font-weight:600;background:var(--grad-soft)}
+@media(max-width:480px){.langsel .lmenu{grid-template-columns:1fr;min-width:170px}}
+</style>
+</head>
+<body>
+
+<header><div class="w">
+  <a class="brand" href="index.html">
+    <span class="mk"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span><b>Ounces&nbsp;to&nbsp;Kilograms</b><span>เครื่องแปลง oz → kg</span></span>
+  </a>
+  <div class="hright">
+  <nav>
+    <a href="index.html">Oz → kg</a>
+    <a href="kg-to-oz.html">Kg → oz</a>
+  </nav>
+  <div class="langsel" id="langsel"><button class="lbtn" id="lbtn" aria-haspopup="true" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15.5 0 18M12 3c-2.5 2.5-2.5 15.5 0 18" stroke="currentColor" stroke-width="1.7"/></svg><span>TH</span></button><div class="lmenu"><a href="../index.html" lang="en">English</a><a href="../de/index.html" lang="de">Deutsch</a><a href="../es/index.html" lang="es">Español</a><a href="../fr/index.html" lang="fr">Français</a><a href="../hi/index.html" lang="hi">हिन्दी</a><a href="../id/index.html" lang="id">Bahasa Indonesia</a><a href="../it/index.html" lang="it">Italiano</a><a href="../ms/index.html" lang="ms">Bahasa Melayu</a><a href="../pl/index.html" lang="pl">Polski</a><a href="../pt/index.html" lang="pt">Português</a><a class="cur" href="index.html" lang="th">ไทย</a><a href="../tl/index.html" lang="tl">Tagalog</a><a href="../vi/index.html" lang="vi">Tiếng Việt</a></div></div>
+  </div>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="aurora a1"></div><div class="aurora a2"></div><div class="w">
+  <span class="eyebrow">เครื่องแปลงน้ำหนัก</span>
+  <h1>เครื่องแปลงออนซ์เป็นกิโลกรัม</h1>
+  <p class="sub">แปลง <strong>ออนซ์ (oz)</strong> เป็น <strong>กิโลกรัม (kg)</strong> ทันทีที่คุณพิมพ์ สำหรับออนซ์มาตรฐานและทรอยออนซ์ ใช้ปุ่มสลับเพื่อเปลี่ยนจาก kg เป็น oz</p>
+  <div class="trust"><span>✓ ค่าตัวประกอบ NIST ที่แม่นยำ</span><span>ตรวจทานโดย <b>Gary Bennett</b></span><span>อัปเดต <b>พ.ย. 2026</b></span></div>
+
+  <div class="conv">
+    <div class="conv-row">
+      <div class="field">
+        <label for="oz">ออนซ์</label>
+        <div class="inp"><input id="oz" type="text" inputmode="decimal" value="16" autocomplete="off"><span class="unit" id="ozUnit">oz</span></div>
+      </div>
+      <button class="swap" id="swap" aria-label="Reverse: go to kilograms to ounces converter" title="Reverse → kg to oz">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 4 4 7l3 3M4 7h13M17 20l3-3-3-3m3 3H7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="field">
+        <label for="kg">กิโลกรัม</label>
+        <div class="inp"><input id="kg" type="text" inputmode="decimal" autocomplete="off"><span class="unit">kg</span></div>
+      </div>
+    </div>
+    <div class="seg-wrap"><div class="seg" id="ozType"><button class="on" data-f="0.028349523125" data-lab="oz">ออนซ์ (oz)</button><button data-f="0.0311034768" data-lab="oz t">ทรอยออนซ์ (oz t)</button></div></div>
+    <div class="scalebox">
+      <svg class="scale" viewBox="0 0 440 172" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0F766E"/><stop offset=".55" stop-color="#1D4ED8"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs>
+        <rect x="178" y="142" width="84" height="12" rx="6" fill="#28304D"/>
+        <rect x="214" y="54" width="12" height="90" rx="6" fill="#28304D"/>
+        <g class="beam-wrap">
+          <rect x="70" y="45" width="300" height="10" rx="5" fill="url(#beam)"/>
+          <circle cx="220" cy="50" r="11" fill="#1D4ED8" stroke="#fff" stroke-width="3"/>
+          <path d="M95 53 L66 100 M95 53 L124 100" stroke="#9AA6BF" stroke-width="2"/>
+          <path d="M58 100 Q95 130 132 100" stroke="#0F766E" stroke-width="3.5" stroke-linecap="round" fill="#E7F3F1"/>
+          <path d="M345 53 L316 100 M345 53 L374 100" stroke="#9AA6BF" stroke-width="2"/>
+          <path d="M308 100 Q345 130 382 100" stroke="#7C3AED" stroke-width="3.5" stroke-linecap="round" fill="#F2ECFF"/>
+          <text id="panL" x="95" y="88" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="18" fill="#131A2B">16 oz</text>
+          <text id="panR" x="345" y="88" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="18" fill="#131A2B">0.4536 kg</text>
+        </g>
+      </svg>
+      <div class="scap"><div class="eqrow"><span id="eqline">16 oz = 0.4536 kg</span><button class="copybtn" id="copy" type="button">⧉ คัดลอก</button></div><small>น้ำหนักเดียวกัน แสดงในสองหน่วย</small></div>
+    </div>
+    <div class="also"><span>เป็นกรัม<b id="u-g">453.59 g</b></span><span>เป็นปอนด์<b id="u-lb">1 lb</b></span><span>เป็นสโตน<b id="u-st">0.0714 st</b></span></div>
+    <div class="chips" id="chips">
+      <button data-oz="0.5">½ oz</button>
+      <button data-oz="1">1 oz</button>
+      <button data-oz="4">4 oz</button>
+      <button data-oz="8">8 oz</button>
+      <button data-oz="16">16 oz</button>
+      <button data-oz="32">32 oz</button>
+      <button data-oz="100">100 oz</button>
+      <button data-oz="1000">1000 oz</button>
+    </div>
+    <div class="prec">
+      <label for="dec">ตำแหน่งทศนิยม</label>
+      <select id="dec"><option>2</option><option selected>4</option><option>6</option></select>
+    </div>
+  </div>
+</div></section>
+
+<!-- intro -->
+<section class="sec article"><div class="w">
+  <h2>เครื่องแปลงออนซ์เป็นกิโลกรัมสำหรับออนซ์มาตรฐานและทรอยออนซ์</h2>
+  <p>เครื่องมือฟรีนี้แปลงออนซ์เป็นกิโลกรัมทันทีที่คุณพิมพ์ตัวเลข การแปลงออนซ์เป็นกิโลกรัมเปลี่ยนน้ำหนักระบบสหรัฐฯ เป็นน้ำหนักระบบเมตริกด้วยตัวเลขคงที่หนึ่งค่า ออนซ์ปรากฏบนฉลาก พัสดุ และสูตรอาหารของสหรัฐฯ ขณะที่โลกส่วนใหญ่ใช้กิโลกรัม ตัวเลขคงที่หนึ่งค่าทำให้ทุกคำตอบแม่นยำ รวดเร็ว และน่าเชื่อถือ พิมพ์ค่าในช่องออนซ์ ใช้ปุ่มสลับสำหรับ <a href="kg-to-oz.html">กิโลกรัมเป็นออนซ์</a> และเลือกทรอยสำหรับทองหรือเงิน</p>
+  <p><strong>หนึ่งออนซ์เท่ากับ 0.028349523125 กิโลกรัมพอดี หรือราว 28.35 กรัม</strong> ในการแปลง oz เป็น kg ให้คูณออนซ์ด้วย 0.028349523125 หนึ่งกิโลกรัมมีราว 35.274 ออนซ์ ดังนั้นการหารด้วย 35.274 จึงให้คำตอบเดียวกัน สิบหกออนซ์เป็นหนึ่งปอนด์ และหนึ่งปอนด์เท่ากับ 0.45359237 กิโลกรัมพอดี แต่ละออนซ์มี 437.5 เกรน และเกรนเป็นหน่วยเล็ก ๆ ราว 64.8 มิลลิกรัม</p>
+  <p>ตัวเลขเหล่านี้มาจากกฎหมาย ไม่ใช่การเดา ในปี 1959 หกประเทศได้ลงนามในความตกลงระหว่างประเทศว่าด้วยหลาและปอนด์ สหรัฐอเมริกา สหราชอาณาจักร แคนาดา ออสเตรเลีย นิวซีแลนด์ และแอฟริกาใต้ ตกลงกันว่าหนึ่งปอนด์เท่ากับ 0.45359237 kg National Institute of Standards and Technology (NIST) ระบุค่าออนซ์ที่สอดคล้องกันไว้ในตาราง Handbook 44 ของตน Stephan Schlamminger นักฟิสิกส์ของ NIST ผู้ช่วยนิยามกิโลกรัมใหม่ เรียกจุดยึดใหม่ของมันว่า «ถักทอเข้ากับเนื้อผ้าของจักรวาล»</p>
+  <p>คู่มือนี้ครอบคลุมสูตร วิธีสี่ขั้นตอน และคำตอบสำเร็จรูปตั้งแต่ 1 ออนซ์ถึง 100 ออนซ์ แต่ละส่วนเริ่มจากงานจริง เช่น การอบขนมจากสูตรสหรัฐฯ หรือการส่งพัสดุชิ้นเล็ก พ่อแม่ที่แปลงน้ำหนักทารกแรกเกิดและนักเดินทางที่จัดกระเป๋าต่างมีส่วนสำหรับความต้องการของตน นักมวยที่ตรวจขนาดนวมและผู้ซื้อทองที่ชั่งเหรียญก็มีส่วนของตนเช่นกัน ส่วนสุดท้ายครอบคลุมทรอยออนซ์และของเหลวออนซ์</p>
+  <div class="callout teal"><strong>ข้อเท็จจริงน่าประหลาดใจเกี่ยวกับ 35 ออนซ์</strong> สามสิบห้าออนซ์หนัก 0.9922 kg ซึ่งห่างจากหนึ่งกิโลกรัมเต็มเพียง 7.8 กรัม เหรียญทอง 1 ทรอยออนซ์หนัก 31.1 กรัม เพราะโลหะมีค่าใช้ออนซ์พิเศษของตนเอง และขวดน้ำ 32 ออนซ์วัดปริมาตร ดังนั้นค่ากิโลกรัมของมันจึงขึ้นอยู่กับสิ่งที่บรรจุอยู่</div>
+</div></section>
+
+<!-- table of contents -->
+<section class="sec" style="padding-top:6px"><div class="w">
+  <nav class="toc" aria-label="Contents">
+    <div class="toch">สารบัญ</div>
+    <ol>
+      <li><a href="#basics">ออนซ์ ทรอยออนซ์ และกิโลกรัมคืออะไร</a></li>
+      <li><a href="#convert">วิธีแปลงออนซ์เป็นกิโลกรัม</a></li>
+      <li><a href="#method">วิธีทีละขั้นตอน</a></li>
+      <li><a href="#chart">ตารางแปลง oz เป็น kg</a></li>
+      <li><a href="#searched">ค่าออนซ์ที่ค้นหามากที่สุด</a></li>
+      <li><a href="#everyday">สิ่งของในชีวิตประจำวันที่ผู้คนแปลง</a></li>
+      <li><a href="#troy">ทรอยออนซ์และทองแท่ง</a></li>
+      <li><a href="#fluid">ของเหลวออนซ์กับออนซ์</a></li>
+      <li><a href="#precision">ควรแม่นยำเพียงใด</a></li>
+      <li><a href="#faq">คำถามที่พบบ่อย</a></li>
+    </ol>
+  </nav>
+</div></section>
+
+<!-- 1. basics -->
+<section class="sec article" id="basics"><div class="w">
+  <h2>ออนซ์ ทรอยออนซ์ และกิโลกรัมคืออะไร?</h2>
+  <p>ออนซ์เป็นหน่วยมวลขนาดเล็กที่มีสองรูปแบบทั่วไป ออนซ์มาตรฐานหนัก 28.35 กรัม และทรอยออนซ์สำหรับโลหะมีค่าหนัก 31.10 กรัม กิโลกรัมเป็นหน่วยฐานของมวลในระบบเมตริกเท่ากับ 1,000 กรัม</p>
+
+  <h3>ออนซ์มาตรฐาน (Avoirdupois)</h3>
+  <p>ออนซ์ avoirdupois เป็นหน่วยมวลที่เท่ากับหนึ่งในสิบหกของหนึ่งปอนด์และใช้วัดสินค้าในชีวิตประจำวัน คำว่า avoirdupois (ออกเสียง «av-er-duh-POIZ») มาจากคำภาษาฝรั่งเศสเก่าที่แปลว่า «สินค้าที่มีน้ำหนัก» ผู้ซื้อในสหรัฐอเมริกาเห็นออนซ์นี้บนบรรจุภัณฑ์อาหารเกือบทุกชิ้น หนึ่งออนซ์ avoirdupois มี 16 แดรม และแดรมเป็นหน่วยเล็ก ๆ ที่ใช้ในสูตรเก่า</p>
+  <p>สหราชอาณาจักรรับปอนด์ปี 1959 เดียวกันผ่าน Weights and Measures Act 1963 ผลก็คือออนซ์ของอังกฤษและออนซ์ของอเมริกาหนักเท่ากันในปัจจุบัน เมนูสเต๊กในร้านอาหารหลายแห่งในสหราชอาณาจักรระบุชิ้นเนื้อเป็นออนซ์อย่างภาคภูมิใจ และร้านค้าขายเนื้อชนิดเดียวกันเป็นกรัม</p>
+
+  <h3>ทรอยออนซ์</h3>
+  <p>ทรอยออนซ์ (oz t) เป็นหน่วยมวลที่เท่ากับ 31.1034768 กรัม และใช้ชั่งทอง เงิน แพลทินัม และแพลเลเดียม ชื่อมาจาก Troyes เมืองตลาดในฝรั่งเศสที่พ่อค้ายุคกลางชั่งเงินและเครื่องเทศ หนึ่งทรอยออนซ์มี 480 เกรน ขณะที่ออนซ์มาตรฐานมี 437.5 เกรน</p>
+  <p>ระบบทรอยสร้างหน่วยของมันจากเกรนเดียวกัน ตาม NIST Handbook 44, 24 เกรนเป็น 1 เพนนีเวต และ 20 เพนนีเวตเป็น 1 ทรอยออนซ์ สิบสองทรอยออนซ์เป็น 1 ทรอยปอนด์ที่ 373.24 กรัม ดังนั้นทรอยปอนด์จึงเบากว่าปอนด์มาตรฐาน แม้ว่าทรอยออนซ์จะหนักกว่าออนซ์มาตรฐาน</p>
+  <p>ทรอยออนซ์แปลงเป็นกิโลกรัมด้วยค่าตัวประกอบของตนเอง คูณทรอยออนซ์ด้วย 0.0311034768 เพื่อให้ได้กิโลกรัม แท่งเงิน 10 oz t หนัก 0.3110 kg และหนึ่งกิโลกรัมมี 32.1507 ทรอยออนซ์ การตั้งค่าทรอยของเครื่องแปลงใช้ค่าตัวประกอบที่แม่นยำนี้</p>
+
+  <h3>กิโลกรัม</h3>
+  <p>กิโลกรัมเป็นหน่วยฐานของมวลในระบบหน่วยระหว่างประเทศ (SI) และเป็นหลักยึดของน้ำหนักระบบเมตริกทุกค่า General Conference on Weights and Measures (CGPM) ลงมติในเดือนพฤศจิกายน 2018 ให้เปลี่ยนวิธีนิยามกิโลกรัม กฎใหม่เริ่มในวันที่ 20 พฤษภาคม 2019 ซึ่งเป็นวันมาตรวิทยาโลก</p>
+  <p>ก่อนวันนั้น กระบอกโลหะหนึ่งอันใกล้ปารีสเป็นตัวกำหนดขนาดของกิโลกรัม นักวิทยาศาสตร์เรียกกระบอกแพลทินัมและอิริเดียมนั้นว่า «Le Grand K» ปัจจุบันกิโลกรัมอิงกับค่าคงตัวพลังก์ ซึ่งเป็นตัวเลขคงที่จากฟิสิกส์เท่ากับ 6.62607015 × 10⁻³⁴ จูล-วินาที International Bureau of Weights and Measures (BIPM) เลือกตัวเลขนั้นเพื่อให้กิโลกรัมคงขนาดเดิม การเลือกนั้นทำให้ค่าของทุกออนซ์คงเดิม</p>
+  <p>นักวิทยาศาสตร์แยกมวลออกจากน้ำหนัก มวลคือปริมาณสสารในวัตถุ และน้ำหนักคือแรงดึงดูดของแรงโน้มถ่วงต่อมัน ในชีวิตประจำวัน ทั้งสองคำใช้แทนความคิดเดียวกัน และคู่มือนี้ก็เช่นกัน</p>
+</div></section>
+
+<!-- 2. convert -->
+<section class="sec article" id="convert"><div class="w">
+  <h2>แปลงออนซ์เป็นกิโลกรัมอย่างไร?</h2>
+  <p>คูณจำนวนออนซ์ด้วย 0.028349523125 เพื่อให้ได้กิโลกรัม การหารออนซ์ด้วย 35.27396195 ให้ผลลัพธ์เดียวกัน</p>
+  <div class="formula">
+    <div class="card fcard">
+      <div class="fhd"><span class="fico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 20c3 0 3-15 6-15M3 9h8" stroke="#4338CA" stroke-width="2" stroke-linecap="round"/></svg></span><h3>สูตร</h3></div>
+      <div class="eq">kg = oz × 0.0283495<small>1 ออนซ์ = 0.028349523125 กิโลกรัม (แม่นยำ)</small></div>
+    </div>
+    <div class="card fcard">
+      <div class="fhd"><span class="fico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#7C3AED" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>ตัวอย่าง</h3></div>
+      <div class="eq">16 oz × 0.0283495 = 0.4536 kg<small>ดังนั้น 16 ออนซ์เท่ากับราว 0.4536 กิโลกรัม</small></div>
+    </div>
+  </div>
+
+  <h3>ทำไมค่าตัวประกอบจึงเป็น 0.028349523125?</h3>
+  <p>ค่าตัวประกอบมาจากการแบ่งหนึ่งปอนด์เป็น 16 ส่วนเท่า ๆ กัน ความตกลงปี 1959 กำหนดปอนด์ไว้ที่ 0.45359237 kg ดังนั้นหนึ่งออนซ์จึงเป็นค่านั้นหารด้วย 16</p>
+  <div class="fml">0.45359237 ÷ 16 = 0.028349523125</div>
+  <p>NIST ยืนยันตัวเลขเดียวกัน Handbook 44, ภาคผนวก C ของตนระบุหนึ่งออนซ์ avoirdupois เป็น 28.349523125 กรัมพอดี เนื่องจากตัวเลขทั้งสองแม่นยำตามกฎหมาย ค่าตัวประกอบจึงไม่เคยเปลี่ยนจากปีต่อปี</p>
+
+  <h3>สองตัวอย่างที่คำนวณแล้ว</h3>
+  <p>ลองนึกถึงคนทำอาหารที่บ้านที่มีสูตรบราวนีของสหรัฐฯ ที่ต้องใช้ช็อกโกแลต 10 ออนซ์ สิบออนซ์คูณ 0.0283495 เท่ากับ 0.2835 kg หรือราว 283 กรัมบนตาชั่งในครัว ผู้ขายออนไลน์ที่ส่งเทียนหนัก 28 ออนซ์ได้ 0.7938 kg สำหรับแบบฟอร์มศุลกากร</p>
+
+  <h3>ค่าตัวประกอบย้อนกลับคืออะไร?</h3>
+  <p>หนึ่งกิโลกรัมเท่ากับ 35.27396195 ออนซ์ ในการเปลี่ยนกิโลกรัมกลับเป็นออนซ์ ให้คูณกิโลกรัมด้วยตัวเลขนั้น นักเดินทางที่สายการบินอนุญาต 23 kg สามารถเปลี่ยนขีดจำกัดนั้นเป็นออนซ์: 23 × 35.274 = 811.3 ออนซ์ ปุ่มสลับในเครื่องแปลงทำขั้นตอนนี้ให้คุณ</p>
+  <p>ตำราอาหารยุโรปหลายเล่มพิมพ์ 28 กรัมต่อออนซ์เป็นทางลัด ค่าตัวประกอบที่แม่นยำแม่นกว่าราว 1.2% ซึ่งช่วยให้ขนมปังและเพสตรีออกมาถูกต้อง</p>
+</div></section>
+
+<!-- 3. method -->
+<section class="sec article" id="method"><div class="w">
+  <h2>วิธีทีละขั้นตอนคืออะไร?</h2>
+  <p>ในการแปลง oz เป็น kg ด้วยมือ ให้ทำตาม 4 ขั้นตอน: เขียนออนซ์ คูณ ปัดเศษ และตรวจสอบ ทั้งวิธีใช้เวลาน้อยกว่าหนึ่งนาทีด้วยเครื่องคิดเลขในโทรศัพท์</p>
+  <ol>
+    <li>เขียนน้ำหนักเป็นออนซ์ในรูปเลขทศนิยม เช่น 15 หรือ 7.5</li>
+    <li>คูณตัวเลขนั้นด้วย 0.028349523125 หรือด้วย 0.0283495 สำหรับการใช้งานส่วนใหญ่</li>
+    <li>ปัดเศษคำตอบให้เหมาะกับงานของคุณ เช่น 2 ตำแหน่งทศนิยมสำหรับการทำอาหาร</li>
+    <li>ตรวจสอบคำตอบเทียบกับค่าที่ทราบ เช่น 16 oz = 0.4536 kg</li>
+  </ol>
+  <p>นี่คือวิธีแปลง oz เป็น kg ด้วยตัวเลขจริง สิบห้าออนซ์คูณ 0.0283495 เท่ากับ 0.4252 kg คำตอบนั้นอยู่ต่ำกว่า 16 ออนซ์เล็กน้อย จึงผ่านการตรวจสอบ สำหรับผลลัพธ์เป็นกรัม เครื่องแปลงออนซ์เป็นกรัมตอบได้โดยตรง</p>
+
+  <h3>ตัวอย่างทศนิยมที่คำนวณแล้ว</h3>
+  <p>โจทย์ในโรงเรียนมักใช้ทศนิยม นี่จึงเป็นตัวอย่างฝึกหัด 3 ข้อ ในการแปลง 90.2 oz เป็น kg ให้คูณ 90.2 ด้วย 0.028349523125 แล้วได้ 2.5571 kg ขั้นตอนเดียวกันแปลง 91.3 oz เป็น kg และได้ 2.5883 kg แบบฝึกหัดที่สามอาจให้คุณแปลง 92.2 oz เป็น kg และคำตอบคือ 2.6138 kg</p>
+  <p>ครูเรียกวิธีนี้ว่าการวิเคราะห์มิติ การวิเคราะห์มิติเป็นวิธีแก้โจทย์หน่วยด้วยการคูณด้วยเศษส่วนที่เท่ากับ 1 เช่น 0.0283495 kg ต่อ 1 oz หน่วยออนซ์หักล้างกัน และเหลือเพียงกิโลกรัม</p>
+
+  <h3>ทางลัดการคิดเลขในใจ</h3>
+  <p>หารออนซ์ด้วย 35 เพื่อประมาณการอย่างรวดเร็ว สำหรับ 105 ออนซ์ 105 ÷ 35 = 3 kg และคำตอบที่แม่นยำคือ 2.9767 kg การประมาณอยู่ภายในราว 0.8% ของค่าที่แม่นยำ วิธีนี้ใช้ได้ดีในช่องเดินซื้อของ และค่าตัวประกอบที่แม่นยำเหมาะกับฉลากไปรษณีย์ที่สุด</p>
+
+  <h3>ปอนด์บวกออนซ์</h3>
+  <p>เปลี่ยนปอนด์เป็นออนซ์ก่อน บวกออนซ์ส่วนเกิน แล้วจึงคูณ พัสดุ 2 lb 5 oz มี 2 × 16 + 5 = 37 ออนซ์ สามสิบเจ็ดออนซ์คูณ 0.0283495 เท่ากับ 1.0489 kg สำหรับน้ำหนักที่ให้มาเป็นปอนด์เท่านั้น เครื่องคิดเลขปอนด์เป็นกิโลกรัมเร็วกว่า</p>
+</div></section>
+
+<!-- 4. chart -->
+<section class="sec article" id="chart"><div class="w">
+  <h2>ตารางแปลง oz เป็น kg แสดงอะไร?</h2>
+  <p>สามสิบหกค่าปรากฏในตารางด้านล่าง จาก 1 ออนซ์ถึง 1,000 ออนซ์ ค่ากิโลกรัมแต่ละค่าปัดเศษเป็น 4 ตำแหน่งทศนิยม และค่ากรัมแต่ละค่าเป็น 2 ตำแหน่ง</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>ออนซ์ (oz)</th><th>กิโลกรัม (kg)</th><th>กรัม (g)</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+  <p>ตารางแสดงเส้นแบ่งที่มีประโยชน์หนึ่งเส้น สามสิบห้าออนซ์อยู่ต่ำกว่า 1 กิโลกรัมเล็กน้อย ขณะที่ 36 ออนซ์เกินไปราว 21 กรัม</p>
+</div></section>
+
+<!-- 5. most searched -->
+<section class="sec article" id="searched"><div class="w">
+  <h2>ค่าออนซ์ที่ค้นหามากที่สุดในหน่วยกิโลกรัมคืออะไร?</h2>
+  <p>ค่าหกค่าที่ค้นหามากที่สุดคือ 16, 10, 12, 32, 8 และ 1 ออนซ์ ในหน่วยกิโลกรัม ค่าเหล่านี้เท่ากับ 0.4536, 0.2835, 0.3402, 0.9072, 0.2268 และ 0.0283</p>
+  <div class="valgrid">
+    <div class="valcard"><h3>16 oz เป็น kg</h3><div class="big">0.4536 kg</div><p>หนึ่งปอนด์เต็มพอดี (453.59 g) นักอบขนมใช้ค่านี้มากที่สุด เพราะสูตรสหรัฐฯ นับเป็นปอนด์</p></div>
+    <div class="valcard"><h3>10 oz เป็น kg</h3><div class="big">0.2835 kg</div><p>283.50 กรัม มากกว่าหนึ่งในสี่ของกิโลกรัมเล็กน้อย</p></div>
+    <div class="valcard"><h3>12 oz เป็น kg</h3><div class="big">0.3402 kg</div><p>340.19 กรัม ถุงกาแฟบดมาตรฐานของสหรัฐฯ มักบรรจุ 12 ออนซ์</p></div>
+    <div class="valcard"><h3>32 oz เป็น kg</h3><div class="big">0.9072 kg</div><p>สองปอนด์ ห่างจาก 1 กิโลกรัมราว 93 กรัม ตรวจฉลาก เพราะขวด 32-oz หลายใบระบุเป็นของเหลวออนซ์</p></div>
+    <div class="valcard"><h3>8 oz เป็น kg</h3><div class="big">0.2268 kg</div><p>ครึ่งปอนด์ น้ำหนึ่งถ้วยของสหรัฐฯ หนักราว 8.3 ออนซ์ ดังนั้นหนึ่งถ้วยกับ 8 oz จึงใกล้เคียงแต่ไม่เท่ากัน</p></div>
+    <div class="valcard"><h3>1 oz เป็น kg</h3><div class="big">0.0283 kg</div><p>ปัดเศษแล้ว หากเขียนเต็ม ค่าคือ 0.028349523125 kg</p></div>
+  </div>
+</div></section>
+
+<!-- 6. everyday -->
+<section class="sec article" id="everyday"><div class="w">
+  <h2>ผู้คนแปลงสิ่งของในชีวิตประจำวันใดจากออนซ์เป็นกิโล?</h2>
+  <p>ผู้คนแปลงสิ่งของในชีวิตประจำวัน 5 กลุ่มหลัก: อาหาร ไปรษณีย์ ทารกแรกเกิด สัมภาระ และอุปกรณ์ออกกำลังกาย ทองและเงินเป็นกลุ่มที่หก แต่ใช้ออนซ์ที่ต่างกัน</p>
+
+  <h3>ฉลากอาหารและสูตรอาหาร</h3>
+  <p>ฉลากอาหารสหรัฐฯ แสดงทั้งสองหน่วยตามกฎหมาย U.S. Food and Drug Administration (FDA) กำหนดกฎนี้ไว้ใน 21 CFR 101.105 อาหารบรรจุหีบห่อต้องระบุน้ำหนักสุทธิทั้งในหน่วยเมตริกและในหน่วยสหรัฐฯ น้ำหนักสุทธิคือน้ำหนักของอาหารเพียงอย่างเดียว ไม่รวมกล่อง กระป๋อง หรือโหล</p>
+  <p>NIST ศึกษาว่าร้านค้าปฏิบัติตามกฎนี้ได้ดีเพียงใด นักวิจัยตรวจบรรจุภัณฑ์อย่างน้อย 1,137 ชิ้นใน 19 ร้านค้าปลีก ราว 17% ของบรรจุภัณฑ์เหล่านั้นระบุเฉพาะหน่วยเมตริก ซึ่งแสดงว่าฉลากเมตริกคุ้นเคยเพียงใด บรรจุภัณฑ์ที่น้ำหนักไม่คงที่ เช่น เนื้อเดลีที่ตั้งราคาตามปอนด์ ได้รับการยกเว้นจากกฎสองหน่วย</p>
+  <p>คนทำอาหารที่บ้านซึ่งใช้สูตรอเมริกันพบตัวเลขเหล่านี้ในทุกช่องเดินซื้อของ เนยหนึ่งแท่งหนัก 4 ออนซ์ ซึ่งคือ 0.1134 kg ถ้วยโยเกิร์ตมักบรรจุ 6 ออนซ์ และการตรวจ 6 oz เป็น kg ให้ 0.1701 kg ถั่วกระป๋องมักมาในกระป๋อง 15 ออนซ์ ดังนั้น 15 oz เป็น kg เท่ากับ 0.4252 kg</p>
+  <p>บรรจุภัณฑ์ที่ใหญ่กว่าต้องการความระมัดระวังเช่นกัน กระป๋องใหญ่ของมะเขือเทศบดมี 28 ออนซ์ ซึ่งเท่ากับ 0.7938 kg กระป๋องทรงสูงของข้าวโอ๊ตมักหนัก 18 ออนซ์ หรือ 0.5103 kg นักอบขนมที่ค้นหา 16 oz เป็น kg สำหรับแป้งหนึ่งปอนด์ได้ 0.4536 kg</p>
+  <p>ขนมปังแซนด์วิชมักหนัก 24 ออนซ์ ซึ่งให้ 0.6804 kg โหลใหญ่ของมายองเนสอาจบรรจุ 30 ออนซ์ตามน้ำหนัก หรือ 0.8505 kg ผู้ซื้อในประเทศที่ใช้เมตริกเปรียบเทียบราคาต่อกิโลกรัม ดังนั้นตัวเลขนี้จึงช่วยให้พวกเขาประเมินความคุ้มค่า</p>
+
+  <h3>ไปรษณีย์และการจัดส่ง</h3>
+  <p>United States Postal Service (USPS) ใช้ขีดจำกัดออนซ์สำคัญ 2 ค่า Domestic Mail Manual ของตนจำกัดจดหมาย First-Class ไว้ที่ 3.5 ออนซ์ ซึ่งคือ 0.0992 kg ไปรษณีย์ First-Class รูปทรงใดก็ตามหยุดที่ 13 ออนซ์ ค่าของ 13 oz เป็น kg คือ 0.3685 kg และชิ้นที่หนักกว่าจะย้ายไปบริการอื่น</p>
+  <p>ผู้ขายรายย่อยบน Etsy และ eBay ทำงานกับขีดจำกัดเหล่านี้ทุกวันและตั้งราคาพัสดุอย่างมั่นใจ การ์ดอวยพรพร้อมของขวัญบางอาจหนัก 2 ออนซ์ หรือ 0.0567 kg การตรวจ 3 oz เป็น kg ให้ 0.0850 kg ซึ่งยังอยู่ในขีดจำกัดจดหมาย หนังสือปกอ่อน 11 ออนซ์หนัก 0.3118 kg จึงยังต่ำกว่าขีดจำกัด 13 ออนซ์</p>
+  <p>ผู้ให้บริการขนส่งระหว่างประเทศหลายรายคิดค่าบริการตามครึ่งกิโลกรัมหรือกิโลกรัมเต็มถัดไป ผู้ขายได้การจัดส่งที่ราบรื่นที่สุดด้วยการปัดขึ้นก่อนพิมพ์ฉลาก นี่คือจุดที่มีรายละเอียด: ผู้ให้บริการอาจคิดค่าบริการตามขนาดกล่องแทนน้ำหนักสำหรับพัสดุที่เบาแต่ใหญ่</p>
+
+  <h3>น้ำหนักทารกแรกเกิดและเด็ก</h3>
+  <p>โรงพยาบาลในสหรัฐฯ มักรายงานน้ำหนักแรกเกิดเป็นปอนด์และออนซ์ และโลกส่วนใหญ่ใช้กิโลกรัม Centers for Disease Control and Prevention (CDC) นิยามน้ำหนักแรกเกิดต่ำว่าน้อยกว่า 2,500 กรัม ในหน่วยสหรัฐฯ เส้นแบ่งนั้นเขียนเป็น 5 ปอนด์ 8 ออนซ์</p>
+  <p>พยาบาลและพ่อแม่ใช้วิธีปอนด์บวกออนซ์สำหรับน้ำหนักทารกใด ๆ ทารกแรกเกิด 7 lb 8 oz หนัก 7 × 16 + 8 = 120 ออนซ์ หนึ่งร้อยยี่สิบออนซ์คูณ 0.0283495 เท่ากับ 3.4019 kg ปู่ย่าตายายในต่างประเทศมักต้องการตัวเลขกิโลกรัมนี้ในข้อความแรกจากโรงพยาบาล</p>
+  <p>ค่าเส้นแบ่งเป็นกรณีพิเศษที่น่าสนใจ 5 lb 8 oz พอดีเท่ากับ 88 ออนซ์ หรือ 2.4948 kg ตัวเลขนั้นอยู่ต่ำกว่า 2,500 กรัม 5 กรัม หน่วยงานสาธารณสุขใช้คู่ที่ปัดเศษแล้ว ดังนั้นแพทย์จึงอ่านทั้งสองรูปแบบเป็นเกณฑ์เดียวกัน</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>ปอนด์และออนซ์</th><th>ออนซ์รวม</th><th>กิโลกรัม</th></tr></thead>
+        <tbody>
+          <tr><td>5 lb 4 oz</td><td>84</td><td>2.3814</td></tr>
+          <tr><td>5 lb 6 oz</td><td>86</td><td>2.4381</td></tr>
+          <tr><td>6 lb 4 oz</td><td>100</td><td>2.8350</td></tr>
+          <tr><td>6 lb 5 oz</td><td>101</td><td>2.8633</td></tr>
+          <tr><td>6 lb 14 oz</td><td>110</td><td>3.1184</td></tr>
+          <tr><td>8 lb 9 oz</td><td>137</td><td>3.8839</td></tr>
+          <tr><td>9 lb 5 oz</td><td>149</td><td>4.2241</td></tr>
+          <tr><td>10 lb 5 oz</td><td>165</td><td>4.6777</td></tr>
+          <tr><td>14 lb 5 oz</td><td>229</td><td>6.4920</td></tr>
+          <tr><td>15 lb 5 oz</td><td>245</td><td>6.9456</td></tr>
+          <tr><td>16 lb 10 oz</td><td>266</td><td>7.5410</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>ทุกแถวใช้กฎเดียวกัน คูณปอนด์ด้วย 16 บวกออนซ์ และคูณผลรวมด้วย 0.0283495</p>
+
+  <h3>การเดินทางและสัมภาระ</h3>
+  <p>สายการบินกำหนดขีดจำกัดกระเป๋าเป็นกิโลกรัมหรือปอนด์ และผู้จัดกระเป๋าที่ชาญฉลาดชั่งของชิ้นเล็กแต่เนิ่น ๆ รองเท้าวิ่งหนึ่งคู่ที่ 26 ออนซ์ได้เป็น 0.7371 kg ขณะที่แล็ปท็อปบาง 42 ออนซ์หนัก 1.1907 kg แจกันของที่ระลึก 36 ออนซ์ได้เป็น 1.0206 kg ของขวัญน่ารักที่หนักเกินหนึ่งกิโลกรัมเล็กน้อย</p>
+  <p>กล่องของขวัญวางซ้อนกันอย่างรวดเร็วในกระเป๋าเดินทาง การตรวจ 40 oz เป็น kg ให้ 1.1340 kg ช็อกโกแลตสามปอนด์เท่ากับ 48 ออนซ์ หรือ 1.3608 kg เมล็ดกาแฟสี่ปอนด์เท่ากับ 64 ออนซ์ ซึ่งคือ 1.8144 kg</p>
+  <p>สินค้าปริมาณมากไปถึงปลายที่หนักกว่าของตาราง เจ็ดสิบสองออนซ์ได้เป็น 2.0412 kg และ 80 ออนซ์เป็น 2.2680 kg ที่ด้านบน 100 oz เป็น kg เท่ากับ 2.8350 kg ซึ่งควรจำไว้: 100 ออนซ์ใกล้ 3 กิโลกรัมแต่ยังต่ำกว่า</p>
+
+  <h3>อุปกรณ์ออกกำลังกายและสัดส่วนอาหาร</h3>
+  <p>นวมมวยขายตามน้ำหนักเป็นออนซ์ ตั้งแต่ 8 ออนซ์ถึง 20 ออนซ์ นวมกระสอบ 10 ออนซ์หนัก 0.2835 kg ดังนั้น 10 oz เป็น kg จึงตอบคำถามทั่วไปจากนักมวยในต่างประเทศ นวมสปาร์ริง 14 ออนซ์หนัก 0.3969 kg ซึ่งช่วยให้โค้ชเปรียบเทียบขนาดนวมของสหรัฐฯ และยุโรป</p>
+  <p>แอปติดตามมื้ออาหารชั่งโปรตีนเป็นสัดส่วนที่เรียบร้อยและแม่นยำ อกไก่หนึ่งส่วน 5 ออนซ์หนัก 0.1417 kg และเนื้อแซลมอนฟิลเล 7 ออนซ์ได้เป็น 0.1984 kg สเต๊กริบอายขนาดใหญ่ 20 ออนซ์หนัก 0.5670 kg เนื้อครึ่งกิโลกรัมอย่างเต็มที่</p>
+  <p>อุปกรณ์ฝึกซ้อมครอบคลุมส่วนกลางของตาราง เชือกกระโดดถ่วงน้ำหนัก 22 ออนซ์หนัก 0.6237 kg และโฟมโรลเลอร์ 25 ออนซ์ได้เป็น 0.7087 kg</p>
+</div></section>
+
+<!-- 7. troy & bullion -->
+<section class="sec article" id="troy"><div class="w">
+  <h2>จากออนซ์ของชำสู่ออนซ์ทองแท่ง</h2>
+  <p>ทุกค่าในตารางจนถึงตอนนี้ใช้ออนซ์เดียว: ออนซ์ของชำที่ 28.35 กรัม ออนซ์นั้นเติมเต็มรถเข็นซื้อของ ถุงไปรษณีย์ และสมุดบันทึกทารกทั่วสหรัฐอเมริกา แต่คำว่า «ออนซ์» มีชีวิตที่สองในร้านเครื่องประดับและห้องนิรภัยของธนาคาร ที่นั่น ออนซ์หนักกว่าเล็กน้อยและมีชื่อของตนเอง และนี่คือขั้นตอนที่ทำให้คู่มือนี้สมบูรณ์ การเลือกออนซ์ที่ถูกต้องสำคัญ เพราะทั้งสองต่างกันเกือบ 10% สำหรับผู้ซื้อทอง ออนซ์ที่ถูกต้องปกป้องมูลค่าของการซื้อทุกครั้ง บรรทัดถัดไปอธิบายออนซ์ทองแท่งด้วยตัวเลขที่เรียบง่าย</p>
+
+  <h3>ทรอยออนซ์เหมือนกับออนซ์ทั่วไปหรือไม่?</h3>
+  <p>ไม่ ทรอยออนซ์หนัก 31.1034768 กรัม ขณะที่ออนซ์ทั่วไปหนัก 28.349523125 กรัม ทรอยออนซ์หนักกว่าราว 9.7%</p>
+  <p>ออนซ์ทั่วไปมี 437.5 เกรน ดังนั้นทรอยออนซ์จึงมีเกรนมากกว่า 42.5 เกรน การตั้งค่าออนซ์ของเครื่องแปลงใช้ออนซ์ทั่วไป น้ำหนักทองและเงินต้องใช้การตั้งค่าทรอยแทน</p>
+  <div class="fml">kg = oz t × 0.0311034768</div>
+  <p>ในการแปลง oz ทองเป็น kg ให้คูณทรอยออนซ์ด้วย 0.0311034768 หนึ่งกิโลกรัมมี 32.1507 ทรอยออนซ์ ดังนั้น 1 kg เป็นทรอย oz เท่ากับ 32.15 oz t เครื่องแปลงทรอยออนซ์เป็นกิโลกรัมจัดการการคำนวณทองแท่งด้วยค่าตัวประกอบนี้</p>
+  <div class="callout"><strong>ทำไมการตั้งค่าทรอยจึงสำคัญ</strong> นักลงทุนทองที่ซื้อแท่ง 5 oz t ได้ 5 × 0.0311034768 = 0.1555 kg การตั้งค่ามาตรฐานจะแสดง 0.1417 kg สำหรับ 5 ออนซ์เดียวกัน ช่องว่าง 13.8 กรัมนั้นคือเงินจริงสำหรับผู้ซื้อทองแท่ง</div>
+  <p>London Bullion Market Association (LBMA) กำหนดมาตรฐานโลกสำหรับแท่งขนาดใหญ่ กฎ Good Delivery ของตนกำหนดให้แท่งทองมี 350 ถึง 430 ทรอยออนซ์บริสุทธิ์ ช่วงนั้นเท่ากับราว 10.9 kg ถึง 13.4 kg แท่งเงินมาตรฐานมีราว 1,000 ทรอยออนซ์ ซึ่งใกล้ 31.1 kg</p>
+  <p>The Perth Mint ซึ่งเป็นของรัฐบาลออสเตรเลียตะวันตก บันทึกนิสัยทั่วไปอย่างหนึ่ง ผู้ค้ามักพิมพ์ «oz» บนเหรียญและแท่งเป็นรูปย่อของทรอยออนซ์ ผู้ซื้อสามารถอ่าน «oz» ของโลหะมีค่าทุกอันเป็นทรอยออนซ์ได้อย่างมั่นใจ</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>รายการ</th><th>ทรอยออนซ์</th><th>กิโลกรัม</th></tr></thead>
+        <tbody>
+          <tr><td>เหรียญทองหรือเงิน</td><td>1 oz t</td><td>0.0311 kg</td></tr>
+          <tr><td>Kilobar</td><td>32.15 oz t</td><td>1.0000 kg</td></tr>
+          <tr><td>แท่งเงิน</td><td>100 oz t</td><td>3.1103 kg</td></tr>
+          <tr><td>แท่งทอง LBMA (ทั่วไป)</td><td>400 oz t</td><td>12.4414 kg</td></tr>
+          <tr><td>แท่งเงิน LBMA (ทั่วไป)</td><td>1,000 oz t</td><td>31.1035 kg</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>แท่งทอง 400 ออนซ์หนักราว 12.4 kg ในหน่วยทรอย 400 ออนซ์ของชำเดียวกันจะหนักเพียง 11.3 kg</p>
+</div></section>
+
+<!-- 8. fluid -->
+<section class="sec article" id="fluid"><div class="w">
+  <h2>ของเหลวออนซ์หนักเท่ากับออนซ์หรือไม่?</h2>
+  <p>ไม่ ของเหลวออนซ์วัดปริมาตร หรือพื้นที่ที่ของเหลวเติมเต็ม ขณะที่ออนซ์วัดมวล หนึ่งของเหลวออนซ์ของสหรัฐฯ มี 29.57 มิลลิลิตร</p>
+  <p>น้ำเป็นกรณีที่ง่าย น้ำหนึ่งของเหลวออนซ์ของสหรัฐฯ หนักราว 29.6 กรัม ซึ่งใกล้ 1.04 ออนซ์ ดังนั้นขวดน้ำ 32 ออนซ์ที่เติมน้ำหนักราว 0.946 kg มากกว่า 32 ออนซ์ของน้ำหนัก (0.907 kg) เล็กน้อย ความต่าง 39 กรัมนั้นเป็นข้อมูลที่มีประโยชน์สำหรับนักเดินป่าและสมาชิกยิม</p>
+  <p>ของเหลวอื่นทำลายรูปแบบของน้ำ น้ำมันปรุงอาหารเบากว่าน้ำ และน้ำผึ้งหนักกว่ามาก โหลที่ติดฉลากเป็นของเหลวออนซ์ต้องการความหนาแน่นของของเหลว ซึ่งคือมวลต่อมิลลิลิตร ก่อนที่คำตอบกิโลกรัมใด ๆ จะแม่นยำ ขวดส่วนใหญ่ในร้านค้าสหรัฐฯ พิมพ์ «fl oz» ดังนั้นตัวอักษร «fl» จึงเป็นสัญญาณที่ต้องสังเกต</p>
+</div></section>
+
+<!-- 9. precision -->
+<section class="sec article" id="precision"><div class="w">
+  <h2>คำตอบของคุณควรแม่นยำเพียงใด?</h2>
+  <p>จับคู่ตำแหน่งทศนิยมกับงาน: 2 ตำแหน่งสำหรับการทำอาหาร 3 สำหรับการจัดส่ง และ 4 ขึ้นไปสำหรับวิทยาศาสตร์และการแพทย์ จำนวนหลักที่ถูกต้องทำให้คำตอบแต่ละข้อชัดเจนและใช้งานได้จริง</p>
+  <div class="card tbl plain">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>การใช้งาน</th><th>ตำแหน่งทศนิยม</th><th>12 oz เป็น kg</th><th>กฎการปัดเศษ</th></tr></thead>
+        <tbody>
+          <tr><td>การทำอาหารและการอบ</td><td>2</td><td>0.34 kg</td><td>ปัดเป็นค่าใกล้ที่สุด</td></tr>
+          <tr><td>การจัดส่งและค่าไปรษณีย์</td><td>3</td><td>0.341 kg</td><td>ปัดขึ้นเสมอ</td></tr>
+          <tr><td>การแพทย์และการดูแลทารก</td><td>4</td><td>0.3402 kg</td><td>ปัดเป็นค่าใกล้ที่สุด</td></tr>
+          <tr><td>วิทยาศาสตร์ในห้องแล็บและโรงเรียน</td><td>6 ขึ้นไป</td><td>0.340194 kg</td><td>คงเลขนัยสำคัญ</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>การจัดส่งเป็นการใช้งานหนึ่งที่การปัดขึ้นได้ผลดีที่สุด ผู้ให้บริการขนส่งคิดค่าบริการตามขั้นถัดไป ดังนั้นน้ำหนักที่ปัดขึ้นจึงทำให้ทุกพัสดุเคลื่อนไปอย่างราบรื่น</p>
+  <p>เลขนัยสำคัญคือหลักในตัวเลขที่มีความหมายจริง ตาชั่งที่อ่านได้ 12.0 ออนซ์ให้เลขนัยสำคัญ 3 หลัก ดังนั้น 0.340 kg จึงเป็นผลลัพธ์ที่ซื่อตรง ทุกตารางอย่างเป็นทางการที่ตรวจทานสำหรับคู่มือนี้ให้ค่าตัวประกอบเดียวกัน ดังนั้นมีเพียงการปัดเศษที่ทำให้เกิดความต่างเล็กน้อยระหว่างเว็บไซต์</p>
+</div></section>
+
+<!-- 10. faq -->
+<section class="sec article" id="faq"><div class="w">
+  <h2>คำถามที่พบบ่อย</h2>
+  <p>คำถามยอดนิยมสิบหกข้อได้รับคำตอบด้านล่าง แต่ละคำตอบสมบูรณ์ในตัวเอง</p>
+  <div class="faq">
+    <details open><summary>หนึ่งออนซ์มีกี่กิโลกรัม?</summary><div class="ans">1 oz เท่ากับ 0.0283 kg ค่าที่แม่นยำคือ 0.028349523125 kg ซึ่งคือ 28.35 กรัม</div></details>
+    <details><summary>ฉันแปลงออนซ์เป็นกิโลกรัมอย่างไร?</summary><div class="ans">คูณจำนวนออนซ์ด้วย 0.0283495 ตัวอย่างเช่น 8 oz × 0.0283495 = 0.2268 kg</div></details>
+    <details><summary>แปลง oz เป็น kg ต้องคูณหรือหาร?</summary><div class="ans">ทั้งสองใช้ได้ คูณออนซ์ด้วย 0.0283495 หรือหารด้วย 35.274 ทั้งสองให้ค่ากิโลกรัมเดียวกัน</div></details>
+    <details><summary>หนึ่งกิโลกรัมมีกี่ออนซ์?</summary><div class="ans">หนึ่งกิโลกรัมเท่ากับราว 35.274 ออนซ์ สำหรับทองและเงิน หนึ่งกิโลกรัมเท่ากับ 32.15 ทรอยออนซ์</div></details>
+    <details><summary>นี่คือออนซ์ตามน้ำหนักหรือของเหลวออนซ์?</summary><div class="ans">เครื่องแปลงนี้ใช้ออนซ์ตามน้ำหนัก ที่เรียกว่าออนซ์ avoirdupois ของเหลวออนซ์วัดปริมาตร ไม่ใช่น้ำหนัก</div></details>
+    <details><summary>แปลง fl oz เป็น kg อย่างไร?</summary><div class="ans">ของเหลวออนซ์วัดปริมาตร ดังนั้นคุณต้องการความหนาแน่นของของเหลวก่อน สำหรับน้ำ ให้คูณ fl oz ด้วย 0.02957 เพื่อให้ได้กิโลกรัม ขวดน้ำ 32 fl oz หนักราว 0.946 kg</div></details>
+    <details><summary>ทรอยออนซ์คืออะไร และควรใช้การตั้งค่าทรอยเมื่อใด?</summary><div class="ans">ทรอยออนซ์หนัก 31.1034768 กรัม และวัดทอง เงิน แพลทินัม และแพลเลเดียม ใช้การตั้งค่าทรอยสำหรับน้ำหนักโลหะมีค่าใด ๆ แม้ว่าฉลากจะระบุเพียง «oz»</div></details>
+    <details><summary>แปลงปอนด์และออนซ์เป็น kg อย่างไร?</summary><div class="ans">คูณปอนด์ด้วย 16 และบวกออนซ์ส่วนเกิน จากนั้นคูณออนซ์รวมด้วย 0.0283495 สำหรับ 6 lb 4 oz นั่นคือ 100 oz หรือ 2.835 kg</div></details>
+    <details><summary>พยาบาลแปลงน้ำหนักทารกจาก lb และ oz เป็น kg อย่างไร?</summary><div class="ans">พยาบาลเปลี่ยนน้ำหนักเป็นออนซ์รวม คูณด้วย 0.0283495 และบันทึกกิโลกรัมเป็น 3 หรือ 4 ตำแหน่งทศนิยม ทารก 7 lb 8 oz หนัก 3.402 kg</div></details>
+    <details><summary>เด็กคนหนึ่งหนัก 41 lb 12 oz นั่นเป็นกี่ kg?</summary><div class="ans">สี่สิบเอ็ดปอนด์ 12 ออนซ์เท่ากับ 668 ออนซ์ คูณ 668 ด้วย 0.0283495 เพื่อให้ได้ 18.94 kg</div></details>
+    <details><summary>56 oz เป็นกี่ kg?</summary><div class="ans">ห้าสิบหกออนซ์เท่ากับ 1.5876 kg ซึ่งคือ 3.5 ปอนด์พอดี</div></details>
+    <details><summary>35 ออนซ์มากกว่า 1 กิโลกรัมหรือไม่?</summary><div class="ans">ไม่ คำตอบ 35 oz เป็น kg คือ 0.9922 kg ซึ่งอยู่ภายใน 7.8 กรัมของ 1 กิโลกรัม สามสิบหกออนซ์เกินเครื่องหมาย 1 kg</div></details>
+    <details><summary>ค่าตัวประกอบใดให้ผลลัพธ์ที่แม่นยำที่สุด?</summary><div class="ans">บางเว็บไซต์ปัดค่าตัวประกอบเป็น 0.0283495 หรือ 0.02835 ทางลัดนั้นแม่นยำถึงราวตำแหน่งทศนิยมที่สี่ ค่าตัวประกอบที่แม่นยำ 0.028349523125 ให้ความตรงกันสมบูรณ์ทุกครั้ง</div></details>
+    <details><summary>การเปลี่ยนแปลงกิโลกรัมปี 2019 ส่งผลต่อการแปลงออนซ์หรือไม่?</summary><div class="ans">ไม่ BIPM เลือกค่าคงตัวพลังก์เพื่อให้กิโลกรัมคงขนาดเดิม ทุกค่าออนซ์จากก่อนปี 2019 ยังคงใช้ได้ในปัจจุบัน</div></details>
+    <details><summary>สหรัฐอเมริกาและสหราชอาณาจักรใช้ออนซ์เดียวกันหรือไม่?</summary><div class="ans">ใช่ ทั้งสองประเทศรับปอนด์สากลปี 1959 ดังนั้นออนซ์ทั้งสองหนัก 28.349523125 กรัม สหราชอาณาจักรเขียนค่านี้ไว้ใน Weights and Measures Act 1963 ของตน</div></details>
+    <details><summary>คู่มือออนซ์เป็นกิโลกรัมนี้ครอบคลุมอะไร?</summary><div class="ans">ครอบคลุมสูตรที่แม่นยำ วิธีสี่ขั้นตอน ตาราง 36 แถว ค่าที่ค้นหามากที่สุด การใช้งานในชีวิตประจำวัน ทรอยออนซ์สำหรับทองแท่ง ของเหลวออนซ์ และคำตอบของคุณควรแม่นยำเพียงใด</div></details>
+  </div>
+</div></section>
+
+<!-- about the writer -->
+<section class="sec article" id="author"><div class="w">
+  <h2>เกี่ยวกับผู้เขียน</h2>
+  <div class="authorcard">
+    <img src="../gary-bennett.webp" alt="Gary Bennett, metrologist" width="96" height="96" loading="lazy">
+    <div>
+      <p class="an-name">Gary Bennett</p>
+      <div class="an-role">ผู้เขียนและนักมาตรวิทยา · ผู้เชี่ยวชาญด้านการวัด</div>
+      <p>แกรี เบนเนตต์ เป็นผู้เขียนและนักมาตรวิทยาที่จัดทำและตรวจทานคู่มือการวัดเพื่อความแม่นยำ เขาเขียนคู่มือนี้และตรวจสอบทุกค่าตัวประกอบการแปลง ค่าในตาราง และตัวอย่างที่คำนวณแล้วเทียบกับตัวเลข NIST ที่แม่นยำ รวมถึงออนซ์ avoirdupois (0.028349523125 kg) และทรอยออนซ์ (0.0311034768 kg)</p>
+      <a class="an-link" href="../gary-bennett.html">อ่านโปรไฟล์ฉบับเต็มของแกรี →</a>
+    </div>
+  </div>
+</div></section>
+
+</main>
+
+<footer>
+  <div class="fw">
+    <div class="fcol brandcol">
+      <div class="fbrand"><span class="mk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>Ounces to Kilograms</b></div>
+      <p>การแปลงออนซ์เป็นกิโลกรัมที่ฟรีและแม่นยำสำหรับออนซ์มาตรฐานและทรอยออนซ์ อิงตามค่าตัวประกอบอย่างเป็นทางการของ NIST</p>
+    </div>
+    <div class="fcol"><h4>หน้า</h4>
+      <a href="index.html">ออนซ์เป็นกิโลกรัม</a><a href="kg-to-oz.html">กิโลกรัมเป็นออนซ์</a><a href="../about.html">เกี่ยวกับ</a><a href="../gary-bennett.html">ผู้เขียน</a><a href="../sitemap.html">แผนผังเว็บไซต์</a><a href="../contact.html">ติดต่อ</a>
+    </div>
+    <div class="fcol"><h4>นโยบาย</h4>
+      <a href="../editorial-policy.html">นโยบายกองบรรณาธิการ</a><a href="../disclaimer.html">ข้อจำกัดความรับผิดชอบ</a><a href="../privacy-policy.html">นโยบายความเป็นส่วนตัว</a><a href="../terms.html">ข้อกำหนดการใช้งาน</a>
+    </div>
+    <div class="fcol"><h4>ติดต่อ</h4>
+      <a href="mailto:info@ouncestokilograms.com">info@ouncestokilograms.com</a>
+    </div>
+  </div>
+  <div class="fbar">© 2026 Ounces to Kilograms สงวนลิขสิทธิ์</div>
+</footer>
+
+<script>
+const AVO = 0.028349523125;            // avoirdupois ounce → kg (NIST)
+const LB = 0.45359237, ST = 6.35029318; // kg per pound / stone
+let F = AVO, ozLab = 'oz', dp = 4, tipT;
+
+const ozEl=document.getElementById('oz'), kgEl=document.getElementById('kg'),
+      eq=document.getElementById('eqline'), panL=document.getElementById('panL'),
+      panR=document.getElementById('panR'), beam=document.querySelector('.beam-wrap'),
+      ozUnit=document.getElementById('ozUnit'), decSel=document.getElementById('dec'),
+      uG=document.getElementById('u-g'), uLB=document.getElementById('u-lb'), uST=document.getElementById('u-st');
+const rm = matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+// accepts "0.5", "1/2", "3 1/2"
+function parseVal(s){ s=(s||'').trim(); if(s==='') return NaN;
+  let m=s.match(/^(-?\d*\.?\d+)\s+(\d+)\/(\d+)$/); if(m) return (+m[1])+(+m[2])/(+m[3]);
+  m=s.match(/^(-?\d+)\/(\d+)$/); if(m) return (+m[1])/(+m[2]);
+  const n=parseFloat(s.replace(/,/g,'')); return isFinite(n)?n:NaN;
+}
+function fmt(n){ if(!isFinite(n)) return '0'; return n.toFixed(dp).replace(/\.?0+$/,'') || '0'; }
+function tip(dir){ if(rm||!beam) return; beam.style.transform='rotate('+dir+'deg)'; clearTimeout(tipT); tipT=setTimeout(()=>{ beam.style.transform='rotate(0deg)'; },280); }
+function multi(k){ uG.textContent=(k*1000).toFixed(2).replace(/\.?0+$/,'')+' g'; uLB.textContent=fmt(k/LB)+' lb'; uST.textContent=fmt(k/ST)+' st'; }
+function paintEmpty(){ panL.textContent='- '+ozLab; panR.textContent='- kg'; eq.textContent='ใส่ค่า'; uG.textContent='-'; uLB.textContent='-'; uST.textContent='-'; }
+function paint(o,k,dir){ panL.textContent=fmt(o)+' '+ozLab; panR.textContent=fmt(k)+' kg'; multi(k); tip(dir); }
+function fromOz(){ const o=parseVal(ozEl.value); if(isNaN(o)){ kgEl.value=''; paintEmpty(); return; } const k=o*F; kgEl.value=fmt(k); eq.textContent=fmt(o)+' '+ozLab+' = '+fmt(k)+' kg'; paint(o,k,-1.6); }
+function fromKg(){ const k=parseVal(kgEl.value); if(isNaN(k)){ ozEl.value=''; paintEmpty(); return; } const o=k/F; ozEl.value=fmt(o); eq.textContent=fmt(k)+' kg = '+fmt(o)+' '+ozLab; paint(o,k,1.6); }
+function recalc(){ if(ozEl.value.trim()!=='') fromOz(); else if(kgEl.value.trim()!=='') fromKg(); else paintEmpty(); }
+
+ozEl.addEventListener('input', fromOz);
+kgEl.addEventListener('input', fromKg);
+decSel.addEventListener('change', ()=>{ dp=parseInt(decSel.value,10); recalc(); });
+
+document.getElementById('chips').addEventListener('click', e=>{ const b=e.target.closest('button'); if(!b) return; ozEl.value=b.dataset.oz; fromOz(); });
+
+// swap navigates to the reverse converter (kg -> oz), carrying the weight across
+document.getElementById('swap').addEventListener('click', ()=>{
+  const o=parseVal(ozEl.value); const k=(isNaN(o)?NaN:o*F);
+  location.href = isFinite(k) ? ('kg-to-oz.html?kg='+(+k.toFixed(6))) : 'kg-to-oz.html';
+});
+
+// ounce type: avoirdupois vs troy (precious metals)
+document.getElementById('ozType').addEventListener('click', e=>{
+  const b=e.target.closest('button'); if(!b) return;
+  [...e.currentTarget.children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+  F=parseFloat(b.dataset.f); ozLab=b.dataset.lab; ozUnit.textContent=ozLab; recalc();
+});
+
+// copy result
+document.getElementById('copy').addEventListener('click', async ()=>{
+  const btn=document.getElementById('copy');
+  try{ await navigator.clipboard.writeText(eq.textContent); btn.textContent='✓ คัดลอกแล้ว'; btn.classList.add('done'); setTimeout(()=>{ btn.textContent='⧉ คัดลอก'; btn.classList.remove('done'); },1400); }
+  catch(err){ /* clipboard blocked in this context */ }
+});
+
+// conversion chart: 36 values, kg to 4 dp, g to 2 dp (matches the guide)
+const rows=[1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,18,20,22,24,25,26,28,30,32,35,36,40,42,48,50,64,72,80,90,100,1000];
+document.getElementById('tbody').innerHTML = rows.map(o=>{
+  const k=o*AVO, g=o*28.349523125;
+  const ozL=o.toLocaleString('en-US');
+  const gL=g.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+  return `<tr><td>${ozL} oz</td><td>${k.toFixed(4)} kg</td><td>${gL} g</td></tr>`;
+}).join('');
+
+// pre-fill from a reverse-conversion hand-off (?kg=…)
+(function(){ const v=new URLSearchParams(location.search).get('kg'); if(v!==null){ const n=parseFloat(v); if(isFinite(n)) ozEl.value=String(+(n/AVO).toFixed(4)); } })();
+fromOz();
+</script>
+<script>
+(function(){var s=document.getElementById('langsel'),b=document.getElementById('lbtn');if(b){b.addEventListener('click',function(e){e.stopPropagation();var o=s.classList.toggle('open');b.setAttribute('aria-expanded',o);});document.addEventListener('click',function(){s.classList.remove('open');b.setAttribute('aria-expanded',false);});}})();
+</script>
+</body>
+</html>
