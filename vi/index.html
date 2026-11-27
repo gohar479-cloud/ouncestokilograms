@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Công cụ đổi ao-xơ sang kilôgam (oz sang kg) | Chuẩn &amp; Troy</title>
+<meta name="description" content="Đổi ao-xơ sang kilôgam ngay lập tức cho ao-xơ chuẩn và troy. Hệ số NIST chính xác, bảng đầy đủ, ví dụ đã giải và mẹo làm tròn.">
+<link rel="alternate" hreflang="en" href="https://ouncestokilograms.com/">
+<link rel="alternate" hreflang="de" href="https://ouncestokilograms.com/de/">
+<link rel="alternate" hreflang="es" href="https://ouncestokilograms.com/es/">
+<link rel="alternate" hreflang="fr" href="https://ouncestokilograms.com/fr/">
+<link rel="alternate" hreflang="hi" href="https://ouncestokilograms.com/hi/">
+<link rel="alternate" hreflang="id" href="https://ouncestokilograms.com/id/">
+<link rel="alternate" hreflang="it" href="https://ouncestokilograms.com/it/">
+<link rel="alternate" hreflang="ms" href="https://ouncestokilograms.com/ms/">
+<link rel="alternate" hreflang="pl" href="https://ouncestokilograms.com/pl/">
+<link rel="alternate" hreflang="pt" href="https://ouncestokilograms.com/pt/">
+<link rel="alternate" hreflang="vi" href="https://ouncestokilograms.com/vi/">
+<link rel="alternate" hreflang="x-default" href="https://ouncestokilograms.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F5FB; --ink:#131A2B; --muted:#4B5768; --card:#FFFFFF; --line:#E4E8F2;
+  --teal:#0F766E; --teal-ink:#0B5C56; --indigo:#4338CA; --indigo-2:#1D4ED8; --violet:#7C3AED; --sky:#1D4ED8; --soft:#EDF1FF;
+  --grad:linear-gradient(118deg,#0F766E 0%,#1D4ED8 54%,#7C3AED 100%);
+  --grad-2:linear-gradient(118deg,#1D4ED8,#7C3AED);
+  --grad-soft:linear-gradient(118deg,#E8F4F2,#EDF0FF);
+  --sh:0 1px 2px rgba(20,26,46,.05),0 16px 44px rgba(28,34,80,.12);
+  --sh-c:0 10px 30px rgba(40,50,120,.15);
+  --maxw:1060px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.dsp{font-family:'Space Grotesk',Inter,sans-serif;letter-spacing:-.015em;line-height:1.08;margin:0}
+a{color:inherit;text-decoration:none}
+.w{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.num{font-variant-numeric:tabular-nums}
+
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(245,247,248,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .mk{width:38px;height:38px;border-radius:10px;background:var(--grad);display:grid;place-items:center;flex:0 0 auto}
+.brand b{font-family:'Space Grotesk';font-weight:700;font-size:18px;line-height:1}
+.brand span{display:block;font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+nav{display:flex;gap:22px}
+nav a{color:var(--muted);font-weight:500;font-size:15px}
+nav a:hover{color:var(--teal-ink)}
+@media(max-width:640px){nav{display:none}}
+.crumbs{background:#fff;border-bottom:1px solid var(--line)}
+.crumbs > div{max-width:1060px;margin:0 auto;padding:10px 20px;font-size:13.5px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--indigo);font-weight:500}
+.crumbs a:hover{text-decoration:underline}
+.crumbs .sep{color:#B6C0CF}
+.crumbs .cur{color:var(--ink);font-weight:500}
+
+/* hero + converter */
+.hero{position:relative;padding:54px 0 96px;text-align:center;background:var(--grad);color:#fff;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:42px 42px;mask:radial-gradient(700px 320px at 50% 0,#000,transparent 75%);pointer-events:none}
+.aurora{position:absolute;border-radius:50%;filter:blur(64px);opacity:.45;pointer-events:none}
+.aurora.a1{width:340px;height:340px;background:#8BF0E4;top:-120px;left:-60px}
+.aurora.a2{width:320px;height:320px;background:#B9A6FF;top:-80px;right:-50px;opacity:.5}
+.hero .w{position:relative;z-index:2}
+.eyebrow{display:inline-block;font-family:'Space Grotesk';font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.28);padding:5px 13px;border-radius:999px;backdrop-filter:blur(4px)}
+.hero h1{font-size:clamp(30px,5vw,48px);font-weight:700;margin:16px 0 0;color:#fff}
+.hero p.sub{color:rgba(255,255,255,.92);font-size:18px;max-width:580px;margin:12px auto 0}
+.hero p.sub strong{color:#fff}
+
+.conv{position:relative;background:var(--card);border:1px solid rgba(255,255,255,.6);border-radius:22px;box-shadow:0 30px 70px rgba(20,26,70,.33);max-width:720px;margin:30px auto 0;padding:28px 26px 26px;overflow:hidden}
+.conv::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--grad)}
+.conv-row{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:end}
+.field label{display:block;font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;text-align:left}
+.field .inp{position:relative}
+.field input{width:100%;font-family:'Space Grotesk';font-weight:600;font-size:30px;padding:16px 68px 16px 16px;border:1.5px solid var(--line);border-radius:14px;background:#FBFCFD;color:var(--ink);font-variant-numeric:tabular-nums}
+.field input:focus{outline:none;border-color:var(--indigo);box-shadow:0 0 0 4px rgba(91,91,240,.15);background:#fff}
+.field .unit{position:absolute;right:16px;top:50%;transform:translateY(-50%);font-family:'Space Grotesk';font-weight:700;color:var(--indigo);font-size:16px;pointer-events:none}
+.swap{width:50px;height:50px;border-radius:50%;border:0;background:var(--grad);display:grid;place-items:center;cursor:pointer;transition:transform .3s,box-shadow .2s;margin-bottom:4px;box-shadow:0 8px 20px rgba(40,60,180,.3)}
+.swap:hover{box-shadow:0 10px 26px rgba(40,60,180,.42)}
+.swap.spin{transform:rotate(180deg)}
+.scalebox{margin-top:18px;text-align:center}
+.scale{width:100%;max-width:430px;height:auto;margin:0 auto;display:block}
+.scale .beam-wrap{transform-box:view-box;transform-origin:220px 50px;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.scap{margin-top:4px;font-family:'Space Grotesk';font-weight:700;font-size:21px;color:var(--ink);font-variant-numeric:tabular-nums}
+.scap #eqline{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.scap small{display:block;font-family:Inter;font-weight:500;font-size:13px;color:var(--muted);margin-top:3px;letter-spacing:.01em}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
+.chips button{font-family:Inter;font-weight:500;font-size:14px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--muted);cursor:pointer;transition:.15s}
+.chips button:hover{border-color:transparent;color:#fff;background:var(--grad-2);box-shadow:0 6px 14px rgba(60,80,200,.25)}
+.prec{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:16px;font-size:14px;color:var(--muted)}
+.prec select{font:inherit;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink)}
+@media(max-width:560px){.conv-row{grid-template-columns:1fr;gap:10px}.swap{margin:0 auto;transform:rotate(90deg)}.swap.spin{transform:rotate(270deg)}}
+
+/* trust line */
+.trust{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:16px auto 0}
+.trust span{font-size:13px;color:#fff;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:5px 12px;backdrop-filter:blur(4px)}
+.trust b{font-weight:600}
+/* ounce-type toggle */
+.seg-wrap{text-align:center}
+.seg{display:inline-flex;margin:16px auto 0;background:#EDF0F7;border:1px solid var(--line);border-radius:12px;padding:4px;gap:4px}
+.seg button{font-family:'Space Grotesk';font-weight:600;font-size:14px;padding:8px 16px;border:0;border-radius:9px;background:transparent;color:var(--muted);cursor:pointer;transition:.15s}
+.seg button.on{background:#fff;color:var(--indigo);box-shadow:0 1px 3px rgba(20,26,70,.14)}
+/* equation + copy */
+.eqrow{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.copybtn{font-family:'Space Grotesk';font-weight:600;font-size:13px;color:var(--indigo);background:var(--soft);border:1px solid #D6DEF6;border-radius:9px;padding:6px 12px;cursor:pointer;transition:.15s}
+.copybtn:hover{background:#fff;border-color:var(--indigo)}
+.copybtn.done{color:#fff;background:var(--grad-2);border-color:transparent}
+/* multi-unit output */
+.also{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.also span{display:block;background:var(--grad-soft);border:1px solid #E1E7F5;border-radius:12px;padding:11px 10px;text-align:center;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.also b{display:block;font-family:'Space Grotesk';font-weight:700;font-size:18px;color:var(--ink);margin-top:3px;font-variant-numeric:tabular-nums;text-transform:none;letter-spacing:0}
+@media(max-width:480px){.also{grid-template-columns:1fr 1fr}}
+
+/* sections + article */
+.sec{padding:34px 0}
+.sec h2{font-size:clamp(24px,3.4vw,32px);font-weight:700;margin-bottom:6px}
+.sec .lead{color:var(--muted);margin:0 0 22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh)}
+.article{max-width:760px;margin:0 auto}
+.article h2{font-size:clamp(23px,3.2vw,30px);font-weight:700;margin:0 0 14px;scroll-margin-top:84px;position:relative;padding-left:16px}
+.article h2::before{content:"";position:absolute;left:0;top:5px;bottom:5px;width:5px;border-radius:3px;background:var(--grad)}
+.article h3{font-family:'Space Grotesk';font-weight:600;font-size:19px;color:var(--indigo);margin:26px 0 8px}
+.article p{margin:0 0 16px;color:#2A3346}
+.article strong{color:var(--ink);font-weight:600}
+.article ol,.article ul{margin:0 0 18px;padding-left:22px;color:#2A3346}
+.article li{margin-bottom:9px}
+.article p a[href^="http"]{color:var(--indigo);font-weight:600;text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+.article p a[href^="http"]:hover{color:var(--violet)}
+
+/* author byline */
+.byline{display:flex;align-items:center;gap:13px;margin:0 0 22px;padding:12px 15px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh)}
+.byline img{width:50px;height:50px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:2px solid #fff;box-shadow:0 2px 6px rgba(20,26,70,.22)}
+.byline .bl-name{font-size:15px;color:var(--ink);font-weight:500}
+.byline .bl-name a{color:var(--indigo);font-weight:600}
+.byline .bl-meta{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+
+/* author card (writer section) */
+.authorcard{display:flex;gap:22px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh);padding:26px;position:relative;overflow:hidden}
+.authorcard::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad)}
+.authorcard img{width:96px;height:96px;border-radius:16px;object-fit:cover;flex:0 0 auto;border:2px solid #fff;box-shadow:0 3px 10px rgba(20,26,70,.2)}
+.authorcard .an-name{font-family:'Space Grotesk';font-weight:700;font-size:22px;color:var(--ink);margin:0}
+.authorcard .an-role{font-size:14px;color:var(--indigo);font-weight:600;margin:3px 0 12px}
+.authorcard p{margin:0 0 12px;color:#2A3346}
+.authorcard .an-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-weight:600;font-size:14px;color:#fff;background:var(--grad-2);padding:9px 16px;border-radius:10px;transition:.15s}
+.authorcard .an-link:hover{box-shadow:0 8px 18px rgba(60,80,200,.3)}
+@media(max-width:560px){.authorcard{flex-direction:column;gap:16px;padding:22px}}
+
+/* callout */
+.callout{background:var(--grad-soft);border:1px solid #DCE6F3;border-left:4px solid var(--indigo);border-radius:12px;padding:16px 18px;margin:0 0 18px;color:#2A3346;font-size:16px}
+.callout.teal{border-left-color:var(--teal)}
+.callout b,.callout strong{color:var(--ink)}
+
+/* inline formula */
+.fml{font-family:'Space Grotesk';font-weight:600;font-size:18px;background:var(--grad-soft);color:var(--indigo);padding:13px 16px;border-radius:10px;border:1px solid #E3E7F6;margin:0 0 18px;text-align:center;font-variant-numeric:tabular-nums;overflow-x:auto}
+
+/* TOC */
+.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--sh);padding:22px 24px;max-width:760px;margin:0 auto}
+.toc .toch{font-family:'Space Grotesk';font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 14px}
+.toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.toc li{counter-increment:toc;margin:0 0 10px;break-inside:avoid}
+.toc a{display:flex;gap:10px;align-items:baseline;color:#2A3346;font-size:15px;transition:.15s}
+.toc a::before{content:counter(toc,decimal-leading-zero);font-family:'Space Grotesk';font-weight:600;font-size:12px;color:var(--indigo);flex:0 0 auto}
+.toc a:hover{color:var(--indigo)}
+@media(max-width:560px){.toc ol{columns:1}}
+
+/* value grid */
+.valgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:4px 0 20px}
+.valcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--sh);position:relative;overflow:hidden}
+.valcard::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
+.valcard h3{margin:0 0 6px;font-size:15px;color:var(--muted);text-transform:none;font-family:'Space Grotesk'}
+.valcard .big{font-family:'Space Grotesk';font-weight:700;font-size:23px;color:var(--indigo-2);font-variant-numeric:tabular-nums}
+.valcard p{font-size:13.5px;color:var(--muted);margin:6px 0 0}
+@media(max-width:620px){.valgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){.valgrid{grid-template-columns:1fr}}
+
+/* table */
+.tbl{border-radius:16px;overflow:hidden;margin:0 0 20px}
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;min-width:300px}
+th,td{padding:14px 18px;text-align:left;font-size:15.5px;vertical-align:top}
+.tbl.nowrap th,.tbl.nowrap td{white-space:nowrap}
+@media(max-width:420px){th,td{padding:12px 12px;font-size:14px}}
+thead th{font-family:'Space Grotesk';font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--grad)}
+tbody td{border-bottom:1px solid var(--line)}
+tbody tr:nth-child(even){background:#F5F7FE}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:var(--soft)}
+td:first-child{font-weight:700;color:var(--ink)}
+td:nth-child(2){font-weight:700;color:var(--indigo-2)}
+td:nth-child(3){color:var(--muted)}
+.tbl.plain td:nth-child(2){font-weight:400;color:#2A3346}
+.tbl.plain td:nth-child(3){color:#2A3346}
+
+/* formula cards */
+.formula{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 20px}
+.fcard{padding:24px;position:relative;overflow:hidden}
+.fcard::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad)}
+.fhd{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.fico{width:42px;height:42px;border-radius:12px;background:var(--grad-soft);border:1px solid #DCE3F5;display:grid;place-items:center;flex:0 0 auto}
+.fcard h3{font-size:18px;margin:0;color:var(--ink)}
+.eq{font-family:'Space Grotesk';font-weight:600;font-size:19px;background:var(--grad-soft);color:var(--indigo);padding:14px 16px;border-radius:12px;font-variant-numeric:tabular-nums;border:1px solid #E3E7F6}
+.eq small{display:block;color:var(--muted);font-weight:500;font-size:13px;margin-top:6px}
+@media(max-width:640px){.formula{grid-template-columns:1fr}}
+
+/* faq */
+.faq details{border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:10px;overflow:hidden}
+.faq details[open]{box-shadow:var(--sh-c);border-color:#CBD2F2}
+.faq summary{list-style:none;cursor:pointer;padding:16px 18px;font-family:'Space Grotesk';font-weight:600;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:#fff;background:var(--grad-2);width:26px;height:26px;min-width:26px;border-radius:50%;display:grid;place-items:center;font-size:18px;line-height:1;font-weight:500}
+.faq details[open] summary{color:var(--indigo)}
+.faq details[open] summary::after{content:"\2013"}
+.faq .ans{padding:2px 18px 16px;color:var(--muted)}
+
+footer{background:#0F1B2D;color:#AEBAC6;padding:44px 0 24px;margin-top:26px;font-size:14px}
+.fw{max-width:1060px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:28px}
+.fcol h4{font-family:'Space Grotesk';font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#fff;margin:0 0 12px}
+.fcol a{display:block;color:#AEBAC6;margin-bottom:9px}.fcol a:hover{color:#fff}
+.fbrand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.fbrand .mk{width:34px;height:34px;border-radius:9px;background:var(--grad);display:grid;place-items:center}
+.fbrand b{color:#fff;font-family:'Space Grotesk';font-weight:700;font-size:16px}
+.brandcol p{color:#8A97A6;margin:0;max-width:260px;line-height:1.5;font-size:13.5px}
+.fbar{max-width:1060px;margin:26px auto 0;padding:18px 20px 0;border-top:1px solid rgba(255,255,255,.1);color:#7D8B99;font-size:13px}
+@media(max-width:720px){.fw{grid-template-columns:1fr 1fr}.brandcol{grid-column:1/-1}}
+@media(max-width:440px){.fw{grid-template-columns:1fr}}
+
+.hright{display:flex;align-items:center;gap:16px;margin-left:auto}
+.langsel{position:relative}
+.langsel .lbtn{display:flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-weight:600;font-size:14px;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:9px;padding:7px 11px;cursor:pointer}
+.langsel .lbtn:hover{border-color:var(--indigo);color:var(--indigo)}
+.langsel .lmenu{position:absolute;right:0;top:calc(100% + 8px);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--sh);padding:6px;display:none;grid-template-columns:1fr 1fr;gap:2px;min-width:260px;z-index:40}
+.langsel.open .lmenu{display:grid}
+.langsel .lmenu a{display:block;padding:8px 11px;border-radius:8px;font-size:14px;color:#2A3346;white-space:nowrap}
+.langsel .lmenu a:hover{background:var(--soft);color:var(--indigo)}
+.langsel .lmenu a.cur{color:var(--indigo);font-weight:600;background:var(--grad-soft)}
+@media(max-width:480px){.langsel .lmenu{grid-template-columns:1fr;min-width:170px}}
+</style>
+</head>
+<body>
+
+<header><div class="w">
+  <a class="brand" href="index.html">
+    <span class="mk"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span><b>Ounces&nbsp;to&nbsp;Kilograms</b><span>công cụ đổi oz → kg</span></span>
+  </a>
+  <div class="hright">
+  <nav>
+    <a href="index.html">Oz → kg</a>
+    <a href="kg-to-oz.html">Kg → oz</a>
+  </nav>
+  <div class="langsel" id="langsel"><button class="lbtn" id="lbtn" aria-haspopup="true" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15.5 0 18M12 3c-2.5 2.5-2.5 15.5 0 18" stroke="currentColor" stroke-width="1.7"/></svg><span>VI</span></button><div class="lmenu"><a href="../index.html" lang="en">English</a><a href="../de/index.html" lang="de">Deutsch</a><a href="../es/index.html" lang="es">Español</a><a href="../fr/index.html" lang="fr">Français</a><a href="../hi/index.html" lang="hi">हिन्दी</a><a href="../id/index.html" lang="id">Bahasa Indonesia</a><a href="../it/index.html" lang="it">Italiano</a><a href="../ms/index.html" lang="ms">Bahasa Melayu</a><a href="../pl/index.html" lang="pl">Polski</a><a href="../pt/index.html" lang="pt">Português</a><a class="cur" href="index.html" lang="vi">Tiếng Việt</a></div></div>
+  </div>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="aurora a1"></div><div class="aurora a2"></div><div class="w">
+  <span class="eyebrow">Công cụ đổi khối lượng</span>
+  <h1>Công cụ đổi ao-xơ sang kilôgam</h1>
+  <p class="sub">Đổi <strong>ao-xơ (oz)</strong> sang <strong>kilôgam (kg)</strong> ngay khi bạn gõ, cho ao-xơ chuẩn và troy. Dùng nút hoán đổi để chuyển từ kg sang oz.</p>
+  <div class="trust"><span>✓ Hệ số NIST chính xác</span><span>Đánh giá bởi <b>Gary Bennett</b></span><span>Cập nhật <b>Th11 2026</b></span></div>
+
+  <div class="conv">
+    <div class="conv-row">
+      <div class="field">
+        <label for="oz">Ao-xơ</label>
+        <div class="inp"><input id="oz" type="text" inputmode="decimal" value="16" autocomplete="off"><span class="unit" id="ozUnit">oz</span></div>
+      </div>
+      <button class="swap" id="swap" aria-label="Reverse: go to kilograms to ounces converter" title="Reverse → kg to oz">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 4 4 7l3 3M4 7h13M17 20l3-3-3-3m3 3H7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="field">
+        <label for="kg">Kilôgam</label>
+        <div class="inp"><input id="kg" type="text" inputmode="decimal" autocomplete="off"><span class="unit">kg</span></div>
+      </div>
+    </div>
+    <div class="seg-wrap"><div class="seg" id="ozType"><button class="on" data-f="0.028349523125" data-lab="oz">Ao-xơ (oz)</button><button data-f="0.0311034768" data-lab="oz t">Ao-xơ troy (oz t)</button></div></div>
+    <div class="scalebox">
+      <svg class="scale" viewBox="0 0 440 172" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0F766E"/><stop offset=".55" stop-color="#1D4ED8"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs>
+        <rect x="178" y="142" width="84" height="12" rx="6" fill="#28304D"/>
+        <rect x="214" y="54" width="12" height="90" rx="6" fill="#28304D"/>
+        <g class="beam-wrap">
+          <rect x="70" y="45" width="300" height="10" rx="5" fill="url(#beam)"/>
+          <circle cx="220" cy="50" r="11" fill="#1D4ED8" stroke="#fff" stroke-width="3"/>
+          <path d="M95 53 L66 100 M95 53 L124 100" stroke="#9AA6BF" stroke-width="2"/>
+          <path d="M58 100 Q95 130 132 100" stroke="#0F766E" stroke-width="3.5" stroke-linecap="round" fill="#E7F3F1"/>
+          <path d="M345 53 L316 100 M345 53 L374 100" stroke="#9AA6BF" stroke-width="2"/>
+          <path d="M308 100 Q345 130 382 100" stroke="#7C3AED" stroke-width="3.5" stroke-linecap="round" fill="#F2ECFF"/>
+          <text id="panL" x="95" y="88" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="18" fill="#131A2B">16 oz</text>
+          <text id="panR" x="345" y="88" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="18" fill="#131A2B">0.4536 kg</text>
+        </g>
+      </svg>
+      <div class="scap"><div class="eqrow"><span id="eqline">16 oz = 0.4536 kg</span><button class="copybtn" id="copy" type="button">⧉ Sao chép</button></div><small>Cùng một khối lượng, hiển thị theo hai đơn vị</small></div>
+    </div>
+    <div class="also"><span>Theo gam<b id="u-g">453.59 g</b></span><span>Theo pao<b id="u-lb">1 lb</b></span><span>Theo stone<b id="u-st">0.0714 st</b></span></div>
+    <div class="chips" id="chips">
+      <button data-oz="0.5">½ oz</button>
+      <button data-oz="1">1 oz</button>
+      <button data-oz="4">4 oz</button>
+      <button data-oz="8">8 oz</button>
+      <button data-oz="16">16 oz</button>
+      <button data-oz="32">32 oz</button>
+      <button data-oz="100">100 oz</button>
+      <button data-oz="1000">1000 oz</button>
+    </div>
+    <div class="prec">
+      <label for="dec">Chữ số thập phân</label>
+      <select id="dec"><option>2</option><option selected>4</option><option>6</option></select>
+    </div>
+  </div>
+</div></section>
+
+<!-- intro -->
+<section class="sec article"><div class="w">
+  <h2>Công cụ đổi ao-xơ sang kilôgam cho ao-xơ chuẩn và troy</h2>
+  <p>Công cụ miễn phí này đổi ao-xơ sang kilôgam ngay khi bạn gõ một con số. Việc quy đổi ao-xơ sang kilôgam biến một khối lượng theo hệ đo lường Mỹ thành khối lượng hệ mét bằng một con số cố định. Ao-xơ xuất hiện trên nhãn, bưu kiện và công thức nấu ăn của Mỹ, trong khi phần lớn thế giới dùng kilôgam. Một con số cố định làm cho mọi đáp án chính xác, nhanh và đáng tin cậy. Nhập một giá trị vào ô Ao-xơ, dùng nút hoán đổi để chuyển <a href="kg-to-oz.html">kilôgam sang ao-xơ</a>, và chọn Troy cho vàng hoặc bạc.</p>
+  <p><strong>Một ao-xơ bằng đúng 0,028349523125 kilôgam, tức khoảng 28,35 gam.</strong> Để đổi oz sang kg, nhân số ao-xơ với 0,028349523125. Một kilôgam chứa khoảng 35,274 ao-xơ, nên chia cho 35,274 cho cùng đáp án. Mười sáu ao-xơ tạo thành một pao, và một pao bằng đúng 0,45359237 kilôgam. Mỗi ao-xơ chứa 437,5 grain, và một grain là một đơn vị nhỏ khoảng 64,8 miligam.</p>
+  <p>Những con số này đến từ luật pháp, không phải từ phỏng đoán. Năm 1959, sáu quốc gia ký Thỏa thuận Quốc tế về Yard và Pound. Hoa Kỳ, Vương quốc Anh, Canada, Úc, New Zealand và Nam Phi thống nhất một pao bằng 0,45359237 kg. National Institute of Standards and Technology (NIST) liệt kê giá trị ao-xơ tương ứng trong các bảng Handbook 44 của mình. Stephan Schlamminger, một nhà vật lý của NIST đã góp phần định nghĩa lại kilôgam, gọi nền tảng mới của nó là «được dệt vào kết cấu của vũ trụ».</p>
+  <p>Hướng dẫn này bao gồm công thức, phương pháp bốn bước, và các đáp án có sẵn từ 1 ao-xơ đến 100 ao-xơ. Mỗi phần bắt đầu từ một nhiệm vụ thực tế, như nướng theo công thức Mỹ hoặc gửi một bưu kiện nhỏ. Cha mẹ quy đổi cân nặng trẻ sơ sinh và du khách xếp va-li đều tìm thấy phần phù hợp. Võ sĩ quyền anh kiểm tra cỡ găng và người mua vàng cân tiền xu cũng có phần của họ. Các phần cuối bàn về ao-xơ troy và ao-xơ chất lỏng.</p>
+  <div class="callout teal"><strong>Một sự thật bất ngờ về 35 ao-xơ.</strong> Ba mươi lăm ao-xơ nặng 0,9922 kg, chỉ cách một kilôgam đầy đủ 7,8 gam. Một đồng tiền vàng 1 ao-xơ troy nặng 31,1 gam, vì kim loại quý dùng ao-xơ đặc biệt riêng. Và một chai nước 32 ao-xơ đo thể tích, nên giá trị kilôgam của nó tùy thuộc vào thứ lấp đầy nó.</div>
+</div></section>
+
+<!-- table of contents -->
+<section class="sec" style="padding-top:6px"><div class="w">
+  <nav class="toc" aria-label="Contents">
+    <div class="toch">Mục lục</div>
+    <ol>
+      <li><a href="#basics">Ao-xơ, ao-xơ troy và kilôgam là gì</a></li>
+      <li><a href="#convert">Cách đổi ao-xơ sang kilôgam</a></li>
+      <li><a href="#method">Phương pháp từng bước</a></li>
+      <li><a href="#chart">Bảng quy đổi oz sang kg</a></li>
+      <li><a href="#searched">Các giá trị ao-xơ được tìm nhiều nhất</a></li>
+      <li><a href="#everyday">Những thứ hằng ngày người ta quy đổi</a></li>
+      <li><a href="#troy">Ao-xơ troy &amp; kim loại thỏi</a></li>
+      <li><a href="#fluid">Ao-xơ chất lỏng và ao-xơ</a></li>
+      <li><a href="#precision">Cần chính xác đến mức nào</a></li>
+      <li><a href="#faq">Câu hỏi thường gặp</a></li>
+    </ol>
+  </nav>
+</div></section>
+
+<!-- 1. basics -->
+<section class="sec article" id="basics"><div class="w">
+  <h2>Ao-xơ, Ao-xơ Troy và Kilôgam Là Gì?</h2>
+  <p>Ao-xơ là một đơn vị khối lượng nhỏ có hai dạng thông dụng. Ao-xơ chuẩn nặng 28,35 gam, và ao-xơ troy dành cho kim loại quý nặng 31,10 gam. Kilôgam là đơn vị cơ sở hệ mét của khối lượng, bằng 1.000 gam.</p>
+
+  <h3>Ao-xơ Chuẩn (Avoirdupois)</h3>
+  <p>Ao-xơ avoirdupois là một đơn vị khối lượng bằng một phần mười sáu của một pao và dùng để đo hàng hóa hằng ngày. Từ avoirdupois (đọc là «av-er-duh-POIZ») bắt nguồn từ các từ tiếng Pháp cổ nghĩa là «hàng hóa có trọng lượng». Người mua sắm ở Hoa Kỳ thấy ao-xơ này trên hầu hết mọi bao bì thực phẩm. Một ao-xơ avoirdupois chứa 16 dram, và dram là một đơn vị nhỏ dùng trong các công thức cũ.</p>
+  <p>Vương quốc Anh áp dụng cùng pao năm 1959 qua Weights and Measures Act 1963. Kết quả là ngày nay một ao-xơ Anh và một ao-xơ Mỹ nặng bằng nhau. Thực đơn bít tết ở nhiều nhà hàng Anh tự hào ghi các miếng theo ao-xơ, còn cửa hàng bán cùng loại thịt theo gam.</p>
+
+  <h3>Ao-xơ Troy</h3>
+  <p>Ao-xơ troy (oz t) là một đơn vị khối lượng bằng 31,1034768 gam và dùng để cân vàng, bạc, bạch kim và paladi. Tên gọi bắt nguồn từ Troyes, một thị trấn chợ ở Pháp nơi thương nhân thời trung cổ cân bạc và gia vị. Một ao-xơ troy chứa 480 grain, trong khi một ao-xơ chuẩn chứa 437,5 grain.</p>
+  <p>Hệ troy xây dựng các đơn vị từ cùng một grain. Theo NIST Handbook 44, 24 grain tạo thành 1 pennyweight, và 20 pennyweight tạo thành 1 ao-xơ troy. Mười hai ao-xơ troy tạo thành 1 pao troy nặng 373,24 gam. Vì vậy một pao troy nhẹ hơn một pao chuẩn, dù một ao-xơ troy nặng hơn một ao-xơ chuẩn.</p>
+  <p>Ao-xơ troy được đổi sang kilôgam bằng hệ số riêng. Nhân ao-xơ troy với 0,0311034768 để ra kilôgam. Một thỏi bạc 10 oz t nặng 0,3110 kg, và một kilôgam chứa 32,1507 ao-xơ troy. Chế độ Troy của công cụ dùng đúng hệ số này.</p>
+
+  <h3>Kilôgam</h3>
+  <p>Kilôgam là đơn vị cơ sở của khối lượng trong Hệ Đơn vị Quốc tế (SI) và làm nền tảng cho mọi khối lượng hệ mét. Hội nghị toàn thể về Cân đo (CGPM) đã bỏ phiếu vào tháng 11 năm 2018 để thay đổi cách định nghĩa kilôgam. Quy tắc mới bắt đầu vào ngày 20 tháng 5 năm 2019, tức Ngày Đo lường Thế giới.</p>
+  <p>Trước ngày đó, một trụ kim loại gần Paris xác định kích thước của kilôgam. Các nhà khoa học gọi trụ bằng bạch kim và iridi đó là «Le Grand K». Ngày nay, kilôgam dựa trên hằng số Planck, một con số cố định từ vật lý bằng 6,62607015 × 10⁻³⁴ joule-giây. International Bureau of Weights and Measures (BIPM) đã chọn con số đó để kilôgam giữ nguyên kích thước cũ. Lựa chọn đó giữ cho giá trị của mọi ao-xơ không đổi.</p>
+  <p>Các nhà khoa học phân biệt khối lượng với trọng lượng. Khối lượng là lượng vật chất trong một vật, còn trọng lượng là lực hút của trọng lực lên nó. Trong đời thường, cả hai từ được dùng cho cùng một ý, và hướng dẫn này cũng vậy.</p>
+</div></section>
+
+<!-- 2. convert -->
+<section class="sec article" id="convert"><div class="w">
+  <h2>Đổi Ao-xơ Sang Kilôgam Như Thế Nào?</h2>
+  <p>Nhân số ao-xơ với 0,028349523125 để ra kilôgam. Chia số ao-xơ cho 35,27396195 cho cùng kết quả.</p>
+  <div class="formula">
+    <div class="card fcard">
+      <div class="fhd"><span class="fico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 20c3 0 3-15 6-15M3 9h8" stroke="#4338CA" stroke-width="2" stroke-linecap="round"/></svg></span><h3>Công thức</h3></div>
+      <div class="eq">kg = oz × 0.0283495<small>1 ao-xơ = 0,028349523125 kilôgam (chính xác)</small></div>
+    </div>
+    <div class="card fcard">
+      <div class="fhd"><span class="fico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#7C3AED" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Ví dụ</h3></div>
+      <div class="eq">16 oz × 0.0283495 = 0.4536 kg<small>Vậy 16 ao-xơ bằng khoảng 0,4536 kilôgam.</small></div>
+    </div>
+  </div>
+
+  <h3>Tại Sao Hệ Số Là 0,028349523125?</h3>
+  <p>Hệ số đến từ việc chia một pao thành 16 phần bằng nhau. Thỏa thuận năm 1959 ấn định pao ở 0,45359237 kg, nên một ao-xơ là giá trị đó chia cho 16.</p>
+  <div class="fml">0.45359237 ÷ 16 = 0.028349523125</div>
+  <p>NIST xác nhận cùng con số. Handbook 44, Phụ lục C của họ liệt kê một ao-xơ avoirdupois là đúng 28,349523125 gam. Vì cả hai con số đều chính xác theo luật, hệ số không bao giờ thay đổi từ năm này sang năm khác.</p>
+
+  <h3>Hai Ví Dụ Đã Giải</h3>
+  <p>Hãy hình dung một người nấu ăn tại nhà với công thức brownie Mỹ cần 10 ao-xơ sô-cô-la. Mười ao-xơ nhân 0,0283495 bằng 0,2835 kg, hay khoảng 283 gam trên cân nhà bếp. Một người bán trực tuyến gửi một cây nến nặng 28 ao-xơ nhận 0,7938 kg cho tờ khai hải quan.</p>
+
+  <h3>Hệ Số Ngược Là Gì?</h3>
+  <p>Một kilôgam bằng 35,27396195 ao-xơ. Để đổi kilôgam trở lại ao-xơ, nhân kilôgam với con số đó. Một du khách có hãng bay cho phép 23 kg có thể đổi giới hạn đó sang ao-xơ: 23 × 35,274 = 811,3 ao-xơ. Nút hoán đổi trong công cụ làm bước này cho bạn.</p>
+  <p>Nhiều sách nấu ăn châu Âu in 28 gam mỗi ao-xơ như một cách rút gọn. Hệ số chính xác chính xác hơn khoảng 1,2%, giúp bánh mì và bánh ngọt thành công.</p>
+</div></section>
+
+<!-- 3. method -->
+<section class="sec article" id="method"><div class="w">
+  <h2>Phương Pháp Từng Bước Là Gì?</h2>
+  <p>Để đổi oz sang kg bằng tay, làm theo 4 bước: viết số ao-xơ, nhân, làm tròn và kiểm tra. Toàn bộ phương pháp mất chưa đến một phút với máy tính trên điện thoại.</p>
+  <ol>
+    <li>Viết khối lượng theo ao-xơ dưới dạng số thập phân, như 15 hoặc 7,5.</li>
+    <li>Nhân con số đó với 0,028349523125, hoặc với 0,0283495 cho hầu hết mục đích.</li>
+    <li>Làm tròn đáp án cho phù hợp với công việc, như 2 chữ số thập phân khi nấu ăn.</li>
+    <li>Kiểm tra đáp án so với một giá trị đã biết, như 16 oz = 0,4536 kg.</li>
+  </ol>
+  <p>Đây là cách đổi oz sang kg với một con số thực. Mười lăm ao-xơ nhân 0,0283495 bằng 0,4252 kg. Đáp án đó nằm hơi dưới 16 ao-xơ, nên nó vượt qua bước kiểm tra. Để có kết quả theo gam, công cụ đổi ao-xơ sang gam trả lời trực tiếp.</p>
+
+  <h3>Ví Dụ Đã Giải Với Số Thập Phân</h3>
+  <p>Bài tập ở trường thường dùng số thập phân, nên đây là 3 ví dụ luyện tập. Để đổi 90,2 oz sang kg, nhân 90,2 với 0,028349523125 và được 2,5571 kg. Các bước tương tự đổi 91,3 oz sang kg và cho 2,5883 kg. Một phiếu bài tập thứ ba có thể yêu cầu bạn đổi 92,2 oz sang kg, và đáp án là 2,6138 kg.</p>
+  <p>Giáo viên gọi phương pháp này là phân tích thứ nguyên. Phân tích thứ nguyên là cách giải bài toán đơn vị bằng cách nhân với một phân số bằng 1, như 0,0283495 kg trên 1 oz. Các đơn vị ao-xơ triệt tiêu, và chỉ còn lại kilôgam.</p>
+
+  <h3>Mẹo Tính Nhẩm</h3>
+  <p>Chia số ao-xơ cho 35 để ước tính nhanh. Với 105 ao-xơ, 105 ÷ 35 = 3 kg, và đáp án chính xác là 2,9767 kg. Ước tính nằm trong khoảng 0,8% của giá trị chính xác. Cách này hiệu quả ở lối đi siêu thị, còn hệ số chính xác phù hợp nhất cho nhãn bưu phí.</p>
+
+  <h3>Pao Cộng Ao-xơ</h3>
+  <p>Đổi pao sang ao-xơ trước, cộng thêm số ao-xơ dư, rồi nhân. Một bưu kiện 2 lb 5 oz chứa 2 × 16 + 5 = 37 ao-xơ. Ba mươi bảy ao-xơ nhân 0,0283495 bằng 1,0489 kg. Với khối lượng chỉ cho theo pao, công cụ đổi pao sang kilôgam nhanh hơn.</p>
+</div></section>
+
+<!-- 4. chart -->
+<section class="sec article" id="chart"><div class="w">
+  <h2>Bảng Quy Đổi oz Sang kg Cho Thấy Gì?</h2>
+  <p>Ba mươi sáu giá trị xuất hiện trong bảng bên dưới, từ 1 ao-xơ đến 1.000 ao-xơ. Mỗi con số kilôgam được làm tròn đến 4 chữ số thập phân, và mỗi con số gam đến 2 chữ số.</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Ao-xơ (oz)</th><th>Kilôgam (kg)</th><th>Gam (g)</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+  <p>Bảng cho thấy một ranh giới hữu ích. Ba mươi lăm ao-xơ nằm ngay dưới 1 kilôgam, trong khi 36 ao-xơ vượt qua nó khoảng 21 gam.</p>
+</div></section>
+
+<!-- 5. most searched -->
+<section class="sec article" id="searched"><div class="w">
+  <h2>Các Giá Trị Ao-xơ Được Tìm Nhiều Nhất Theo Kilôgam Là Gì?</h2>
+  <p>Sáu giá trị được tìm nhiều nhất là 16, 10, 12, 32, 8 và 1 ao-xơ. Theo kilôgam, chúng bằng 0,4536, 0,2835, 0,3402, 0,9072, 0,2268 và 0,0283.</p>
+  <div class="valgrid">
+    <div class="valcard"><h3>16 oz sang kg</h3><div class="big">0.4536 kg</div><p>Đúng một pao đầy đủ (453,59 g). Thợ làm bánh dùng giá trị này nhiều nhất, vì công thức Mỹ tính theo pao.</p></div>
+    <div class="valcard"><h3>10 oz sang kg</h3><div class="big">0.2835 kg</div><p>283,50 gam, nhiều hơn một phần tư kilôgam một chút.</p></div>
+    <div class="valcard"><h3>12 oz sang kg</h3><div class="big">0.3402 kg</div><p>340,19 gam. Một gói cà phê xay chuẩn của Mỹ thường chứa 12 ao-xơ.</p></div>
+    <div class="valcard"><h3>32 oz sang kg</h3><div class="big">0.9072 kg</div><p>Hai pao, cách 1 kilôgam khoảng 93 gam. Hãy kiểm tra nhãn, vì nhiều chai 32-oz ghi ao-xơ chất lỏng.</p></div>
+    <div class="valcard"><h3>8 oz sang kg</h3><div class="big">0.2268 kg</div><p>Nửa pao. Một cup nước của Mỹ nặng khoảng 8,3 ao-xơ, nên một cup và 8 oz gần nhau nhưng không bằng.</p></div>
+    <div class="valcard"><h3>1 oz sang kg</h3><div class="big">0.0283 kg</div><p>Đã làm tròn. Viết đầy đủ, giá trị là 0,028349523125 kg.</p></div>
+  </div>
+</div></section>
+
+<!-- 6. everyday -->
+<section class="sec article" id="everyday"><div class="w">
+  <h2>Người Ta Đổi Những Thứ Hằng Ngày Nào Từ Ao-xơ Sang Ki-lô?</h2>
+  <p>Người ta đổi 5 nhóm vật dụng hằng ngày chính: thực phẩm, bưu phẩm, trẻ sơ sinh, hành lý và dụng cụ thể hình. Vàng và bạc tạo thành nhóm thứ sáu, nhưng chúng dùng một ao-xơ khác.</p>
+
+  <h3>Nhãn Thực Phẩm và Công Thức</h3>
+  <p>Nhãn thực phẩm Mỹ ghi cả hai đơn vị theo luật. U.S. Food and Drug Administration (FDA) đặt quy tắc này trong 21 CFR 101.105. Thực phẩm đóng gói phải ghi khối lượng tịnh theo đơn vị hệ mét và đơn vị Mỹ. Khối lượng tịnh là khối lượng của riêng thực phẩm, không có hộp, lon hay lọ.</p>
+  <p>NIST đã nghiên cứu các cửa hàng tuân thủ quy tắc này tốt đến mức nào. Các nhà nghiên cứu kiểm tra ít nhất 1.137 gói hàng tại 19 cửa hàng bán lẻ. Khoảng 17% số gói đó chỉ ghi đơn vị hệ mét, cho thấy nhãn hệ mét đã trở nên quen thuộc ra sao. Các gói có khối lượng thay đổi, như thịt nguội tính giá theo pao, được miễn quy tắc hai đơn vị.</p>
+  <p>Một người nấu ăn theo công thức Mỹ gặp những con số này ở mọi lối đi. Một thanh bơ nặng 4 ao-xơ, tức 0,1134 kg. Một hộp sữa chua thường chứa 6 ao-xơ, và phép kiểm 6 oz sang kg cho 0,1701 kg. Đậu đóng hộp thường trong lon 15 ao-xơ, nên 15 oz sang kg bằng 0,4252 kg.</p>
+  <p>Các gói lớn hơn cần sự cẩn thận tương tự. Lon lớn cà chua nghiền chứa 28 ao-xơ, tức 0,7938 kg. Một hộp cao yến mạch cán thường nặng 18 ao-xơ, hay 0,5103 kg. Thợ làm bánh tra 16 oz sang kg cho một pao bột nhận 0,4536 kg.</p>
+  <p>Ổ bánh sandwich thường nặng 24 ao-xơ, cho 0,6804 kg. Một lọ lớn sốt mayonnaise có thể chứa 30 ao-xơ theo khối lượng, hay 0,8505 kg. Người mua ở các nước hệ mét so sánh giá mỗi kilôgam, nên con số này giúp họ đánh giá giá trị.</p>
+
+  <h3>Bưu Phẩm và Vận Chuyển</h3>
+  <p>United States Postal Service (USPS) dùng 2 giới hạn ao-xơ then chốt. Domestic Mail Manual của họ giới hạn một thư First-Class ở 3,5 ao-xơ, tức 0,0992 kg. Thư First-Class ở bất kỳ hình dạng nào dừng ở 13 ao-xơ. Giá trị 13 oz sang kg là 0,3685 kg, và các kiện nặng hơn chuyển sang dịch vụ khác.</p>
+  <p>Người bán nhỏ trên Etsy và eBay làm việc với các giới hạn này mỗi ngày và định giá bưu kiện của họ một cách tự tin. Một tấm thiệp kèm quà mỏng có thể nặng 2 ao-xơ, hay 0,0567 kg. Phép kiểm 3 oz sang kg cho 0,0850 kg, vẫn vừa giới hạn thư. Một cuốn sách bìa mềm 11 ao-xơ nặng 0,3118 kg, nên nó vẫn dưới mức 13 ao-xơ.</p>
+  <p>Nhiều hãng vận chuyển quốc tế tính cước theo nửa kilôgam hoặc kilôgam kế tiếp. Người bán có việc giao hàng suôn sẻ nhất bằng cách làm tròn lên trước khi in nhãn. Đây là chỗ có sự tinh tế: một hãng có thể tính cước theo kích thước thùng thay vì khối lượng đối với bưu kiện nhẹ, cồng kềnh.</p>
+
+  <h3>Cân Nặng Trẻ Sơ Sinh và Trẻ Em</h3>
+  <p>Bệnh viện Mỹ thường ghi cân nặng khi sinh theo pao và ao-xơ, còn phần lớn thế giới dùng kilôgam. Centers for Disease Control and Prevention (CDC) định nghĩa cân nặng sơ sinh thấp là dưới 2.500 gam. Theo đơn vị Mỹ, ranh giới đó được viết là 5 pao 8 ao-xơ.</p>
+  <p>Y tá và cha mẹ dùng phương pháp pao-cộng-ao-xơ cho mọi cân nặng của bé. Một trẻ sơ sinh 7 lb 8 oz nặng 7 × 16 + 8 = 120 ao-xơ. Một trăm hai mươi ao-xơ nhân 0,0283495 bằng 3,4019 kg. Ông bà ở nước ngoài thường muốn con số kilôgam này ngay trong tin nhắn đầu tiên từ bệnh viện.</p>
+  <p>Giá trị ranh giới là một trường hợp đặc biệt thú vị. Đúng 5 lb 8 oz bằng 88 ao-xơ, hay 2,4948 kg. Con số đó nằm dưới 2.500 gam 5 gam. Các cơ quan y tế dùng cặp đã làm tròn, nên bác sĩ đọc cả hai dạng như cùng một mốc.</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Pao và ao-xơ</th><th>Tổng ao-xơ</th><th>Kilôgam</th></tr></thead>
+        <tbody>
+          <tr><td>5 lb 4 oz</td><td>84</td><td>2.3814</td></tr>
+          <tr><td>5 lb 6 oz</td><td>86</td><td>2.4381</td></tr>
+          <tr><td>6 lb 4 oz</td><td>100</td><td>2.8350</td></tr>
+          <tr><td>6 lb 5 oz</td><td>101</td><td>2.8633</td></tr>
+          <tr><td>6 lb 14 oz</td><td>110</td><td>3.1184</td></tr>
+          <tr><td>8 lb 9 oz</td><td>137</td><td>3.8839</td></tr>
+          <tr><td>9 lb 5 oz</td><td>149</td><td>4.2241</td></tr>
+          <tr><td>10 lb 5 oz</td><td>165</td><td>4.6777</td></tr>
+          <tr><td>14 lb 5 oz</td><td>229</td><td>6.4920</td></tr>
+          <tr><td>15 lb 5 oz</td><td>245</td><td>6.9456</td></tr>
+          <tr><td>16 lb 10 oz</td><td>266</td><td>7.5410</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>Mỗi hàng theo cùng một quy tắc. Nhân pao với 16, cộng ao-xơ, và nhân tổng với 0,0283495.</p>
+
+  <h3>Du Lịch và Hành Lý</h3>
+  <p>Các hãng bay đặt giới hạn hành lý theo kilôgam hoặc pao, và người xếp đồ thông minh cân các món nhỏ sớm. Một đôi giày chạy 26 ao-xơ ra 0,7371 kg, còn một laptop mỏng 42 ao-xơ nặng 1,1907 kg. Một bình lưu niệm 36 ao-xơ ra 1,0206 kg, một món quà đáng yêu hơn một kilôgam một chút.</p>
+  <p>Hộp quà chất đống nhanh trong va-li. Phép kiểm 40 oz sang kg cho 1,1340 kg. Ba pao sô-cô-la bằng 48 ao-xơ, hay 1,3608 kg. Bốn pao hạt cà phê bằng 64 ao-xơ, tức 1,8144 kg.</p>
+  <p>Các món số lượng lớn đạt tới đầu nặng của bảng. Bảy mươi hai ao-xơ ra 2,0412 kg, và 80 ao-xơ ra 2,2680 kg. Ở trên cùng, 100 oz sang kg bằng 2,8350 kg, đáng nhớ: 100 ao-xơ gần 3 kilôgam nhưng vẫn dưới mức đó.</p>
+
+  <h3>Dụng Cụ Thể Hình và Khẩu Phần Ăn</h3>
+  <p>Găng quyền anh được bán theo khối lượng tính bằng ao-xơ, từ 8 ao-xơ đến 20 ao-xơ. Găng đấm bao 10 ao-xơ nặng 0,2835 kg, nên 10 oz sang kg trả lời một câu hỏi thường gặp của võ sĩ ở nước ngoài. Găng đấu tập 14 ao-xơ nặng 0,3969 kg, giúp huấn luyện viên so sánh cỡ găng Mỹ và châu Âu.</p>
+  <p>Ứng dụng theo dõi bữa ăn cân protein theo các khẩu phần gọn gàng, chính xác. Một phần ức gà 5 ao-xơ nặng 0,1417 kg, và một miếng phi lê cá hồi 7 ao-xơ ra 0,1984 kg. Một miếng bít tết ribeye lớn 20 ao-xơ nặng 0,5670 kg, nửa kilôgam thịt hào phóng.</p>
+  <p>Dụng cụ tập luyện chiếm phần giữa của bảng. Một dây nhảy có tạ 22 ao-xơ nặng 0,6237 kg, và một con lăn xốp 25 ao-xơ ra 0,7087 kg.</p>
+</div></section>
+
+<!-- 7. troy & bullion -->
+<section class="sec article" id="troy"><div class="w">
+  <h2>Từ Ao-xơ Tạp Hóa Đến Ao-xơ Kim Loại Thỏi</h2>
+  <p>Mọi giá trị trong bảng cho đến giờ dùng một ao-xơ: ao-xơ tạp hóa 28,35 gam. Ao-xơ đó lấp đầy xe đẩy mua sắm, túi thư và sổ sức khỏe trẻ em khắp Hoa Kỳ. Nhưng từ «ao-xơ» có một cuộc đời thứ hai trong các tiệm kim hoàn và hầm ngân hàng. Ở đó, ao-xơ nặng hơn một chút và mang tên riêng. Và đây là bước làm cho hướng dẫn này trọn vẹn. Chọn đúng ao-xơ là điều quan trọng, vì hai loại chênh nhau gần 10%. Với người mua vàng, đúng ao-xơ bảo vệ giá trị của mỗi lần mua. Các dòng tiếp theo giải thích ao-xơ kim loại thỏi bằng những con số đơn giản.</p>
+
+  <h3>Ao-xơ Troy Có Giống Ao-xơ Thường Không?</h3>
+  <p>Không. Một ao-xơ troy nặng 31,1034768 gam, trong khi một ao-xơ thường nặng 28,349523125 gam. Ao-xơ troy nặng hơn khoảng 9,7%.</p>
+  <p>Một ao-xơ thường chứa 437,5 grain, nên ao-xơ troy mang thêm 42,5 grain. Chế độ Ao-xơ của công cụ dùng ao-xơ thường. Khối lượng vàng và bạc cần chế độ Troy thay vào đó.</p>
+  <div class="fml">kg = oz t × 0.0311034768</div>
+  <p>Để đổi oz vàng sang kg, nhân ao-xơ troy với 0,0311034768. Một kilôgam chứa 32,1507 ao-xơ troy, nên 1 kg sang ao-xơ troy bằng 32,15 oz t. Công cụ đổi ao-xơ troy sang kilôgam xử lý phép tính kim loại thỏi với hệ số này.</p>
+  <div class="callout"><strong>Vì sao chế độ Troy quan trọng.</strong> Một nhà đầu tư vàng mua một thỏi 5 oz t nhận 5 × 0,0311034768 = 0,1555 kg. Chế độ chuẩn sẽ hiển thị 0,1417 kg cho cùng 5 ao-xơ. Khoảng chênh 13,8 gam đó là tiền thật đối với người mua kim loại thỏi.</div>
+  <p>London Bullion Market Association (LBMA) đặt chuẩn thế giới cho các thỏi lớn. Quy tắc Good Delivery của tổ chức này yêu cầu một thỏi vàng chứa từ 350 đến 430 ao-xơ troy tinh. Khoảng đó bằng khoảng 10,9 kg đến 13,4 kg. Một thỏi bạc chuẩn chứa khoảng 1.000 ao-xơ troy, gần 31,1 kg.</p>
+  <p>The Perth Mint, thuộc sở hữu của Chính phủ Tây Úc, lưu ý một thói quen phổ biến. Người bán thường in «oz» trên tiền xu và thỏi như cách viết tắt của ao-xơ troy. Người mua có thể tự tin đọc mọi «oz» kim loại quý là ao-xơ troy.</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Mặt hàng</th><th>Ao-xơ troy</th><th>Kilôgam</th></tr></thead>
+        <tbody>
+          <tr><td>Tiền xu vàng hoặc bạc</td><td>1 oz t</td><td>0.0311 kg</td></tr>
+          <tr><td>Kilobar</td><td>32.15 oz t</td><td>1.0000 kg</td></tr>
+          <tr><td>Thỏi bạc</td><td>100 oz t</td><td>3.1103 kg</td></tr>
+          <tr><td>Thỏi vàng LBMA (điển hình)</td><td>400 oz t</td><td>12.4414 kg</td></tr>
+          <tr><td>Thỏi bạc LBMA (điển hình)</td><td>1,000 oz t</td><td>31.1035 kg</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>Một thỏi vàng 400 ao-xơ nặng khoảng 12,4 kg theo đơn vị troy. Cùng 400 ao-xơ tạp hóa chỉ nặng 11,3 kg.</p>
+</div></section>
+
+<!-- 8. fluid -->
+<section class="sec article" id="fluid"><div class="w">
+  <h2>Ao-xơ Chất Lỏng Có Nặng Bằng Ao-xơ Không?</h2>
+  <p>Không. Ao-xơ chất lỏng đo thể tích, tức không gian mà chất lỏng lấp đầy, trong khi ao-xơ đo khối lượng. Một ao-xơ chất lỏng Mỹ chứa 29,57 mililít.</p>
+  <p>Nước là trường hợp dễ. Một ao-xơ chất lỏng Mỹ của nước nặng khoảng 29,6 gam, gần 1,04 ao-xơ. Vậy một chai nước 32 ao-xơ đầy nước nặng khoảng 0,946 kg, nhiều hơn 32 ao-xơ khối lượng (0,907 kg) một chút. Khoảng chênh 39 gam đó là một thông tin tiện lợi cho người đi bộ đường dài và người tập gym.</p>
+  <p>Các chất lỏng khác phá vỡ khuôn mẫu của nước. Dầu ăn nhẹ hơn nước, còn mật ong nặng hơn nhiều. Một lọ ghi theo ao-xơ chất lỏng cần khối lượng riêng của chất lỏng, tức khối lượng mỗi mililít, trước khi bất kỳ đáp án kilôgam nào chính xác. Hầu hết chai trong cửa hàng Mỹ in «fl oz», nên các chữ «fl» là dấu hiệu cần chú ý.</p>
+</div></section>
+
+<!-- 9. precision -->
+<section class="sec article" id="precision"><div class="w">
+  <h2>Đáp Án Của Bạn Cần Chính Xác Đến Mức Nào?</h2>
+  <p>Khớp số chữ số thập phân với công việc: 2 chữ số khi nấu ăn, 3 khi vận chuyển, và 4 trở lên cho khoa học và y học. Số chữ số đúng làm cho mỗi đáp án rõ ràng và thiết thực.</p>
+  <div class="card tbl plain">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Mục đích</th><th>Chữ số thập phân</th><th>12 oz theo kg</th><th>Quy tắc làm tròn</th></tr></thead>
+        <tbody>
+          <tr><td>Nấu ăn và làm bánh</td><td>2</td><td>0.34 kg</td><td>Làm tròn đến gần nhất</td></tr>
+          <tr><td>Vận chuyển và bưu phí</td><td>3</td><td>0.341 kg</td><td>Luôn làm tròn lên</td></tr>
+          <tr><td>Y học và chăm sóc trẻ</td><td>4</td><td>0.3402 kg</td><td>Làm tròn đến gần nhất</td></tr>
+          <tr><td>Khoa học phòng thí nghiệm và trường học</td><td>6 trở lên</td><td>0.340194 kg</td><td>Giữ chữ số có nghĩa</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>Vận chuyển là mục đích mà làm tròn lên hiệu quả nhất. Hãng vận chuyển tính cước theo mức kế tiếp, nên một khối lượng làm tròn lên giữ cho mỗi bưu kiện di chuyển trơn tru.</p>
+  <p>Chữ số có nghĩa là các chữ số trong một con số mang ý nghĩa thực. Một cân hiển thị 12,0 ao-xơ cho 3 chữ số có nghĩa, nên 0,340 kg là kết quả trung thực. Mọi bảng chính thức được rà soát cho hướng dẫn này đều cho cùng hệ số, nên chỉ việc làm tròn gây ra những khác biệt nhỏ giữa các trang.</p>
+</div></section>
+
+<!-- 10. faq -->
+<section class="sec article" id="faq"><div class="w">
+  <h2>Câu hỏi thường gặp</h2>
+  <p>Mười sáu câu hỏi phổ biến được trả lời bên dưới. Mỗi câu trả lời đứng độc lập.</p>
+  <div class="faq">
+    <details open><summary>Một ao-xơ có bao nhiêu kilôgam?</summary><div class="ans">1 oz bằng 0,0283 kg. Giá trị chính xác là 0,028349523125 kg, tức 28,35 gam.</div></details>
+    <details><summary>Tôi đổi ao-xơ sang kilôgam như thế nào?</summary><div class="ans">Nhân số ao-xơ với 0,0283495. Ví dụ, 8 oz × 0,0283495 = 0,2268 kg.</div></details>
+    <details><summary>Đổi oz sang kg thì nhân hay chia?</summary><div class="ans">Cả hai đều được. Nhân ao-xơ với 0,0283495, hoặc chia cho 35,274. Cả hai cho cùng giá trị kilôgam.</div></details>
+    <details><summary>Một kilôgam có bao nhiêu ao-xơ?</summary><div class="ans">Một kilôgam bằng khoảng 35,274 ao-xơ. Với vàng và bạc, một kilôgam bằng 32,15 ao-xơ troy.</div></details>
+    <details><summary>Đây là ao-xơ theo khối lượng hay ao-xơ chất lỏng?</summary><div class="ans">Công cụ này dùng ao-xơ theo khối lượng, gọi là ao-xơ avoirdupois. Ao-xơ chất lỏng đo thể tích, không phải khối lượng.</div></details>
+    <details><summary>Đổi fl oz sang kg như thế nào?</summary><div class="ans">Ao-xơ chất lỏng đo thể tích, nên bạn cần khối lượng riêng của chất lỏng trước. Với nước, nhân fl oz với 0,02957 để ra kilôgam. Một chai nước 32 fl oz nặng khoảng 0,946 kg.</div></details>
+    <details><summary>Ao-xơ troy là gì, và khi nào tôi nên dùng chế độ Troy?</summary><div class="ans">Một ao-xơ troy nặng 31,1034768 gam và dùng để đo vàng, bạc, bạch kim và paladi. Dùng chế độ Troy cho bất kỳ khối lượng kim loại quý nào, kể cả khi nhãn chỉ ghi «oz».</div></details>
+    <details><summary>Đổi pao và ao-xơ sang kg như thế nào?</summary><div class="ans">Nhân pao với 16 và cộng số ao-xơ dư. Rồi nhân tổng ao-xơ với 0,0283495. Với 6 lb 4 oz, đó là 100 oz, hay 2,835 kg.</div></details>
+    <details><summary>Y tá đổi cân nặng của bé từ lb và oz sang kg như thế nào?</summary><div class="ans">Y tá đổi cân nặng thành tổng ao-xơ, nhân với 0,0283495, và ghi kilôgam đến 3 hoặc 4 chữ số thập phân. Một bé 7 lb 8 oz nặng 3,402 kg.</div></details>
+    <details><summary>Một trẻ nặng 41 lb 12 oz. Đó là bao nhiêu kg?</summary><div class="ans">Bốn mươi mốt pao 12 ao-xơ bằng 668 ao-xơ. Nhân 668 với 0,0283495 để ra 18,94 kg.</div></details>
+    <details><summary>56 oz là bao nhiêu kg?</summary><div class="ans">Năm mươi sáu ao-xơ bằng 1,5876 kg, tức đúng 3,5 pao.</div></details>
+    <details><summary>35 ao-xơ có nhiều hơn 1 kilôgam không?</summary><div class="ans">Không. Đáp án 35 oz sang kg là 0,9922 kg, cách 1 kilôgam trong vòng 7,8 gam. Ba mươi sáu ao-xơ vượt mốc 1 kg.</div></details>
+    <details><summary>Hệ số nào cho kết quả chính xác nhất?</summary><div class="ans">Một số trang làm tròn hệ số thành 0,0283495 hoặc 0,02835. Cách rút gọn đó vẫn chính xác đến khoảng chữ số thập phân thứ tư. Hệ số chính xác 0,028349523125 cho kết quả khớp hoàn hảo mỗi lần.</div></details>
+    <details><summary>Thay đổi kilôgam năm 2019 có ảnh hưởng đến việc quy đổi ao-xơ không?</summary><div class="ans">Không. BIPM đã chọn giá trị hằng số Planck để kilôgam giữ nguyên kích thước cũ. Mọi giá trị ao-xơ từ trước năm 2019 vẫn đúng đến nay.</div></details>
+    <details><summary>Hoa Kỳ và Vương quốc Anh có dùng cùng một ao-xơ không?</summary><div class="ans">Có. Cả hai quốc gia đều áp dụng pao quốc tế năm 1959, nên cả hai ao-xơ nặng 28,349523125 gam. Anh đã ghi giá trị này vào Weights and Measures Act 1963 của họ.</div></details>
+    <details><summary>Hướng dẫn ao-xơ sang kilôgam này bao gồm những gì?</summary><div class="ans">Nó bao gồm công thức chính xác, phương pháp bốn bước, bảng 36 hàng, các giá trị được tìm nhiều nhất, các mục đích hằng ngày, ao-xơ troy cho kim loại thỏi, ao-xơ chất lỏng, và đáp án của bạn cần chính xác đến mức nào.</div></details>
+  </div>
+</div></section>
+
+<!-- about the writer -->
+<section class="sec article" id="author"><div class="w">
+  <h2>Về tác giả</h2>
+  <div class="authorcard">
+    <img src="../gary-bennett.webp" alt="Gary Bennett, metrologist" width="96" height="96" loading="lazy">
+    <div>
+      <p class="an-name">Gary Bennett</p>
+      <div class="an-role">Tác giả &amp; Chuyên gia đo lường · Chuyên gia đo lường</div>
+      <p>Gary Bennett là một tác giả và chuyên gia đo lường, người biên soạn và rà soát các hướng dẫn đo lường để bảo đảm độ chính xác. Ông đã viết hướng dẫn này và kiểm tra từng hệ số quy đổi, giá trị bảng và ví dụ đã giải so với các số liệu NIST chính xác, bao gồm ao-xơ avoirdupois (0,028349523125 kg) và ao-xơ troy (0,0311034768 kg).</p>
+      <a class="an-link" href="../gary-bennett.html">Đọc hồ sơ đầy đủ của Gary →</a>
+    </div>
+  </div>
+</div></section>
+
+</main>
+
+<footer>
+  <div class="fw">
+    <div class="fcol brandcol">
+      <div class="fbrand"><span class="mk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>Ounces to Kilograms</b></div>
+      <p>Quy đổi ao-xơ sang kilôgam miễn phí, chính xác cho ao-xơ chuẩn và troy, dựa trên các hệ số chính thức của NIST.</p>
+    </div>
+    <div class="fcol"><h4>Trang</h4>
+      <a href="index.html">Ao-xơ sang kilôgam</a><a href="kg-to-oz.html">Kilôgam sang ao-xơ</a><a href="../about.html">Giới thiệu</a><a href="../gary-bennett.html">Tác giả</a><a href="../sitemap.html">Sơ đồ trang</a><a href="../contact.html">Liên hệ</a>
+    </div>
+    <div class="fcol"><h4>Chính sách</h4>
+      <a href="../editorial-policy.html">Chính sách biên tập</a><a href="../disclaimer.html">Tuyên bố miễn trừ</a><a href="../privacy-policy.html">Chính sách bảo mật</a><a href="../terms.html">Điều khoản sử dụng</a>
+    </div>
+    <div class="fcol"><h4>Liên hệ</h4>
+      <a href="mailto:info@ouncestokilograms.com">info@ouncestokilograms.com</a>
+    </div>
+  </div>
+  <div class="fbar">© 2026 Ounces to Kilograms. Bảo lưu mọi quyền.</div>
+</footer>
+
+<script>
+const AVO = 0.028349523125;            // avoirdupois ounce → kg (NIST)
+const LB = 0.45359237, ST = 6.35029318; // kg per pound / stone
+let F = AVO, ozLab = 'oz', dp = 4, tipT;
+
+const ozEl=document.getElementById('oz'), kgEl=document.getElementById('kg'),
+      eq=document.getElementById('eqline'), panL=document.getElementById('panL'),
+      panR=document.getElementById('panR'), beam=document.querySelector('.beam-wrap'),
+      ozUnit=document.getElementById('ozUnit'), decSel=document.getElementById('dec'),
+      uG=document.getElementById('u-g'), uLB=document.getElementById('u-lb'), uST=document.getElementById('u-st');
+const rm = matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+// accepts "0.5", "1/2", "3 1/2"
+function parseVal(s){ s=(s||'').trim(); if(s==='') return NaN;
+  let m=s.match(/^(-?\d*\.?\d+)\s+(\d+)\/(\d+)$/); if(m) return (+m[1])+(+m[2])/(+m[3]);
+  m=s.match(/^(-?\d+)\/(\d+)$/); if(m) return (+m[1])/(+m[2]);
+  const n=parseFloat(s.replace(/,/g,'')); return isFinite(n)?n:NaN;
+}
+function fmt(n){ if(!isFinite(n)) return '0'; return n.toFixed(dp).replace(/\.?0+$/,'') || '0'; }
+function tip(dir){ if(rm||!beam) return; beam.style.transform='rotate('+dir+'deg)'; clearTimeout(tipT); tipT=setTimeout(()=>{ beam.style.transform='rotate(0deg)'; },280); }
+function multi(k){ uG.textContent=(k*1000).toFixed(2).replace(/\.?0+$/,'')+' g'; uLB.textContent=fmt(k/LB)+' lb'; uST.textContent=fmt(k/ST)+' st'; }
+function paintEmpty(){ panL.textContent='- '+ozLab; panR.textContent='- kg'; eq.textContent='Nhập một giá trị'; uG.textContent='-'; uLB.textContent='-'; uST.textContent='-'; }
+function paint(o,k,dir){ panL.textContent=fmt(o)+' '+ozLab; panR.textContent=fmt(k)+' kg'; multi(k); tip(dir); }
+function fromOz(){ const o=parseVal(ozEl.value); if(isNaN(o)){ kgEl.value=''; paintEmpty(); return; } const k=o*F; kgEl.value=fmt(k); eq.textContent=fmt(o)+' '+ozLab+' = '+fmt(k)+' kg'; paint(o,k,-1.6); }
+function fromKg(){ const k=parseVal(kgEl.value); if(isNaN(k)){ ozEl.value=''; paintEmpty(); return; } const o=k/F; ozEl.value=fmt(o); eq.textContent=fmt(k)+' kg = '+fmt(o)+' '+ozLab; paint(o,k,1.6); }
+function recalc(){ if(ozEl.value.trim()!=='') fromOz(); else if(kgEl.value.trim()!=='') fromKg(); else paintEmpty(); }
+
+ozEl.addEventListener('input', fromOz);
+kgEl.addEventListener('input', fromKg);
+decSel.addEventListener('change', ()=>{ dp=parseInt(decSel.value,10); recalc(); });
+
+document.getElementById('chips').addEventListener('click', e=>{ const b=e.target.closest('button'); if(!b) return; ozEl.value=b.dataset.oz; fromOz(); });
+
+// swap navigates to the reverse converter (kg -> oz), carrying the weight across
+document.getElementById('swap').addEventListener('click', ()=>{
+  const o=parseVal(ozEl.value); const k=(isNaN(o)?NaN:o*F);
+  location.href = isFinite(k) ? ('kg-to-oz.html?kg='+(+k.toFixed(6))) : 'kg-to-oz.html';
+});
+
+// ounce type: avoirdupois vs troy (precious metals)
+document.getElementById('ozType').addEventListener('click', e=>{
+  const b=e.target.closest('button'); if(!b) return;
+  [...e.currentTarget.children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+  F=parseFloat(b.dataset.f); ozLab=b.dataset.lab; ozUnit.textContent=ozLab; recalc();
+});
+
+// copy result
+document.getElementById('copy').addEventListener('click', async ()=>{
+  const btn=document.getElementById('copy');
+  try{ await navigator.clipboard.writeText(eq.textContent); btn.textContent='✓ Đã sao chép'; btn.classList.add('done'); setTimeout(()=>{ btn.textContent='⧉ Sao chép'; btn.classList.remove('done'); },1400); }
+  catch(err){ /* clipboard blocked in this context */ }
+});
+
+// conversion chart: 36 values, kg to 4 dp, g to 2 dp (matches the guide)
+const rows=[1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,18,20,22,24,25,26,28,30,32,35,36,40,42,48,50,64,72,80,90,100,1000];
+document.getElementById('tbody').innerHTML = rows.map(o=>{
+  const k=o*AVO, g=o*28.349523125;
+  const ozL=o.toLocaleString('en-US');
+  const gL=g.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+  return `<tr><td>${ozL} oz</td><td>${k.toFixed(4)} kg</td><td>${gL} g</td></tr>`;
+}).join('');
+
+// pre-fill from a reverse-conversion hand-off (?kg=…)
+(function(){ const v=new URLSearchParams(location.search).get('kg'); if(v!==null){ const n=parseFloat(v); if(isFinite(n)) ozEl.value=String(+(n/AVO).toFixed(4)); } })();
+fromOz();
+</script>
+<script>
+(function(){var s=document.getElementById('langsel'),b=document.getElementById('lbtn');if(b){b.addEventListener('click',function(e){e.stopPropagation();var o=s.classList.toggle('open');b.setAttribute('aria-expanded',o);});document.addEventListener('click',function(){s.classList.remove('open');b.setAttribute('aria-expanded',false);});}})();
+</script>
+</body>
+</html>
