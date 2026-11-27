@@ -7,6 +7,9 @@
 <meta name="googlebot" content="noindex, nofollow">
 <title>Kilograms to Ounces Converter (kg to oz) | Troy &amp; lbs + oz</title>
 <meta name="description" content="Convert kilograms to ounces instantly, with troy ounces for gold and silver and pounds plus ounces. Exact factor, full chart, and worked examples.">
+<link rel="alternate" hreflang="en" href="https://ouncestokilograms.com/kg-to-oz">
+<link rel="alternate" hreflang="es" href="https://ouncestokilograms.com/es/kg-to-oz">
+<link rel="alternate" hreflang="x-default" href="https://ouncestokilograms.com/kg-to-oz">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ouncestokilograms.com/"},{"@type":"ListItem","position":2,"name":"Kilograms to Ounces","item":"https://ouncestokilograms.com/kg-to-oz"}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -194,6 +197,17 @@ footer{background:#0F1B2D;color:#AEBAC6;padding:44px 0 24px;margin-top:26px;font
 .fbar{max-width:1060px;margin:26px auto 0;padding:18px 20px 0;border-top:1px solid rgba(255,255,255,.1);color:#7D8B99;font-size:13px}
 @media(max-width:720px){.fw{grid-template-columns:1fr 1fr}.brandcol{grid-column:1/-1}}
 @media(max-width:440px){.fw{grid-template-columns:1fr}}
+
+.hright{display:flex;align-items:center;gap:16px;margin-left:auto}
+.langsel{position:relative}
+.langsel .lbtn{display:flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-weight:600;font-size:14px;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:9px;padding:7px 11px;cursor:pointer}
+.langsel .lbtn:hover{border-color:var(--indigo);color:var(--indigo)}
+.langsel .lmenu{position:absolute;right:0;top:calc(100% + 8px);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--sh);padding:6px;display:none;grid-template-columns:1fr 1fr;gap:2px;min-width:260px;z-index:40}
+.langsel.open .lmenu{display:grid}
+.langsel .lmenu a{display:block;padding:8px 11px;border-radius:8px;font-size:14px;color:#2A3346;white-space:nowrap}
+.langsel .lmenu a:hover{background:var(--soft);color:var(--indigo)}
+.langsel .lmenu a.cur{color:var(--indigo);font-weight:600;background:var(--grad-soft)}
+@media(max-width:480px){.langsel .lmenu{grid-template-columns:1fr;min-width:170px}}
 </style>
 </head>
 <body>
@@ -203,10 +217,13 @@ footer{background:#0F1B2D;color:#AEBAC6;padding:44px 0 24px;margin-top:26px;font
     <span class="mk"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
     <span><b>Ounces&nbsp;to&nbsp;Kilograms</b><span>kg → oz converter</span></span>
   </a>
+  <div class="hright">
   <nav>
     <a href="index.html">Oz → kg</a>
     <a href="kg-to-oz.html">Kg → oz</a>
   </nav>
+  <div class="langsel" id="langsel"><button class="lbtn" id="lbtn" aria-haspopup="true" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15.5 0 18M12 3c-2.5 2.5-2.5 15.5 0 18" stroke="currentColor" stroke-width="1.7"/></svg><span>EN</span></button><div class="lmenu"><a class="cur" href="kg-to-oz.html" lang="en">English</a><a href="es/kg-to-oz.html" lang="es">Español</a></div></div>
+  </div>
 </div></header>
 
 <nav class="crumbs" aria-label="Breadcrumb"><div><a href="index.html">Home</a><span class="sep">&rsaquo;</span><span class="cur">Kilograms to Ounces</span></div></nav>
@@ -601,6 +618,9 @@ document.getElementById('tbody').innerHTML = rows.map(k=>{
 // pre-fill from a reverse-conversion hand-off (?kg=…)
 (function(){ const v=new URLSearchParams(location.search).get('kg'); if(v!==null){ const n=parseFloat(v); if(isFinite(n)) kgEl.value=String(+n.toFixed(4)); } })();
 fromKg();
+</script>
+<script>
+(function(){var s=document.getElementById('langsel'),b=document.getElementById('lbtn');if(b){b.addEventListener('click',function(e){e.stopPropagation();var o=s.classList.toggle('open');b.setAttribute('aria-expanded',o);});document.addEventListener('click',function(){s.classList.remove('open');b.setAttribute('aria-expanded',false);});}})();
 </script>
 </body>
 </html>

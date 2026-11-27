@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Convertidor de Onzas a Kilogramos (oz a kg) | Estándar y Troy</title>
+<meta name="description" content="Convierte onzas a kilogramos al instante para onzas estándar y troy. Factores NIST exactos, una tabla completa, ejemplos resueltos y consejos de redondeo.">
+<link rel="alternate" hreflang="en" href="https://ouncestokilograms.com/">
+<link rel="alternate" hreflang="es" href="https://ouncestokilograms.com/es/">
+<link rel="alternate" hreflang="x-default" href="https://ouncestokilograms.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F5FB; --ink:#131A2B; --muted:#4B5768; --card:#FFFFFF; --line:#E4E8F2;
+  --teal:#0F766E; --teal-ink:#0B5C56; --indigo:#4338CA; --indigo-2:#1D4ED8; --violet:#7C3AED; --sky:#1D4ED8; --soft:#EDF1FF;
+  --grad:linear-gradient(118deg,#0F766E 0%,#1D4ED8 54%,#7C3AED 100%);
+  --grad-2:linear-gradient(118deg,#1D4ED8,#7C3AED);
+  --grad-soft:linear-gradient(118deg,#E8F4F2,#EDF0FF);
+  --sh:0 1px 2px rgba(20,26,46,.05),0 16px 44px rgba(28,34,80,.12);
+  --sh-c:0 10px 30px rgba(40,50,120,.15);
+  --maxw:1060px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.dsp{font-family:'Space Grotesk',Inter,sans-serif;letter-spacing:-.015em;line-height:1.08;margin:0}
+a{color:inherit;text-decoration:none}
+.w{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.num{font-variant-numeric:tabular-nums}
+
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(245,247,248,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .mk{width:38px;height:38px;border-radius:10px;background:var(--grad);display:grid;place-items:center;flex:0 0 auto}
+.brand b{font-family:'Space Grotesk';font-weight:700;font-size:18px;line-height:1}
+.brand span{display:block;font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+nav{display:flex;gap:22px}
+nav a{color:var(--muted);font-weight:500;font-size:15px}
+nav a:hover{color:var(--teal-ink)}
+@media(max-width:640px){nav{display:none}}
+.crumbs{background:#fff;border-bottom:1px solid var(--line)}
+.crumbs > div{max-width:1060px;margin:0 auto;padding:10px 20px;font-size:13.5px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--indigo);font-weight:500}
+.crumbs a:hover{text-decoration:underline}
+.crumbs .sep{color:#B6C0CF}
+.crumbs .cur{color:var(--ink);font-weight:500}
+
+/* hero + converter */
+.hero{position:relative;padding:54px 0 96px;text-align:center;background:var(--grad);color:#fff;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:42px 42px;mask:radial-gradient(700px 320px at 50% 0,#000,transparent 75%);pointer-events:none}
+.aurora{position:absolute;border-radius:50%;filter:blur(64px);opacity:.45;pointer-events:none}
+.aurora.a1{width:340px;height:340px;background:#8BF0E4;top:-120px;left:-60px}
+.aurora.a2{width:320px;height:320px;background:#B9A6FF;top:-80px;right:-50px;opacity:.5}
+.hero .w{position:relative;z-index:2}
+.eyebrow{display:inline-block;font-family:'Space Grotesk';font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.28);padding:5px 13px;border-radius:999px;backdrop-filter:blur(4px)}
+.hero h1{font-size:clamp(30px,5vw,48px);font-weight:700;margin:16px 0 0;color:#fff}
+.hero p.sub{color:rgba(255,255,255,.92);font-size:18px;max-width:580px;margin:12px auto 0}
+.hero p.sub strong{color:#fff}
+
+.conv{position:relative;background:var(--card);border:1px solid rgba(255,255,255,.6);border-radius:22px;box-shadow:0 30px 70px rgba(20,26,70,.33);max-width:720px;margin:30px auto 0;padding:28px 26px 26px;overflow:hidden}
+.conv::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--grad)}
+.conv-row{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:end}
+.field label{display:block;font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;text-align:left}
+.field .inp{position:relative}
+.field input{width:100%;font-family:'Space Grotesk';font-weight:600;font-size:30px;padding:16px 68px 16px 16px;border:1.5px solid var(--line);border-radius:14px;background:#FBFCFD;color:var(--ink);font-variant-numeric:tabular-nums}
+.field input:focus{outline:none;border-color:var(--indigo);box-shadow:0 0 0 4px rgba(91,91,240,.15);background:#fff}
+.field .unit{position:absolute;right:16px;top:50%;transform:translateY(-50%);font-family:'Space Grotesk';font-weight:700;color:var(--indigo);font-size:16px;pointer-events:none}
+.swap{width:50px;height:50px;border-radius:50%;border:0;background:var(--grad);display:grid;place-items:center;cursor:pointer;transition:transform .3s,box-shadow .2s;margin-bottom:4px;box-shadow:0 8px 20px rgba(40,60,180,.3)}
+.swap:hover{box-shadow:0 10px 26px rgba(40,60,180,.42)}
+.swap.spin{transform:rotate(180deg)}
+.scalebox{margin-top:18px;text-align:center}
+.scale{width:100%;max-width:430px;height:auto;margin:0 auto;display:block}
+.scale .beam-wrap{transform-box:view-box;transform-origin:220px 50px;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.scap{margin-top:4px;font-family:'Space Grotesk';font-weight:700;font-size:21px;color:var(--ink);font-variant-numeric:tabular-nums}
+.scap #eqline{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.scap small{display:block;font-family:Inter;font-weight:500;font-size:13px;color:var(--muted);margin-top:3px;letter-spacing:.01em}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
+.chips button{font-family:Inter;font-weight:500;font-size:14px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--muted);cursor:pointer;transition:.15s}
+.chips button:hover{border-color:transparent;color:#fff;background:var(--grad-2);box-shadow:0 6px 14px rgba(60,80,200,.25)}
+.prec{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:16px;font-size:14px;color:var(--muted)}
+.prec select{font:inherit;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink)}
+@media(max-width:560px){.conv-row{grid-template-columns:1fr;gap:10px}.swap{margin:0 auto;transform:rotate(90deg)}.swap.spin{transform:rotate(270deg)}}
+
+/* trust line */
+.trust{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:16px auto 0}
+.trust span{font-size:13px;color:#fff;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:5px 12px;backdrop-filter:blur(4px)}
+.trust b{font-weight:600}
+/* ounce-type toggle */
+.seg-wrap{text-align:center}
+.seg{display:inline-flex;margin:16px auto 0;background:#EDF0F7;border:1px solid var(--line);border-radius:12px;padding:4px;gap:4px}
+.seg button{font-family:'Space Grotesk';font-weight:600;font-size:14px;padding:8px 16px;border:0;border-radius:9px;background:transparent;color:var(--muted);cursor:pointer;transition:.15s}
+.seg button.on{background:#fff;color:var(--indigo);box-shadow:0 1px 3px rgba(20,26,70,.14)}
+/* equation + copy */
+.eqrow{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.copybtn{font-family:'Space Grotesk';font-weight:600;font-size:13px;color:var(--indigo);background:var(--soft);border:1px solid #D6DEF6;border-radius:9px;padding:6px 12px;cursor:pointer;transition:.15s}
+.copybtn:hover{background:#fff;border-color:var(--indigo)}
+.copybtn.done{color:#fff;background:var(--grad-2);border-color:transparent}
+/* multi-unit output */
+.also{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.also span{display:block;background:var(--grad-soft);border:1px solid #E1E7F5;border-radius:12px;padding:11px 10px;text-align:center;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.also b{display:block;font-family:'Space Grotesk';font-weight:700;font-size:18px;color:var(--ink);margin-top:3px;font-variant-numeric:tabular-nums;text-transform:none;letter-spacing:0}
+@media(max-width:480px){.also{grid-template-columns:1fr 1fr}}
+
+/* sections + article */
+.sec{padding:34px 0}
+.sec h2{font-size:clamp(24px,3.4vw,32px);font-weight:700;margin-bottom:6px}
+.sec .lead{color:var(--muted);margin:0 0 22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh)}
+.article{max-width:760px;margin:0 auto}
+.article h2{font-size:clamp(23px,3.2vw,30px);font-weight:700;margin:0 0 14px;scroll-margin-top:84px;position:relative;padding-left:16px}
+.article h2::before{content:"";position:absolute;left:0;top:5px;bottom:5px;width:5px;border-radius:3px;background:var(--grad)}
+.article h3{font-family:'Space Grotesk';font-weight:600;font-size:19px;color:var(--indigo);margin:26px 0 8px}
+.article p{margin:0 0 16px;color:#2A3346}
+.article strong{color:var(--ink);font-weight:600}
+.article ol,.article ul{margin:0 0 18px;padding-left:22px;color:#2A3346}
+.article li{margin-bottom:9px}
+.article p a[href^="http"]{color:var(--indigo);font-weight:600;text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+.article p a[href^="http"]:hover{color:var(--violet)}
+
+/* author byline */
+.byline{display:flex;align-items:center;gap:13px;margin:0 0 22px;padding:12px 15px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh)}
+.byline img{width:50px;height:50px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:2px solid #fff;box-shadow:0 2px 6px rgba(20,26,70,.22)}
+.byline .bl-name{font-size:15px;color:var(--ink);font-weight:500}
+.byline .bl-name a{color:var(--indigo);font-weight:600}
+.byline .bl-meta{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+
+/* author card (writer section) */
+.authorcard{display:flex;gap:22px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh);padding:26px;position:relative;overflow:hidden}
+.authorcard::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad)}
+.authorcard img{width:96px;height:96px;border-radius:16px;object-fit:cover;flex:0 0 auto;border:2px solid #fff;box-shadow:0 3px 10px rgba(20,26,70,.2)}
+.authorcard .an-name{font-family:'Space Grotesk';font-weight:700;font-size:22px;color:var(--ink);margin:0}
+.authorcard .an-role{font-size:14px;color:var(--indigo);font-weight:600;margin:3px 0 12px}
+.authorcard p{margin:0 0 12px;color:#2A3346}
+.authorcard .an-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-weight:600;font-size:14px;color:#fff;background:var(--grad-2);padding:9px 16px;border-radius:10px;transition:.15s}
+.authorcard .an-link:hover{box-shadow:0 8px 18px rgba(60,80,200,.3)}
+@media(max-width:560px){.authorcard{flex-direction:column;gap:16px;padding:22px}}
+
+/* callout */
+.callout{background:var(--grad-soft);border:1px solid #DCE6F3;border-left:4px solid var(--indigo);border-radius:12px;padding:16px 18px;margin:0 0 18px;color:#2A3346;font-size:16px}
+.callout.teal{border-left-color:var(--teal)}
+.callout b,.callout strong{color:var(--ink)}
+
+/* inline formula */
+.fml{font-family:'Space Grotesk';font-weight:600;font-size:18px;background:var(--grad-soft);color:var(--indigo);padding:13px 16px;border-radius:10px;border:1px solid #E3E7F6;margin:0 0 18px;text-align:center;font-variant-numeric:tabular-nums;overflow-x:auto}
+
+/* TOC */
+.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--sh);padding:22px 24px;max-width:760px;margin:0 auto}
+.toc .toch{font-family:'Space Grotesk';font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 14px}
+.toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.toc li{counter-increment:toc;margin:0 0 10px;break-inside:avoid}
+.toc a{display:flex;gap:10px;align-items:baseline;color:#2A3346;font-size:15px;transition:.15s}
+.toc a::before{content:counter(toc,decimal-leading-zero);font-family:'Space Grotesk';font-weight:600;font-size:12px;color:var(--indigo);flex:0 0 auto}
+.toc a:hover{color:var(--indigo)}
+@media(max-width:560px){.toc ol{columns:1}}
+
+/* value grid */
+.valgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:4px 0 20px}
+.valcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--sh);position:relative;overflow:hidden}
+.valcard::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
+.valcard h3{margin:0 0 6px;font-size:15px;color:var(--muted);text-transform:none;font-family:'Space Grotesk'}
+.valcard .big{font-family:'Space Grotesk';font-weight:700;font-size:23px;color:var(--indigo-2);font-variant-numeric:tabular-nums}
+.valcard p{font-size:13.5px;color:var(--muted);margin:6px 0 0}
+@media(max-width:620px){.valgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){.valgrid{grid-template-columns:1fr}}
+
+/* table */
+.tbl{border-radius:16px;overflow:hidden;margin:0 0 20px}
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;min-width:300px}
+th,td{padding:14px 18px;text-align:left;font-size:15.5px;vertical-align:top}
+.tbl.nowrap th,.tbl.nowrap td{white-space:nowrap}
+@media(max-width:420px){th,td{padding:12px 12px;font-size:14px}}
+thead th{font-family:'Space Grotesk';font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--grad)}
+tbody td{border-bottom:1px solid var(--line)}
+tbody tr:nth-child(even){background:#F5F7FE}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:var(--soft)}
+td:first-child{font-weight:700;color:var(--ink)}
+td:nth-child(2){font-weight:700;color:var(--indigo-2)}
+td:nth-child(3){color:var(--muted)}
+.tbl.plain td:nth-child(2){font-weight:400;color:#2A3346}
+.tbl.plain td:nth-child(3){color:#2A3346}
+
+/* formula cards */
+.formula{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 20px}
+.fcard{padding:24px;position:relative;overflow:hidden}
+.fcard::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad)}
+.fhd{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.fico{width:42px;height:42px;border-radius:12px;background:var(--grad-soft);border:1px solid #DCE3F5;display:grid;place-items:center;flex:0 0 auto}
+.fcard h3{font-size:18px;margin:0;color:var(--ink)}
+.eq{font-family:'Space Grotesk';font-weight:600;font-size:19px;background:var(--grad-soft);color:var(--indigo);padding:14px 16px;border-radius:12px;font-variant-numeric:tabular-nums;border:1px solid #E3E7F6}
+.eq small{display:block;color:var(--muted);font-weight:500;font-size:13px;margin-top:6px}
+@media(max-width:640px){.formula{grid-template-columns:1fr}}
+
+/* faq */
+.faq details{border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:10px;overflow:hidden}
+.faq details[open]{box-shadow:var(--sh-c);border-color:#CBD2F2}
+.faq summary{list-style:none;cursor:pointer;padding:16px 18px;font-family:'Space Grotesk';font-weight:600;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:#fff;background:var(--grad-2);width:26px;height:26px;min-width:26px;border-radius:50%;display:grid;place-items:center;font-size:18px;line-height:1;font-weight:500}
+.faq details[open] summary{color:var(--indigo)}
+.faq details[open] summary::after{content:"\2013"}
+.faq .ans{padding:2px 18px 16px;color:var(--muted)}
+
+footer{background:#0F1B2D;color:#AEBAC6;padding:44px 0 24px;margin-top:26px;font-size:14px}
+.fw{max-width:1060px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:28px}
+.fcol h4{font-family:'Space Grotesk';font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#fff;margin:0 0 12px}
+.fcol a{display:block;color:#AEBAC6;margin-bottom:9px}.fcol a:hover{color:#fff}
+.fbrand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.fbrand .mk{width:34px;height:34px;border-radius:9px;background:var(--grad);display:grid;place-items:center}
+.fbrand b{color:#fff;font-family:'Space Grotesk';font-weight:700;font-size:16px}
+.brandcol p{color:#8A97A6;margin:0;max-width:260px;line-height:1.5;font-size:13.5px}
+.fbar{max-width:1060px;margin:26px auto 0;padding:18px 20px 0;border-top:1px solid rgba(255,255,255,.1);color:#7D8B99;font-size:13px}
+@media(max-width:720px){.fw{grid-template-columns:1fr 1fr}.brandcol{grid-column:1/-1}}
+@media(max-width:440px){.fw{grid-template-columns:1fr}}
+
+.hright{display:flex;align-items:center;gap:16px;margin-left:auto}
+.langsel{position:relative}
+.langsel .lbtn{display:flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-weight:600;font-size:14px;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:9px;padding:7px 11px;cursor:pointer}
+.langsel .lbtn:hover{border-color:var(--indigo);color:var(--indigo)}
+.langsel .lmenu{position:absolute;right:0;top:calc(100% + 8px);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--sh);padding:6px;display:none;grid-template-columns:1fr 1fr;gap:2px;min-width:260px;z-index:40}
+.langsel.open .lmenu{display:grid}
+.langsel .lmenu a{display:block;padding:8px 11px;border-radius:8px;font-size:14px;color:#2A3346;white-space:nowrap}
+.langsel .lmenu a:hover{background:var(--soft);color:var(--indigo)}
+.langsel .lmenu a.cur{color:var(--indigo);font-weight:600;background:var(--grad-soft)}
+@media(max-width:480px){.langsel .lmenu{grid-template-columns:1fr;min-width:170px}}
+</style>
+</head>
+<body>
+
+<header><div class="w">
+  <a class="brand" href="index.html">
+    <span class="mk"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span><b>Ounces&nbsp;to&nbsp;Kilograms</b><span>conversor oz → kg</span></span>
+  </a>
+  <div class="hright">
+  <nav>
+    <a href="index.html">Oz → kg</a>
+    <a href="kg-to-oz.html">Kg → oz</a>
+  </nav>
+  <div class="langsel" id="langsel"><button class="lbtn" id="lbtn" aria-haspopup="true" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15.5 0 18M12 3c-2.5 2.5-2.5 15.5 0 18" stroke="currentColor" stroke-width="1.7"/></svg><span>ES</span></button><div class="lmenu"><a href="../index.html" lang="en">English</a><a class="cur" href="index.html" lang="es">Español</a></div></div>
+  </div>
+</div></header>
+
+<nav class="crumbs" aria-label="Breadcrumb"><div><span class="cur">Inicio</span></div></nav>
+
+<main id="top">
+<section class="hero"><div class="aurora a1"></div><div class="aurora a2"></div><div class="w">
+  <span class="eyebrow">Conversor de peso</span>
+  <h1>Convertidor de Onzas a Kilogramos</h1>
+  <p class="sub">Convierte <strong>onzas (oz)</strong> a <strong>kilogramos (kg)</strong> en el momento en que escribes, con onzas estándar y troy. Usa el botón de intercambio para kg a oz.</p>
+  <div class="trust"><span>✓ Factores NIST exactos</span><span>Revisado por <b>Gary Bennett</b></span><span>Actualizado <b>nov 2026</b></span></div>
+
+  <div class="conv">
+    <div class="conv-row">
+      <div class="field">
+        <label for="oz">Onzas</label>
+        <div class="inp"><input id="oz" type="text" inputmode="decimal" value="16" autocomplete="off"><span class="unit" id="ozUnit">oz</span></div>
+      </div>
+      <button class="swap" id="swap" aria-label="Reverse: go to kilograms to ounces converter" title="Reverse → kg to oz">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 4 4 7l3 3M4 7h13M17 20l3-3-3-3m3 3H7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="field">
+        <label for="kg">Kilogramos</label>
+        <div class="inp"><input id="kg" type="text" inputmode="decimal" autocomplete="off"><span class="unit">kg</span></div>
+      </div>
+    </div>
+    <div class="seg-wrap"><div class="seg" id="ozType"><button class="on" data-f="0.028349523125" data-lab="oz">Onza (oz)</button><button data-f="0.0311034768" data-lab="oz t">Onza troy (oz t)</button></div></div>
+    <div class="scalebox">
+      <svg class="scale" viewBox="0 0 440 172" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0F766E"/><stop offset=".55" stop-color="#1D4ED8"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs>
+        <rect x="178" y="142" width="84" height="12" rx="6" fill="#28304D"/>
+        <rect x="214" y="54" width="12" height="90" rx="6" fill="#28304D"/>
+        <g class="beam-wrap">
+          <rect x="70" y="45" width="300" height="10" rx="5" fill="url(#beam)"/>
+          <circle cx="220" cy="50" r="11" fill="#1D4ED8" stroke="#fff" stroke-width="3"/>
+          <path d="M95 53 L66 100 M95 53 L124 100" stroke="#9AA6BF" stroke-width="2"/>
+          <path d="M58 100 Q95 130 132 100" stroke="#0F766E" stroke-width="3.5" stroke-linecap="round" fill="#E7F3F1"/>
+          <path d="M345 53 L316 100 M345 53 L374 100" stroke="#9AA6BF" stroke-width="2"/>
+          <path d="M308 100 Q345 130 382 100" stroke="#7C3AED" stroke-width="3.5" stroke-linecap="round" fill="#F2ECFF"/>
+          <text id="panL" x="95" y="88" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="18" fill="#131A2B">16 oz</text>
+          <text id="panR" x="345" y="88" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="18" fill="#131A2B">0.4536 kg</text>
+        </g>
+      </svg>
+      <div class="scap"><div class="eqrow"><span id="eqline">16 oz = 0.4536 kg</span><button class="copybtn" id="copy" type="button">⧉ Copiar</button></div><small>El mismo peso, mostrado en dos unidades</small></div>
+    </div>
+    <div class="also"><span>En gramos<b id="u-g">453.59 g</b></span><span>En libras<b id="u-lb">1 lb</b></span><span>En stones<b id="u-st">0.0714 st</b></span></div>
+    <div class="chips" id="chips">
+      <button data-oz="0.5">½ oz</button>
+      <button data-oz="1">1 oz</button>
+      <button data-oz="4">4 oz</button>
+      <button data-oz="8">8 oz</button>
+      <button data-oz="16">16 oz</button>
+      <button data-oz="32">32 oz</button>
+      <button data-oz="100">100 oz</button>
+      <button data-oz="1000">1000 oz</button>
+    </div>
+    <div class="prec">
+      <label for="dec">Decimales</label>
+      <select id="dec"><option>2</option><option selected>4</option><option>6</option></select>
+    </div>
+  </div>
+</div></section>
+
+<!-- intro -->
+<section class="sec article"><div class="w">
+  <h2>Convertidor de Onzas a Kilogramos para onzas estándar y troy</h2>
+  <div class="byline">
+    <img src="../gary-bennett.webp" alt="Gary Bennett, metrologist" width="50" height="50" loading="lazy">
+    <div class="bl-name">Escrito por <a href="../gary-bennett.html">Gary Bennett</a>, redactor y metrólogo<span class="bl-meta">Actualizado en noviembre de 2026 · Verificado con los factores NIST exactos</span></div>
+  </div>
+  <p>Esta herramienta gratuita convierte onzas a kilogramos en cuanto escribes un número. La conversión de onzas a kilogramos transforma un peso del sistema estadounidense en un peso métrico con un único número fijo. Las onzas aparecen en etiquetas, paquetes y recetas de EE. UU., mientras que la mayor parte del mundo usa kilogramos. Un número fijo hace que cada resultado sea exacto, rápido y fiable. Escribe un valor en la casilla de Onzas, usa el botón de intercambio para pasar de kilogramos a onzas y elige Troy para el oro o la plata.</p>
+  <p><strong>Una onza equivale exactamente a 0,028349523125 kilogramos, es decir, unos 28,35 gramos.</strong> Para convertir oz a kg, multiplica las onzas por 0,028349523125. Un kilogramo contiene unas 35,274 onzas, así que dividir entre 35,274 da el mismo resultado. Dieciséis onzas forman una libra, y una libra equivale exactamente a 0,45359237 kilogramos. Cada onza contiene 437,5 granos, y un grano es una unidad diminuta de unos 64,8 miligramos.</p>
+  <p>Estas cifras provienen de la ley, no de suposiciones. En 1959, seis naciones firmaron el Acuerdo Internacional de la Yarda y la Libra. Estados Unidos, el Reino Unido, Canadá, Australia, Nueva Zelanda y Sudáfrica acordaron una libra de 0,45359237 kg. El Instituto Nacional de Estándares y Tecnología (NIST) recoge el valor equivalente de la onza en las tablas de su Handbook 44. Stephan Schlamminger, un físico del NIST que ayudó a redefinir el kilogramo, describió su nuevo anclaje como algo "entretejido en la estructura del universo".</p>
+  <p>Esta guía cubre la fórmula, un método de cuatro pasos y respuestas listas desde 1 onza hasta 100 onzas. Cada sección parte de una tarea real, como hornear con una receta estadounidense o enviar un paquete pequeño. Los padres que convierten el peso de un recién nacido y los viajeros que preparan una maleta encuentran una sección para sus necesidades. Los boxeadores que comprueban tallas de guantes y los compradores de oro que pesan monedas también tienen la suya. Las secciones finales tratan la onza troy y la onza líquida.</p>
+  <div class="callout teal"><strong>Un dato sorprendente sobre 35 onzas.</strong> Treinta y cinco onzas pesan 0,9922 kg, a solo 7,8 gramos de un kilogramo completo. Una moneda de oro de 1 onza troy pesa 31,1 gramos, porque los metales preciosos usan su propia onza especial. Y una botella de agua de 32 onzas mide volumen, así que su valor en kilogramos depende de lo que contenga.</div>
+</div></section>
+
+<!-- table of contents -->
+<section class="sec" style="padding-top:6px"><div class="w">
+  <nav class="toc" aria-label="Contents">
+    <div class="toch">Contenido</div>
+    <ol>
+      <li><a href="#basics">Qué son una onza, una onza troy y un kilogramo</a></li>
+      <li><a href="#convert">Cómo convertir onzas a kilogramos</a></li>
+      <li><a href="#method">El método paso a paso</a></li>
+      <li><a href="#chart">La tabla de conversión de oz a kg</a></li>
+      <li><a href="#searched">Valores de onzas más buscados</a></li>
+      <li><a href="#everyday">Conversiones habituales del día a día</a></li>
+      <li><a href="#troy">Onza troy y lingotes</a></li>
+      <li><a href="#fluid">Onza líquida frente a onza</a></li>
+      <li><a href="#precision">Qué precisión usar</a></li>
+      <li><a href="#faq">Preguntas frecuentes</a></li>
+    </ol>
+  </nav>
+</div></section>
+
+<!-- 1. basics -->
+<section class="sec article" id="basics"><div class="w">
+  <h2>¿Qué son una onza, una onza troy y un kilogramo?</h2>
+  <p>Una onza es una pequeña unidad de masa que se presenta en dos formas comunes. La onza estándar pesa 28,35 gramos y la onza troy para metales preciosos pesa 31,10 gramos. Un kilogramo es la unidad base métrica de masa, igual a 1000 gramos.</p>
+
+  <h3>La onza estándar (avoirdupois)</h3>
+  <p>La onza avoirdupois es una unidad de masa que equivale a un dieciseisavo de libra y mide productos cotidianos. La palabra avoirdupois (se pronuncia "av-er-du-PUÁ") procede de un antiguo término francés que significa "bienes de peso". En Estados Unidos, los compradores ven esta onza en casi todos los envases de alimentos. Una onza avoirdupois contiene 16 dracmas, y un dracma es una unidad diminuta usada en recetas antiguas.</p>
+  <p>El Reino Unido adoptó la misma libra de 1959 mediante la Weights and Measures Act de 1963. Por eso, una onza británica y una onza estadounidense pesan hoy lo mismo. Muchas cartas de restaurantes del Reino Unido anuncian los cortes de carne en onzas, y las tiendas venden la misma carne en gramos.</p>
+
+  <h3>La onza troy</h3>
+  <p>La onza troy (oz t) es una unidad de masa que equivale a 31,1034768 gramos y se usa para pesar oro, plata, platino y paladio. El nombre proviene de Troyes, una ciudad mercado de Francia donde los comerciantes medievales pesaban plata y especias. Una onza troy contiene 480 granos, mientras que una onza estándar contiene 437,5 granos.</p>
+  <p>El sistema troy construye sus unidades a partir del mismo grano. Según el NIST Handbook 44, 24 granos forman 1 pennyweight y 20 pennyweights forman 1 onza troy. Doce onzas troy forman 1 libra troy de 373,24 gramos. Por eso una libra troy es más ligera que una libra estándar, aunque una onza troy sea más pesada que una onza estándar.</p>
+  <p>Las onzas troy se convierten a kilogramos con su propio factor. Multiplica las onzas troy por 0,0311034768 para obtener kilogramos. Un lingote de plata de 10 oz t pesa 0,3110 kg, y un kilogramo contiene 32,1507 onzas troy. La opción Troy del convertidor usa este factor exacto.</p>
+
+  <h3>El kilogramo</h3>
+  <p>El kilogramo es la unidad base de masa del Sistema Internacional de Unidades (SI) y es la referencia de todo peso métrico. La Conferencia General de Pesos y Medidas (CGPM) votó en noviembre de 2018 cambiar la definición del kilogramo. La nueva norma entró en vigor el 20 de mayo de 2019, el Día Mundial de la Metrología.</p>
+  <p>Antes de esa fecha, un cilindro metálico cerca de París definía el tamaño del kilogramo. Los científicos llamaban a ese cilindro de platino e iridio "Le Grand K". Hoy, el kilogramo se basa en la constante de Planck, un número fijo de la física igual a 6,62607015 × 10⁻³⁴ julios-segundo. La Oficina Internacional de Pesos y Medidas (BIPM) eligió ese número para que el kilogramo conservara su tamaño anterior. Esa elección mantiene igual el valor de cada onza.</p>
+  <p>Los científicos distinguen masa y peso. La masa es la cantidad de materia de un objeto, y el peso es la fuerza de la gravedad sobre él. En el día a día ambas palabras se usan para la misma idea, y esta guía hace lo mismo.</p>
+</div></section>
+
+<!-- 2. convert -->
+<section class="sec article" id="convert"><div class="w">
+  <h2>¿Cómo se convierten onzas a kilogramos?</h2>
+  <p>Multiplica el número de onzas por 0,028349523125 para obtener kilogramos. Dividir las onzas entre 35,27396195 da el mismo resultado.</p>
+  <div class="formula">
+    <div class="card fcard">
+      <div class="fhd"><span class="fico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 20c3 0 3-15 6-15M3 9h8" stroke="#4338CA" stroke-width="2" stroke-linecap="round"/></svg></span><h3>Fórmula</h3></div>
+      <div class="eq">kg = oz × 0.0283495<small>1 onza = 0,028349523125 kilogramos (exacto)</small></div>
+    </div>
+    <div class="card fcard">
+      <div class="fhd"><span class="fico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#7C3AED" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Ejemplo</h3></div>
+      <div class="eq">16 oz × 0.0283495 = 0.4536 kg<small>Así, 16 onzas equivalen a unos 0,4536 kilogramos.</small></div>
+    </div>
+  </div>
+
+  <h3>¿Por qué el factor es 0,028349523125?</h3>
+  <p>El factor surge de dividir una libra en 16 partes iguales. El acuerdo de 1959 fijó la libra en 0,45359237 kg, así que una onza es ese valor dividido entre 16.</p>
+  <div class="fml">0.45359237 ÷ 16 = 0.028349523125</div>
+  <p>El NIST confirma la misma cifra. Su Handbook 44, Apéndice C indica que una onza avoirdupois equivale exactamente a 28,349523125 gramos. Como ambos números son exactos por ley, el factor nunca cambia de un año a otro.</p>
+
+  <h3>Dos ejemplos resueltos</h3>
+  <p>Imagina a alguien que cocina con una receta estadounidense de brownies que pide 10 onzas de chocolate. Diez onzas por 0,0283495 dan 0,2835 kg, es decir, unos 283 gramos en una báscula de cocina. Un vendedor en línea que envía una vela de 28 onzas obtiene 0,7938 kg para el formulario de aduanas.</p>
+
+  <h3>¿Cuál es el factor inverso?</h3>
+  <p>Un kilogramo equivale a 35,27396195 onzas. Para volver a pasar de kilogramos a onzas, multiplica los kilogramos por ese número. Un viajero cuya aerolínea permite 23 kg puede convertir ese límite en onzas: 23 × 35,274 = 811,3 onzas. El botón de intercambio del convertidor hace este paso por ti.</p>
+  <p>Muchos libros de cocina europeos usan 28 gramos por onza como atajo. El factor exacto es un 1,2 % más preciso, lo que ayuda a que el pan y la repostería salgan bien.</p>
+</div></section>
+
+<!-- 3. method -->
+<section class="sec article" id="method"><div class="w">
+  <h2>¿Cuál es el método paso a paso?</h2>
+  <p>Para convertir oz a kg a mano, sigue 4 pasos: escribe las onzas, multiplica, redondea y comprueba. Todo el método lleva menos de un minuto con la calculadora del móvil.</p>
+  <ol>
+    <li>Escribe el peso en onzas como número decimal, por ejemplo 15 o 7,5.</li>
+    <li>Multiplica ese número por 0,028349523125, o por 0,0283495 para la mayoría de los usos.</li>
+    <li>Redondea el resultado según tu tarea, por ejemplo a 2 decimales para cocinar.</li>
+    <li>Comprueba el resultado con un valor conocido, como 16 oz = 0,4536 kg.</li>
+  </ol>
+  <p>Así se convierte oz a kg con un número real. Quince onzas por 0,0283495 dan 0,4252 kg. Ese resultado queda un poco por debajo de 16 onzas, así que pasa la comprobación. Para resultados en gramos, un convertidor de onzas a gramos responde directamente.</p>
+
+  <h3>Ejemplos resueltos con decimales</h3>
+  <p>Los problemas escolares suelen usar decimales, así que aquí tienes 3 ejemplos de práctica. Para convertir 90,2 oz a kg, multiplica 90,2 por 0,028349523125 y obtienes 2,5571 kg. Los mismos pasos convierten 91,3 oz a kg y dan 2,5883 kg. Una tercera ficha puede pedirte convertir 92,2 oz a kg, y la respuesta es 2,6138 kg.</p>
+  <p>Los profesores llaman a este método análisis dimensional. El análisis dimensional resuelve problemas de unidades multiplicando por una fracción igual a 1, como 0,0283495 kg por 1 oz. Las unidades de onza se cancelan y solo quedan los kilogramos.</p>
+
+  <h3>Atajo de cálculo mental</h3>
+  <p>Divide las onzas entre 35 para una estimación rápida. Para 105 onzas, 105 ÷ 35 = 3 kg, y la respuesta exacta es 2,9767 kg. La estimación queda a un 0,8 % del valor exacto. Funciona bien en el supermercado, mientras que el factor exacto es mejor para las etiquetas de envío.</p>
+
+  <h3>Libras más onzas</h3>
+  <p>Primero convierte las libras en onzas, suma las onzas adicionales y luego multiplica. Un paquete de 2 lb 5 oz contiene 2 × 16 + 5 = 37 onzas. Treinta y siete onzas por 0,0283495 dan 1,0489 kg. Para pesos dados solo en libras, una calculadora de libras a kilogramos es más rápida.</p>
+</div></section>
+
+<!-- 4. chart -->
+<section class="sec article" id="chart"><div class="w">
+  <h2>¿Qué muestra la tabla de conversión de oz a kg?</h2>
+  <p>En la tabla siguiente aparecen treinta y seis valores, de 1 onza a 1000 onzas. Cada cifra en kilogramos se redondea a 4 decimales y cada cifra en gramos a 2.</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Onzas (oz)</th><th>Kilogramos (kg)</th><th>Gramos (g)</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+  <p>La tabla muestra un límite útil. Treinta y cinco onzas quedan justo por debajo de 1 kilogramo, mientras que 36 onzas lo superan en unos 21 gramos.</p>
+</div></section>
+
+<!-- 5. most searched -->
+<section class="sec article" id="searched"><div class="w">
+  <h2>¿Cuáles son los valores de onzas más buscados en kilogramos?</h2>
+  <p>Los seis valores más buscados son 16, 10, 12, 32, 8 y 1 onza. En kilogramos equivalen a 0,4536, 0,2835, 0,3402, 0,9072, 0,2268 y 0,0283.</p>
+  <div class="valgrid">
+    <div class="valcard"><h3>16 oz a kg</h3><div class="big">0.4536 kg</div><p>Exactamente una libra completa (453,59 g). Es el valor más usado por los reposteros, ya que las recetas de EE. UU. cuentan en libras.</p></div>
+    <div class="valcard"><h3>10 oz a kg</h3><div class="big">0.2835 kg</div><p>283,50 gramos, algo más de un cuarto de kilogramo.</p></div>
+    <div class="valcard"><h3>12 oz a kg</h3><div class="big">0.3402 kg</div><p>340,19 gramos. Una bolsa estándar de café molido de EE. UU. suele contener 12 onzas.</p></div>
+    <div class="valcard"><h3>32 oz a kg</h3><div class="big">0.9072 kg</div><p>Dos libras, a unos 93 gramos de 1 kilogramo. Revisa la etiqueta, ya que muchas botellas de 32 oz indican onzas líquidas.</p></div>
+    <div class="valcard"><h3>8 oz a kg</h3><div class="big">0.2268 kg</div><p>Media libra. Una taza estadounidense de agua pesa unas 8,3 onzas, así que una taza y 8 oz son parecidas pero no iguales.</p></div>
+    <div class="valcard"><h3>1 oz a kg</h3><div class="big">0.0283 kg</div><p>Redondeado. En su forma completa, el valor es 0,028349523125 kg.</p></div>
+  </div>
+</div></section>
+
+<!-- 6. everyday -->
+<section class="sec article" id="everyday"><div class="w">
+  <h2>¿Qué cosas cotidianas se convierten de onzas a kilos?</h2>
+  <p>La gente convierte 5 grupos principales de artículos cotidianos: alimentos, correo, bebés recién nacidos, equipaje y material de fitness. El oro y la plata forman un sexto grupo, pero usan una onza distinta.</p>
+
+  <h3>Etiquetas de alimentos y recetas</h3>
+  <p>Las etiquetas de alimentos de EE. UU. muestran ambas unidades por ley. La Administración de Alimentos y Medicamentos (FDA) establece esta norma en 21 CFR 101.105. Los alimentos envasados deben indicar su peso neto en unidades métricas y del sistema estadounidense. El peso neto es el peso del alimento solo, sin la caja, la lata ni el bote.</p>
+  <p>El NIST estudió el grado de cumplimiento de esta norma por parte de las tiendas. Los investigadores examinaron al menos 1137 paquetes en 19 comercios. Alrededor del 17 % de esos paquetes indicaban solo unidades métricas, lo que muestra lo familiares que se han vuelto las etiquetas métricas. Los paquetes de peso variable, como el fiambre vendido por libra, están exentos de la regla de las dos unidades.</p>
+  <p>Quien cocina con una receta estadounidense encuentra estas cifras en cada pasillo. Una barra de mantequilla pesa 4 onzas, es decir, 0,1134 kg. Un yogur suele contener 6 onzas, y 6 oz a kg da 0,1701 kg. Las alubias enlatadas suelen venir en latas de 15 onzas, así que 15 oz a kg equivale a 0,4252 kg.</p>
+  <p>Los envases más grandes requieren el mismo cuidado. Las latas grandes de tomate triturado contienen 28 onzas, lo que equivale a 0,7938 kg. Un bote alto de copos de avena suele pesar 18 onzas, o 0,5103 kg. Quien busca 16 oz a kg para una libra de harina obtiene 0,4536 kg.</p>
+  <p>Las barras de pan de molde suelen pesar 24 onzas, lo que da 0,6804 kg. Un bote grande de mayonesa puede contener 30 onzas de peso, o 0,8505 kg. En los países métricos se compara el precio por kilogramo, así que esta cifra ayuda a valorar la compra.</p>
+
+  <h3>Correo y envíos</h3>
+  <p>El Servicio Postal de EE. UU. (USPS) usa 2 límites clave en onzas. Su Domestic Mail Manual limita una carta de primera clase a 3,5 onzas, es decir, 0,0992 kg. El correo de primera clase de cualquier forma se detiene en 13 onzas. El valor de 13 oz a kg es 0,3685 kg, y las piezas más pesadas pasan a otros servicios.</p>
+  <p>Los pequeños vendedores de Etsy y eBay trabajan con estos límites a diario y fijan el precio de sus paquetes con confianza. Una tarjeta de felicitación con un regalo fino puede pesar 2 onzas, o 0,0567 kg. 3 oz a kg da 0,0850 kg, que sigue entrando en el límite de carta. Un libro de bolsillo de 11 onzas pesa 0,3118 kg, así que se mantiene por debajo del tope de 13 onzas.</p>
+  <p>Muchas empresas de transporte internacional facturan por el siguiente medio kilogramo o kilogramo completo. Los vendedores logran envíos más fluidos redondeando hacia arriba antes de imprimir la etiqueta. Aquí hay un matiz: para paquetes ligeros y voluminosos, una empresa puede facturar por el tamaño de la caja en vez de por el peso.</p>
+
+  <h3>Peso de recién nacidos y niños</h3>
+  <p>Los hospitales de EE. UU. suelen indicar el peso al nacer en libras y onzas, y la mayor parte del mundo usa kilogramos. Los Centros para el Control y la Prevención de Enfermedades (CDC) definen el bajo peso al nacer como menos de 2500 gramos. En unidades estadounidenses, ese límite se escribe como 5 libras 8 onzas.</p>
+  <p>El personal de enfermería y los padres usan el método de libras más onzas para cualquier peso de bebé. Un recién nacido de 7 lb 8 oz pesa 7 × 16 + 8 = 120 onzas. Ciento veinte onzas por 0,0283495 dan 3,4019 kg. Los abuelos en el extranjero suelen querer esta cifra en kilogramos en el primer mensaje desde el hospital.</p>
+  <p>El valor límite es un caso especial interesante. Exactamente 5 lb 8 oz equivalen a 88 onzas, o 2,4948 kg. Ese número queda 5 gramos por debajo de 2500 gramos. Las agencias de salud usan el par redondeado, así que los médicos leen ambas formas como la misma referencia.</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Libras y onzas</th><th>Onzas totales</th><th>Kilogramos</th></tr></thead>
+        <tbody>
+          <tr><td>5 lb 4 oz</td><td>84</td><td>2.3814</td></tr>
+          <tr><td>5 lb 6 oz</td><td>86</td><td>2.4381</td></tr>
+          <tr><td>6 lb 4 oz</td><td>100</td><td>2.8350</td></tr>
+          <tr><td>6 lb 5 oz</td><td>101</td><td>2.8633</td></tr>
+          <tr><td>6 lb 14 oz</td><td>110</td><td>3.1184</td></tr>
+          <tr><td>8 lb 9 oz</td><td>137</td><td>3.8839</td></tr>
+          <tr><td>9 lb 5 oz</td><td>149</td><td>4.2241</td></tr>
+          <tr><td>10 lb 5 oz</td><td>165</td><td>4.6777</td></tr>
+          <tr><td>14 lb 5 oz</td><td>229</td><td>6.4920</td></tr>
+          <tr><td>15 lb 5 oz</td><td>245</td><td>6.9456</td></tr>
+          <tr><td>16 lb 10 oz</td><td>266</td><td>7.5410</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>Cada fila sigue la misma regla. Multiplica las libras por 16, suma las onzas y multiplica el total por 0,0283495.</p>
+
+  <h3>Viajes y equipaje</h3>
+  <p>Airlines set bag limits in kilograms or pounds, and smart packers weigh small items early. A pair of running shoes at 26 ounces works out to 0.7371 kg, while a thin laptop of 42 ounces weighs 1.1907 kg. A souvenir vase of 36 ounces comes to 1.0206 kg, a lovely gift at just over one kilogram.</p>
+  <p>Gift boxes stack quickly in a suitcase. A 40 oz to kg check gives 1.1340 kg. Three pounds of chocolate equal 48 ounces, or 1.3608 kg. Four pounds of coffee beans equal 64 ounces, which is 1.8144 kg.</p>
+  <p>Bulk items reach the heavier end of the chart. Seventy-two ounces come to 2.0412 kg, and 80 ounces to 2.2680 kg. At the top, 100 oz to kg equals 2.8350 kg, worth remembering: 100 ounces are close to 3 kilograms but still under them.</p>
+
+  <h3>Material de fitness y porciones de comida</h3>
+  <p>Los guantes de boxeo se venden por peso en onzas, de 8 a 20 onzas. Los guantes de saco de 10 onzas pesan 0,2835 kg, así que 10 oz a kg responde a una pregunta habitual de los boxeadores en el extranjero. Los guantes de sparring de 14 onzas pesan 0,3969 kg, lo que ayuda a los entrenadores a comparar las tallas estadounidenses y europeas.</p>
+  <p>Las apps de dieta pesan la proteína en porciones precisas. Una pechuga de pollo de 5 onzas pesa 0,1417 kg, y un filete de salmón de 7 onzas da 0,1984 kg. Un gran chuletón de 20 onzas pesa 0,5670 kg, un generoso medio kilo de carne.</p>
+  <p>El material de entrenamiento ocupa la parte media de la tabla. Una comba con peso de 22 onzas pesa 0,6237 kg, y un rodillo de espuma de 25 onzas da 0,7087 kg.</p>
+</div></section>
+
+<!-- 7. troy & bullion -->
+<section class="sec article" id="troy"><div class="w">
+  <h2>De la onza de supermercado a la onza de lingote</h2>
+  <p>Cada valor de la tabla hasta ahora usa una onza: la onza de supermercado de 28,35 gramos. Esa onza llena carros de la compra, sacas de correo y cartillas de bebé por todo Estados Unidos. Pero la palabra "onza" tiene una segunda vida en las joyerías y las cámaras acorazadas. Allí, la onza pesa un poco más y tiene su propio nombre. Y este es el paso que completa esta guía. Elegir la onza correcta importa, porque ambas difieren en casi un 10 %. Para los compradores de oro, la onza correcta protege el valor de cada compra. Las líneas siguientes explican la onza de lingote con números sencillos.</p>
+
+  <h3>¿Es una onza troy igual que una onza normal?</h3>
+  <p>No. Una onza troy pesa 31,1034768 gramos, mientras que una onza normal pesa 28,349523125 gramos. La onza troy es alrededor de un 9,7 % más pesada.</p>
+  <p>Una onza normal contiene 437,5 granos, así que la onza troy lleva 42,5 granos más. La opción Onza del convertidor usa la onza normal. Los pesos de oro y plata necesitan la opción Troy.</p>
+  <div class="fml">kg = oz t × 0.0311034768</div>
+  <p>Para convertir oz de oro a kg, multiplica las onzas troy por 0,0311034768. Un kilogramo contiene 32,1507 onzas troy, así que 1 kg a oz troy equivale a 32,15 oz t. El convertidor de onza troy a kilogramo hace los cálculos de lingotes con este factor.</p>
+  <div class="callout"><strong>Por qué importa la opción Troy.</strong> Un inversor en oro que compra un lingote de 5 oz t obtiene 5 × 0,0311034768 = 0,1555 kg. La opción estándar mostraría 0,1417 kg para esas mismas 5 onzas. Esa diferencia de 13,8 gramos es dinero real para los compradores de lingotes.</div>
+  <p>La London Bullion Market Association (LBMA) fija el estándar mundial para los grandes lingotes. Sus normas Good Delivery exigen que un lingote de oro contenga de 350 a 430 onzas troy finas. Ese rango equivale a entre 10,9 kg y 13,4 kg aproximadamente. Un lingote de plata estándar contiene unas 1000 onzas troy, cerca de 31,1 kg.</p>
+  <p>La Perth Mint, propiedad del Gobierno de Australia Occidental, señala una costumbre común. Los distribuidores suelen imprimir "oz" en monedas y lingotes como forma abreviada de onzas troy. Los compradores pueden leer con confianza cada "oz" de metal precioso como una onza troy.</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Artículo</th><th>Onzas troy</th><th>Kilogramos</th></tr></thead>
+        <tbody>
+          <tr><td>Moneda de oro o plata</td><td>1 oz t</td><td>0.0311 kg</td></tr>
+          <tr><td>Kilobar</td><td>32.15 oz t</td><td>1.0000 kg</td></tr>
+          <tr><td>Lingote de plata</td><td>100 oz t</td><td>3.1103 kg</td></tr>
+          <tr><td>Lingote de oro LBMA (típico)</td><td>400 oz t</td><td>12.4414 kg</td></tr>
+          <tr><td>Lingote de plata LBMA (típico)</td><td>1,000 oz t</td><td>31.1035 kg</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>Un lingote de oro de 400 onzas pesa unos 12,4 kg en unidades troy. Esas mismas 400 onzas de supermercado pesarían solo 11,3 kg.</p>
+</div></section>
+
+<!-- 8. fluid -->
+<section class="sec article" id="fluid"><div class="w">
+  <h2>¿Pesa lo mismo una onza líquida que una onza?</h2>
+  <p>No. Una onza líquida mide volumen, es decir, el espacio que ocupa un líquido, mientras que una onza mide masa. Una onza líquida estadounidense contiene 29,57 mililitros.</p>
+  <p>El agua es el caso sencillo. Una onza líquida estadounidense de agua pesa unos 29,6 gramos, cerca de 1,04 onzas. Así, una botella de agua de 32 onzas llena de agua pesa unos 0,946 kg, algo más que 32 onzas de peso (0,907 kg). Esa diferencia de 39 gramos es un dato útil para senderistas y quienes van al gimnasio.</p>
+  <p>Otros líquidos rompen el patrón del agua. El aceite de cocina es más ligero que el agua, y la miel mucho más pesada. Un bote etiquetado en onzas líquidas necesita la densidad del líquido, es decir, su masa por mililitro, antes de que cualquier resultado en kilogramos sea exacto. La mayoría de las botellas de las tiendas de EE. UU. imprimen "fl oz", así que las letras "fl" son la señal a tener en cuenta.</p>
+</div></section>
+
+<!-- 9. precision -->
+<section class="sec article" id="precision"><div class="w">
+  <h2>¿Qué precisión debe tener tu resultado?</h2>
+  <p>Ajusta los decimales a la tarea: 2 para cocinar, 3 para envíos y 4 o más para ciencia y medicina. El número adecuado de dígitos hace que cada resultado sea claro y práctico.</p>
+  <div class="card tbl plain">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Uso</th><th>Decimales</th><th>12 oz en kg</th><th>Regla de redondeo</th></tr></thead>
+        <tbody>
+          <tr><td>Cocina y repostería</td><td>2</td><td>0.34 kg</td><td>Redondear al más cercano</td></tr>
+          <tr><td>Envíos y franqueo</td><td>3</td><td>0.341 kg</td><td>Redondear siempre hacia arriba</td></tr>
+          <tr><td>Medicina y cuidado del bebé</td><td>4</td><td>0.3402 kg</td><td>Redondear al más cercano</td></tr>
+          <tr><td>Ciencia de laboratorio y escolar</td><td>6 o más</td><td>0.340194 kg</td><td>Mantener las cifras significativas</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>Los envíos son el único uso donde redondear hacia arriba es lo mejor. Las empresas cobran por el siguiente escalón, así que un peso redondeado hacia arriba mantiene cada paquete en movimiento.</p>
+  <p>Las cifras significativas son los dígitos de un número que tienen significado real. Una báscula que marca 12,0 onzas da 3 cifras significativas, así que 0,340 kg es el resultado honesto. Todas las tablas oficiales revisadas para esta guía dan el mismo factor, así que solo el redondeo causa pequeñas diferencias entre sitios.</p>
+</div></section>
+
+<!-- 10. faq -->
+<section class="sec article" id="faq"><div class="w">
+  <h2>Preguntas frecuentes</h2>
+  <p>A continuación se responden dieciséis preguntas frecuentes. Cada respuesta es independiente.</p>
+  <div class="faq">
+    <details open><summary>¿Cuántos kilogramos hay en una onza?</summary><div class="ans">1 oz equivale a 0,0283 kg. El valor exacto es 0,028349523125 kg, es decir, 28,35 gramos.</div></details>
+    <details><summary>¿Cómo convierto onzas a kilogramos?</summary><div class="ans">Multiplica el número de onzas por 0,0283495. Por ejemplo, 8 oz × 0,0283495 = 0,2268 kg.</div></details>
+    <details><summary>¿Se multiplica o se divide para convertir oz a kg?</summary><div class="ans">Ambas opciones valen. Multiplica las onzas por 0,0283495 o divídelas entre 35,274. Las dos dan el mismo valor en kilogramos.</div></details>
+    <details><summary>¿Cuántas onzas hay en un kilogramo?</summary><div class="ans">Un kilogramo equivale a unas 35,274 onzas. Para el oro y la plata, un kilogramo equivale a 32,15 onzas troy.</div></details>
+    <details><summary>¿Son onzas de peso u onzas líquidas?</summary><div class="ans">Este convertidor usa onzas de peso, conocidas como onzas avoirdupois. Las onzas líquidas miden volumen, no peso.</div></details>
+    <details><summary>¿Cómo se convierte fl oz a kg?</summary><div class="ans">Las onzas líquidas miden volumen, así que primero necesitas la densidad del líquido. Para el agua, multiplica las fl oz por 0,02957 para obtener kilogramos. Una botella de agua de 32 fl oz pesa unos 0,946 kg.</div></details>
+    <details><summary>¿Qué es una onza troy y cuándo debo usar la opción Troy?</summary><div class="ans">Una onza troy pesa 31,1034768 gramos y mide oro, plata, platino y paladio. Usa la opción Troy para cualquier peso de metal precioso, incluso cuando la etiqueta ponga solo "oz".</div></details>
+    <details><summary>¿Cómo se convierten libras y onzas a kg?</summary><div class="ans">Multiplica las libras por 16 y suma las onzas adicionales. Luego multiplica el total de onzas por 0,0283495. Para 6 lb 4 oz, eso son 100 oz, o 2,835 kg.</div></details>
+    <details><summary>¿Cómo convierte el personal de enfermería el peso de un bebé de lb y oz a kg?</summary><div class="ans">El personal de enfermería convierte el peso en onzas totales, multiplica por 0,0283495 y anota los kilogramos con 3 o 4 decimales. Un bebé de 7 lb 8 oz pesa 3,402 kg.</div></details>
+    <details><summary>Un niño pesa 41 lb 12 oz. ¿Cuánto es en kg?</summary><div class="ans">Cuarenta y una libras 12 onzas equivalen a 668 onzas. Multiplica 668 por 0,0283495 para obtener 18,94 kg.</div></details>
+    <details><summary>¿Cuánto es 56 oz en kg?</summary><div class="ans">Cincuenta y seis onzas equivalen a 1,5876 kg, que son exactamente 3,5 libras.</div></details>
+    <details><summary>¿Son 35 onzas más de 1 kilogramo?</summary><div class="ans">No. La respuesta de 35 oz a kg es 0,9922 kg, a 7,8 gramos de 1 kilogramo. Treinta y seis onzas superan la marca de 1 kg.</div></details>
+    <details><summary>¿Qué factor da el resultado más preciso?</summary><div class="ans">Algunos sitios redondean el factor a 0,0283495 o 0,02835. Ese atajo sigue siendo preciso hasta la cuarta cifra decimal. El factor exacto 0,028349523125 da una coincidencia perfecta siempre.</div></details>
+    <details><summary>¿Afectó el cambio del kilogramo de 2019 a las conversiones de onzas?</summary><div class="ans">No. La BIPM eligió el valor de la constante de Planck para que el kilogramo conservara su tamaño anterior. Cada valor de onza de antes de 2019 sigue siendo válido hoy.</div></details>
+    <details><summary>¿Usan Estados Unidos y el Reino Unido la misma onza?</summary><div class="ans">Sí. Ambos países adoptaron la libra internacional de 1959, así que las dos onzas pesan 28,349523125 gramos. El Reino Unido recogió este valor en su Weights and Measures Act de 1963.</div></details>
+    <details><summary>¿Qué cubre esta guía de onzas a kilogramos?</summary><div class="ans">Cubre la fórmula exacta, un método de cuatro pasos, una tabla de 36 filas, los valores más buscados, los usos cotidianos, la onza troy para lingotes, la onza líquida y la precisión que debe tener tu resultado.</div></details>
+  </div>
+</div></section>
+
+<!-- about the writer -->
+<section class="sec article" id="author"><div class="w">
+  <h2>Sobre el redactor</h2>
+  <div class="authorcard">
+    <img src="../gary-bennett.webp" alt="Gary Bennett, metrologist" width="96" height="96" loading="lazy">
+    <div>
+      <p class="an-name">Gary Bennett</p>
+      <div class="an-role">Redactor y metrólogo · Especialista en medición</div>
+      <p>Gary Bennett is a writer and metrologist who produces and reviews measurement guides for accuracy. He wrote this guide and checked every conversion factor, chart value, and worked example against the exact NIST figures, including the avoirdupois ounce (0.028349523125 kg) and the troy ounce (0.0311034768 kg).</p>
+      <a class="an-link" href="../gary-bennett.html">Leer el perfil completo de Gary →</a>
+    </div>
+  </div>
+</div></section>
+
+</main>
+
+<footer>
+  <div class="fw">
+    <div class="fcol brandcol">
+      <div class="fbrand"><span class="mk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>Ounces to Kilograms</b></div>
+      <p>Free, exact ounce-to-kilogram conversions for standard and troy ounces, built on official NIST factors.</p>
+    </div>
+    <div class="fcol"><h4>Páginas</h4>
+      <a href="index.html">Ounces to Kilograms</a><a href="kg-to-oz.html">Kilogramos a Onzas</a><a href="../about.html">Acerca de</a><a href="../gary-bennett.html">Redactor</a><a href="../sitemap.html">Mapa del sitio</a><a href="../contact.html">Contact</a>
+    </div>
+    <div class="fcol"><h4>Políticas</h4>
+      <a href="../editorial-policy.html">Política editorial</a><a href="../disclaimer.html">Aviso legal</a><a href="../privacy-policy.html">Política de privacidad</a><a href="../terms.html">Términos de uso</a>
+    </div>
+    <div class="fcol"><h4>Contacto</h4>
+      <a href="mailto:info@ouncestokilograms.com">info@ouncestokilograms.com</a>
+    </div>
+  </div>
+  <div class="fbar">© 2026 Convertidor de Onzas a Kilogramos. Todos los derechos reservados.</div>
+</footer>
+
+<script>
+const AVO = 0.028349523125;            // avoirdupois ounce → kg (NIST)
+const LB = 0.45359237, ST = 6.35029318; // kg per pound / stone
+let F = AVO, ozLab = 'oz', dp = 4, tipT;
+
+const ozEl=document.getElementById('oz'), kgEl=document.getElementById('kg'),
+      eq=document.getElementById('eqline'), panL=document.getElementById('panL'),
+      panR=document.getElementById('panR'), beam=document.querySelector('.beam-wrap'),
+      ozUnit=document.getElementById('ozUnit'), decSel=document.getElementById('dec'),
+      uG=document.getElementById('u-g'), uLB=document.getElementById('u-lb'), uST=document.getElementById('u-st');
+const rm = matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+// accepts "0.5", "1/2", "3 1/2"
+function parseVal(s){ s=(s||'').trim(); if(s==='') return NaN;
+  let m=s.match(/^(-?\d*\.?\d+)\s+(\d+)\/(\d+)$/); if(m) return (+m[1])+(+m[2])/(+m[3]);
+  m=s.match(/^(-?\d+)\/(\d+)$/); if(m) return (+m[1])/(+m[2]);
+  const n=parseFloat(s.replace(/,/g,'')); return isFinite(n)?n:NaN;
+}
+function fmt(n){ if(!isFinite(n)) return '0'; return n.toFixed(dp).replace(/\.?0+$/,'') || '0'; }
+function tip(dir){ if(rm||!beam) return; beam.style.transform='rotate('+dir+'deg)'; clearTimeout(tipT); tipT=setTimeout(()=>{ beam.style.transform='rotate(0deg)'; },280); }
+function multi(k){ uG.textContent=(k*1000).toFixed(2).replace(/\.?0+$/,'')+' g'; uLB.textContent=fmt(k/LB)+' lb'; uST.textContent=fmt(k/ST)+' st'; }
+function paintEmpty(){ panL.textContent='- '+ozLab; panR.textContent='- kg'; eq.textContent='Introduce un valor'; uG.textContent='-'; uLB.textContent='-'; uST.textContent='-'; }
+function paint(o,k,dir){ panL.textContent=fmt(o)+' '+ozLab; panR.textContent=fmt(k)+' kg'; multi(k); tip(dir); }
+function fromOz(){ const o=parseVal(ozEl.value); if(isNaN(o)){ kgEl.value=''; paintEmpty(); return; } const k=o*F; kgEl.value=fmt(k); eq.textContent=fmt(o)+' '+ozLab+' = '+fmt(k)+' kg'; paint(o,k,-1.6); }
+function fromKg(){ const k=parseVal(kgEl.value); if(isNaN(k)){ ozEl.value=''; paintEmpty(); return; } const o=k/F; ozEl.value=fmt(o); eq.textContent=fmt(k)+' kg = '+fmt(o)+' '+ozLab; paint(o,k,1.6); }
+function recalc(){ if(ozEl.value.trim()!=='') fromOz(); else if(kgEl.value.trim()!=='') fromKg(); else paintEmpty(); }
+
+ozEl.addEventListener('input', fromOz);
+kgEl.addEventListener('input', fromKg);
+decSel.addEventListener('change', ()=>{ dp=parseInt(decSel.value,10); recalc(); });
+
+document.getElementById('chips').addEventListener('click', e=>{ const b=e.target.closest('button'); if(!b) return; ozEl.value=b.dataset.oz; fromOz(); });
+
+// swap navigates to the reverse converter (kg -> oz), carrying the weight across
+document.getElementById('swap').addEventListener('click', ()=>{
+  const o=parseVal(ozEl.value); const k=(isNaN(o)?NaN:o*F);
+  location.href = isFinite(k) ? ('kg-to-oz.html?kg='+(+k.toFixed(6))) : 'kg-to-oz.html';
+});
+
+// ounce type: avoirdupois vs troy (precious metals)
+document.getElementById('ozType').addEventListener('click', e=>{
+  const b=e.target.closest('button'); if(!b) return;
+  [...e.currentTarget.children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+  F=parseFloat(b.dataset.f); ozLab=b.dataset.lab; ozUnit.textContent=ozLab; recalc();
+});
+
+// copy result
+document.getElementById('copy').addEventListener('click', async ()=>{
+  const btn=document.getElementById('copy');
+  try{ await navigator.clipboard.writeText(eq.textContent); btn.textContent='✓ Copiado'; btn.classList.add('done'); setTimeout(()=>{ btn.textContent='⧉ Copiar'; btn.classList.remove('done'); },1400); }
+  catch(err){ /* clipboard blocked in this context */ }
+});
+
+// conversion chart: 36 values, kg to 4 dp, g to 2 dp (matches the guide)
+const rows=[1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,18,20,22,24,25,26,28,30,32,35,36,40,42,48,50,64,72,80,90,100,1000];
+document.getElementById('tbody').innerHTML = rows.map(o=>{
+  const k=o*AVO, g=o*28.349523125;
+  const ozL=o.toLocaleString('en-US');
+  const gL=g.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+  return `<tr><td>${ozL} oz</td><td>${k.toFixed(4)} kg</td><td>${gL} g</td></tr>`;
+}).join('');
+
+// pre-fill from a reverse-conversion hand-off (?kg=…)
+(function(){ const v=new URLSearchParams(location.search).get('kg'); if(v!==null){ const n=parseFloat(v); if(isFinite(n)) ozEl.value=String(+(n/AVO).toFixed(4)); } })();
+fromOz();
+</script>
+<script>
+(function(){var s=document.getElementById('langsel'),b=document.getElementById('lbtn');if(b){b.addEventListener('click',function(e){e.stopPropagation();var o=s.classList.toggle('open');b.setAttribute('aria-expanded',o);});document.addEventListener('click',function(){s.classList.remove('open');b.setAttribute('aria-expanded',false);});}})();
+</script>
+</body>
+</html>
