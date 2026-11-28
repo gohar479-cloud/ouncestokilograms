@@ -8,6 +8,8 @@
 <title>औंस से किलोग्राम कनवर्टर (oz से kg) | मानक और ट्रॉय</title>
 <meta name="description" content="मानक और ट्रॉय औंस के लिए औंस को तुरंत किलोग्राम में बदलें। सटीक NIST कारक, पूरी तालिका, हल किए गए उदाहरण, और पूर्णांकन संबंधी सुझाव।">
 <link rel="alternate" hreflang="en" href="https://ouncestokilograms.com/">
+<link rel="alternate" hreflang="ar" href="https://ouncestokilograms.com/ar/">
+<link rel="alternate" hreflang="bn" href="https://ouncestokilograms.com/bn/">
 <link rel="alternate" hreflang="de" href="https://ouncestokilograms.com/de/">
 <link rel="alternate" hreflang="es" href="https://ouncestokilograms.com/es/">
 <link rel="alternate" hreflang="fr" href="https://ouncestokilograms.com/fr/">
@@ -17,8 +19,10 @@
 <link rel="alternate" hreflang="ms" href="https://ouncestokilograms.com/ms/">
 <link rel="alternate" hreflang="pl" href="https://ouncestokilograms.com/pl/">
 <link rel="alternate" hreflang="pt" href="https://ouncestokilograms.com/pt/">
+<link rel="alternate" hreflang="sv" href="https://ouncestokilograms.com/sv/">
 <link rel="alternate" hreflang="th" href="https://ouncestokilograms.com/th/">
 <link rel="alternate" hreflang="tl" href="https://ouncestokilograms.com/tl/">
+<link rel="alternate" hreflang="tr" href="https://ouncestokilograms.com/tr/">
 <link rel="alternate" hreflang="vi" href="https://ouncestokilograms.com/vi/">
 <link rel="alternate" hreflang="x-default" href="https://ouncestokilograms.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -236,10 +240,15 @@ footer{background:#0F1B2D;color:#AEBAC6;padding:44px 0 24px;margin-top:26px;font
 .langsel .lbtn:hover{border-color:var(--indigo);color:var(--indigo)}
 .langsel .lmenu{position:absolute;right:0;top:calc(100% + 8px);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--sh);padding:6px;display:none;grid-template-columns:1fr 1fr;gap:2px;min-width:260px;z-index:40}
 .langsel.open .lmenu{display:grid}
-.langsel .lmenu a{display:block;padding:8px 11px;border-radius:8px;font-size:14px;color:#2A3346;white-space:nowrap}
+.langsel .lmenu a{display:flex;align-items:center;gap:8px;padding:8px 11px;border-radius:8px;font-size:14px;color:#2A3346;white-space:nowrap}
 .langsel .lmenu a:hover{background:var(--soft);color:var(--indigo)}
 .langsel .lmenu a.cur{color:var(--indigo);font-weight:600;background:var(--grad-soft)}
+.langsel .lmenu a .flag{font-size:16px;line-height:1}
+.langsel .lbtn .flag{font-size:15px;line-height:1}
 @media(max-width:480px){.langsel .lmenu{grid-template-columns:1fr;min-width:170px}}
+[dir="rtl"] .hright{margin-left:0;margin-right:auto}
+[dir="rtl"] .langsel .lmenu{right:auto;left:0}
+[dir="rtl"] .crumbs-hero{justify-content:flex-end}
 </style>
 </head>
 <body>
@@ -254,7 +263,7 @@ footer{background:#0F1B2D;color:#AEBAC6;padding:44px 0 24px;margin-top:26px;font
     <a href="index.html">Oz → kg</a>
     <a href="kg-to-oz.html">Kg → oz</a>
   </nav>
-  <div class="langsel" id="langsel"><button class="lbtn" id="lbtn" aria-haspopup="true" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15.5 0 18M12 3c-2.5 2.5-2.5 15.5 0 18" stroke="currentColor" stroke-width="1.7"/></svg><span>HI</span></button><div class="lmenu"><a href="../index.html" lang="en">English</a><a href="../de/index.html" lang="de">Deutsch</a><a href="../es/index.html" lang="es">Español</a><a href="../fr/index.html" lang="fr">Français</a><a class="cur" href="index.html" lang="hi">हिन्दी</a><a href="../id/index.html" lang="id">Bahasa Indonesia</a><a href="../it/index.html" lang="it">Italiano</a><a href="../ms/index.html" lang="ms">Bahasa Melayu</a><a href="../pl/index.html" lang="pl">Polski</a><a href="../pt/index.html" lang="pt">Português</a><a href="../th/index.html" lang="th">ไทย</a><a href="../tl/index.html" lang="tl">Tagalog</a><a href="../vi/index.html" lang="vi">Tiếng Việt</a></div></div>
+  <div class="langsel" id="langsel"><button class="lbtn" id="lbtn" aria-haspopup="true" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15.5 0 18M12 3c-2.5 2.5-2.5 15.5 0 18" stroke="currentColor" stroke-width="1.7"/></svg><span class="flag">🇮🇳</span><span>HI</span></button><div class="lmenu"><a href="../index.html" lang="en"><span class="flag">🇬🇧</span>English</a><a href="../ar/index.html" lang="ar"><span class="flag">🇸🇦</span>العربية</a><a href="../bn/index.html" lang="bn"><span class="flag">🇧🇩</span>বাংলা</a><a href="../de/index.html" lang="de"><span class="flag">🇩🇪</span>Deutsch</a><a href="../es/index.html" lang="es"><span class="flag">🇪🇸</span>Español</a><a href="../fr/index.html" lang="fr"><span class="flag">🇫🇷</span>Français</a><a class="cur" href="index.html" lang="hi"><span class="flag">🇮🇳</span>हिन्दी</a><a href="../id/index.html" lang="id"><span class="flag">🇮🇩</span>Bahasa Indonesia</a><a href="../it/index.html" lang="it"><span class="flag">🇮🇹</span>Italiano</a><a href="../ms/index.html" lang="ms"><span class="flag">🇲🇾</span>Bahasa Melayu</a><a href="../pl/index.html" lang="pl"><span class="flag">🇵🇱</span>Polski</a><a href="../pt/index.html" lang="pt"><span class="flag">🇵🇹</span>Português</a><a href="../sv/index.html" lang="sv"><span class="flag">🇸🇪</span>Svenska</a><a href="../th/index.html" lang="th"><span class="flag">🇹🇭</span>ไทย</a><a href="../tl/index.html" lang="tl"><span class="flag">🇵🇭</span>Tagalog</a><a href="../tr/index.html" lang="tr"><span class="flag">🇹🇷</span>Türkçe</a><a href="../vi/index.html" lang="vi"><span class="flag">🇻🇳</span>Tiếng Việt</a></div></div>
   </div>
 </div></header>
 

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Onstan Kilograma Dönüştürücü (oz - kg) | Standart ve Troy</title>
+<meta name="description" content="Standart ve troy onsları için onsu anında kilograma dönüştürün. Kesin NIST faktörleri, tam bir tablo, çözümlü örnekler ve yuvarlama ipuçları.">
+<link rel="alternate" hreflang="en" href="https://ouncestokilograms.com/">
+<link rel="alternate" hreflang="ar" href="https://ouncestokilograms.com/ar/">
+<link rel="alternate" hreflang="bn" href="https://ouncestokilograms.com/bn/">
+<link rel="alternate" hreflang="de" href="https://ouncestokilograms.com/de/">
+<link rel="alternate" hreflang="es" href="https://ouncestokilograms.com/es/">
+<link rel="alternate" hreflang="fr" href="https://ouncestokilograms.com/fr/">
+<link rel="alternate" hreflang="hi" href="https://ouncestokilograms.com/hi/">
+<link rel="alternate" hreflang="id" href="https://ouncestokilograms.com/id/">
+<link rel="alternate" hreflang="it" href="https://ouncestokilograms.com/it/">
+<link rel="alternate" hreflang="ms" href="https://ouncestokilograms.com/ms/">
+<link rel="alternate" hreflang="pl" href="https://ouncestokilograms.com/pl/">
+<link rel="alternate" hreflang="pt" href="https://ouncestokilograms.com/pt/">
+<link rel="alternate" hreflang="sv" href="https://ouncestokilograms.com/sv/">
+<link rel="alternate" hreflang="th" href="https://ouncestokilograms.com/th/">
+<link rel="alternate" hreflang="tl" href="https://ouncestokilograms.com/tl/">
+<link rel="alternate" hreflang="tr" href="https://ouncestokilograms.com/tr/">
+<link rel="alternate" hreflang="vi" href="https://ouncestokilograms.com/vi/">
+<link rel="alternate" hreflang="x-default" href="https://ouncestokilograms.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F5FB; --ink:#131A2B; --muted:#4B5768; --card:#FFFFFF; --line:#E4E8F2;
+  --teal:#0F766E; --teal-ink:#0B5C56; --indigo:#4338CA; --indigo-2:#1D4ED8; --violet:#7C3AED; --sky:#1D4ED8; --soft:#EDF1FF;
+  --grad:linear-gradient(118deg,#0F766E 0%,#1D4ED8 54%,#7C3AED 100%);
+  --grad-2:linear-gradient(118deg,#1D4ED8,#7C3AED);
+  --grad-soft:linear-gradient(118deg,#E8F4F2,#EDF0FF);
+  --sh:0 1px 2px rgba(20,26,46,.05),0 16px 44px rgba(28,34,80,.12);
+  --sh-c:0 10px 30px rgba(40,50,120,.15);
+  --maxw:1060px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.dsp{font-family:'Space Grotesk',Inter,sans-serif;letter-spacing:-.015em;line-height:1.08;margin:0}
+a{color:inherit;text-decoration:none}
+.w{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.num{font-variant-numeric:tabular-nums}
+
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(245,247,248,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .mk{width:38px;height:38px;border-radius:10px;background:var(--grad);display:grid;place-items:center;flex:0 0 auto}
+.brand b{font-family:'Space Grotesk';font-weight:700;font-size:18px;line-height:1}
+.brand span{display:block;font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+nav{display:flex;gap:22px}
+nav a{color:var(--muted);font-weight:500;font-size:15px}
+nav a:hover{color:var(--teal-ink)}
+@media(max-width:640px){nav{display:none}}
+.crumbs{background:#fff;border-bottom:1px solid var(--line)}
+.crumbs > div{max-width:1060px;margin:0 auto;padding:10px 20px;font-size:13.5px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--indigo);font-weight:500}
+.crumbs a:hover{text-decoration:underline}
+.crumbs .sep{color:#B6C0CF}
+.crumbs .cur{color:var(--ink);font-weight:500}
+
+/* hero + converter */
+.hero{position:relative;padding:54px 0 96px;text-align:center;background:var(--grad);color:#fff;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:42px 42px;mask:radial-gradient(700px 320px at 50% 0,#000,transparent 75%);pointer-events:none}
+.aurora{position:absolute;border-radius:50%;filter:blur(64px);opacity:.45;pointer-events:none}
+.aurora.a1{width:340px;height:340px;background:#8BF0E4;top:-120px;left:-60px}
+.aurora.a2{width:320px;height:320px;background:#B9A6FF;top:-80px;right:-50px;opacity:.5}
+.hero .w{position:relative;z-index:2}
+.eyebrow{display:inline-block;font-family:'Space Grotesk';font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.28);padding:5px 13px;border-radius:999px;backdrop-filter:blur(4px)}
+.hero h1{font-size:clamp(30px,5vw,48px);font-weight:700;margin:16px 0 0;color:#fff}
+.hero p.sub{color:rgba(255,255,255,.92);font-size:18px;max-width:580px;margin:12px auto 0}
+.hero p.sub strong{color:#fff}
+
+.conv{position:relative;background:var(--card);border:1px solid rgba(255,255,255,.6);border-radius:22px;box-shadow:0 30px 70px rgba(20,26,70,.33);max-width:720px;margin:30px auto 0;padding:28px 26px 26px;overflow:hidden}
+.conv::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--grad)}
+.conv-row{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:end}
+.field label{display:block;font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;text-align:left}
+.field .inp{position:relative}
+.field input{width:100%;font-family:'Space Grotesk';font-weight:600;font-size:30px;padding:16px 68px 16px 16px;border:1.5px solid var(--line);border-radius:14px;background:#FBFCFD;color:var(--ink);font-variant-numeric:tabular-nums}
+.field input:focus{outline:none;border-color:var(--indigo);box-shadow:0 0 0 4px rgba(91,91,240,.15);background:#fff}
+.field .unit{position:absolute;right:16px;top:50%;transform:translateY(-50%);font-family:'Space Grotesk';font-weight:700;color:var(--indigo);font-size:16px;pointer-events:none}
+.swap{width:50px;height:50px;border-radius:50%;border:0;background:var(--grad);display:grid;place-items:center;cursor:pointer;transition:transform .3s,box-shadow .2s;margin-bottom:4px;box-shadow:0 8px 20px rgba(40,60,180,.3)}
+.swap:hover{box-shadow:0 10px 26px rgba(40,60,180,.42)}
+.swap.spin{transform:rotate(180deg)}
+.scalebox{margin-top:18px;text-align:center}
+.scale{width:100%;max-width:430px;height:auto;margin:0 auto;display:block}
+.scale .beam-wrap{transform-box:view-box;transform-origin:220px 50px;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.scap{margin-top:4px;font-family:'Space Grotesk';font-weight:700;font-size:21px;color:var(--ink);font-variant-numeric:tabular-nums}
+.scap #eqline{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.scap small{display:block;font-family:Inter;font-weight:500;font-size:13px;color:var(--muted);margin-top:3px;letter-spacing:.01em}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
+.chips button{font-family:Inter;font-weight:500;font-size:14px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--muted);cursor:pointer;transition:.15s}
+.chips button:hover{border-color:transparent;color:#fff;background:var(--grad-2);box-shadow:0 6px 14px rgba(60,80,200,.25)}
+.prec{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:16px;font-size:14px;color:var(--muted)}
+.prec select{font:inherit;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink)}
+@media(max-width:560px){.conv-row{grid-template-columns:1fr;gap:10px}.swap{margin:0 auto;transform:rotate(90deg)}.swap.spin{transform:rotate(270deg)}}
+
+/* trust line */
+.trust{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:16px auto 0}
+.trust span{font-size:13px;color:#fff;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:5px 12px;backdrop-filter:blur(4px)}
+.trust b{font-weight:600}
+/* ounce-type toggle */
+.seg-wrap{text-align:center}
+.seg{display:inline-flex;margin:16px auto 0;background:#EDF0F7;border:1px solid var(--line);border-radius:12px;padding:4px;gap:4px}
+.seg button{font-family:'Space Grotesk';font-weight:600;font-size:14px;padding:8px 16px;border:0;border-radius:9px;background:transparent;color:var(--muted);cursor:pointer;transition:.15s}
+.seg button.on{background:#fff;color:var(--indigo);box-shadow:0 1px 3px rgba(20,26,70,.14)}
+/* equation + copy */
+.eqrow{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.copybtn{font-family:'Space Grotesk';font-weight:600;font-size:13px;color:var(--indigo);background:var(--soft);border:1px solid #D6DEF6;border-radius:9px;padding:6px 12px;cursor:pointer;transition:.15s}
+.copybtn:hover{background:#fff;border-color:var(--indigo)}
+.copybtn.done{color:#fff;background:var(--grad-2);border-color:transparent}
+/* multi-unit output */
+.also{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.also span{display:block;background:var(--grad-soft);border:1px solid #E1E7F5;border-radius:12px;padding:11px 10px;text-align:center;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.also b{display:block;font-family:'Space Grotesk';font-weight:700;font-size:18px;color:var(--ink);margin-top:3px;font-variant-numeric:tabular-nums;text-transform:none;letter-spacing:0}
+@media(max-width:480px){.also{grid-template-columns:1fr 1fr}}
+
+/* sections + article */
+.sec{padding:34px 0}
+.sec h2{font-size:clamp(24px,3.4vw,32px);font-weight:700;margin-bottom:6px}
+.sec .lead{color:var(--muted);margin:0 0 22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh)}
+.article{max-width:760px;margin:0 auto}
+.article h2{font-size:clamp(23px,3.2vw,30px);font-weight:700;margin:0 0 14px;scroll-margin-top:84px;position:relative;padding-left:16px}
+.article h2::before{content:"";position:absolute;left:0;top:5px;bottom:5px;width:5px;border-radius:3px;background:var(--grad)}
+.article h3{font-family:'Space Grotesk';font-weight:600;font-size:19px;color:var(--indigo);margin:26px 0 8px}
+.article p{margin:0 0 16px;color:#2A3346}
+.article strong{color:var(--ink);font-weight:600}
+.article ol,.article ul{margin:0 0 18px;padding-left:22px;color:#2A3346}
+.article li{margin-bottom:9px}
+.article p a[href^="http"]{color:var(--indigo);font-weight:600;text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+.article p a[href^="http"]:hover{color:var(--violet)}
+
+/* author byline */
+.byline{display:flex;align-items:center;gap:13px;margin:0 0 22px;padding:12px 15px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh)}
+.byline img{width:50px;height:50px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:2px solid #fff;box-shadow:0 2px 6px rgba(20,26,70,.22)}
+.byline .bl-name{font-size:15px;color:var(--ink);font-weight:500}
+.byline .bl-name a{color:var(--indigo);font-weight:600}
+.byline .bl-meta{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+
+/* author card (writer section) */
+.authorcard{display:flex;gap:22px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh);padding:26px;position:relative;overflow:hidden}
+.authorcard::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad)}
+.authorcard img{width:96px;height:96px;border-radius:16px;object-fit:cover;flex:0 0 auto;border:2px solid #fff;box-shadow:0 3px 10px rgba(20,26,70,.2)}
+.authorcard .an-name{font-family:'Space Grotesk';font-weight:700;font-size:22px;color:var(--ink);margin:0}
+.authorcard .an-role{font-size:14px;color:var(--indigo);font-weight:600;margin:3px 0 12px}
+.authorcard p{margin:0 0 12px;color:#2A3346}
+.authorcard .an-link{display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-weight:600;font-size:14px;color:#fff;background:var(--grad-2);padding:9px 16px;border-radius:10px;transition:.15s}
+.authorcard .an-link:hover{box-shadow:0 8px 18px rgba(60,80,200,.3)}
+@media(max-width:560px){.authorcard{flex-direction:column;gap:16px;padding:22px}}
+
+/* callout */
+.callout{background:var(--grad-soft);border:1px solid #DCE6F3;border-left:4px solid var(--indigo);border-radius:12px;padding:16px 18px;margin:0 0 18px;color:#2A3346;font-size:16px}
+.callout.teal{border-left-color:var(--teal)}
+.callout b,.callout strong{color:var(--ink)}
+
+/* inline formula */
+.fml{font-family:'Space Grotesk';font-weight:600;font-size:18px;background:var(--grad-soft);color:var(--indigo);padding:13px 16px;border-radius:10px;border:1px solid #E3E7F6;margin:0 0 18px;text-align:center;font-variant-numeric:tabular-nums;overflow-x:auto}
+
+/* TOC */
+.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--sh);padding:22px 24px;max-width:760px;margin:0 auto}
+.toc .toch{font-family:'Space Grotesk';font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 14px}
+.toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.toc li{counter-increment:toc;margin:0 0 10px;break-inside:avoid}
+.toc a{display:flex;gap:10px;align-items:baseline;color:#2A3346;font-size:15px;transition:.15s}
+.toc a::before{content:counter(toc,decimal-leading-zero);font-family:'Space Grotesk';font-weight:600;font-size:12px;color:var(--indigo);flex:0 0 auto}
+.toc a:hover{color:var(--indigo)}
+@media(max-width:560px){.toc ol{columns:1}}
+
+/* value grid */
+.valgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:4px 0 20px}
+.valcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--sh);position:relative;overflow:hidden}
+.valcard::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
+.valcard h3{margin:0 0 6px;font-size:15px;color:var(--muted);text-transform:none;font-family:'Space Grotesk'}
+.valcard .big{font-family:'Space Grotesk';font-weight:700;font-size:23px;color:var(--indigo-2);font-variant-numeric:tabular-nums}
+.valcard p{font-size:13.5px;color:var(--muted);margin:6px 0 0}
+@media(max-width:620px){.valgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){.valgrid{grid-template-columns:1fr}}
+
+/* table */
+.tbl{border-radius:16px;overflow:hidden;margin:0 0 20px}
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;min-width:300px}
+th,td{padding:14px 18px;text-align:left;font-size:15.5px;vertical-align:top}
+.tbl.nowrap th,.tbl.nowrap td{white-space:nowrap}
+@media(max-width:420px){th,td{padding:12px 12px;font-size:14px}}
+thead th{font-family:'Space Grotesk';font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--grad)}
+tbody td{border-bottom:1px solid var(--line)}
+tbody tr:nth-child(even){background:#F5F7FE}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:var(--soft)}
+td:first-child{font-weight:700;color:var(--ink)}
+td:nth-child(2){font-weight:700;color:var(--indigo-2)}
+td:nth-child(3){color:var(--muted)}
+.tbl.plain td:nth-child(2){font-weight:400;color:#2A3346}
+.tbl.plain td:nth-child(3){color:#2A3346}
+
+/* formula cards */
+.formula{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 20px}
+.fcard{padding:24px;position:relative;overflow:hidden}
+.fcard::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad)}
+.fhd{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.fico{width:42px;height:42px;border-radius:12px;background:var(--grad-soft);border:1px solid #DCE3F5;display:grid;place-items:center;flex:0 0 auto}
+.fcard h3{font-size:18px;margin:0;color:var(--ink)}
+.eq{font-family:'Space Grotesk';font-weight:600;font-size:19px;background:var(--grad-soft);color:var(--indigo);padding:14px 16px;border-radius:12px;font-variant-numeric:tabular-nums;border:1px solid #E3E7F6}
+.eq small{display:block;color:var(--muted);font-weight:500;font-size:13px;margin-top:6px}
+@media(max-width:640px){.formula{grid-template-columns:1fr}}
+
+/* faq */
+.faq details{border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:10px;overflow:hidden}
+.faq details[open]{box-shadow:var(--sh-c);border-color:#CBD2F2}
+.faq summary{list-style:none;cursor:pointer;padding:16px 18px;font-family:'Space Grotesk';font-weight:600;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:#fff;background:var(--grad-2);width:26px;height:26px;min-width:26px;border-radius:50%;display:grid;place-items:center;font-size:18px;line-height:1;font-weight:500}
+.faq details[open] summary{color:var(--indigo)}
+.faq details[open] summary::after{content:"\2013"}
+.faq .ans{padding:2px 18px 16px;color:var(--muted)}
+
+footer{background:#0F1B2D;color:#AEBAC6;padding:44px 0 24px;margin-top:26px;font-size:14px}
+.fw{max-width:1060px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:28px}
+.fcol h4{font-family:'Space Grotesk';font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#fff;margin:0 0 12px}
+.fcol a{display:block;color:#AEBAC6;margin-bottom:9px}.fcol a:hover{color:#fff}
+.fbrand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.fbrand .mk{width:34px;height:34px;border-radius:9px;background:var(--grad);display:grid;place-items:center}
+.fbrand b{color:#fff;font-family:'Space Grotesk';font-weight:700;font-size:16px}
+.brandcol p{color:#8A97A6;margin:0;max-width:260px;line-height:1.5;font-size:13.5px}
+.fbar{max-width:1060px;margin:26px auto 0;padding:18px 20px 0;border-top:1px solid rgba(255,255,255,.1);color:#7D8B99;font-size:13px}
+@media(max-width:720px){.fw{grid-template-columns:1fr 1fr}.brandcol{grid-column:1/-1}}
+@media(max-width:440px){.fw{grid-template-columns:1fr}}
+
+.hright{display:flex;align-items:center;gap:16px;margin-left:auto}
+.langsel{position:relative}
+.langsel .lbtn{display:flex;align-items:center;gap:6px;font-family:'Space Grotesk';font-weight:600;font-size:14px;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:9px;padding:7px 11px;cursor:pointer}
+.langsel .lbtn:hover{border-color:var(--indigo);color:var(--indigo)}
+.langsel .lmenu{position:absolute;right:0;top:calc(100% + 8px);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--sh);padding:6px;display:none;grid-template-columns:1fr 1fr;gap:2px;min-width:260px;z-index:40}
+.langsel.open .lmenu{display:grid}
+.langsel .lmenu a{display:flex;align-items:center;gap:8px;padding:8px 11px;border-radius:8px;font-size:14px;color:#2A3346;white-space:nowrap}
+.langsel .lmenu a:hover{background:var(--soft);color:var(--indigo)}
+.langsel .lmenu a.cur{color:var(--indigo);font-weight:600;background:var(--grad-soft)}
+.langsel .lmenu a .flag{font-size:16px;line-height:1}
+.langsel .lbtn .flag{font-size:15px;line-height:1}
+@media(max-width:480px){.langsel .lmenu{grid-template-columns:1fr;min-width:170px}}
+[dir="rtl"] .hright{margin-left:0;margin-right:auto}
+[dir="rtl"] .langsel .lmenu{right:auto;left:0}
+[dir="rtl"] .crumbs-hero{justify-content:flex-end}
+</style>
+</head>
+<body>
+
+<header><div class="w">
+  <a class="brand" href="index.html">
+    <span class="mk"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span><b>Ounces&nbsp;to&nbsp;Kilograms</b><span>oz → kg dönüştürücü</span></span>
+  </a>
+  <div class="hright">
+  <nav>
+    <a href="index.html">Oz → kg</a>
+    <a href="kg-to-oz.html">Kg → oz</a>
+  </nav>
+  <div class="langsel" id="langsel"><button class="lbtn" id="lbtn" aria-haspopup="true" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15.5 0 18M12 3c-2.5 2.5-2.5 15.5 0 18" stroke="currentColor" stroke-width="1.7"/></svg><span class="flag">🇹🇷</span><span>TR</span></button><div class="lmenu"><a href="../index.html" lang="en"><span class="flag">🇬🇧</span>English</a><a href="../ar/index.html" lang="ar"><span class="flag">🇸🇦</span>العربية</a><a href="../bn/index.html" lang="bn"><span class="flag">🇧🇩</span>বাংলা</a><a href="../de/index.html" lang="de"><span class="flag">🇩🇪</span>Deutsch</a><a href="../es/index.html" lang="es"><span class="flag">🇪🇸</span>Español</a><a href="../fr/index.html" lang="fr"><span class="flag">🇫🇷</span>Français</a><a href="../hi/index.html" lang="hi"><span class="flag">🇮🇳</span>हिन्दी</a><a href="../id/index.html" lang="id"><span class="flag">🇮🇩</span>Bahasa Indonesia</a><a href="../it/index.html" lang="it"><span class="flag">🇮🇹</span>Italiano</a><a href="../ms/index.html" lang="ms"><span class="flag">🇲🇾</span>Bahasa Melayu</a><a href="../pl/index.html" lang="pl"><span class="flag">🇵🇱</span>Polski</a><a href="../pt/index.html" lang="pt"><span class="flag">🇵🇹</span>Português</a><a href="../sv/index.html" lang="sv"><span class="flag">🇸🇪</span>Svenska</a><a href="../th/index.html" lang="th"><span class="flag">🇹🇭</span>ไทย</a><a href="../tl/index.html" lang="tl"><span class="flag">🇵🇭</span>Tagalog</a><a class="cur" href="index.html" lang="tr"><span class="flag">🇹🇷</span>Türkçe</a><a href="../vi/index.html" lang="vi"><span class="flag">🇻🇳</span>Tiếng Việt</a></div></div>
+  </div>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="aurora a1"></div><div class="aurora a2"></div><div class="w">
+  <span class="eyebrow">Ağırlık dönüştürücü</span>
+  <h1>Onstan Kilograma Dönüştürücü</h1>
+  <p class="sub">Standart ve troy onsları için, yazar yazmaz <strong>onsu (oz)</strong> <strong>kilograma (kg)</strong> dönüştürün. kg'den oz'ye geçmek için değiştir düğmesini kullanın.</p>
+  <div class="trust"><span>✓ Kesin NIST faktörleri</span><span>İnceleyen: <b>Gary Bennett</b></span><span>Güncelleme <b>Kas 2026</b></span></div>
+
+  <div class="conv">
+    <div class="conv-row">
+      <div class="field">
+        <label for="oz">Ons</label>
+        <div class="inp"><input id="oz" type="text" inputmode="decimal" value="16" autocomplete="off"><span class="unit" id="ozUnit">oz</span></div>
+      </div>
+      <button class="swap" id="swap" aria-label="Reverse: go to kilograms to ounces converter" title="Reverse → kg to oz">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 4 4 7l3 3M4 7h13M17 20l3-3-3-3m3 3H7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="field">
+        <label for="kg">Kilogram</label>
+        <div class="inp"><input id="kg" type="text" inputmode="decimal" autocomplete="off"><span class="unit">kg</span></div>
+      </div>
+    </div>
+    <div class="seg-wrap"><div class="seg" id="ozType"><button class="on" data-f="0.028349523125" data-lab="oz">Ons (oz)</button><button data-f="0.0311034768" data-lab="oz t">Troy ons (oz t)</button></div></div>
+    <div class="scalebox">
+      <svg class="scale" viewBox="0 0 440 172" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0F766E"/><stop offset=".55" stop-color="#1D4ED8"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs>
+        <rect x="178" y="142" width="84" height="12" rx="6" fill="#28304D"/>
+        <rect x="214" y="54" width="12" height="90" rx="6" fill="#28304D"/>
+        <g class="beam-wrap">
+          <rect x="70" y="45" width="300" height="10" rx="5" fill="url(#beam)"/>
+          <circle cx="220" cy="50" r="11" fill="#1D4ED8" stroke="#fff" stroke-width="3"/>
+          <path d="M95 53 L66 100 M95 53 L124 100" stroke="#9AA6BF" stroke-width="2"/>
+          <path d="M58 100 Q95 130 132 100" stroke="#0F766E" stroke-width="3.5" stroke-linecap="round" fill="#E7F3F1"/>
+          <path d="M345 53 L316 100 M345 53 L374 100" stroke="#9AA6BF" stroke-width="2"/>
+          <path d="M308 100 Q345 130 382 100" stroke="#7C3AED" stroke-width="3.5" stroke-linecap="round" fill="#F2ECFF"/>
+          <text id="panL" x="95" y="88" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="18" fill="#131A2B">16 oz</text>
+          <text id="panR" x="345" y="88" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="18" fill="#131A2B">0.4536 kg</text>
+        </g>
+      </svg>
+      <div class="scap"><div class="eqrow"><span id="eqline">16 oz = 0.4536 kg</span><button class="copybtn" id="copy" type="button">⧉ Kopyala</button></div><small>Aynı ağırlık, iki birimde gösterilir</small></div>
+    </div>
+    <div class="also"><span>Gram olarak<b id="u-g">453.59 g</b></span><span>Libre olarak<b id="u-lb">1 lb</b></span><span>Stone olarak<b id="u-st">0.0714 st</b></span></div>
+    <div class="chips" id="chips">
+      <button data-oz="0.5">½ oz</button>
+      <button data-oz="1">1 oz</button>
+      <button data-oz="4">4 oz</button>
+      <button data-oz="8">8 oz</button>
+      <button data-oz="16">16 oz</button>
+      <button data-oz="32">32 oz</button>
+      <button data-oz="100">100 oz</button>
+      <button data-oz="1000">1000 oz</button>
+    </div>
+    <div class="prec">
+      <label for="dec">Ondalık basamak</label>
+      <select id="dec"><option>2</option><option selected>4</option><option>6</option></select>
+    </div>
+  </div>
+</div></section>
+
+<!-- intro -->
+<section class="sec article"><div class="w">
+  <h2>Standart ve Troy Onsları için Onstan Kilograma Dönüştürücü</h2>
+  <p>Bu ücretsiz araç, bir sayı yazdığınız anda onsu kilograma dönüştürür. Onstan kilograma dönüşüm, ABD geleneksel ağırlığını tek bir sabit sayıyla metrik ağırlığa çevirir. Ons, ABD etiketlerinde, kolilerde ve tariflerde görülürken dünyanın çoğu kilogram kullanır. Tek bir sabit sayı her yanıtı kesin, hızlı ve güvenilir yapar. Ons kutusuna bir değer yazın, <a href="kg-to-oz.html">kilogramdan onsa</a> için değiştir düğmesini kullanın ve altın veya gümüş için Troy seçeneğini seçin.</p>
+  <p><strong>Bir ons tam olarak 0,028349523125 kilograma, yani yaklaşık 28,35 grama eşittir.</strong> oz'yi kg'ye dönüştürmek için onsu 0,028349523125 ile çarpın. Bir kilogram yaklaşık 35,274 ons tutar, bu yüzden 35,274'e bölmek aynı yanıtı verir. On altı ons bir libre eder ve bir libre tam olarak 0,45359237 kilograma eşittir. Her ons 437,5 grain tutar ve bir grain yaklaşık 64,8 miligramlık küçük bir birimdir.</p>
+  <p>Bu sayılar tahminden değil kanundan gelir. 1959'da altı ulus International Yard and Pound Agreement'ı imzaladı. ABD, Birleşik Krallık, Kanada, Avustralya, Yeni Zelanda ve Güney Afrika, 0,45359237 kg'lik bir libre üzerinde anlaştı. National Institute of Standards and Technology (NIST), buna karşılık gelen ons değerini Handbook 44 tablolarında listeler. Kilogramı yeniden tanımlamaya yardımcı olan NIST fizikçisi Stephan Schlamminger, onun yeni dayanağını «evrenin dokusuna işlenmiş» olarak nitelendirdi.</p>
+  <p>Bu kılavuz formülü, dört adımlı bir yöntemi ve 1 onstan 100 onsa kadar hazır yanıtları kapsar. Her bölüm, bir ABD tarifiyle pişirme veya küçük bir koli gönderme gibi gerçek bir görevden başlar. Yeni doğan bebeğin ağırlığını dönüştüren ebeveynler ve bavul hazırlayan yolcular kendi bölümlerini bulur. Eldiven ölçülerini kontrol eden boksörler ve sikke tartan altın alıcıları da kendilerininkini bulur. Son bölümler troy onsunu ve sıvı onsu kapsar.</p>
+  <div class="callout teal"><strong>35 ons hakkında şaşırtıcı bir gerçek.</strong> Otuz beş ons 0,9922 kg gelir; bu, tam bir kilograma 7,8 gram kalır. 1 troy onsluk bir altın sikke 31,1 gram gelir, çünkü kıymetli metaller kendi özel onsunu kullanır. Ve 32 onsluk bir su şişesi hacmi ölçer, bu yüzden kilogram değeri içini neyin doldurduğuna bağlıdır.</div>
+</div></section>
+
+<!-- table of contents -->
+<section class="sec" style="padding-top:6px"><div class="w">
+  <nav class="toc" aria-label="Contents">
+    <div class="toch">İçindekiler</div>
+    <ol>
+      <li><a href="#basics">Ons, troy ons ve kilogram nedir</a></li>
+      <li><a href="#convert">Ons nasıl kilograma dönüştürülür</a></li>
+      <li><a href="#method">Adım adım yöntem</a></li>
+      <li><a href="#chart">oz - kg dönüşüm tablosu</a></li>
+      <li><a href="#searched">En çok aranan ons değerleri</a></li>
+      <li><a href="#everyday">İnsanların dönüştürdüğü günlük şeyler</a></li>
+      <li><a href="#troy">Troy ons ve külçe</a></li>
+      <li><a href="#fluid">Sıvı ons ile ons karşılaştırması</a></li>
+      <li><a href="#precision">Ne kadar hassas olunmalı</a></li>
+      <li><a href="#faq">Sıkça sorulan sorular</a></li>
+    </ol>
+  </nav>
+</div></section>
+
+<!-- 1. basics -->
+<section class="sec article" id="basics"><div class="w">
+  <h2>Ons, Troy Ons ve Kilogram Nedir?</h2>
+  <p>Ons, iki yaygın biçimde gelen küçük bir kütle birimidir. Standart ons 28,35 gram gelir ve kıymetli metaller için troy ons 31,10 gram gelir. Kilogram, 1.000 grama eşit metrik temel kütle birimidir.</p>
+
+  <h3>Standart (Avoirdupois) Ons</h3>
+  <p>Avoirdupois ons, bir librenin on altıda birine eşit olan ve günlük malları ölçen bir kütle birimidir. Avoirdupois sözcüğü («av-er-duh-POIZ» okunur) «ağırlıklı mallar» anlamına gelen eski Fransızca sözcüklerden gelir. ABD'deki alışverişçiler bu onsu neredeyse her gıda ambalajında görür. Bir avoirdupois ons 16 dram tutar ve dram, eski tariflerde kullanılan küçük bir birimdir.</p>
+  <p>Birleşik Krallık, aynı 1959 libresini Weights and Measures Act 1963 ile benimsedi. Sonuç olarak bir İngiliz onsu ile bir Amerikan onsu bugün aynı gelir. Birçok Birleşik Krallık restoranındaki biftek menüleri parçaları gururla ons olarak listeler ve dükkânlar aynı eti gram olarak satar.</p>
+
+  <h3>Troy Ons</h3>
+  <p>Troy ons (oz t), 31,1034768 grama eşit olan ve altın, gümüş, platin ve paladyum tartmak için kullanılan bir kütle birimidir. Ad, ortaçağ tüccarlarının gümüş ve baharat tarttığı Fransa'daki bir pazar kasabası olan Troyes'ten gelir. Bir troy ons 480 grain tutarken bir standart ons 437,5 grain tutar.</p>
+  <p>Troy sistemi birimlerini aynı grain'den kurar. NIST Handbook 44'e göre 24 grain 1 pennyweight eder ve 20 pennyweight 1 troy ons eder. On iki troy ons 373,24 gramlık 1 troy libre oluşturur. Yani bir troy ons bir standart onstan daha ağır olsa da, bir troy libre bir standart libreden daha hafiftir.</p>
+  <p>Troy onslar kendi faktörleriyle kilograma dönüşür. Kilogram elde etmek için troy onsu 0,0311034768 ile çarpın. 10 oz t'lik bir gümüş külçe 0,3110 kg gelir ve bir kilogram 32,1507 troy ons tutar. Dönüştürücünün Troy ayarı tam olarak bu faktörü kullanır.</p>
+
+  <h3>Kilogram</h3>
+  <p>Kilogram, International System of Units (SI) içindeki temel kütle birimidir ve her metrik ağırlığın dayanağıdır. General Conference on Weights and Measures (CGPM), Kasım 2018'de kilogramın nasıl tanımlandığını değiştirmek için oy kullandı. Yeni kural, World Metrology Day olan 20 Mayıs 2019'da başladı.</p>
+  <p>O tarihten önce Paris yakınlarındaki bir metal silindir kilogramın boyutunu belirliyordu. Bilim insanları o platin ve iridyum silindiri «Le Grand K» olarak adlandırdı. Bugün kilogram, fizikten gelen ve 6,62607015 × 10⁻³⁴ joule-saniyeye eşit sabit bir sayı olan Planck sabitine dayanır. International Bureau of Weights and Measures (BIPM), kilogram eski boyutunu korusun diye o sayıyı seçti. Bu seçim her onsun değerini aynı tutar.</p>
+  <p>Bilim insanları kütleyi ağırlıktan ayırır. Kütle, bir nesnedeki madde miktarıdır ve ağırlık, yerçekiminin ona uyguladığı çekimdir. Alışverişçiler aynı fikir için her iki sözcüğü de kullanır ve bu kılavuz da aynısını yapar.</p>
+</div></section>
+
+<!-- 2. convert -->
+<section class="sec article" id="convert"><div class="w">
+  <h2>Ons Kilograma Nasıl Dönüştürülür?</h2>
+  <p>Kilogram elde etmek için ons sayısını 0,028349523125 ile çarpın. Onsu 35,27396195'e bölmek aynı sonucu verir.</p>
+  <div class="formula">
+    <div class="card fcard">
+      <div class="fhd"><span class="fico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 20c3 0 3-15 6-15M3 9h8" stroke="#4338CA" stroke-width="2" stroke-linecap="round"/></svg></span><h3>Formül</h3></div>
+      <div class="eq">kg = oz × 0.0283495<small>1 ons = 0,028349523125 kilogram (kesin)</small></div>
+    </div>
+    <div class="card fcard">
+      <div class="fhd"><span class="fico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#7C3AED" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Örnek</h3></div>
+      <div class="eq">16 oz × 0.0283495 = 0.4536 kg<small>Yani 16 ons yaklaşık 0,4536 kilograma eşittir.</small></div>
+    </div>
+  </div>
+
+  <h3>Faktör Neden 0,028349523125?</h3>
+  <p>Faktör, bir libreyi 16 eşit parçaya bölmekten gelir. 1959 anlaşması libreyi 0,45359237 kg olarak sabitledi, yani bir ons o değerin 16'ya bölünmüşüdür.</p>
+  <div class="fml">0.45359237 ÷ 16 = 0.028349523125</div>
+  <p>NIST aynı rakamı doğrular. Onun Handbook 44, Ek C bir avoirdupois onsu tam olarak 28,349523125 gram olarak listeler. Her iki sayı da kanunen kesin olduğundan faktör yıldan yıla asla değişmez.</p>
+
+  <h3>İki Çözümlü Örnek</h3>
+  <p>10 ons çikolata isteyen bir ABD brownie tarifi olan bir ev aşçısını düşünün. On ons çarpı 0,0283495, 0,2835 kg eder, yani mutfak terazisinde yaklaşık 283 gram. 28 ons gelen bir mum gönderen bir çevrimiçi satıcı, gümrük formu için 0,7938 kg elde eder.</p>
+
+  <h3>Ters Faktör Nedir?</h3>
+  <p>Bir kilogram 35,27396195 onsa eşittir. Kilogramı tekrar onsa çevirmek için kilogramı o sayıyla çarpın. Havayolu 23 kg'ye izin veren bir yolcu bu sınırı onsa çevirebilir: 23 × 35,274 = 811,3 ons. Dönüştürücüdeki değiştir düğmesi bu adımı sizin için yapar.</p>
+  <p>Birçok Avrupa yemek kitabı kısayol olarak ons başına 28 gram basar. Kesin faktör yaklaşık %1,2 daha doğrudur, bu da ekmek ve hamur işinin doğru çıkmasına yardımcı olur.</p>
+</div></section>
+
+<!-- 3. method -->
+<section class="sec article" id="method"><div class="w">
+  <h2>Adım Adım Yöntem Nedir?</h2>
+  <p>oz'yi kg'ye elle dönüştürmek için 4 adımı izleyin: onsu yazın, çarpın, yuvarlayın ve kontrol edin. Tüm yöntem bir telefon hesaplayıcısıyla bir dakikadan az sürer.</p>
+  <ol>
+    <li>Ağırlığı ons olarak 15 veya 7,5 gibi bir ondalık sayı olarak yazın.</li>
+    <li>Bu sayıyı 0,028349523125 ile, çoğu kullanım için 0,0283495 ile çarpın.</li>
+    <li>Yanıtı görevinize uyacak şekilde yuvarlayın, örneğin yemek pişirme için 2 ondalık basamak.</li>
+    <li>Yanıtı bilinen bir değerle karşılaştırın, örneğin 16 oz = 0,4536 kg.</li>
+  </ol>
+  <p>İşte gerçek bir sayıyla oz'nin kg'ye nasıl dönüştürüleceği. On beş ons çarpı 0,0283495, 0,4252 kg eder. Bu yanıt 16 onsun biraz altında kalır, bu yüzden kontrolü geçer. Gram cinsinden sonuçlar için onstan grama dönüştürücü doğrudan yanıt verir.</p>
+
+  <h3>Çözümlü Ondalık Örnekler</h3>
+  <p>Okul problemleri genellikle ondalık kullanır, işte 3 alıştırma örneği. 90,2 oz'yi kg'ye dönüştürmek için 90,2'yi 0,028349523125 ile çarpın ve 2,5571 kg elde edin. Aynı adımlar 91,3 oz'yi kg'ye dönüştürür ve 2,5883 kg verir. Üçüncü bir çalışma kâğıdı 92,2 oz'yi kg'ye dönüştürmenizi isteyebilir ve yanıt 2,6138 kg'dir.</p>
+  <p>Öğretmenler bu yönteme boyut analizi der. Boyut analizi, birim problemlerini 1 oz başına 0,0283495 kg gibi 1'e eşit bir kesirle çarparak çözme yöntemidir. Ons birimleri sadeleşir ve yalnızca kilogram kalır.</p>
+
+  <h3>Zihinden Hesap Kısayolu</h3>
+  <p>Hızlı bir tahmin için onsu 35'e bölün. 105 ons için 105 ÷ 35 = 3 kg ve kesin yanıt 2,9767 kg'dir. Tahmin, kesin değerin yaklaşık %0,8'i içinde kalır. Bu, market reyonunda iyi işler ve kesin faktör posta etiketlerine en çok uyar.</p>
+
+  <h3>Libre Artı Ons</h3>
+  <p>Önce libreyi onsa çevirin, fazladan onsu ekleyin ve sonra çarpın. 2 lb 5 oz'lik bir koli 2 × 16 + 5 = 37 ons tutar. Otuz yedi ons çarpı 0,0283495, 1,0489 kg eder. Yalnızca libre olarak verilen ağırlıklar için libreden kilograma hesaplayıcı daha hızlıdır.</p>
+</div></section>
+
+<!-- 4. chart -->
+<section class="sec article" id="chart"><div class="w">
+  <h2>oz - kg Dönüşüm Tablosu Ne Gösterir?</h2>
+  <p>Aşağıdaki tabloda 1 onstan 1.000 onsa kadar otuz altı değer görünür. Her kilogram rakamı 4 ondalık basamağa ve her gram rakamı 2 basamağa yuvarlanmıştır.</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Ons (oz)</th><th>Kilogram (kg)</th><th>Gram (g)</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+  <p>Tablo yararlı bir sınır gösterir. Otuz beş ons 1 kilogramın hemen altında kalırken 36 ons onu yaklaşık 21 gram geçer.</p>
+</div></section>
+
+<!-- 5. most searched -->
+<section class="sec article" id="searched"><div class="w">
+  <h2>Kilogram Cinsinden En Çok Aranan Ons Değerleri Nelerdir?</h2>
+  <p>En çok aranan altı değer 16, 10, 12, 32, 8 ve 1 onstur. Kilogram olarak 0,4536; 0,2835; 0,3402; 0,9072; 0,2268 ve 0,0283'e eşittir.</p>
+  <div class="valgrid">
+    <div class="valcard"><h3>16 oz - kg</h3><div class="big">0.4536 kg</div><p>Tam olarak bir libre (453,59 g). Fırıncılar bu değeri en çok kullanır, çünkü ABD tarifleri libre ile sayar.</p></div>
+    <div class="valcard"><h3>10 oz - kg</h3><div class="big">0.2835 kg</div><p>283,50 gram, bir kilogramın dörtte birinden biraz fazla.</p></div>
+    <div class="valcard"><h3>12 oz - kg</h3><div class="big">0.3402 kg</div><p>340,19 gram. Standart bir ABD çekilmiş kahve paketi genellikle 12 ons tutar.</p></div>
+    <div class="valcard"><h3>32 oz - kg</h3><div class="big">0.9072 kg</div><p>İki libre, 1 kilograma yaklaşık 93 gram kalır. Etikete bakın, çünkü birçok 32 oz'lik şişe sıvı ons listeler.</p></div>
+    <div class="valcard"><h3>8 oz - kg</h3><div class="big">0.2268 kg</div><p>Yarım libre. Bir ABD su bardağı yaklaşık 8,3 ons gelir, bu yüzden bir bardak ile 8 oz yakındır ama eşit değildir.</p></div>
+    <div class="valcard"><h3>1 oz - kg</h3><div class="big">0.0283 kg</div><p>Yuvarlanmış. Tam yazıldığında değer 0,028349523125 kg'dir.</p></div>
+  </div>
+</div></section>
+
+<!-- 6. everyday -->
+<section class="sec article" id="everyday"><div class="w">
+  <h2>İnsanlar Hangi Günlük Şeyleri Onstan Kiloya Dönüştürür?</h2>
+  <p>İnsanlar 5 ana günlük eşya grubunu dönüştürür: gıda, posta, yeni doğan bebekler, bagaj ve spor ekipmanı. Altın ve gümüş altıncı bir grup oluşturur ama farklı bir ons kullanır.</p>
+
+  <h3>Gıda Etiketleri ve Tarifler</h3>
+  <p>ABD gıda etiketleri kanunen her iki birimi de gösterir. U.S. Food and Drug Administration (FDA) bu kuralı 21 CFR 101.105'te belirler. Ambalajlı gıda net ağırlığını metrik birimlerde ve ABD geleneksel birimlerinde listelemelidir. Net ağırlık, kutu, teneke veya kavanoz olmadan yalnızca gıdanın ağırlığıdır.</p>
+  <p>NIST, mağazaların bu kurala ne kadar iyi uyduğunu inceledi. Araştırmacılar 19 perakende mağazasında en az 1.137 paketi inceledi. Bu paketlerin yaklaşık %17'si yalnızca metrik birimleri listeledi; bu da metrik etiketlerin ne kadar tanıdık hâle geldiğini gösterir. Libre ile fiyatlandırılan şarküteri eti gibi rastgele ağırlıklı paketler iki birim kuralından muaftır.</p>
+  <p>Amerikan tarifiyle çalışan bir ev aşçısı bu sayılarla her reyonda karşılaşır. Bir çubuk tereyağı 4 ons, yani 0,1134 kg gelir. Bir yoğurt kabı genellikle 6 ons tutar ve 6 oz - kg kontrolü 0,1701 kg verir. Konserve fasulye genellikle 15 onsluk tenekelerde gelir, bu yüzden 15 oz - kg 0,4252 kg'ye eşittir.</p>
+  <p>Daha büyük paketler aynı özeni gerektirir. Büyük ezilmiş domates tenekeleri 28 ons tutar, bu da 0,7938 kg eder. Uzun bir yulaf ezmesi kutusu genellikle 18 ons, yani 0,5103 kg gelir. Bir libre un için 16 oz - kg'ye bakan fırıncılar 0,4536 kg elde eder.</p>
+  <p>Sandviç ekmekleri genellikle 24 ons gelir, bu da 0,6804 kg verir. Büyük bir mayonez kavanozu ağırlıkça 30 ons, yani 0,8505 kg tutabilir. Metrik ülkelerdeki alışverişçiler kilogram başına fiyatı karşılaştırır, bu yüzden bu rakam değeri değerlendirmelerine yardımcı olur.</p>
+
+  <h3>Posta ve Gönderim</h3>
+  <p>United States Postal Service (USPS) 2 temel ons sınırı kullanır. Domestic Mail Manual bir First-Class mektubu 3,5 onsta, yani 0,0992 kg'de sınırlar. Her biçimdeki First-Class Mail 13 onsta durur. 13 oz - kg değeri 0,3685 kg'dir ve daha ağır parçalar başka hizmetlere geçer.</p>
+  <p>Etsy ve eBay'deki küçük satıcılar bu sınırlarla her gün çalışır ve kolilerini güvenle fiyatlandırır. İnce bir hediyeli tebrik kartı 2 ons, yani 0,0567 kg gelebilir. 3 oz - kg kontrolü 0,0850 kg verir, bu da hâlâ mektup sınırına uyar. 11 onsluk bir ciltsiz kitap 0,3118 kg gelir, bu yüzden 13 ons sınırının altında kalır.</p>
+  <p>Birçok uluslararası taşıyıcı bir sonraki yarım kilogram veya tam kilogram üzerinden fatura keser. Satıcılar etiket basmadan önce yukarı yuvarlayarak en sorunsuz teslimatı elde eder. İşte burada incelik var: bir taşıyıcı hafif, hacimli koliler için ağırlık yerine kutu boyutu üzerinden fatura kesebilir.</p>
+
+  <h3>Yeni Doğan ve Çocuk Ağırlığı</h3>
+  <p>ABD hastaneleri doğum ağırlığını genellikle libre ve ons olarak bildirir ve dünyanın çoğu kilogram kullanır. Centers for Disease Control and Prevention (CDC) düşük doğum ağırlığını 2.500 gramdan az olarak tanımlar. ABD birimlerinde bu sınır 5 libre 8 ons olarak yazılır.</p>
+  <p>Hemşireler ve ebeveynler her bebek ağırlığı için libre artı ons yöntemini kullanır. 7 lb 8 oz'lik bir yeni doğan 7 × 16 + 8 = 120 ons gelir. Yüz yirmi ons çarpı 0,0283495, 3,4019 kg eder. Yurt dışındaki büyükanne ve büyükbabalar hastaneden gelen ilk mesajda genellikle bu kilogram rakamını ister.</p>
+  <p>Sınır değeri ilginç bir özel durumdur. Tam olarak 5 lb 8 oz, 88 onsa, yani 2,4948 kg'ye eşittir. Bu sayı 2.500 gramın 5 gram altında kalır. Sağlık kuruluşları yuvarlanmış çifti kullanır, bu yüzden doktorlar her iki biçimi de aynı satır olarak okur.</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Libre ve ons</th><th>Toplam ons</th><th>Kilogram</th></tr></thead>
+        <tbody>
+          <tr><td>5 lb 4 oz</td><td>84</td><td>2.3814</td></tr>
+          <tr><td>5 lb 6 oz</td><td>86</td><td>2.4381</td></tr>
+          <tr><td>6 lb 4 oz</td><td>100</td><td>2.8350</td></tr>
+          <tr><td>6 lb 5 oz</td><td>101</td><td>2.8633</td></tr>
+          <tr><td>6 lb 14 oz</td><td>110</td><td>3.1184</td></tr>
+          <tr><td>8 lb 9 oz</td><td>137</td><td>3.8839</td></tr>
+          <tr><td>9 lb 5 oz</td><td>149</td><td>4.2241</td></tr>
+          <tr><td>10 lb 5 oz</td><td>165</td><td>4.6777</td></tr>
+          <tr><td>14 lb 5 oz</td><td>229</td><td>6.4920</td></tr>
+          <tr><td>15 lb 5 oz</td><td>245</td><td>6.9456</td></tr>
+          <tr><td>16 lb 10 oz</td><td>266</td><td>7.5410</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>Her satır aynı kuralı izler. Libreyi 16 ile çarpın, onsu ekleyin ve toplamı 0,0283495 ile çarpın.</p>
+
+  <h3>Seyahat ve Bagaj</h3>
+  <p>Havayolları bagaj sınırlarını kilogram veya libre olarak belirler ve akıllı yolcular küçük eşyaları erken tartar. 26 onsluk bir çift koşu ayakkabısı 0,7371 kg eder, 42 onsluk ince bir dizüstü bilgisayar ise 1,1907 kg gelir. 36 onsluk bir hediyelik vazo 1,0206 kg eder; bir kilogramın hemen üzerinde hoş bir hediye.</p>
+  <p>Hediye kutuları bir bavulda hızla birikir. 40 oz - kg kontrolü 1,1340 kg verir. Üç libre çikolata 48 onsa, yani 1,3608 kg'ye eşittir. Dört libre kahve çekirdeği 64 onsa, yani 1,8144 kg'ye eşittir.</p>
+  <p>Toplu ürünler tablonun daha ağır ucuna ulaşır. Yetmiş iki ons 2,0412 kg eder ve 80 ons 2,2680 kg eder. En üstte 100 oz - kg, 2,8350 kg'ye eşittir; hatırlamaya değer: 100 ons 3 kilograma yakındır ama hâlâ altındadır.</p>
+
+  <h3>Spor Ekipmanı ve Yemek Porsiyonları</h3>
+  <p>Boks eldivenleri ağırlığa göre, 8 onstan 20 onsa kadar ons olarak satılır. 10 onsluk kum torbası eldivenleri 0,2835 kg gelir, bu yüzden 10 oz - kg yurt dışındaki boksörlerden gelen yaygın bir soruyu yanıtlar. 14 onsluk antrenman eldivenleri 0,3969 kg gelir, bu da antrenörlerin ABD ve Avrupa eldiven ölçülerini karşılaştırmasına yardımcı olur.</p>
+  <p>Öğün takipçileri proteini düzenli, hassas porsiyonlarda tartar. 5 onsluk bir tavuk göğsü porsiyonu 0,1417 kg gelir ve 7 onsluk bir somon fileto 0,1984 kg eder. 20 onsluk büyük bir ribeye biftek 0,5670 kg gelir; cömert bir yarım kilogram et.</p>
+  <p>Antrenman ekipmanı tablonun ortasını kapsar. 22 onsluk ağırlıklı bir atlama ipi 0,6237 kg gelir ve 25 onsluk bir köpük rulo 0,7087 kg eder.</p>
+</div></section>
+
+<!-- 7. troy & bullion -->
+<section class="sec article" id="troy"><div class="w">
+  <h2>Market Onsundan Külçe Onsuna</h2>
+  <p>Tablodaki şimdiye kadarki her değer bir onsu kullanır: 28,35 gramlık market onsunu. O ons, ABD genelinde alışveriş arabalarını, posta çantalarını ve bebek kitaplarını doldurur. Ama «ons» sözcüğünün kuyumcu dükkânlarında ve banka kasalarında ikinci bir yaşamı vardır. Orada ons biraz daha fazla gelir ve kendi adını taşır. Ve bu, bu kılavuzu tamamlayan adımdır. Doğru onsu seçmek önemlidir, çünkü ikisi neredeyse %10 farklıdır. Altın alıcıları için doğru ons her alışverişin değerini korur. Sonraki satırlar külçe onsunu sade sayılarla açıklar.</p>
+
+  <h3>Troy Ons, Normal Ons ile Aynı mıdır?</h3>
+  <p>Hayır. Bir troy ons 31,1034768 gram gelirken normal bir ons 28,349523125 gram gelir. Troy ons yaklaşık %9,7 daha ağırdır.</p>
+  <p>Normal bir ons 437,5 grain tutar, bu yüzden troy ons 42,5 grain daha taşır. Dönüştürücünün Ons ayarı normal onsu kullanır. Altın ve gümüş ağırlıkları ise Troy ayarını gerektirir.</p>
+  <div class="fml">kg = oz t × 0.0311034768</div>
+  <p>Altın oz'yi kg'ye dönüştürmek için troy onsu 0,0311034768 ile çarpın. Bir kilogram 32,1507 troy ons tutar, bu yüzden 1 kg - troy oz, 32,15 oz t'ye eşittir. Troy onstan kilograma dönüştürücü, külçe matematiğini bu faktörle hâlleder.</p>
+  <div class="callout"><strong>Troy ayarı neden önemli.</strong> 5 oz t'lik bir külçe alan bir altın yatırımcısı 5 × 0,0311034768 = 0,1555 kg elde eder. Standart ayar aynı 5 ons için 0,1417 kg gösterirdi. Bu 13,8 gramlık fark külçe alıcıları için gerçek paradır.</div>
+  <p>London Bullion Market Association (LBMA) büyük külçeler için dünya standardını belirler. Good Delivery kuralları bir altın külçenin 350 ile 430 saf troy ons tutmasını gerektirir. Bu aralık yaklaşık 10,9 kg ile 13,4 kg'ye eşittir. Standart bir gümüş külçe yaklaşık 1.000 troy ons tutar, bu da 31,1 kg'ye yakındır.</p>
+  <p>Government of Western Australia'ya ait Perth Mint, yaygın bir alışkanlığa dikkat çeker. Satıcılar sikke ve külçelere troy onsun kısa biçimi olarak genellikle «oz» basar. Alıcılar her kıymetli metal «oz»'yi güvenle bir troy ons olarak okuyabilir.</p>
+  <div class="card tbl nowrap">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Öğe</th><th>Troy ons</th><th>Kilogram</th></tr></thead>
+        <tbody>
+          <tr><td>Altın veya gümüş sikke</td><td>1 oz t</td><td>0.0311 kg</td></tr>
+          <tr><td>Kilobar</td><td>32.15 oz t</td><td>1.0000 kg</td></tr>
+          <tr><td>Gümüş külçe</td><td>100 oz t</td><td>3.1103 kg</td></tr>
+          <tr><td>LBMA altın külçe (tipik)</td><td>400 oz t</td><td>12.4414 kg</td></tr>
+          <tr><td>LBMA gümüş külçe (tipik)</td><td>1,000 oz t</td><td>31.1035 kg</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>400 onsluk bir altın külçe troy birimlerinde yaklaşık 12,4 kg gelir. Aynı 400 market onsu yalnızca 11,3 kg gelirdi.</p>
+</div></section>
+
+<!-- 8. fluid -->
+<section class="sec article" id="fluid"><div class="w">
+  <h2>Sıvı Ons, Bir Ons ile Aynı Ağırlıkta mıdır?</h2>
+  <p>Hayır. Sıvı ons hacmi, yani bir sıvının doldurduğu alanı ölçerken ons kütleyi ölçer. Bir ABD sıvı onsu 29,57 mililitre tutar.</p>
+  <p>Su tek kolay durumdur. Bir ABD sıvı onsu su yaklaşık 29,6 gram gelir, bu da 1,04 onsa yakındır. Yani suyla dolu 32 onsluk bir su şişesi yaklaşık 0,946 kg gelir; 32 ons ağırlıktan (0,907 kg) biraz fazla. Bu 39 gramlık fark, yürüyüşçüler ve spor salonu üyeleri için kullanışlı bir gerçektir.</p>
+  <p>Diğer sıvılar su örüntüsünü bozar. Sıvı yağ sudan hafiftir ve bal çok daha ağırdır. Sıvı ons olarak etiketlenmiş bir kavanoz, herhangi bir kilogram yanıtı kesin olmadan önce sıvının yoğunluğunu, yani mililitre başına kütlesini gerektirir. ABD mağazalarındaki çoğu şişe «fl oz» basar, bu yüzden «fl» harfleri dikkat edilecek işarettir.</p>
+</div></section>
+
+<!-- 9. precision -->
+<section class="sec article" id="precision"><div class="w">
+  <h2>Yanıtınız Ne Kadar Hassas Olmalı?</h2>
+  <p>Ondalık basamakları göreve uydurun: yemek pişirme için 2 basamak, gönderim için 3 ve bilim ile tıp için 4 veya daha fazla. Doğru sayıda basamak her yanıtı açık ve pratik yapar.</p>
+  <div class="card tbl plain">
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Kullanım</th><th>Ondalık basamak</th><th>kg cinsinden 12 oz</th><th>Yuvarlama kuralı</th></tr></thead>
+        <tbody>
+          <tr><td>Yemek pişirme ve fırınlama</td><td>2</td><td>0.34 kg</td><td>En yakına yuvarla</td></tr>
+          <tr><td>Gönderim ve posta</td><td>3</td><td>0.341 kg</td><td>Her zaman yukarı yuvarla</td></tr>
+          <tr><td>İlaç ve bebek bakımı</td><td>4</td><td>0.3402 kg</td><td>En yakına yuvarla</td></tr>
+          <tr><td>Laboratuvar ve okul bilimi</td><td>6 veya daha fazla</td><td>0.340194 kg</td><td>Anlamlı basamakları koru</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>Gönderim, yukarı yuvarlamanın en iyi işlediği kullanımdır. Taşıyıcılar bir sonraki kademeden ücret alır, bu yüzden yukarı yuvarlanmış bir ağırlık her kolinin sorunsuz ilerlemesini sağlar.</p>
+  <p>Anlamlı basamaklar, bir sayıda gerçek anlam taşıyan rakamlardır. 12,0 ons okuyan bir terazi 3 anlamlı basamak verir, bu yüzden 0,340 kg dürüst sonuçtur. Bu kılavuz için incelenen her resmî tablo aynı faktörü verir, bu yüzden siteler arasında yalnızca yuvarlama küçük farklara yol açar.</p>
+</div></section>
+
+<!-- 10. faq -->
+<section class="sec article" id="faq"><div class="w">
+  <h2>Sıkça Sorulan Sorular</h2>
+  <p>Aşağıda on altı popüler soru yanıtlanmıştır. Her yanıt kendi başına geçerlidir.</p>
+  <div class="faq">
+    <details open><summary>Bir onsta kaç kilogram vardır?</summary><div class="ans">1 oz, 0,0283 kg'ye eşittir. Kesin değer 0,028349523125 kg'dir, yani 28,35 gram.</div></details>
+    <details><summary>Onsu kilograma nasıl dönüştürürüm?</summary><div class="ans">Ons sayısını 0,0283495 ile çarpın. Örneğin 8 oz × 0,0283495 = 0,2268 kg.</div></details>
+    <details><summary>oz'yi kg'ye dönüştürmek için çarpar mı yoksa böler misiniz?</summary><div class="ans">İkisi de işe yarar. Onsu 0,0283495 ile çarpın veya 35,274'e bölün. İkisi de aynı kilogram değerini verir.</div></details>
+    <details><summary>Bir kilogramda kaç ons vardır?</summary><div class="ans">Bir kilogram yaklaşık 35,274 onsa eşittir. Altın ve gümüş için bir kilogram 32,15 troy onsa eşittir.</div></details>
+    <details><summary>Bu ağırlıkça ons mu yoksa sıvı ons mu?</summary><div class="ans">Bu dönüştürücü, avoirdupois onsları olarak bilinen ağırlıkça onsu kullanır. Sıvı onslar ağırlığı değil hacmi ölçer.</div></details>
+    <details><summary>fl oz'yi kg'ye nasıl dönüştürürsünüz?</summary><div class="ans">Sıvı onslar hacmi ölçer, bu yüzden önce sıvının yoğunluğuna ihtiyacınız var. Su için kilogram elde etmek için fl oz'yi 0,02957 ile çarpın. 32 fl oz'lik bir su şişesi yaklaşık 0,946 kg gelir.</div></details>
+    <details><summary>Troy ons nedir ve Troy ayarını ne zaman kullanmalıyım?</summary><div class="ans">Bir troy ons 31,1034768 gram gelir ve altın, gümüş, platin ve paladyumu ölçer. Etiket yalnızca «oz» dese bile herhangi bir kıymetli metal ağırlığı için Troy ayarını kullanın.</div></details>
+    <details><summary>Libre ve onsu kg'ye nasıl dönüştürürsünüz?</summary><div class="ans">Libreyi 16 ile çarpın ve fazladan onsu ekleyin. Sonra toplam onsu 0,0283495 ile çarpın. 6 lb 4 oz için bu 100 oz, yani 2,835 kg'dir.</div></details>
+    <details><summary>Hemşireler bir bebeğin lb ve oz ağırlığını kg'ye nasıl dönüştürür?</summary><div class="ans">Hemşireler ağırlığı toplam onsa çevirir, 0,0283495 ile çarpar ve kilogramı 3 veya 4 ondalık basamağa kaydeder. 7 lb 8 oz'lik bir bebek 3,402 kg gelir.</div></details>
+    <details><summary>Bir çocuk 41 lb 12 oz gelir. Bu kg olarak nedir?</summary><div class="ans">Kırk bir libre 12 ons, 668 onsa eşittir. 18,94 kg elde etmek için 668'i 0,0283495 ile çarpın.</div></details>
+    <details><summary>56 oz kg olarak ne kadardır?</summary><div class="ans">Elli altı ons 1,5876 kg'ye eşittir, bu da tam olarak 3,5 libredir.</div></details>
+    <details><summary>35 ons 1 kilogramdan fazla mıdır?</summary><div class="ans">Hayır. 35 oz - kg yanıtı 0,9922 kg'dir, bu da 1 kilograma 7,8 gram kalır. Otuz altı ons 1 kg sınırını geçer.</div></details>
+    <details><summary>Hangi faktör en hassas sonucu verir?</summary><div class="ans">Bazı siteler faktörü 0,0283495 veya 0,02835'e yuvarlar. Bu kısayol yaklaşık dördüncü ondalık basamağa kadar doğru kalır. Kesin faktör 0,028349523125 her seferinde kusursuz bir eşleşme verir.</div></details>
+    <details><summary>2019 kilogram değişikliği ons dönüşümlerini etkiledi mi?</summary><div class="ans">Hayır. BIPM, kilogram eski boyutunu korusun diye Planck sabiti değerini seçti. 2019 öncesindeki her ons değeri bugün hâlâ geçerlidir.</div></details>
+    <details><summary>ABD ile Birleşik Krallık aynı onsu mu kullanır?</summary><div class="ans">Evet. Her iki ulus da 1959 uluslararası libresini benimsedi, bu yüzden her iki ons da 28,349523125 gram gelir. Birleşik Krallık bu değeri Weights and Measures Act 1963'e yazdı.</div></details>
+    <details><summary>Bu onstan kilograma kılavuzu neyi kapsar?</summary><div class="ans">Kesin formülü, dört adımlı bir yöntemi, 36 satırlık bir tabloyu, en çok aranan değerleri, günlük kullanımları, külçe için troy onsu, sıvı onsu ve yanıtınızın ne kadar hassas olması gerektiğini kapsar.</div></details>
+  </div>
+</div></section>
+
+<!-- about the writer -->
+<section class="sec article" id="author"><div class="w">
+  <h2>Yazar Hakkında</h2>
+  <div class="authorcard">
+    <img src="../gary-bennett.webp" alt="Gary Bennett, metrologist" width="96" height="96" loading="lazy">
+    <div>
+      <p class="an-name">Gary Bennett</p>
+      <div class="an-role">Yazar ve Metrolog · Ölçüm uzmanı</div>
+      <p>Gary Bennett, doğruluk için ölçüm kılavuzları hazırlayan ve inceleyen bir yazar ve metrologdur. Bu kılavuzu yazdı ve her dönüştürme faktörünü, tablo değerini ve çözümlü örneği, avoirdupois onsu (0,028349523125 kg) ve troy onsu (0,0311034768 kg) dâhil kesin NIST rakamlarıyla karşılaştırarak kontrol etti.</p>
+      <a class="an-link" href="../gary-bennett.html">Gary'nin tam profilini okuyun →</a>
+    </div>
+  </div>
+</div></section>
+
+</main>
+
+<footer>
+  <div class="fw">
+    <div class="fcol brandcol">
+      <div class="fbrand"><span class="mk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3v2m0 0-7 3m7-3 7 3M5 8l-2.5 6a4 4 0 0 0 5 0L5 8zm14 0-2.5 6a4 4 0 0 0 5 0L19 8zM8 21h8m-4 0V9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>Ounces to Kilograms</b></div>
+      <p>Resmî NIST faktörlerine dayanan, standart ve troy onsları için ücretsiz, kesin onstan kilograma dönüşümler.</p>
+    </div>
+    <div class="fcol"><h4>Sayfalar</h4>
+      <a href="index.html">Onstan Kilograma</a><a href="kg-to-oz.html">Kilogramdan Onsa</a><a href="../about.html">Hakkında</a><a href="../gary-bennett.html">Yazar</a><a href="../sitemap.html">Site haritası</a><a href="../contact.html">İletişim</a>
+    </div>
+    <div class="fcol"><h4>Politikalar</h4>
+      <a href="../editorial-policy.html">Yayın Politikası</a><a href="../disclaimer.html">Sorumluluk Reddi</a><a href="../privacy-policy.html">Gizlilik Politikası</a><a href="../terms.html">Kullanım Koşulları</a>
+    </div>
+    <div class="fcol"><h4>İletişim</h4>
+      <a href="mailto:info@ouncestokilograms.com">info@ouncestokilograms.com</a>
+    </div>
+  </div>
+  <div class="fbar">© 2026 Ounces to Kilograms. Tüm hakları saklıdır.</div>
+</footer>
+
+<script>
+const AVO = 0.028349523125;            // avoirdupois ounce → kg (NIST)
+const LB = 0.45359237, ST = 6.35029318; // kg per pound / stone
+let F = AVO, ozLab = 'oz', dp = 4, tipT;
+
+const ozEl=document.getElementById('oz'), kgEl=document.getElementById('kg'),
+      eq=document.getElementById('eqline'), panL=document.getElementById('panL'),
+      panR=document.getElementById('panR'), beam=document.querySelector('.beam-wrap'),
+      ozUnit=document.getElementById('ozUnit'), decSel=document.getElementById('dec'),
+      uG=document.getElementById('u-g'), uLB=document.getElementById('u-lb'), uST=document.getElementById('u-st');
+const rm = matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+// accepts "0.5", "1/2", "3 1/2"
+function parseVal(s){ s=(s||'').trim(); if(s==='') return NaN;
+  let m=s.match(/^(-?\d*\.?\d+)\s+(\d+)\/(\d+)$/); if(m) return (+m[1])+(+m[2])/(+m[3]);
+  m=s.match(/^(-?\d+)\/(\d+)$/); if(m) return (+m[1])/(+m[2]);
+  const n=parseFloat(s.replace(/,/g,'')); return isFinite(n)?n:NaN;
+}
+function fmt(n){ if(!isFinite(n)) return '0'; return n.toFixed(dp).replace(/\.?0+$/,'') || '0'; }
+function tip(dir){ if(rm||!beam) return; beam.style.transform='rotate('+dir+'deg)'; clearTimeout(tipT); tipT=setTimeout(()=>{ beam.style.transform='rotate(0deg)'; },280); }
+function multi(k){ uG.textContent=(k*1000).toFixed(2).replace(/\.?0+$/,'')+' g'; uLB.textContent=fmt(k/LB)+' lb'; uST.textContent=fmt(k/ST)+' st'; }
+function paintEmpty(){ panL.textContent='- '+ozLab; panR.textContent='- kg'; eq.textContent='Bir değer girin'; uG.textContent='-'; uLB.textContent='-'; uST.textContent='-'; }
+function paint(o,k,dir){ panL.textContent=fmt(o)+' '+ozLab; panR.textContent=fmt(k)+' kg'; multi(k); tip(dir); }
+function fromOz(){ const o=parseVal(ozEl.value); if(isNaN(o)){ kgEl.value=''; paintEmpty(); return; } const k=o*F; kgEl.value=fmt(k); eq.textContent=fmt(o)+' '+ozLab+' = '+fmt(k)+' kg'; paint(o,k,-1.6); }
+function fromKg(){ const k=parseVal(kgEl.value); if(isNaN(k)){ ozEl.value=''; paintEmpty(); return; } const o=k/F; ozEl.value=fmt(o); eq.textContent=fmt(k)+' kg = '+fmt(o)+' '+ozLab; paint(o,k,1.6); }
+function recalc(){ if(ozEl.value.trim()!=='') fromOz(); else if(kgEl.value.trim()!=='') fromKg(); else paintEmpty(); }
+
+ozEl.addEventListener('input', fromOz);
+kgEl.addEventListener('input', fromKg);
+decSel.addEventListener('change', ()=>{ dp=parseInt(decSel.value,10); recalc(); });
+
+document.getElementById('chips').addEventListener('click', e=>{ const b=e.target.closest('button'); if(!b) return; ozEl.value=b.dataset.oz; fromOz(); });
+
+// swap navigates to the reverse converter (kg -> oz), carrying the weight across
+document.getElementById('swap').addEventListener('click', ()=>{
+  const o=parseVal(ozEl.value); const k=(isNaN(o)?NaN:o*F);
+  location.href = isFinite(k) ? ('kg-to-oz.html?kg='+(+k.toFixed(6))) : 'kg-to-oz.html';
+});
+
+// ounce type: avoirdupois vs troy (precious metals)
+document.getElementById('ozType').addEventListener('click', e=>{
+  const b=e.target.closest('button'); if(!b) return;
+  [...e.currentTarget.children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+  F=parseFloat(b.dataset.f); ozLab=b.dataset.lab; ozUnit.textContent=ozLab; recalc();
+});
+
+// copy result
+document.getElementById('copy').addEventListener('click', async ()=>{
+  const btn=document.getElementById('copy');
+  try{ await navigator.clipboard.writeText(eq.textContent); btn.textContent='✓ Kopyalandı'; btn.classList.add('done'); setTimeout(()=>{ btn.textContent='⧉ Kopyala'; btn.classList.remove('done'); },1400); }
+  catch(err){ /* clipboard blocked in this context */ }
+});
+
+// conversion chart: 36 values, kg to 4 dp, g to 2 dp (matches the guide)
+const rows=[1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,18,20,22,24,25,26,28,30,32,35,36,40,42,48,50,64,72,80,90,100,1000];
+document.getElementById('tbody').innerHTML = rows.map(o=>{
+  const k=o*AVO, g=o*28.349523125;
+  const ozL=o.toLocaleString('en-US');
+  const gL=g.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+  return `<tr><td>${ozL} oz</td><td>${k.toFixed(4)} kg</td><td>${gL} g</td></tr>`;
+}).join('');
+
+// pre-fill from a reverse-conversion hand-off (?kg=…)
+(function(){ const v=new URLSearchParams(location.search).get('kg'); if(v!==null){ const n=parseFloat(v); if(isFinite(n)) ozEl.value=String(+(n/AVO).toFixed(4)); } })();
+fromOz();
+</script>
+<script>
+(function(){var s=document.getElementById('langsel'),b=document.getElementById('lbtn');if(b){b.addEventListener('click',function(e){e.stopPropagation();var o=s.classList.toggle('open');b.setAttribute('aria-expanded',o);});document.addEventListener('click',function(){s.classList.remove('open');b.setAttribute('aria-expanded',false);});}})();
+</script>
+</body>
+</html>
