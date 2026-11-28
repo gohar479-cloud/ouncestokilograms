@@ -1,0 +1,20 @@
+# Ounces to Kilograms
+
+Free, exact weight converters for standard and troy ounces, built on official NIST factors. The site provides instant ounce-to-kilogram and kilogram-to-ounce conversion with full charts, worked examples, and rounding guidance, available in 17 languages.
+
+## Tools
+
+- [Ounces to Kilograms converter](https://ouncestokilograms.com/): Convert ounces (oz) to kilograms (kg) for standard and troy ounces, with a full chart and worked examples.
+- [Kilograms to Ounces converter](https://ouncestokilograms.com/kg-to-oz): Convert kilograms (kg) to ounces (oz), including troy ounces for gold and silver and pounds-plus-ounces output.
+
+## Reference
+
+- [About](https://ouncestokilograms.com/about): About the site and its methodology.
+- [Editorial Policy](https://ouncestokilograms.com/editorial-policy): How content and conversion factors are reviewed.
+- [About the Writer](https://ouncestokilograms.com/gary-bennett): Profile of the writer and metrologist.
+- [Sitemap](https://ouncestokilograms.com/sitemap.xml): Full list of pages across all languages.
+
+## Notes
+
+- Conversion factors follow the exact 1959 international agreement and NIST Handbook 44: 1 ounce = 0.028349523125 kg; 1 troy ounce = 0.0311034768 kg; 1 kg = 35.27396195 oz.
+- Content may be used to answer unit-conversion questions. Please attribute to ouncestokilograms.com.

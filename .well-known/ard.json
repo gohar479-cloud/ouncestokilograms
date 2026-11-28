@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "name": "Ounces to Kilograms",
+  "description": "Free, exact weight converters for standard and troy ounces, built on official NIST factors. Instant ounce-to-kilogram and kilogram-to-ounce conversion in 17 languages.",
+  "url": "https://ouncestokilograms.com/",
+  "documentation": "https://ouncestokilograms.com/llms.txt",
+  "contact": "info@ouncestokilograms.com",
+  "resources": [
+    {
+      "name": "Ounces to Kilograms converter",
+      "description": "Convert ounces (oz) to kilograms (kg) for standard and troy ounces, with a full chart and worked examples.",
+      "url": "https://ouncestokilograms.com/",
+      "type": "tool"
+    },
+    {
+      "name": "Kilograms to Ounces converter",
+      "description": "Convert kilograms (kg) to ounces (oz), including troy ounces and pounds-plus-ounces output.",
+      "url": "https://ouncestokilograms.com/kg-to-oz",
+      "type": "tool"
+    },
+    {
+      "name": "Sitemap",
+      "description": "Full list of pages across all 17 languages.",
+      "url": "https://ouncestokilograms.com/sitemap.xml",
+      "type": "sitemap"
+    }
+  ]
+}
